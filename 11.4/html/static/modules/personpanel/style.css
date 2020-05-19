@@ -1,0 +1,382 @@
+/* CSS Document */
+/*------------------------  Globa ------------------------------*/
+html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-size:100%;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+html{height:100%;}
+ul, ol {list-style:none;}
+.red{color:#ff0000;}
+.clear{ clear:both; overflow:hidden;}
+.fr{float:right;}
+.tac{text-align:center;}
+a{color:#007AEA;text-decoration:none;}
+body {
+	background: url(images/bg.jpg) repeat-x #b3d6f2;
+   padding:0px;margin:0px;
+}
+#container {
+	margin: 0px;
+	width: 907px;
+}
+#left {
+	background-image: url(images/title-personal.png);
+	background-repeat: no-repeat;
+	width: 317px;
+	padding-bottom: 15px;
+	height: 100%;
+	float: left;
+	padding-top: 29px;
+}
+#left .left-center {
+	background-image: url(images/left-c.png);
+	background-repeat: repeat-y;
+	height: auto;
+	padding-top: 5px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	padding-left: 8px;
+}
+#left .left-center .photo-row {
+	height: 146px;
+	background-image: url(images/photo-box.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#left .left-center .button-row {
+	height: 34px;
+	padding-left: 56px;
+	width: 245px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b7b7b7;
+}
+.button-row span {
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	width: 80px;
+	float: left;
+	margin-left: 10px;
+}
+.button-row a {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 400;
+	color: #1f63ac;
+	letter-spacing: -1px;
+}
+.button-row a:hover {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 16px;
+	font-weight: normal;
+	color: #990000;
+	letter-spacing: -1px;
+}
+.button-row img {
+	vertical-align: bottom;
+	line-height: 25px;
+	height: 25px;
+}
+#left .left-center .data-row {
+	height: auto;
+}
+
+#left .left-center .grade {
+	height: 24px;
+	border-top: 1px solid #b7b7b7;
+	background: url(images/online-time.jpg) no-repeat 14px 5px;
+	padding-left: 117px;
+	padding-top: 7px;
+	text-align:left;
+}
+#left .left-foot {
+	background-image: url(images/left-dw.png);
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 317px;
+}
+#left .left-center .data-row table {
+	width: 280px;
+	margin-left: 16px;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 12px;
+}
+
+#right {
+	background-image: url(images/title-information.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 100%;
+	width: 580px;
+	margin-left: 10px;
+	padding-top: 29px;
+}
+#right .right-center {
+	background-image: url(images/right-c.png);
+	background-repeat: repeat-y;
+	height: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#right .right-center .talk {
+	height: auto;
+	padding-top: 25px;
+	width: 560px;
+	background-image: url(images/tit-talk.jpg);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+}
+#right .right-center .share {
+	width: 560px;
+	background: url(images/tit-share.jpg) no-repeat left 6px;
+	height: auto;
+	padding-bottom: 12px;
+	margin-top: 10px;
+	padding-top: 25px;
+	position:relative;
+}
+#right .right-center .date {
+	width: 560px;
+	height: auto;
+   padding-bottom: 12px;
+	padding-top: 25px;
+	background: url(images/tit-date.jpg) no-repeat left 6px;
+   position:relative;
+}
+#right .right-center .diary {
+	width: 560px;
+	height: auto;
+   padding-bottom: 12px;
+	padding-top: 25px;
+	background: url(images/tit-diary.jpg) no-repeat left 6px;
+	position:relative;
+}
+#right .right-center .email {
+	width: 560px;
+	height: auto;
+   padding-bottom: 12px;
+	padding-top: 25px;
+	background: url(images/tit-email.jpg) no-repeat left 6px;
+	position:relative;
+}
+#right .right-center .incentive{
+	width: 560px;
+	height: auto;
+    padding-bottom: 12px;
+	padding-top: 25px;
+	background: url(images/tit-award_punish.jpg) no-repeat left 6px;
+	position:relative;
+}
+.textbox-up {
+	background-image: url(images/textbox-up.jpg);
+	background-repeat: no-repeat;
+	width: 552px;
+	height: 16px;
+}
+.textbox-up2 {
+	background-image: url(images/textbox-up2.jpg);
+	background-repeat: no-repeat;
+	width: 552px;
+	height: 16px;
+	padding:0px;
+	margin:0px;
+}
+.textbox-ce {
+	background-image: url(images/textbox-ce.jpg);
+	background-repeat: repeat-y;
+	height: auto;
+	width: 512px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.textbox-ce2 {
+	background-image: url(images/textbox-ce.jpg);
+	background-repeat: repeat-y;
+	height: auto;
+	width: 532px;
+	padding-right: 15px;
+	padding-left: 5px;
+}
+
+.textbox-ce2 .noresult{
+   font-size:12px;
+   padding:5px 0px;   
+}
+.textbox-ce p {
+	font-size: 12px;
+	line-height: 19px;
+	text-align:left;
+	word-wrap: break-word;
+   word-break: break-all;
+}
+.textbox-dw {
+	background-image: url(images/textbox-dw.jpg);
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 552px;
+}
+.textbox-ce2 .con-box {
+	padding:20px;
+	height: auto;
+	list-style-type:none;
+}
+.textbox-ce2 .con-box li {
+    list-style-type:none;
+    line-height:24px;
+    font-size:12px;
+    border-bottom:1px dashed #cdcdcd;
+    margin-bottom:5px;
+    text-align:left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.textbox-ce2 .con-box li.dot{
+   padding-left:10px;
+   background: url(images/dot.gif) no-repeat left 8px;
+}
+.textbox-ce2 .con-box li.dot img.attach{
+    display: block;
+}
+
+.textbox-ce2 .con-box li span.time{
+   color:#333333;
+}
+
+.textbox-ce2 .con-box li span.cal{
+   color:#333333;
+}
+
+.textbox-title a {
+	font-family: "ËÎÌå";
+	font-size: 13px;
+	color: #005cd8;
+	text-decoration: none;
+	line-height: 19px;
+}
+.textbox-title a:hover {
+	font-family: "ËÎÌå";
+	font-size: 13px;
+	color: #FF0000;
+	line-height: 19px;
+}
+.textbox-ce li {
+	line-height: 22px;
+	height: 22px;
+	font-size: 13px;
+	font-family: "ËÎÌå";
+}
+.textbox-ce span {
+	margin-left: 10px;
+}
+.blue {
+	color: #005CD8;
+}
+.textbox-ce a {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}
+.textbox-ce a:hover {
+	font-size: 13px;
+	color: #005CD8;
+}
+
+
+#right .right-foot {
+	background-image: url(images/right-dw.png);
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 580px;
+}
+
+.textbox-more{
+   width:40px;
+   height:20px;
+   line-height:20px;
+   font-size:12px;
+   position:absolute;
+   right:0;
+   top:6px;   
+}
+
+.date span.CalLevel1, .date span.CalLevel2, .date span.CalLevel3, .date span.CalLevel4{
+   display:inline-block;
+   padding-left:16px;
+   background:url("/static/images/flag.gif") no-repeat;
+   background-position:0px -160px;
+}
+.date span.CalLevel1 {
+   line-height:16px;
+   background-position:0px -4px;
+}
+.date span.CalLevel2 {
+   line-height:16px;
+   background-position:0px -44px;
+}
+.date span.CalLevel3 {
+   line-height:16px;
+   background-position:0px -24px;
+}
+.date span.CalLevel4 {
+   line-height:16px;
+   background-position:0px -164px;
+}
+
+.photo-box .tl{
+   width:12px;
+   height:12px;
+   background:url("images/box/photo-box_tl.png") no-repeat top left;   
+}
+.photo-box .tc{
+   height:12px;
+   background:url("images/box/photo-box_tc.png") repeat-x center center;   
+}
+.photo-box .tr{
+   height:12px;
+   width:11px;
+   background:url("images/box/photo-box_tr.png") no-repeat center center;   
+}
+.photo-box .cl{
+   width:12px;
+   background:url("images/box/photo-box_cl.png") repeat-y center center;   
+}
+.photo-box .cr{
+   width:11px;
+   background:url("images/box/photo-box_cr.png") repeat-y;   
+}
+.photo-box .bl{
+   width:12px;
+   height:10px;
+   background:url("images/box/photo-box_bl.png") no-repeat top center;   
+}
+.photo-box .bc{
+   height:10px;
+   background:url("images/box/photo-box_bc.png") repeat-x;   
+}
+.photo-box .br{
+   width:11px;
+   height:10px;
+   background:url("images/box/photo-box_br.png") no-repeat top center;   
+}
+
+.photo-row1{
+   position:relative;
+   text-align:center;
+   margin:15px auto;  
+}
+.photo-cover{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+/*   cursor:url('images/icon_zoom_in.ico'),auto;     */
+}
+.attach{
+    display: block;
+    cursor: pointer;
+}

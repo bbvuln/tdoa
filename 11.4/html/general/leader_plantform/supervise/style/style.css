@@ -1,0 +1,44 @@
+.Text_gray{color: #666666;}
+.Border_gray{border-color: #E5E5E5;}
+
+#wrapper{width: 90%;margin: 0 auto;padding-bottom: 20px;}
+.nav_info{height:60px;line-height: 60px;float: right;font-size: 14px;}
+.nav_info button.btn{*margin-left: 10px;*float: left;*margin-top: 17px;}
+.nav_location{height: 60px;line-height: 60px;font-weight: bold;font-size: 14px;}
+
+.table_noboder{border: none;width: 100%;}
+.table_noboder td{border: none;width: 50%;}
+
+.content_flow .mod{margin-bottom: 15px;}
+.content_flow .mod .mod_bd{height: 330px;}
+.content_flow.l{margin-right: 5px;}
+.content_flow.r{margin-left: 5px;}
+
+#mod_glss .progress{margin-top: 10px;}
+.progress_info{float: left;margin-left: 10px;padding-top: 5px;position: relative;}
+.progress_info a, .progress_info a:hover{display: inline-block;text-decoration: none;position: relative;padding-top: 12px;}
+.progress_info a{vertical-align: top;width: 40px;text-align: center;}
+.progress_info a span{margin: 0 auto;width: 8px;height: 8px;margin-bottom: 3px;background: #ffffff url(img/dot.png) no-repeat 0 -8px;position: absolute;top: 0;left:50%;margin-left: -4px;}
+.progress_info a span.dot_success{background-position-y:0;}
+.progress_info a span.dot_doing{background-position-y:-16px;}
+.progress_info .progress_info_line{position: absolute;z-index: -1;height: 1px;width: 100%;background-color: #cdcdcd;top: 9px;}
+.progress_info a span.first{left: 0;width: 50%;margin-left: 0;padding-right: 4px;background-position-x:100%;}
+.progress_info a span.last{right: 0;width: 50%;margin-right: 0;padding-left: 4px;background-position-x:0;}
+
+#sv_active_tr td{cursor: pointer;}
+
+.T_table{table-layout: fixed;}
+table.T_table th{background-color: #FBFBFB;text-align: center;}
+
+.mod_bd_inner{display: none;}
+.mod_bd_col{height: 100%;}
+.mod_bd_col1, .mod_bd_col2{float: left;width: 48%;}
+.mod_bd_col1{margin-right: 2%;}
+.mod_bd_col2{margin-left: 2%;}
+.mod_bd_col.mod_bd_col2 td{text-align: center;color: #999999;}
+
+.mod_bd_col2 .type_list{margin: 0;padding: 0;}
+.mod_bd_col2 .type_list li{width: 48%;float: left;margin: 5px 1%;}
+.mod_bd_col2 .type_list li a{height: 30px;line-height: 30px;display: block;border: 1px solid #dddddd;background-color: #ffffff;text-decoration: none;padding: 0 5px;text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.mod_bd_col2 .type_list li a:hover{background-color: #FBFBFB;}
+.T_table tr td.sv_active{color:#ffffff;background-color: #449dcf;}

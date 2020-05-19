@@ -1,0 +1,367 @@
+.content-wrap table a:visited,
+.content-wrap table a:link,
+.content-wrap table a:active{
+	text-decoration:none;
+}
+/* 上下班考勤记录 */
+[class^="icon-"], [class*=" icon-"] {
+	background-image: none;
+}
+
+#stateModal .modal-footer {
+	background: #fff;
+	padding: 14px 15px 0;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+.modal-footer button {
+	cursor: pointer;
+}
+
+.controls input[type="radio"], input[type="checkbox"] {
+	margin: -3px 0 0;
+}
+
+table textarea,
+.controls textarea {
+	resize: none;
+}
+
+.content-wrap {
+	/* margin: 0px 15px; */
+}
+
+#nowdate {
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	color: #666;
+	background: #fff;
+	font-weight: normal;
+	box-shadow: none;
+}
+
+.search-wrap {
+	float: right;
+}
+
+.search-wrap label {
+	display: inline-block;
+}
+
+.search-wrap input {
+	width: 120px;
+	margin-bottom: 0;
+}
+
+.search-wrap button {
+	margin-left: 10px;
+}
+
+.content-wrap table,
+.content-wrap th,
+.content-wrap td {
+	text-align: center;
+}
+
+.content-wrap table {
+    background: #fff;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.content-wrap table i {
+	margin-right: 10px;
+}
+
+.content-wrap table .icon-29 {
+	color: #35aa47;
+}
+
+.content-wrap table .icon-lishixiaoxi {
+	color: #f50505;
+	font-size: 20px;
+}
+
+.content-wrap table a {
+	margin-right: 10px;
+}
+
+.abnormal-color {
+	color: #f50505;
+}
+
+.form-text {
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.appro-wrap {
+	border-bottom: 1px dashed #c9c9c9;
+	margin: 20px 0;
+}
+
+.no-data {
+	height: 100px;
+}
+
+.no-data span {
+	display: inline-block;
+	margin-top: 30px;
+	font-size: 14px;
+	color: #999;
+}
+
+.abnormal-stateModal.disable {
+	text-decoration: none;
+	color: #999;
+	cursor: auto;
+}
+/* 排版设置*/
+#datalist .schedule-active {
+	color: #27b127;
+}
+
+#datalist .schedule-disabled {
+	color: red;
+}
+
+.content-wrap button:hover {
+	cursor: pointer;
+}
+/* 新建考勤 */
+#createTable {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#createTable td {
+	text-align: left;
+}
+
+.content-wrap #createTable a {
+	margin-right: 0;
+}
+
+#createTable textarea {
+	width: 540px;
+	height: 60px;
+	margin-bottom: 0;
+}
+
+#createTable input[type='text'] {
+	margin-bottom: 0;
+	width: 120px;
+}
+
+#createTable input[type='radio'] {
+	width: 30px;
+	margin-top: -4px;
+}
+
+.fixed-wrap {
+	margin: 15px 25px;
+}
+
+#fixedSetting {
+	margin: 15px 0;
+	border: 1px solid #ddd;
+}
+
+#fixedSetting td,
+#fixedSetting th {
+	text-align: center;
+	border: 1px solid #ddd;
+	color: #666;
+}
+
+a.week-wrap {
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding: 5px;
+	border-radius: 3px;
+	color: #666;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.week-wrap.active {
+	border: 1px solid #0088cc;
+	color: #0088cc;
+}
+
+#oneweek a.week-wrap.active {
+	cursor: default;
+}
+
+#setModal .form-horizontal .controls {
+	margin-left: 100px;
+}
+
+#setModal .form-horizontal .control-label {
+	width: 100px;
+}
+
+.controls a:hover,
+#dateTags a:hover,
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#dateTags a,
+#dateTags input[type='text'] {
+	margin: 0 20px 15px 0;
+}
+
+#createTable  #addinput {
+	margin: 0 20px 7px 0;
+}
+
+.content-wrap #createTable #addbtn,
+.content-wrap #createTable #dateTags a{
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+#scheduleTime span {
+	display: inline-block;
+	padding: 5px 30px 5px 0;
+}
+
+.specialday-wrap {
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 4px 6px 4px 15px;
+	border-radius: 3px;
+	margin: 5px 20px 5px 0;
+}
+
+#dateTags a.close {
+	color: #666;
+	margin-left: 30px;
+	margin-bottom: 0;
+}
+
+.flexible-wrap li {
+	margin: 15px 0;
+}
+#scheduleStatus{
+	display: none;
+}
+a.schedule-delete.disabled{
+	 color: #999;
+    cursor: default;
+}
+
+/* 考勤审批 */
+.approv-nav{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+}
+ul.approve-type-wrap{
+	overflow: hidden;
+	margin-left:20px;
+	margin-top: 10px;
+}
+.approve-type {
+	display: block;
+	float: left;
+    cursor: pointer;
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.approve-type:hover{
+	font-weight: bold;
+}
+
+.approve-type.active {
+	font-weight: bold;
+    color: #0e86fe;
+    width: 110px;
+    background: #f6f7f9;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+#deptSchedule{
+	float:right;
+	margin-right:20px;
+}
+#approveTable{
+	border-bottom: 1px solid #ddd;
+}
+
+/*详情查看*/
+.detail-title{
+	margin-left: 15px;
+	font-size: 16px;
+    line-height: 20px;
+}
+table#detailTable{
+	width: 95%;
+    margin: 20px auto;
+    background: #fff;
+}
+.list-box{
+	/* position: relative !important; */
+	height:130px;
+	width:246px;
+}
+.search-area{
+	max-width: 214px !important;
+}
+.menu-ul-list{
+	max-height:78px !important;
+}
+#setModal{
+	height:350px;
+}
+.modal-body{
+	margin-top:40px;
+	min-height:215px;
+}
+.select-btn-option{
+	width:246px!important;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+    background-color: #e2e2e2;
+    background-image: -moz-linear-gradient(top, #e2e2e2, #e2e2e2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e2e2e2), to(#e2e2e2));
+    background-image: -webkit-linear-gradient(top, #e2e2e2, #e2e2e2);
+    background-image: -o-linear-gradient(top, #e2e2e2, #e2e2e2);
+    background-image: linear-gradient(to bottom, #e2e2e2, #e2e2e2);
+}
+.dropdown-menu > li > a:hover{
+	color: #000;
+    text-decoration: none;
+    outline: 0;
+    background-color: 99ccff;
+    background-image: -moz-linear-gradient(top, #CFE8FB, #CFE8FB);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CFE8FB), to(#CFE8FB));
+    background-image: -webkit-linear-gradient(top, #CFE8FB, #CFE8FB);
+    background-image: -o-linear-gradient(top, #CFE8FB, #CFE8FB);
+    background-image: linear-gradient(to bottom, #CFE8FB, #CFE8FB);
+}
+.ui-center-table{
+	margin-bottom: 20px;
+}
+
+.pagination{
+	text-align:right;
+	margin: 20px;
+}

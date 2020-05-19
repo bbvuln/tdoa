@@ -1,0 +1,14 @@
+<h4 style="font-family:'微软雅黑'"><span>怎样把DISCUZ论坛和OA软件安装在同一台服务器上？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;margin:left;">
+处理步骤如下：<br/>
+1)查看现有的DISCUZ论坛的版本和数据库的版本。<br/>
+2)停掉现有系统环境的服务程序，包括apache、mysql。<br/>
+3)在该服务器上，安装2010版本oa系统，让其正常运行，2010版本oa系统，包括mysql、apache。<br/>
+4)拷贝DISCUZ论坛的程序文件到bbs2下，另外到“通达网站/OA知识库/Office Anywhere 高级应用技巧/OA与Discuz!论坛集成” 下载对应版本的index.php文件，替换MYOA/webroot/general/bbs2下的index.php。<br/>
+5)确保现有disucz论坛的数据库是mysql5版本，如果不是，请联系技术支持，给您升级到mysql5。然后放到myoa/data5/目录中。<br/>
+6)修改DISCUZ论坛的配置文件，MYOA/webroot/general/bbs2/config.inc.php,修改数据库连接参数和oa的一致.OA的数据库连接参数：用户名:root密码：myoa888服务端口：3336服务器地址：localhost<br/>
+7)卸载原有系统的mysql、apache程序，配置完成。
+</p>

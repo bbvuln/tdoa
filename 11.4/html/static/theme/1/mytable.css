@@ -1,0 +1,140 @@
+
+html{overflow-x:hidden;overflow-y: scroll;}
+body {background: #E2E5E6; margin: 0px; padding: 0px;}
+
+a:link{color: #0066cc; text-decoration: none;}
+a:visited {color: #0066cc; text-decoration: none}
+a:hover {color: #333333; text-decoration: underline}
+a:active {color: #333333; text-decoration: underline}
+
+ul {
+	margin: 0;
+	margin-left: 3px;
+	padding: 0;
+	line-height:20px;
+}
+ul li {
+	margin: 0px;
+	padding: 0px 0 0px 16px;
+	list-style-type: none;
+	line-height:20px;
+	background:url("/static/images/black_dot.png") no-repeat left;
+}
+
+ol {
+	margin-left: 25px;
+}
+ol li {
+	list-style-type: decimal;
+	line-height:20px;
+}
+
+<!---
+li a:link{color: #0066cc; text-decoration: none;}
+li a:visited {color: #333333; text-decoration: none}
+li a:hover {color: #333333; text-decoration: underline}
+li a:active {color: #333333; text-decoration: underline}
+--->
+img{
+	border:0px;
+	vertical-align:middle
+}
+
+#desktop_config{
+   padding-top:5px;
+}
+#desktop_config img{
+   cursor:pointer;
+}
+
+#overlay {display: none; Z-INDEX: 10000; height:100%;BACKGROUND: #000; FILTER: alpha(opacity=50); LEFT: 0px; POSITION: absolute; TOP: 0px; -moz-opacity:0.5;opacity:0.5;}
+
+.dialogBlock {margin: 10px auto; clear: both; position: absolute; top: 100px;  z-index: 10002;}
+.dialogBlock .menu {float: left; width: 120px;}
+.dialogBlock .menu a {display: block; padding: 3px 10px; margin-bottom: 5px; color: #645A44; text-decoration: none; text-align: center; background: transparent; border: 1px solid white;}
+.dialogBlock .menu a:hover {color: #395500; text-decoration: none !important; background: #F4FADF url('bg_input_btn_hover.png'); border-color: #99CC00; border-bottom-color: #80AA00; border-right-color: #80AA00;}
+.dialogBlock .menu .current {border-color: #C8C4BB; border-bottom-color: #ABA498; border-right-color: #ABA498; background: #F4FBE1 url('bg_input_btn.png');}
+.dialogBlock .subContent {float: right; width: 500px; color: #663300; border: 1px #b8d1e2 solid; background: white url('bg_input_text.png') top left repeat-x;}
+
+.module {border: 1px #dedcd8 solid; background: white; padding: 0px;margin-bottom:10px;margin-left:10px;}
+.module_right {border: 1px #dedcd8 solid; background: white; padding: 0px;margin-bottom:10px;margin-left:10px;}
+.module_nav {margin-bottom:0px;}
+.moduleHeader {border-bottom: 1px #dedcd8 dotted; padding: 3px 1%; margin: 0; font-size: 12px; width: 98%; overflow: hidden; font-weight: normal; line-height: 14px; background: #f4f3f0 url('module_hd_bg.png') top left repeat-x;}
+.moduleHeader .icon {float: left; padding: 5px 0px 0px 0px;}
+.expand_arrow{
+float:left;
+width:22px;
+height:30px;
+background:url("/static/images/expand_arrow.png") no-repeat left center;
+display: inline-block;
+}
+.collapse_arrow{
+float:left;
+width:22px;
+height:30px;
+background:url("/static/images/collapse_arrow.png") no-repeat left center;
+display: inline-block;
+}
+.moduleHeader .text {padding: 2px 3px;  float: left; font-weight: bold;line-height:25px;cursor:pointer;}
+.moduleHeader .title {padding: 2px 3px;  float: left; font-weight: bold;line-height:25px;}
+.moduleHeader .option {padding: 2px 3px; float: right; cursor: pointer; text-decoration: none;}
+.moduleHeader .close {padding: 2px 3px; float: right; cursor: pointer; text-decoration: none;text-align: right; display:none;}
+.module_body {font-size: 9pt;margin: 0 !important; width: 98% !important; overflow-y: auto !important; padding: 5px 1% !important;min-height:110px;}
+.module_body .moduleType{clear:both;}
+.module_body .moduleTypeLink{line-height:20px;height:20px;overflow:hidden;float:left;}
+.module_body .moduleTypeLink a{margin:0 3px;}
+.module_body .moduleTypeLink a.active{color:#FF0000;}
+.module_body .moduleTypeOp{line-height:20px;float:right;display:none;}
+.moduleFooter {padding: 0; text-align: center; font-size: 12px; margin-bottom: 10px;}
+.module_page{display:none;}
+.module_div{overflow:hidden;clear:both;}
+.PageLinkDisable{
+   color:#CCCCCC !important;
+}
+
+.listColor {border: 1px #9F9F9F solid; color: #000000;}
+.listColor hr {border-bottom: 1px #DCDCDC solid;}
+.listColor .head a.nav{display:block;font-weight:bold;height:25px;line-height:25px;text-decoration:none;color:#000;}
+.listColor .head .moduleHeader {background:#DCDCDC url('list_hd_bg.png') repeat-x; border-bottom: 1px #DCDCDC solid;}
+.listColor .body {background:#DCDCDC url('list_hd_bg.png') repeat-x;border-left:1px #dedcd8 solid;border-right:1px #dedcd8 solid;}
+.listColor .body .moduleHeader {border: none;background:none;height:24px;}
+.listColor .moduleHeaderCollapsed {border-bottom: 0px;}
+.listColor .module_body {background: #eeebe8;}
+.listColor .bright {color: #003366 !important;}
+
+.tip{position:fixed;z-index:10003;left:0;bottom:0px;width:98%;border:1px #9F9F9F solid;border-bottom:0px;background:#E2E5E6;margin:0px 10px;padding-left:10px;line-height:30px;-moz-opacity:0.9;opacity:0.9;filter: alpha(opacity=90);}
+#mytable_body{overflow-y:scroll;}
+.pencil{
+height:12px;
+background:url("/static/images/email_edit.png") no-repeat left center;
+padding-left:0px;
+width:14px;
+zoom:1;
+display: inline-block;
+}
+
+.msgHeader {color:#000066; font-size: 12px; overflow: hidden; font-weight: normal; line-height:30px;margin: 10px 0;}
+.msgHeader .title {font-weight: bold;line-height:2em;}
+.msgBody {font-size: 9pt;margin: 0 !important; overflow-y: auto; padding: 10px;}
+.msgdiv{width: 49%;display: inline-block;line-height: 2em;*display:inline;*zoom:1;font-size: 10pt;}
+.modulemsgHeader{color:#000066; font-size: 12px; overflow: hidden;font-weight: bold;background: url('module_hd_bg.png') top left repeat-x;line-height:2em;margin:0;padding-left: 10px;}
+.modulemsgHeader .option {width: 10px;height: 10px;padding: 2px 3px;margin-top:8px; float: right; cursor: pointer; text-decoration: none;background: url('/static/images/close.png') top left no-repeat;}
+.modulemsgHeader .close {padding: 2px 3px; float: right; cursor: pointer; text-decoration: none;display:none;}
+
+input.msgButton{
+FONT-SIZE: 12pt;
+margin: 1px;
+height: 24px;
+text-decoration: none;
+border: 1px solid #6E91C7;
+background: #F4FBE1;
+}
+input.msgButton:hover {
+FONT-SIZE: 12pt;
+color: #395500;
+background: #F4FADF;
+border: 1px solid #80AA00;
+border-top: 1px solid #9C0;
+border-left: 1px solid #9C0;
+}
+.flash-slider {position:absolute; top: 10px; left:10px;}

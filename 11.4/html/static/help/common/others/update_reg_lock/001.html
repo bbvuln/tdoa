@@ -1,0 +1,27 @@
+<h4 style="font-family:'微软雅黑'"><span>重新注册服务的时候一直停留在智能配置上，服务注册不上的原因？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;">
+1）检查登录服务器的是不是管理员身份<br/>
+2）检查注册表中有无注册信息，在运行中输入regedit在HKEY_LOCAL_MACHINE-controlset001-services看一下有没有mysql服务，看看有没有office开头的其它服务。<br/>
+3）看看MYOA\mysql5\share 这个文件夹是不是存在，如果不存在是注册不了的。<br/>
+在注册表中注册，注册服务的命令如下：<br/>
+office_task服务注册<br/>
+d:/myoa/bin/officetask.exe -name office_task -install office_task<br/>
+office_im服务注册<br/>
+d:/myoa/bin/ OfficeIm.exe -name office_im -install office_im<br/>
+Office_Index服务注册<br/>
+d:/myoa/bin/ OfficeIndex.exe -name Office_Index –install Office_Index<br/>
+Office_Daemon服务注册<br/>
+d:/myoa/bin/ OfficeDaemon.exe -name Office_Daemon –install Office_Daemon<br/>
+Office_Mail服务注册<br/>
+d:/myoa/bin/ OfficeMail.exe -name Office_Mail –install Office_Mail<br/>
+MYSQL5_OA服务注册<br/>
+D:/MYOA/mysql5/bin/mysqld.exe -install MySQL5_OA<br/>
+Office_anywhere服务注册<br/>
+d:/myoa/bin/apache.exe -k install -n Office_Anywhere
+</p>
+
+
+

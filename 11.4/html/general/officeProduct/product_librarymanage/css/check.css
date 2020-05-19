@@ -1,0 +1,118 @@
+
+#list_seach_box,#stateSelect,#details_seach_box{
+    float:right;
+    position: relative; 
+}
+select{
+    height:28px;
+}
+#outcheckBtn{
+    float:right;
+    margin-right:20px;
+}
+#list_search_int,#details_search_int{
+    margin-bottom:0;
+    padding-left:30px;
+}
+.search_icon_box{
+    display:block;
+    position: absolute;
+    top: 1px;
+    left:3px;
+    width:28px;
+    height:26px;
+    cursor: pointer;
+    background:#fff;
+    line-height:28px;
+}
+#search_icon,#search_icon_details{
+    margin-top:5px;
+    margin-left:5px;
+}
+#check_tab,#check_build_tab{
+    margin: 0 auto;
+}
+.is_red{
+    color:red;
+}
+.use_handle{
+    color:#108EE9;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#page,#detailsPage{
+    float: right;
+    margin-right: 1%;
+}
+#build_check_box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    /* background:red; */
+}
+#build_check_content{
+    min-height:500px;
+    margin:0 auto;
+    /* background:cyan; */
+}
+#build_check_head{
+    width:98%;
+    height:50px;
+    /* background:yellow; */
+    margin:0 auto;
+}
+#build_check_title{
+    width:98%;
+    height:50px;
+    /* background:yellow; */
+    margin:0 auto;
+}
+#check_name{
+    width:100px!important;
+}
+#select_library,#select_class,#select_good{
+    width:125px;
+    margin-right:5px;
+}
+.build_check_handle_box{
+    width:214px;
+    margin:30px auto;
+}
+.cancel_btn{
+    margin-left:40px;
+}
+.in_icon{
+    margin-left:5px;
+    font-size:12px!important;
+    cursor: default;
+}
+.actual_num{
+    width:80px;
+}
+.remarks{
+    width:120px;
+}
+#check_details_tab{
+    margin: 0 auto;
+}
+#details_list_box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+}
+.pointer{
+    cursor: pointer;
+}
+.yes_btn{
+    width: 84px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 18px;
+}
+h4{
+    color:#0e86fe;
+}

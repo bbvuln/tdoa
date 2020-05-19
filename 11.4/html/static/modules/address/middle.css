@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-size:14px;
+}
+*{
+	margin:0px;
+	padding:0px;
+	overflow-y:auto;}
+li{
+	list-style:none;}
+a{
+	display:block;
+	cursor:pointer;
+	text-decoration:none;}
+img{
+	border:0px;}
+input{
+	border:0px;}
+.content{
+	width:250px;
+	height:553px;
+	margin:0 auto;}
+.middle{
+	position:relative;
+	width:250px;
+	height:553px;
+	border-right:1px #CCCCCC solid;}
+#search{
+	position:relative;
+	width:250px;
+	height:75px;}
+#lxr{
+	position:absolute;
+	top:20px;
+	left:30px;
+	width:170px;
+	height:31px;
+	border-top:1px #CCCCCC solid;
+	border-bottom:1px #CCCCCC solid;}
+#sl{
+	position:absolute;
+	height:33px;
+	top:20px;
+	left:25px;}
+#sr{
+	position:absolute;
+	top:20px;
+	right:17px;}
+#list{
+	position:absolute;
+	top:75px;
+	left:10px;
+	width:33px;
+	height:478px;}
+#list ul{
+	width:33px;
+	height:478px;}
+#list ul li{
+	position:relative;
+	width:33px;
+	height:38px;
+	background-color:#033;
+	background:url(images/bai.jpg) no-repeat;
+	overflow:hidden;} 
+#list ul li a{
+	color:#000;
+	text-align:center;
+	line-height:30px;}
+#list ul li a:hover{
+	background:url(images/hei.jpg) no-repeat;
+	}
+#name{
+	position:absolute;
+	top:75px;
+	right:0px;
+	width:190px;
+	height:478px;}
+.zm{
+    position: relative;
+	background-color:#FAFAFA;}
+.zimu{
+	padding-left: 10%;
+    position: absolute;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #3382ce;
+    font-weight: bold;
+    font-family: arial;
+    border-top: 1px solid #dddddd;
+}
+#name_t{
+	color:#F00;}
+#name_b{
+	color:#309;}
+.namelist{
+	position: relative;
+    padding-top: 30px;
+	    margin: 0;}
+.namelist li{
+	/* border-bottom: 1px #E4E4E4 solid; */
+    position: relative;
+	overflow: hidden;
+	    margin: 10px 0px;
+	}
+.namelist li a{
+	background-color: #FAFAFA;
+    font-size: 13px;
+    color: #000;
+    text-align: left;
+    padding-left: 80px;
+    line-height: 41px;
+    text-decoration: none;
+}
+.namelist li a:hover{
+	background-color:#F3F3F3;}
+.namelist li span{
+	width: 41px;
+    height: 41px;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    overflow: hidden;
+	    border-radius: 50%;}

@@ -1,0 +1,16 @@
+*{margin:0;padding:0}
+
+.module {text-align:center;border:1px #1E5CA5 solid; padding: 0px;margin:0px 5px;}
+.module_body {clear:both;font-size: 9pt;margin: 0 !important; overflow: auto; padding: 5px 5px;}
+.listColor {border: none;}
+.listColor .head {background:url("images/bg_l.png") no-repeat left top; padding-left:6px;height:27px;}
+.listColor .moduleHeader {border: none;background:url("images/bg_r.png") no-repeat top right;height:27px;}
+.listColor .module_body {border: 2px #1E5CA5 solid;border-top:none;}
+
+#navMenu{float: left;white-space: nowrap;padding: 0px 10px 0px 10px;margin-top:2px;height: 25px;overflow:hidden;}
+#navMenu a{float:left;overflow:hidden;color:#FFFFFF;text-decoration: none;padding-left:5px;height: 25px;margin-right:5px;}
+#navMenu a span{float:left;cursor:hand;padding:6px 10px 3px 5px;height: 25px;font-size:14px;}
+#navMenu a:hover{color:#000000;font-weight:bold;background: url('images/top_bg_l.png') no-repeat left top;}
+#navMenu a:hover span{background: url('images/top_bg_r.png') no-repeat right top;}
+#navMenu a.active{color:#000000; background: url('images/top_bg_l.png') no-repeat left top;}
+#navMenu a.active span{background: url('images/top_bg_r.png') no-repeat right top;}

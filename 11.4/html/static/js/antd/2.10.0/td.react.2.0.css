@@ -1,0 +1,417 @@
+.deptselect-textarea{
+	width: 280px;
+	height: 50px;
+}
+.deptselect-addbtn{
+	margin-left: 15px;
+	display: inline-block;
+    vertical-align: top;
+	color: #2db7f5;
+	cursor: pointer;
+}
+.deptselect-addbtn i{
+	margin-right: 5px
+}
+.deptselect-clearbtn{
+	margin-left:  15px;
+	display: inline-block;
+    vertical-align: top;
+	cursor: pointer;
+}
+.deptselect-clearbtn i{
+	margin-right: 5px
+}
+.userselect-textarea{
+	width: 280px;
+}
+.userselect-addbtn{
+	margin-left: 15px;
+	display: inline-block;
+    vertical-align: top;
+	color: #2db7f5;
+	cursor: pointer;
+}
+.userselect-addbtn i{
+	margin-right: 5px
+}
+.userselect-clearbtn{
+	margin-left:  15px;
+	display: inline-block;
+    vertical-align: top;
+	cursor: pointer;
+}
+.userselect-clearbtn i{
+	margin-right: 5px
+}
+/*字段过滤组件*/
+.fieldfilter{
+	display: inline-block;
+}
+.fieldfilter .ant-select,
+.fieldfilter .ant-input,
+.fieldfilter .ant-calendar-picker,
+.fieldfilter .ant-input-number{
+	width: 200px;
+	margin: 0 15px 0 0;
+}
+.fieldfilter .fieldfilter-condition-select{
+	width: 120px;
+}
+.fieldfilter .field_box .ant-input{
+	margin-right: 0;
+}
+
+/*优化滚动条*/
+.ant-select-dropdown-menu::-webkit-scrollbar ,
+.ant-transfer-list-body ul::-webkit-scrollbar {
+    width: 7px;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-thumb,
+.ant-transfer-list-body ul::-webkit-scrollbar-thumb {
+    background-color: #A6A6A6;
+    border-left: 2px solid transparent;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-track,
+.ant-transfer-list-body ul::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+    border-left: 2px solid transparent;
+}
+/*条件管理组件*/
+.con-manager{
+	position: relative;
+}
+.con-manager .counter-reset: {
+	margin-right: 100px
+}
+.con-manager .export-conditions{
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+}
+.con-manager-righticon{
+	margin-right: 5px;
+	color: #01efda;
+}
+.con-manager-group,.con-manager-conditons{
+	margin: 0;
+	padding: 5px;
+}
+.con-manager-conditons:hover,
+.con-manager-group:hover{
+	background: #f7f7f7;
+	border-radius: 4px;
+}	
+.con-manager .export-conditions:hover{
+	color: #57c5f7;
+    background-color: transparent;
+    border-color: #57c5f7;
+}
+.con-manager-conditons-title{
+	width: auto;
+	text-align: left;
+}
+.con-manager-conditons{
+	position: relative;
+}
+.con-manager-conditons .anticon.anticon-minus-circle{
+	color: #fb5656 !important;
+    position: absolute;
+    right: 5px;
+    top: 13px;
+}
+.con-manager-addgroup {
+	background: #2db38e;
+	color: #fff;
+}
+.con-manager-condition.ant-select.ant-select-enabled{
+	margin: 0 15px;
+}
+.con-manager-addcon{
+	margin-right: 15px;
+}
+.con-manager-addgroup{
+	margin-right: 15px;
+}
+.con-manager-deletegroup{
+	margin-right: 15px;
+}
+.con-manager-conditons-title{
+	margin-right: 20px;
+	display: inline-block;
+}
+.con-manager-express{
+	margin: 15px 0;
+}
+
+.con-manager .fieldfilter .ant-select, 
+.con-manager .fieldfilter .ant-input,
+.con-manager .fieldfilter .ant-calendar-picker, 
+.con-manager .fieldfilter .ant-input-number {
+    width: 120px;
+    margin: 0 15px 0 0;
+}
+.con-manager .fieldfilter .fieldfilter-field-select{
+	width: 156px;
+}
+.con-manager .fieldfilter .fieldfilter-condition-select{
+	width: 110px;
+}
+.con-manager .fieldfilter .field_box .ant-calendar-picker,
+.con-manager .fieldfilter .field_box .ant-input-wrapper{
+	margin-right: 15px;
+}
+.con-manager .fieldfilter .field_box .ant-input{
+	margin-right: 0;
+}
+.userselectsingle-single{
+	width: 280px;
+}
+.userselectsingle-addbtn{
+	margin-left: 15px;
+	color: #2db7f5;
+	cursor: pointer;
+}
+.userselectsingle-addbtn i{
+	margin-right: 5px
+}
+.userselectsingle-clearbtn{
+	margin-left:  15px;
+	cursor: pointer;
+}
+.userselectsingle-clearbtn i{
+	margin-right: 5px
+}
+.deptselectsingle-single{
+	width: 280px;
+}
+.deptselectsingle-addbtn{
+	margin-left: 15px;
+	color: #2db7f5;
+	cursor: pointer;
+}
+.deptselectsingle-addbtn i{
+	margin-right: 5px
+}
+.deptselectsingle-clearbtn{
+	margin-left:  15px;
+	cursor: pointer;
+}
+.deptselectsingle-clearbtn i{
+	margin-right: 5px
+}
+.privselect-textarea{
+	width: 280px;
+}
+.privselect-addbtn{
+	margin-left: 15px;
+	display: inline-block;
+    vertical-align: top;
+	color: #2db7f5;
+	cursor: pointer;
+}
+.privselect-addbtn i{
+	margin-right: 5px
+}
+.privselect-clearbtn{
+	margin-left:  15px;
+	display: inline-block;
+    vertical-align: top;
+	cursor: pointer;
+}
+.privselect-clearbtn i{
+	margin-right: 5px
+}
+.privselectsingle-single{
+	width: 280px;
+}
+.privselectsingle-addbtn{
+	margin-left: 15px;
+	color: #2db7f5;
+	cursor: pointer;
+}
+.privselectsingle-addbtn i{
+	margin-right: 5px
+}
+.privselectsingle-clearbtn{
+	margin-left:  15px;
+	cursor: pointer;
+}
+.privselectsingle-clearbtn i{
+	margin-right: 5px
+}
+.formula-modal-body-title{
+	border-bottom: 1px solid #ddd;1
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.formula-modal-body-title div span {
+	cursor: pointer;
+}
+
+/*左侧tabs*/
+.formula-modal-field-wrap{
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	height: 400px;
+	width: 160px;
+    overflow: hidden;
+}
+.formula-modal-field-list{
+    height: 360px;
+    overflow: auto;
+		border-right: none;
+}
+.ant-menu-submenu-inline .ant-menu-submenu-title{
+    padding: 0 40px  0 10px!important;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    cursor: pointer;
+}
+.ant-menu-sub .ant-menu-item{
+    padding: 0 10px 0 20px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    cursor: pointer;
+    border: 0;
+}
+.ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-item {
+    left: 0;
+}
+.ant-menu-submenu-inline.ant-menu-submenu-open.ant-menu-submenu{
+    border-bottom: 1px solid #ddd;
+}
+
+/*中间*/
+.formula-modal-edit-wrap{
+    padding: 0 5px 0 15px;
+}
+.formula-modal-edit-title{
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.formula-edit-textarea{
+    width: 100%;
+    height: 280px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    resize: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.formula-edit-textarea:focus {
+	outline: none;
+}
+
+/*操作符*/
+.formula-oprator-items{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    background: #efefef;
+    margin: 6px 7px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*右侧*/
+.formula-modal-funclist-wrap{
+	width: 235px;
+	height: 410px;
+	float: right;
+	overflow: auto;
+}
+.formula-modal-funclist-title{
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.formula-panel-collapse-wrap{
+	width: 234px;
+	height: 280px;
+	overflow: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.formula-panel-collapse{
+	overflow: auto;
+    border-left: 0;
+    border-right:  0;
+}
+.formula-panel-collapse-titles{
+	background: #efefef;
+}
+.formula-panel-collapse-titles div{
+	padding: 0;
+	border: 0;
+}
+.formula-panel-collapse-titles ul{
+    margin: -16px 0 -17px 0;
+}
+.ant-collapse {
+     border: 0;
+     border-bottom: 1px solid #ddd;
+}
+.formula-panel-collapse-items{
+	height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+    cursor: pointer;
+}
+.formula-panel-function-tips{
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	height: 80px;
+	width:  235px;
+	overflow: auto;
+}
+.formula-panel-tips-title{
+    color: #dd5858;
+}
+.formula-panel-tips-content{
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+/*滚动条*/
+.thin-scroll::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+    background-color: #A6A6A6;
+    border-left: 2px solid transparent;
+}
+.thin-scroll::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+    border-left: 2px solid transparent;
+}

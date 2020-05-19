@@ -1,0 +1,228 @@
+@font-face {font-family: 'kanban-iconfont';
+    src: url('libs/iconfont/iconfont.eot?v=20150508'); /* IE9*/
+    src: url('libs/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('libs/iconfont/iconfont.woff?v=20150508') format('woff'), /* chrome firefox */
+    url('libs/iconfont/iconfont.ttf?v=20150508') format('truetype'), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url('libs/iconfont/iconfont.svg#uxiconfont?v=20150508') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family: "kanban-iconfont" !important;
+    font-size: 22px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/static/images/hIEfix.png,sizingMethod=crop);
+    zoom: 1;
+}
+body{
+    background: #f7f7f7;
+}
+.btn.dropdown-toggle{
+    border-radius: 4px;
+}
+.dropdown-menu .iconfont{
+    font-size: 18px;
+}
+.dropdown-menu > li > a{
+    padding: 3px 12px;
+}
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus, 
+.dropdown-submenu:hover > a, 
+.dropdown-submenu:focus > a{
+    background: #5bc0de;
+    cursor: pointer;
+}
+.dropdown-menu{
+    border-radius: 2px;
+    border: 1px solid #ddd;
+}
+.open > .dropdown-menu{
+    max-height: 180px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+.btn:focus,textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus{
+    border-color: #5bc0de;
+}
+ul, ol{
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: #d9d9d9;
+    border-left: 2px solid transparent
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a6a6a6;
+    border-left: 2px solid transparent
+}
+::-webkit-scrollbar-thumb:window-inactive{
+    background: rgba(0,0,0,.1)
+}
+.input-calendar{
+    cursor: pointer !important;
+}
+.app-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 50px;
+    background-color: white;
+    z-index: 100;
+    /* -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.5); */
+    /* box-shadow: 0 0 2px 0 rgba(0,0,0,.5); */
+    border-bottom: 1px solid #D0D0D0;
+}
+.app-logo{
+    width: 158px;
+    margin: 0 15px;
+    padding: 0;
+    display: inline-block;
+    height: 50px;
+    color: #383838;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.app-nav{
+    margin: 0px 15px;
+    list-style: none;
+    line-height: 50px;
+    position: relative;
+    height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
+}
+.app-nav .app-nav-item{
+    position: relative;
+    margin: 0;
+    float: left;
+    color: #383838;
+    text-align: center;
+    padding: 0px 15px;
+    height: 45px;
+    padding-top: 5px;
+}
+.app-nav .app-nav-item:hover{
+    color: #03a9f4;
+}
+.app-search{
+    height: 40px;
+    line-height: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.app-search:hover{
+    color: #03a9f4;
+}
+.app-search .iconfont{
+    font-size: 13px;
+}
+.app-search .input-append{
+    margin: 0;
+}
+.app-search-result{
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 7px 21px rgba(0,0,0,.1);
+    border-radius: 3px;
+    position: fixed;
+    width: 400px;
+    z-index: 10;
+    top: 60px;
+    right: 20px;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.search-result-list{
+
+}
+.search-section{
+    padding: 10px 0px;
+}
+.search-section .search-type{
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0,0,0,.07);
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.search-section .search-feed{
+    list-style: none;
+}
+.search-section .search-item{
+    padding: 4px 15px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-section .search-item:hover{
+    background: #f7f7f7;
+}
+.app-main {
+    margin-top: 55px;
+}
+.app-main .app-main-container {
+    width: 95%;
+    margin: 0px auto;
+/*    padding: 10px;*/
+    min-height: 200px;
+}
+
+/*重要级别*/
+.levelContainer .level{
+    font-size: 13px;
+    margin-right: 5px;
+}
+.levelContainer .level-0{
+	color: #949494;
+}
+.levelContainer .level-1{
+    color: #ffa200;
+}
+.levelContainer .level-2{
+    color: red;
+}
+.levelContainer .btn{
+    padding: 4px 8px;
+}
+
+/*选人*/
+.selectUser{}
+.selectUser a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.selectUser a.userAdd{}
+.selectUser a.userClear{
+    color: #999;
+}
+
+/*新建任务*/
+.newtask{}
+.newtask .modal-body{
+    /*max-height: 330px;*/
+    min-height: 345px;
+}
+.newtask-content{
+    resize: none;
+}
+
+/*
+    full calendar 与 ant design 冲突
+*/
+.fc-button {
+    box-sizing: content-box !important;
+}

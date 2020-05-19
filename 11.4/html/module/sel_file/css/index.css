@@ -1,0 +1,565 @@
+* {
+    font-family: "Microsoft YaHei", "Arial", simsun, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+ui,
+li {
+    list-style: none;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dis_inline{
+    display: inline-block;
+    width:98%;
+    cursor: pointer;
+}
+.icon-new-role {
+    color: #0e86fe;
+    cursor: pointer;
+}
+.icon-new-grouping {
+    color: #eaac19;
+    cursor: pointer;
+}
+.icon-new-online {
+    color: #249559;
+    cursor: pointer;
+}
+.icon-new-organization {
+    color: #00adef;
+    cursor: pointer;
+}
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 10px 0;
+}
+.content-tag .mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 0;
+}
+.mCS-dark-3.mCSB_scrollTools
+    .mCSB_dragger.mCSB_dragger_onDrag
+    .mCSB_dragger_bar
+    .mCS-dark-3.mCSB_scrollTools
+    .mCSB_dragger
+    .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #cecece !important;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+    background: #f7f7f7;
+}
+.tabs-content
+    .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside
+    > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden,
+.tabs-content .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 30px;
+}
+
+.mCSB_container_wrapper > .mCSB_container {
+    padding-right: 0;
+}
+.content-tag .mCSB_container_wrapper,
+.content-tag .mCSB_inside > .mCSB_container {
+    margin-right: 10px;
+}
+
+.ztree li {
+    padding: 6px 0;
+    position: relative;
+}
+.ztree li a:hover {
+    text-decoration: none;
+}
+.ztree li ul {
+    margin-top: 5px;
+}
+/* .ztree ul li:first-child {
+    padding-top: 16px;
+} */
+.ztree li a.curSelectedNode {
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    opacity: 1;
+    color: #333;
+    border-left: 0;
+}
+.ztree span.customNodeName,
+.ztree span.node_name {
+    font-size: 14px;
+}
+.ztree span.customNode span:first-child {
+    width: 0;
+}
+.ztree li span {
+    margin-right: 0;
+}
+span.customNodeInfo {
+    color: #666;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.ztree li span.button.iconfont {
+    font-size: 18px;
+    background-image: none;
+    line-height: 10px;
+    margin-right: 3px;
+    color: #999;
+}
+.ztree li span.button.icon-arrowdown-right {
+    line-height: 18px;
+}
+.ztree li span.button.icon-new-checked,
+.ztree li span.button.icon-new-notcheck {
+    line-height: 13px;
+}
+.ztree li span.button.chk.checkbox_false_full,
+.ztree li span.button.chk.checkbox_false_full_focus,
+.ztree li span.button.chk.checkbox_true_part,
+.ztree li span.button.chk.checkbox_true_part_focus,
+.ztree li span.button.chk.checkbox_true_full,
+.ztree li span.button.chk.checkbox_true_full_focus,
+.ztree li span.button.switch {
+    background-image: none;
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 14px;
+    padding-right: 14px;
+    
+}
+.ztree li span.button.chk.checkbox_true_part_focus{
+    position: absolute;
+    top: 7px;
+}
+
+.ztree li span.button.chk.checkbox_false_full:before,
+.ztree li span.button.chk.checkbox_false_full_focus:before {
+    content: "\e76b";
+}
+
+.ztree li span.button.chk.checkbox_true_part:before,
+.ztree li span.button.chk.checkbox_true_part_focus:before {
+    content: "\e772";
+    color: #0e86fe;
+}
+
+.ztree li span.button.chk.checkbox_true_full:before,
+.ztree li span.button.chk.checkbox_true_full_focus:before {
+    content: "\e772";
+    color: #0e86fe;
+}
+/* .ztree li span.button.chk.checkbox_true_full+a,
+.ztree li span.button.chk.checkbox_true_full_focus+a{
+    color: #0E86FE;
+} */
+.ztree .allSelected,
+.ztree .allSelected + span {
+    /* color: #0e86fe; */
+}
+.ztree li span.button.switch {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    line-height: 12px;
+    color: #999;
+    font-size: 18px;
+}
+
+.ztree li span.button.noline_close:before {
+    content: "\e75d";
+}
+
+.ztree li span.button.noline_open:before {
+    content: "\e6ba";
+}
+
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    /* width: 550px; */
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+
+    /* -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+   
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto; */
+}
+.container .side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 78px;
+    width: 410px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    /* flex: 0 0 360px; */
+    background: #f7f7f7;
+}
+.container .content {
+    box-sizing: border-box;
+    position: absolute;
+    left: 410px;
+    right: 0;
+    top: 0;
+    bottom: 78px;
+}
+.tabs ul {
+    height: 50px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    margin: 0 20px;
+    /* padding-right: 27px; */
+    padding:0 13.5px;
+    box-sizing: border-box;
+}
+.tabs ul li {
+    height: 48px;
+    /* width: 65px; */
+    padding: 0 10px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+.tabs ul li a {
+    display: inline-block;
+    padding-left: 10px;
+    /* border-bottom: 2px solid #fff; */
+    box-sizing: border-box;
+    /* height: 48px; */
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+.tabs ul li.active {
+    border-bottom: 2px solid #0e86fe;
+}
+.tabs ul li.active a {
+    color: #0e86fe;
+}
+.tabs-content {
+    background: #f7f7f7;
+    font-size: 13px;
+    /* padding: 0 40px; */
+    height: calc(100% - 50px);
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+
+.tab-container {
+    display: none;
+}
+.tab-container.active {
+    display: block;
+    padding: 0 0 20px 40px;
+    padding-left: 26px;
+    box-sizing: border-box;
+    height: 100%;
+    /* height: calc(100% - 50px); */
+}
+.content-wrap,
+.search-wrap {
+    padding: 2px 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 50px;
+    bottom: 20px;
+    background-color: #fff;
+}
+#search-ui-content {
+    margin: 0;
+}
+.item-tag,
+.search-content li {
+    /* font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.65);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 26px;
+    height: 26px;
+    padding: 0 7px;
+    border-radius: 4px;
+    border: 1px solid #deedff;
+    background: #deedff;
+    font-size: 12px;
+    -webkit-transition: all .3s cubic-bezier(.215, .61, .355, 1);
+    transition: all .3s cubic-bezier(.215, .61, .355, 1);
+    opacity: 1;
+    margin-right: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap; */
+    box-sizing: border-box;
+    width: 98%;
+    padding-bottom: 20px;
+    position: relative;
+    padding-right: 10px;
+}
+.tag-close {
+    display: inline-block;
+    font-size: 12px;
+    font-size: 10px \9;
+    -webkit-transform: scale(0.83333333) rotate(0deg);
+    -ms-transform: scale(0.83333333) rotate(0deg);
+    transform: scale(0.83333333) rotate(0deg);
+    cursor: pointer;
+    margin-left: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #999;
+    font-weight: bold;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.content-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 78px;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 0 0;
+    border-top: 1px solid #d9d9d9;
+}
+.content-button button {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    line-height: 1.499;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 28px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 24px;
+}
+.content-bottom {
+    text-align: right;
+    padding-right: 18px;
+    padding-bottom: 10px;
+}
+.content-button .deleteAll {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: #666;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.content-button button.deleteAll:hover,
+.content-button button.deleteAll:hover span {
+    color: #0084ff;
+}
+
+.deleteAll button:focus {
+    outline: 0;
+}
+.search {
+    height: 26px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 12px;
+    /* border: 1px solid #d9d9d9; */
+    border-radius: 5px;
+}
+.search input[type="search"],
+.search input[type="text"] {
+    height: 26px;
+    line-height: 26px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    /* border: 0; */
+    padding: 0 10px 0 35px;
+    z-index: 4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+.icon-query {
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
+    color: #999;
+}
+.search-content {
+    /* display: none; */
+    /* box-sizing: border-box;
+    overflow: auto;
+    max-height: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #333;
+    padding: 20px 20px 0 20px; */
+    /* position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    padding-right: 8px;
+    box-sizing: border-box; */
+}
+.search-content li {
+    /* padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px; */
+}
+.search-content.active,
+.search-content .icon-new-mark.active {
+    display: block;
+}
+.search-content li.active {
+    /* background: #ddd; */
+}
+
+.search-content li span.icon-new-mark {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    color: #4ba7ff;
+}
+
+.tabs ul li .iconfont {
+    color: #0e86fe;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+.tabs ul li .iconfont.icon-wangluoyingpan1 {
+    margin-right: 5px;
+}
+.content-tag,
+.search-content {
+    /* display: none; */
+    box-sizing: border-box;
+    overflow: auto;
+    max-height: 100%;
+    
+    border-radius: 5px;
+    /* box-shadow: 0 0 1px #333; */
+    padding: 20px 20px 0 20px;
+}
+.search-content{
+    border: 2px solid #d9d9d9;
+}
+.search-content {
+    display: none;
+    background-color: #fff;
+}
+.ztree li span.button.ico_docu {
+    display: none;
+}
+.ztree li a {
+    display: block;
+    padding-left: 10px;
+    margin: 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.chk{
+    cursor: pointer!important;
+}
+.ztree li span.button.chk.checkbox_false_full,
+.ztree li span.button.chk.checkbox_false_full_focus,
+.ztree li span.button.chk.checkbox_true_full,
+.ztree li span.button.chk.checkbox_true_full_focus,
+.ztree li span.button.chk.checkbox_true_full_part,
+.ztree li span.button.chk.checkbox_true_part {
+    position: absolute;
+    top: 7px;
+}
+.ztree li span.button.iconfont.allSelected {
+    /* color: #0e86fe; */
+}
+.search-wrap {
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+}
+.search-wrap.active {
+    display: block;
+}
+.overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 10000;
+}
+.overlay.show {
+    display: block;
+}
+.overlay-wrap {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.overlay-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}

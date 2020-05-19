@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'td_textarea', new FCKDialogCommand( 'td_textarea', "多行输入框属性", FCKPlugins.Items['td_textarea'].Path + 'td_textarea.php', 300, 300 ) ) ;

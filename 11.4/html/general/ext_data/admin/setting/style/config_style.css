@@ -1,0 +1,37 @@
+.font_float{
+	float:left;
+}
+.config_main{
+	width:960px; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+.config_body{
+	overflow:auto;
+}
+.circulation_sponsor{
+	width:850px;
+	margin-top:25px;
+	height:205px;
+}
+.config_bottom{
+	margin-left:0px;
+	text-align:center;
+	float:center;
+}
+.config_button{
+	text-align:center;
+	float:none;
+}
+.config_content_left{
+	width:50%;
+}
+.config_content_right{
+	width: 40%;
+	margin-left: 25px;
+	margin-right: 5px;
+}
+.btn_save_topone{
+	margin-top:-20px;
+	float:right;
+}

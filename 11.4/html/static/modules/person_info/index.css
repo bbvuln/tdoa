@@ -1,0 +1,426 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+.title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f8ac1;
+    text-align: left;
+}
+.pageheader{
+    padding: 0px 0px 10px 20px;
+}
+.content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.info-left{
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    bottom: 0;
+    left: 15px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+.info-left a:focus{text-decoration: none;}
+.info-right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 221px;
+    right: 0;
+}
+.info-right iframe{
+    width: 100%;
+    height: 100%;
+}
+.content-body{
+    overflow: auto;
+}
+.menu_container ul{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    margin: 0px;
+    border-bottom: 1px solid #ddd;
+}
+.menu_title{
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0px;
+    padding-left: 20px;
+    position: relative;
+}
+.menu_title:hover{
+    text-decoration: none;
+}
+.on .menu_title{
+    border-bottom: 1px solid #ddd;
+}
+.arrow_icon{
+    display: inline-block;
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /*background: url(images/arrow_icon.png) no-repeat 0px 0px;*/
+}
+.on .arrow_icon{
+    display: none;
+    /*background: url(images/arrow_icon.png) no-repeat 0px -22px;*/
+}
+
+.menulist{   
+    margin: 0px;
+    width: 100%;
+    display: none;
+}
+.on .menulist{
+    display: block;
+}
+.menulist li a{
+    display: block;
+    padding: 8px 0px;
+    margin-left: 40px;
+    
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.menulist li:hover,
+.menulist li.active{
+    background: #ecf3f9;
+}
+.menulist li.last a{
+    border-bottom: none;
+}
+.person-info{
+    position: relative;
+    border-bottom: 1px solid #f3f3f3;
+    list-style: none;
+}
+.person-info.last{
+    border-bottom: none;
+}
+.person-info .icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+}
+.table{
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 0px;
+    background-color: #fff;
+}
+.table thead tr th {
+    font-weight: bold;
+    text-align: center;
+    /* background-color: #ecf3f9; */
+}
+.td-head{
+    font-size: 13px;
+    font-weight: bold;
+    color: #887878;
+    padding-top: 12px !important;
+}
+select{
+    height: 28px;
+    line-height: 28px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.table tbody tr td span {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #787878;
+}
+/* ---------------------sxm 2014-10-30 字体图标-----------------------------*/
+@font-face {
+    font-family: 'personInfo';
+    src: url('iconfont/iconfont.eot?m=150112'); /* IE9*/
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family: "personInfo" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/static/images/hIEfix.png,sizingMethod=crop);
+    zoom: 1;
+    margin-right: 10px;
+    font-weight: normal;
+}
+#menu_first_head .iconfont{color: #5856d6;}
+.theme .iconfont{color: #ff9500;}
+.portal .iconfont{color: #009cff;}
+.mytable .iconfont{color: #007aff;}
+.shortcut .iconfont{color: #4cd964;}
+.winexe .iconfont{color: #4cd964;}
+.fav .iconfont{color: #009cff;}
+.url .iconfont{color: #007aff;}
+#menu_second_head .iconfont{color: #69b9a1;}
+.info .iconfont{color: #ff9500;}
+.avatar .iconfont{color: #009cff;}
+.group .iconfont{color: #007aff;}
+.seal .iconfont{color: #4cd964;}
+.concern_user .iconfont{color: #4cd964;}
+#menu_third_head .iconfont{color: #69b241;}
+.mypriv .iconfont{color: #ff9500;}
+.pass .iconfont{color: #009cff;}
+.log .iconfont{color: #007aff;}
+.email .iconfont{color: #4cd964;}
+#menu_fouth_head .iconfont{color: #4698b7;}
+.guide .iconfont{color: #ff9500;}
+
+
+/* lijun add this for webuploader */
+.webuploader-container {
+    position: relative;
+}
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #0e86fe;
+    padding: 4px 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.webuploader-pick-hover {
+    background: #49a9ee;
+}
+
+.webuploader-pick-disable {
+    opacity: 0.6;
+    pointer-events:none;
+}
+#new-portrait-wrapper *{
+    box-sizing:border-box;
+}
+
+#new-portrait-wrapper {
+    display: none;
+    position:absolute;
+    top: -9px;
+    left: 10px;
+    width: 730px;
+    height: 510px;
+    background:#fff;
+    margin:30px 10px 0 10px;
+    border: 1px solid #ddd;
+}
+
+#new-portrait-wrapper h3{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+#new-portrait-wrapper img{
+    max-width: none;
+}
+.portrait-header {
+    padding:5px 12px;
+    background:#2f80d1;
+    height:30px;
+    position:relative;
+}
+.portrait-header h3, .portrait-header .btn-close {
+    color:#fff;
+    position:absolute;
+    display:inline-block;
+}
+.portrait-header .btn-close {
+    right:10px;
+    cursor:pointer;
+}
+.portrait-body{
+    width:100%;
+    height:480px;
+}
+.portrait-main, .portrait-slide-bar{
+    display:inline-block;
+    position:absolute;
+    height:480px;
+    padding:15px 20px;
+}
+.portrait-main{
+    background:#fff;
+    width:70%;
+    border-right:1px solid #ddd;
+}
+.portrait-content{
+    height:420px;
+}
+.portrait-content img{
+    /*width: 420px;*/
+    /*height: 420px;*/
+}
+.portrait-op-btns{
+    position:absolute;
+    bottom:10px;
+}
+.portrait-op-btns input{
+    margin-right: 10px;
+}
+.portrait-slide-bar{
+    width:30%;
+    right:0;
+    padding-left:20px;
+}
+.portrait-slide-bar>div{
+    margin:5px 0 18px 0;
+}
+.portrait-slide-bar p{
+    font-size:13px;
+    margin-top:5px;
+}
+.portrait-slide-bar span{
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+}
+.avatar-big{
+    width:100px;
+    height:100px;
+}
+.avatar-small{
+    width:50px;
+    height:50px;
+}
+.avatar-big-wrapper{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+.avatar-small-wrapper{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.upload-hints{
+    display: none;
+    position: relative;
+    top: -33px;
+    left: 90px;
+    color: #E60D0D;
+}
+
+#filePicker:last-child{
+    width: 82px !important;
+    height: 40px !important;
+}
+
+#avatarSaving{
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    border: 1px solid #ccc;
+    width: 140px;
+    height: 22px;
+    padding: 5px 0 5px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    background: lightyellow;
+    border-radius: 5px;
+    color: #474747;
+    z-index: 999;
+}
+
+/*勋章*/
+.medals-list,
+.grades-list{
+	margin-top: 0px;
+}
+.medals-item{
+	width: 140px;
+	border: 1px solid #ddd;
+    margin-left: -1px;
+    margin-top: -1px;
+    background: #fff;
+	cursor: pointer;
+	padding:10px;
+}
+.medals-item:hover{
+	opacity:0.7;
+}
+.medals-item-detail {
+    padding-bottom: 15px;
+}
+.medals-icon{
+	display: block;
+    width: 60px;
+	height: 60px;
+    margin: 0px auto;
+	margin-bottom:8px;
+}
+.medals-name{
+	text-align: center;
+    white-space: nowrap;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.medals-valid-date{
+	text-align: center;
+	color:#939393;
+	font-size:12px;
+	margin: 0px;
+}
+.medals-list .tooltip-inner {
+    text-align: left;
+}
+.medals-item.is_outdate{
+	background: #eee;
+}
+.medals-item.is_outdate .medals-name{
+	color:#939393;
+}
+.medals-item.is_outdate .medals-icon{
+	opacity: 0.5;
+}
+.emptyTips{
+    padding: 70px 20px;
+}
+#detail .backbtn{
+	text-align: center;
+    padding: 20px 0px;
+}
+#detail-title {
+	font-weight: normal;
+    padding: 0px 20px;
+}

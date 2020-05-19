@@ -1,0 +1,35 @@
+{
+    "status": "1",
+	"data": [
+		{
+			"id":"0",
+			"name":"销售之星",
+			"type": 0,
+			"icon": "./test.png",
+			"valid_date": "一季度",
+			"source": "来源",
+			"desc": "这是一段描述",
+			"is_outdate": true
+		},
+		{
+			"id":"1",
+			"name":"销售之星1",
+			"type": 0,
+			"icon": "./test.png",
+			"valid_date": "一季度",
+			"source": "来源1",
+			"desc": "这是一段描述1",
+			"is_outdate": false
+		},
+		{
+			"id":"2",
+			"name":"销售之星2",
+			"type": 1,
+			"icon": "./test.png",
+			"valid_date": "一月",
+			"source": "来源2",
+			"desc": "这是一段描述2",
+			"is_outdate": false
+		}
+	]
+}

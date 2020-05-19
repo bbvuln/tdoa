@@ -1,0 +1,129 @@
+*{padding:0px;margin:0px; }
+body{
+	font-size:12px;
+	background: #2597ef url('bg.png') no-repeat center center;
+    min-width: 960px;
+    color: #fff;
+}
+a{color:#fff;}
+.update_tips{position:absolute;left:10px;top:10px;}
+.logo {
+    float: left;
+}
+
+#center {
+    height: 300px; 
+    width: 960px;
+    margin: 40px auto; 
+    padding-top: 200px;
+}
+
+#form {
+    float: right;
+    background: url('form.png?t=2016');
+    position: relative;
+    top: -100px;
+    height: 345px;
+    width: 490px;
+}
+
+#logo{
+	position:relative;
+	width:1000px;
+	height:501px;
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	background-position:left 170px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#logo .right-1{
+	position:relative;
+	width:373px;
+	height:312px;
+	float:right;
+	display:inline-table;
+}
+#logo #form .right-2{
+	position:absolute;
+	width:373px;
+	height: 312px;
+	float: right;
+	margin-top:20px;
+}
+.clear{
+	clear:right;
+}
+#logo .right-1 img{
+    width: 425px;
+    height: 120px;
+	bottom:0;
+	display:block;
+	position:absolute;}
+
+#logo #form{
+}
+#logo #form .left{
+	float: left;
+}
+#logo #form .left div{
+	text-align:left;
+	position: relative;
+	top: 164px;
+	left:214px;
+}
+
+
+input.text{
+	border: none;
+	height:19px;
+	line-height:19px;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 3px;
+	background-color:transparent;
+	width: 143px;
+    outline: none;
+    color: #FFF;
+}
+select{
+   width:140px;
+   height:22px;
+}
+input.submit{
+    width: 250px;
+    height: 40px;
+    background: url('button.png');
+    border: 0px;
+    cursor: pointer;
+}
+input.submit:hover{
+   background-position:0 0;
+}
+.inputer {
+    position: absolute;
+    top: 147px;
+    left: 122px;
+}
+.inputer .user, .inputer .pwd {
+	width: 200px;
+	line-height: 20px;
+	display: block;
+	padding: 10px;
+	padding-left: 30px;
+	margin-bottom: 15px;
+	margin-left: 1px;
+}
+.inputer .pwd {
+	display: block;
+	width: 141px;
+}
+div.msg{
+    line-height:25px;
+	position:relative;
+	width:500px;
+	margin:20px auto;
+}

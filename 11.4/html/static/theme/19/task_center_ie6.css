@@ -1,0 +1,25 @@
+
+#right_content div.subject div.text{
+   background:url('images/ie6/task_center_item_subject_bg.png') 10px center no-repeat;
+}
+#right_content div.option{
+   background:url('images/ie6/task_center_item_option_bg.png') left center no-repeat;
+}
+#right_content div.option a.delay{
+   background:url('images/ie6/task_center_item_option_a_bg.png') 0px top no-repeat;
+}
+#right_content div.option a.delay_set{
+   background:url('images/ie6/task_center_item_option_a_bg.png') 0px top no-repeat;
+}
+#right_content div.option a.ignore{
+   background:url('images/ie6/task_center_item_option_a_bg.png') -40px top no-repeat;
+}
+#right_content div.option a.reborn{
+   background:url('images/ie6/task_center_item_ignored_a_bg.png') 0px top no-repeat;
+}
+#right_content div.option a.delay_reborn{
+   background:url('images/ie6/task_center_item_ignored_a_bg.png') 0px top no-repeat;
+}
+#right_content div.option a.deleted{
+   background:url('images/ie6/task_center_item_ignored_a_bg.png') -40px top no-repeat;
+}

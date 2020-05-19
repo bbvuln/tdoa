@@ -1,0 +1,495 @@
+.td-cmp-option{
+    text-align: right;
+    margin-right: 10px;
+}
+.td-cmp-option button{
+    margin: 5px;
+}
+.td-cmp-name{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.td-cmp-content{
+    margin: 0 auto;
+}
+.td-cmp-content .preview .htCore tbody tr td {
+	word-break:break-all;
+}
+
+.preview-wrapper-wtHolder{
+  width: auto !important;
+}
+
+.ant-modal-body .ant-table-tbody > tr > td{
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+#HandsontableCopyPaste{
+    display: none;
+}
+
+.handsontable .wtHider{
+    margin:0 auto;
+}
+.fullScreenModal .ant-modal-body{
+    padding: 16px 5px;
+    padding-top: 30px;
+}
+.fullScreenModal .ant-modal-body .preview .ant-table{
+    padding-bottom:22px;
+}
+.fullScreenModal .ant-modal-close-x{
+    line-height: 32px;
+    height: 32px;
+    width: 60px;
+}.ant-modal-mask,.ant-modal-wrap{
+	/*overflow: hidden;*/
+	overflow-y: auto;
+}
+.vertical-center-modal-special {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal-special:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+.vertical-center-modal-special .ant-modal .ant-table-body{
+	overflow: auto;
+}
+.vertical-center-modal-special .ant-modal {
+  display: inline-block;
+  width: auto;
+  /*max-width: 1200px;*/
+  vertical-align: middle;
+  top: 0;
+  /*overflow:hidden;*/
+  text-align: left;
+      padding-bottom: 0;
+}
+.highcharts-container{
+	/* width: 100% !important;
+	height: 100% !important; */
+}
+.vertical-center-modal-special .ant-modal-content{
+	height: 100% !important;
+}
+.vertical-center-modal-special .ant-modal-content table{
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+.vertical-center-modal-special .icon{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+}
+.vertical-center-modal-special .icon:hover{
+  color: black
+}
+.vertical-center-modal-special .ant-table-thead > tr > th, .vertical-center-modal-special .ant-table-bordered .ant-table-tbody > tr > td{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pivot-table-content-container{
+  width: 100%;
+  overflow: auto
+}
+/*.td-cmp-name{
+	min-height: 100% !important;
+	height: 100% !important;
+}*/
+.report-preview{
+	/* min-height: 600px !important; */
+}
+.detail-table .ant-table{
+    width: 100%;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.searchfields-confirm{
+    display: inherit;
+    margin-left: 47%;
+    margin-bottom:5px;
+}
+.rep-search-field {
+    white-space: nowrap;
+    margin-bottom: 8px;
+    display: inline-block;
+    margin: 3px 3px 8px 8px;
+}
+span.rep-search-fieldslabel {
+    width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: text-bottom;
+    text-align: right;
+}
+span.rep-search-fieldsymbol {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.rep-search-field-2x{
+    width: 90%;
+}
+/* .rep-search-field-2x .rep-search-fieldslabel,
+.rep-search-field-2x .rep-search-fieldsymbol,
+.rep-search-field-2x .deptselect-textarea-wrap,
+.rep-search-field-2x .userselect-textarea-wrap
+.rep-search-field-2x .privselect-textarea-wrap{
+    vertical-align: top;
+} */
+.rep-search-field-2x .deptselect-textarea-wrap,
+.rep-search-field-2x .userselect-textarea-wrap,
+.rep-search-field-2x .privselect-textarea-wrap{
+    display: inline-block;
+    width: 80%;
+}
+
+.rep-search .rep-search-wrapper{
+    border: 1px dashed #ccc;
+    width: 98%;
+    min-height: 120px;
+    max-height: 170px;
+    overflow: auto;
+	margin:0 auto;
+}
+
+.rep-search  .rep-search-field-2x  .deptselect-clearbtn,.rep-search  .rep-search-field-2x  .deptselect-addbtn,.rep-search  .rep-search-field-2x  .privselect-addbtn,.rep-search  .rep-search-field-2x  .privselect-clearbtn,.rep-search  .rep-search-field-2x  .userselect-addbtn,.rep-search  .rep-search-field-2x  .userselect-clearbtn{
+    vertical-align:middle;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.rep-search-field-2x .deptselect-textarea-wrap, .rep-search-field-2x .userselect-textarea-wrap, .rep-search-field-2x .privselect-textarea-wrap {
+    display: inline-block;
+    width: 300px;
+}
+
+.rep-search-field .deptselect-textarea-wrap, .rep-search-field .userselect-textarea-wrap, .rep-search-field .privselect-textarea-wrap {
+    display: inline-block;
+}
+
+.rep-search-wrapper  .deptselect-textarea,.userselect-textarea,.privselect-textarea{
+  width: 255px !important;
+  height: 28px !important;
+}
+
+.rep-search-wrapper  .rep-search-field-2x {
+    width: 457px;
+}
+
+.rep-search .rep-search-wrapper{
+  /* width: 960px; */
+}
+
+.rep-search .rep-search-field-2x  .deptselect-clearbtn,.rep-search  .rep-search-field-2x  .deptselect-addbtn,.rep-search  .rep-search-field-2x  .privselect-addbtn,.rep-search  .rep-search-field-2x  .privselect-clearbtn,.rep-search  .rep-search-field-2x  .userselect-addbtn,.rep-search  .rep-search-field-2x  .userselect-clearbtn{
+    margin-left: 3px;
+    display: inline-block;
+    line-height: 19px;
+    height: 23px;
+}
+
+.u-field-search-among {
+    display: inline-block;
+    vertical-align: middle;
+}
+.u-field-search-among .rep-u-field-search-datatime{
+    width: 180px;
+    padding-right: 10px;
+}
+.u-field-search-among .rep-u-field-search-datatime .ant-calendar-picker-clear, .ant-calendar-picker-icon {
+    right: 13px;
+}
+.u-field-search-among .rep-u-field-search-number{
+    width: 65px;
+}
+
+.rep-u-field-search-text{
+    width: 145px;
+}
+.rep-u-field-search-select{
+    width: 145px;
+}
+.rep-u-field-search-datatime{
+    width: 145px;
+}
+.rep-u-field-search-number{
+    width: 145px;
+}
+.pivot-content-container {
+    background: #fff;
+    width: 90%;
+}
+
+.pivot-content-container .pivot-table-content-container {
+    overflow: auto;
+    margin: 10px 0;
+}
+
+.pivot-content-container .ant-table {
+    overflow: inherit
+}
+
+.pivot-detail-modal {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.pivot-content-container .button-center {
+    margin-top: 51px
+}
+
+.pivot-detail-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+.pivot-content-container table {
+    /* margin: 0 auto */
+}
+.ant-table-wrapper {
+    margin: 0 auto;
+}
+.pivot-detail-modal .ant-modal {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.pivot-detail-modal .icon {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+}
+
+.pivot-detail-modal .icon:hover {
+    color: black
+}
+
+.pivot-detail-modal .ant-table {
+    overflow-x: auto
+}
+
+.pivot-detail-modal .ant-table-thead>tr>th, .pivot-detail-modal .ant-table-bordered .ant-table-tbody>tr>td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pivot-detail-modal .ant-table-bordered.ant-table-empty .ant-table-placeholder {
+    margin: 0 auto
+}
+
+.pivot-detail-modal table {
+    margin: 0 auto;
+}
+
+.pivot-report-name {
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #333;
+    font-weight: bolder
+}
+
+.pivot-content-container .detail-hover:hover {
+    cursor: pointer;
+}
+
+.pivot-table-content-container .ant-table-placeholder {
+    margin: 0 auto
+}
+
+/* 修改ant table样式 */
+.preview .ant-table-thead > tr > th,
+.preview .ant-table-tbody > tr > td{
+    padding:0 8px;
+    height:50px
+}
+.preview .ant-table-thead > tr > th{
+    /* background: inherit; */
+}
+.preview .ant-table{
+    font-size:inherit;
+    color: inherit;
+    border-width: 1px;
+    border-collapse: collapse;/*关键代码*/
+}
+.preview .ant-table table{
+    /* border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9; */
+    border:1px solid #e9e9e9;
+    border-radius: 0;
+}
+.preview .ant-table .tableHeader table{
+    border-bottom: 0; 
+}
+.preview .ant-table .tableBody{
+    border-bottom: 1px solid #e9e9e9;
+}
+.preview .ant-table .tableBody table{
+    border-top: 0; 
+}
+.preview .ant-table-tbody > tr > td,
+.preview .ant-table-thead > tr > th{
+    border-style: inherit;
+    border-width: 1px;
+    /* border-right: 0; */
+    /* border-bottom: 0; */
+    border-color:#e9e9e9 !important;
+}
+.preview .ant-table  tbody tr:last-child td{
+    border-bottom-width: 1px;
+    border-color: #e9e9e9;
+}
+.preview .ant-table-tbody > tr >td:last-child,
+.preview .ant-table-thead > tr >th:last-child {
+    border-right-width: 1px;
+    border-color: #e9e9e9;
+}
+.preview .ant-table-tbody > tr:hover > td{
+    background: transparent;
+}
+/* ::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: #e3e3e3;
+    border-left: 2px solid transparent
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c1c1c1;
+    border-left: 2px solid transparent
+}
+::-webkit-scrollbar-thumb:window-inactive{
+    background: rgba(0,0,0,.1)
+} */.pivot-content-container {
+    background: #fff;
+    width: 98%;
+}
+
+.pivot-content-container .pivot-table-content-container {
+    overflow: auto;
+    margin: 10px 0;
+}
+
+.pivot-content-container .ant-table {
+    overflow: inherit
+}
+
+.pivot-detail-modal {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.pivot-content-container .button-center {
+    margin-top: 51px
+}
+
+.pivot-detail-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+.pivot-content-container table {
+    /* margin: 0 auto */
+}
+.ant-table-wrapper {
+    margin: 0 auto;
+}
+.pivot-detail-modal .ant-modal {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.pivot-detail-modal .icon {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+}
+
+.pivot-detail-modal .icon:hover {
+    color: black
+}
+
+.pivot-detail-modal .ant-table {
+    overflow-x: auto
+}
+
+.pivot-detail-modal .ant-table-thead>tr>th, .pivot-detail-modal .ant-table-bordered .ant-table-tbody>tr>td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pivot-detail-modal .ant-table-bordered.ant-table-empty .ant-table-placeholder {
+    margin: 0 auto
+}
+
+.pivot-detail-modal table {
+    margin: 0 auto;
+}
+
+.pivot-report-name {
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #333;
+    font-weight: bolder
+}
+
+.pivot-content-container .detail-hover:hover {
+    cursor: pointer;
+}
+
+.pivot-table-content-container .ant-table-placeholder {
+    margin: 0 auto
+}
+.fullScreenModal .pivot-table-content-container{
+    margin: 10px 0;
+}
+.ant-table.ant-table-bordered .ant-table-thead > tr > th{
+    border-right: 1px solid #e9e9e9;
+}

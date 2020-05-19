@@ -1,0 +1,22 @@
+input[hidden="1"],select[hidden="1"]{
+    display: inline-block;
+}
+
+HTML.CSS1Compat .AUTO[contenteditable=false],
+HTML.CSS1Compat .auto[contenteditable=false],
+HTML.CSS1Compat input[contenteditable=false],
+HTML.CSS1Compat select[contenteditable=false],
+HTML.CSS1Compat textarea[contenteditable=false],
+HTML.CSS1Compat .LIST_VIEW_HEADER td{
+    min-height: 20px !important;
+}
+
+HTML.CSS1Compat input[type="checkbox"][contenteditable=false],
+HTML.CSS1Compat input[type="radio"][contenteditable=false],
+HTML.CSS1Compat input[type="file"][contenteditable=false]{
+    min-height: 0px !important;
+}
+
+img.LIST_VIEW{
+    border: none;
+}

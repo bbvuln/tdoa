@@ -1,0 +1,29 @@
+.downloadNow{
+	line-height: 125%;
+	margin-right: 4px;
+}
+.downloadNow a:link,
+.downloadNow a:visited,
+.downloadNow a:active,
+.downloadNow a:hover{
+	font-family: Tahoma, Arial;
+	font-weight: bold;
+	width: 200px;
+	height: 52px;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	text-decoration: none;
+}
+.downloadNowTitle{
+	display: block;
+	font-size: 125%;
+	text-align: center;
+	padding-top: 10px;
+}
+.downloadNowCounter{
+	display: block;
+	font-size: 85%;
+	font-weight: normal;
+	margin-top: 2px;
+}

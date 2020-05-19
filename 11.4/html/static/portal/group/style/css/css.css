@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+	-webkit-text-size-adjust:100%
+}
+html, body, ul, li {
+	margin:0;
+	padding:0;
+}
+ul, li {
+	list-style-type:none
+}
+table {
+	border-collapse:separate;
+	border-spacing:0
+}
+caption, th, td {
+	text-align:left;
+	font-weight:normal
+}
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	 background:#FFF;
+}
+ul, ol {
+	list-style:none
+}
+.clear {
+	clear:both;
+	overflow:hidden;
+	height:0
+}
+.fr {
+	float:right
+}
+.tac {
+	text-align:center
+}
+.no-data
+{
+    padding:20px 0px;
+    text-align:center;
+    font-size:14px;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline
+}
+
+.main { width:auto;
+}
+/* 总部门户 */
+#group{ width:1000px; height:110px;   position:relative; left:50%; margin-left:-480px; background:#FFF;}
+/* 头部 */
+#group #header{ width:1000px; height:160px; overflow:hidden;}
+#group #header .logo{ width:700px;  height:66px; line-height:60px; overflow:hidden; float:left; margin-top:12px;}
+#group #header .logo .img{ float:left;  _display:inline;}
+#group #header .logo .text{ font-family:"微软雅黑"; font-size:24px; font-weight:bold; margin-left:15px;}
+#group #header .logo a{ color:#000;}
+#group #header .logo a:hover{ text-decoration:none; color:#000;}
+#group #header .top{ float:right; width:250px; line-height:30px; margin-top:16px; font-size:13px; text-align:right;}
+#group #header .top a{color:#000;}
+#group #header .loginbar {text-align:right;}
+#group #header .loginbar a{ background:url(../images/loginbar_oa.jpg) no-repeat; display:inline-block; width:96px; height:26px; line-height:26px; text-align:center;color:#fff;}
+#group #header .loginbar a:hover{ background:url(../images/loginbar_hover.jpg) no-repeat;text-decoration:none;}
+
+/* 导航 */
+#group #header .nav{ width:100%; height:36px; background:url(../images/nav_bj.jpg) repeat-x; overflow:hidden; float:left; margin-top:8px;}
+#group #header .nav li{ width:110px; line-height:36px; float:left; text-align:center; background:url(../images/nav_1.jpg) no-repeat right center;}
+#group #header .nav li a{ color:#FFF; font-size:14px; font-weight:bold;  display:block;}
+#group #header .nav li a:hover{ text-decoration:none; /*background:url(../images/current.jpg) no-repeat center 6px;*/color:#000; font-weight:bold;}
+#group #header .nav li.current a{ color:#000; font-weight:bold;}
+
+#group #header .notice{ width:100%; line-height:30px; height:30px; background:url(../images/notice.jpg) repeat-x; float:left; overflow:hidden;}
+#group #header .notice strong{ float:left; padding-left:10px; color:#3b80cc;}
+#group #header .notice ul{ width:800px; float:left; }
+#group #header .notice ul li{ float:left; margin:0 30px 0 10px; background:url(../images/diandian.jpg) no-repeat left center; padding-left:10px;}
+#group #header .notice ul li a{ color:#838383; font-size:12px;}
+#group #header .notice ul li a:hover{ text-decoration:none;}
+
+/* 内容 */
+#group #content {width:100%; overflow:hidden; margin-top:4px;}
+#group #content .title{ width:100%; height:27px; line-height:27px; border-bottom:1px #e9e9e9 solid;line-height:27px; background:url(../images/title.jpg) repeat-x; font-size:14px; color:#368dee; font-weight:bold;}
+#group #content .title span{ width:36px; height:11px; float:right;background:url(../images/more.jpg) no-repeat; display:block; margin:8px 8px 0 0;}
+#group #content .title span a{ width:36px; height:11px; display:block; text-indent:-99999px; overflow:hidden;}
+#group #content .title strong{ width:95px; height:27px; float:left; color:#3275bc; text-align:center;}
+
+/* 内容区域一 */
+#group #content .content_1{ width:100%; overflow:hidden;}
+#group #content .content_1 .news{ width:330px; height:300px; float:left; overflow:hidden; border:1px #e9e9e9 solid; float:left;}
+#group #content .news .title strong{ width:95px; height:27px; float:left; text-align:center;background:url(../images/title_a.jpg) repeat-x; color:#FFF;}
+#group #content .content_1 .news ul{ width:330px; overflow:hidden;margin-top:10px;}
+#group #content .content_1 .news li{ width:305px; height:27px; line-height:27px; float:left; overflow:hidden; background:url(../images/diandian.jpg) no-repeat 10px center; padding-left:20px; color:#595959;}
+#group #content .content_1 .news li span{ float:right; padding-right:5px;}
+#group #content .content_1 .news li a{ color:#6c6c6c; font-size:12px;}
+#group #content .content_1 .news li span{ float:right; color:#979797;}
+
+#group #content .content_1 .news_tu{ width:398px; height:300px; border:1px #e9e9e9 solid; float:left; margin-left:12px; _display:inline; overflow:hidden; background:#fdfdfd;}
+/* 焦点图 */
+#group #content .focusBox{ width:380px; height:290px; margin:8px 0 0 8px; overflow:hidden; position:relative;  }
+#group #content .focusBox .hd{ position:absolute; z-index:1; right:3px; bottom:34px; }
+#group #content .focusBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+#group #content .focusBox .hd ul li{ float:left; margin-right:3px;  width:14px; height:14px; line-height:14px; text-align:center; background:#ddd; cursor:pointer; font-family:Arial; color:#666; }
+#group #content .focusBox .hd ul li.on{ background:#f00; color:#fff;     }
+#group #content .focusBox .bd{ position:relative;  }
+#group #content .focusBox .bd .pic{ line-height:0px;  }
+#group #content .focusBox .bd .pic img{ width:380px; height:262px;}
+#group #content .focusBox .bd .con{ height:28px; line-height:28px; text-align:center; font-weight:bold; }
+#group #content .focusBox .bd ul li a{ color:#000;}
+#group #content .focusBox .bd ul li a:hover{ text-decoration:none;}
+
+#group #content .content_1 .mv{ width:245px; height:300px; float:right; }
+#group #content .content_1 .mv .mv_content{ width:245px; height:190px; background:url(../images/mv.jpg) no-repeat; overflow:hidden;}
+#group #content .content_1 .mv .mv_content a{ color:#FFF; font-weight:bold; padding:75px 22px 0 22px; text-align:center; display:block; line-height:20px; height:100%; }
+#group #content .content_1 .mv .mv_content a:hover{ text-decoration:none;}
+#group #content .content_1 .mv_1{width:243px; height:101px; border:1px #e9e9e9 solid; margin-top:8px;}
+#group #content .content_1 .mv ul{ margin-top:5px;}
+#group #content .content_1 .mv li {width:220px; height:20px; line-height:20px; float:left; overflow:hidden; background:url(../images/diandian.jpg) no-repeat 10px center; padding-left:20px; color:#595959;}
+#group #content .content_1 .mv li a{ color:#6c6c6c; font-size:12px;}
+
+/* 内容区域二 */
+#group #content .content_2{ width:100%; overflow:hidden; margin-top:12px;}
+#group #content .content_2 .scroll_pictures{ width:998px; height:185px; border:1px #e9e9e9 solid; overflow:hidden;}
+#group #content .scroll_pictures .title strong{ width:95px; height:27px; float:left; text-align:center;background:url(../images/title_a.jpg) repeat-x; color:#FFF;}
+#group #content .content_2 .scroll_pictures .bd{ width:993px; padding-left:5px; overflow:hidden;}
+
+#group #content .content_2 .scroll_pictures .bd .pic img{width:155px;}
+#group #content .content_2 .scroll_pictures li{ width:155px; float:left; text-align:center; line-height:24px; margin:12px 5px;}
+#group #content .content_2 .scroll_pictures li a{ color:#000000;}
+#group #content .content_2 .scroll_pictures li a:hover{ text-decoration:none;}
+
+/* 内容区域三 */
+#group #content .content_3{ width:100%; overflow:hidden;}
+#group #content .content_3 .column{ width:323px; height:265px; float:left; margin-left:12px; +margin-left:14px; _display:inline; margin-top:12px; overflow:hidden; border:1px #e9e9e9 solid;}
+#group #content .content_3 .column ul{ width:330px; overflow:hidden;margin-top:10px;}
+#group #content .content_3 .column li{ width:305px; height:27px; line-height:27px; float:left; overflow:hidden; background:url(../images/diandian.jpg) no-repeat 10px center; padding-left:20px; color:#595959;}
+#group #content .content_3 .column li span{ float:right; padding-right:5px;}
+#group #content .content_3 .column li a{ color:#6c6c6c; font-size:12px;}
+#group #content .content_3 .column li span{ float:right; color:#979797;}
+
+
+/* 友情链接 */
+#group #content .link{width:998px; height:48px; line-height:48px; border:1px #e7e7e7 solid; margin-top:12px;}
+#group #content .link a{ color:#5f5f5f; font-size:14px; margin:0 8px;}
+#group #content .link strong{ padding-left:15px; color:#237ee3;font-size:14px;}
+
+/* 尾部 */
+#group .footer{ width:100%; margin-top:12px; text-align:center; line-height:18px; background:#237ee3; padding:8px 0; color:#fff;}

@@ -1,0 +1,156 @@
+#nosalary{
+    display: none;
+    padding-top: 150px;
+}
+#salary{
+    display: none;
+}
+
+.ui-list-info span{
+    padding: 0px 10px 0px 0px;
+    display: inline-block;
+}
+.flow-title-info{
+    margin-left: 10px;
+}
+.perform-list-info{
+    padding: 5px 0px;
+}
+
+.ui-list-info span{
+    padding: 0px 10px 0px 0px;
+    display: inline-block;
+}
+.mark-font{
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.ui-list-info span{
+    padding: 0px 10px 0px 0px;
+    display: inline-block;
+}
+.attend-info-border{
+    border-bottom: 1px solid #dad7d7;
+}
+.attendance-info-list{
+    margin-left: 20px;
+}
+.attendance-info-list span{
+    margin-left: 50px
+}
+.mark-font{
+    text-align: center;
+    padding: 15px 10px;
+}
+.attend-search-info{
+    margin-left: 95px;
+}
+
+.ui-list-info span{
+    padding: 0px 10px 0px 0px;
+    display: inline-block;
+}
+.attend-info-border{
+    border-bottom: 1px solid #dad7d7;
+}
+.attendance-info-list{
+    margin-left: 20px;
+}
+.attendance-info-list span{
+    margin-left: 50px
+}
+.mark-font{
+    text-align: center;
+    padding: 15px 10px;
+}
+.attend-search-info{
+    margin-left: 120px;
+}
+
+.ui-list-info span{
+    padding: 0px 10px 0px 0px;
+    display: inline-block;
+}
+.attend-info-border{
+    border-bottom: 1px solid #dad7d7;
+}
+.attendance-info-list{
+    margin-left: 20px;
+}
+.attendance-info-list span{
+    margin-left: 50px
+}
+.mark-font{
+    text-align: center;
+    padding: 15px 10px;
+}
+.attend-search-info{
+    margin-left: 120px;
+}
+.mark-title{
+    padding: 10px;
+    margin-left: 5px;
+}
+.ui-attend-info-preview{
+    border-bottom: 1px solid #efefef;
+	    padding: 10px 16px;
+}
+.ui-attend-info-cover{
+    display: inline-block;
+    width: 100%;
+}
+.ui-attend-info-time{
+    width: 45%;
+    display: inline-block;
+}
+.ui-attend-info-type{
+    width: 45%;
+    display: inline-block;
+}
+.ui-attend-register-color{
+    color:#666;
+	font-size: 13px;
+}
+.ui-block-check-list{
+	background: #fff;
+}
+.ui-block-check-preview{
+    width: 50%;
+    height: 50%;
+    float: left
+}
+.ui-block-check-preview a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+	text-align: center;
+}
+.ui-block-check-preview a span{
+    color: #333;
+}
+.ui-block-check-preview img{
+    width: 80px;
+    margin-top: 50%;
+}
+.ui-block-check-preview span{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+	margin-top: 5px;
+}
+.ui-preview-width{
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #efefef;
+}
+.ui-preview-height{
+    position: absolute;
+    width: 1px;
+    background-color: #efefef;
+}
+#day_list .ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio) {
+    width: 100px;
+}

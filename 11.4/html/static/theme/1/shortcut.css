@@ -1,0 +1,62 @@
+#infobar #infobar_shortcut
+{
+    position:relative;
+    padding-right:30px;
+}
+
+#infobar #infobar_shortcut #shortcut_scroll
+{
+    display:none;
+    width:30px;
+    height:28px;
+    position:absolute;
+    top:0px;
+    right:180px;
+    cursor:pointer;
+    background:url('/static/images/nav_r1.gif') center center no-repeat;
+}
+#infobar #infobar_shortcut #shortcut_scroll:hover
+{
+    background:url('/static/images/nav_r2.gif') center center no-repeat;
+}
+
+#infobar #infobar_shortcut #shortcut_menus
+{
+    height:28px;
+    overflow:hidden;
+}
+#infobar #infobar_shortcut #shortcut_menus div
+{
+    height:28px;
+    overflow:hidden;
+}
+#infobar #infobar_shortcut #shortcut_menus div a
+{
+    display:inline-block;
+    height:20px;
+    line-height:20px;
+    padding-left:25px;
+    margin:4px 2px;
+    color:#fff;
+    text-decoration:none;
+    background:url('/static/images/m/2.gif') 5px center no-repeat;
+}
+#infobar #infobar_shortcut #shortcut_menus div a:hover
+{
+    background-color:#E2E5E6;
+    color:#000000;
+}
+#infobar #infobar_shortcut #shortcut_menus div a img
+{
+    vertical-align:middle;
+}
+#infobar #infobar_shortcut #shortcut_menus div a span
+{
+    display:block;
+    cursor:pointer;
+    padding-right:5px;
+}
+#infobar #infobar_shortcut #shortcut_menus div a:hover span
+{
+    
+}

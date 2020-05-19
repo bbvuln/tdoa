@@ -1,0 +1,59 @@
+
+#depot_seach_box{
+    float:right;
+    position: relative;
+}
+select{
+    height:28px;
+}
+#depot_search_int{
+    margin-bottom:0;
+    padding-left:30px;
+}
+.search_icon_box{
+    display:block;
+    position: absolute;
+    top: 1px;
+    left:3px;
+    width:28px;
+    height:26px;
+    cursor: pointer;
+    background:#fff;
+    line-height:28px;
+}
+#search_icon{
+    margin-top:5px;
+    margin-left:5px;
+}
+#op_depot_tab,#build_modal_tab,#edit_modal_tab{
+    margin: 0 auto;
+}
+#build_modal_tab,#build_modal_tab tr td,#edit_modal_tab,#edit_modal_tab tr td{
+    border:0;
+}
+.use_handle{
+    color:#108EE9;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.modal_info{
+    width:120px;
+    height:30px;
+    line-height:30px;
+    float: left;
+    margin-right: 19px;
+    text-align: right;
+}
+.mustWrite{
+    color:red;
+    margin-right:5px;
+}
+.no_delete{
+    color:#aaa;
+}
+#buildNewDepot td:hover{
+    background-color:#fff;
+}
+#editDepot td:hover{
+    background-color:#fff;
+}

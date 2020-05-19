@@ -1,0 +1,6 @@
+.from{color:#42B475;}
+.to{color:#006EFE;}
+.msg{padding-left:10px;}
+#body{font-size: 9pt;BACKGROUND: #FFFFFF;color:#000000;border:1px #83ACCF solid;margin-top:10px;padding:5px;}
+#history_msg{overflow-y:auto;height:250px;}
+#pageArea{color:#000000;}

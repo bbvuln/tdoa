@@ -1,0 +1,235 @@
+*{margin:0px;padding:0px;}
+body {background:#fff;}
+A:link{color: #383838; TEXT-DECORATION: none;}
+A:visited {COLOR: #383838; TEXT-DECORATION: none}
+A:active {COLOR: #3333ff; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: none}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+img{
+   border:0px;
+   width:16px;
+   height:16px;
+}
+
+#menu{
+   background: #FFFFFF;
+}
+
+.U1 {
+   background: #FFFFFF;
+}
+.L1 {
+   border-bottom: 1px solid #FFFFFF;
+}
+.L1 a:link, .L1 a:visited{
+   color: #383838;
+   background:#f1f1f1 url("images/ar1.png") no-repeat right center;
+   font-size:9pt;
+   display: block;
+   text-decoration: none;
+   height: 30px;
+   line-height: 30px;
+   border-bottom: 1px #D6D6D6 solid;
+   text-shadow: 0 0 -1px #B6B6B6;
+}
+
+.L1 a:link span, .L1 a:visited span{
+  display: block;
+  padding-left:5px;
+  cursor:pointer;
+  _height:19px;
+  _padding-top:6px;
+   
+}
+.L1 a:hover{
+   color: #383838;
+   background: #f8f8f8 url("images/ar1.png") no-repeat right center;
+}
+/*  一级菜单 active 效果  */
+.L1 a:link.active, .L1 a:hover.active, .L1 a:active.active, .L1 a:visited.active{
+   background: #f8f8f8 url("images/arrow_d1_g.png") no-repeat right center;
+}
+.L1 a:link.active span, .L1 a:hover.active span, .L1 a:active.active span, .L1 a:visited.active span{
+   color: #383838;
+}
+/* 一级菜单 图标 */
+.L1 i{
+   display: inline-block;
+   *zoom: 1;
+   width: 20px;
+   height: 20px;
+   vertical-align: middle;
+   background-image: url('/static/theme/10/images/menu_icons/default.png');
+   background-position:10px center;
+   background-repeat:no-repeat;
+   padding-right:20px;
+   margin-top: -1px;
+   *margin-right: 5px;
+}
+.L1 a:hover i,
+.L1 a.active i{
+}
+
+.L1 a i.mytable{
+   background-image: url('/static/theme/10/images/menu_icons/mytable.png');
+}
+
+.L1 a i.workflow{
+   background-image: url('/static/theme/10/images/menu_icons/workflow.png');
+}
+
+.L1 a i.erp{
+   background-image: url('/static/theme/10/images/menu_icons/erp.png');
+}
+
+.L1 a i.crm{
+   background-image: url('/static/theme/10/images/menu_icons/crm.png');
+}
+
+.L1 a i.tide{
+   background-image: url('/static/theme/10/images/menu_icons/tide.png');
+}
+
+.L1 a i.knowledge{
+   background-image: url('/static/theme/10/images/menu_icons/knowledge.png');
+}
+
+.L1 a i.portal{
+   background-image: url('/static/theme/10/images/menu_icons/portal.png');
+}
+
+.L1 a i.management_center{
+   background-image: url('/static/theme/10/images/menu_icons/management_center.png');
+}
+
+.L1 a i.hr{
+   background-image: url('/static/theme/10/images/menu_icons/hr.png');
+}
+
+.L1 a i.document{
+   background-image: url('/static/theme/10/images/menu_icons/document.png');
+}
+
+.L1 a i.roll_manage{
+   background-image: url('/static/theme/10/images/menu_icons/roll_manage.png');
+}
+
+.L1 a i.project{
+   background-image: url('/static/theme/10/images/menu_icons/project.png');
+}
+
+.L1 a i.reportshop{
+   background-image: url('/static/theme/10/images/menu_icons/reportshop.png');
+}
+
+.L1 a i.comm{
+   background-image: url('/static/theme/10/images/menu_icons/comm.png');
+}
+
+.L1 a i.info{
+   background-image: url('/static/theme/10/images/menu_icons/info.png');
+}
+
+.L1 a i.system{
+   background-image: url('/static/theme/10/images/menu_icons/system.png');
+}
+
+.L1 a i.oa_project{
+   background-image: url('/static/theme/10/images/menu_icons/oa_project.png');
+}
+
+.L1 a i.calendar{
+   background-image: url('/static/theme/10/images/menu_icons/calendar.png');
+}
+
+.L1 a i.@td_services{
+   background-image: url('/static/theme/10/images/menu_icons/@td_services.png');
+}
+
+.L1 a i.ext_data{
+   background-image: url('/static/theme/10/images/menu_icons/ext_data.png');
+}
+
+/*  二三级菜单 效果  */
+.L21 a:link, .L21 a:visited, .L22 a:link, .L22 a:visited, .L3 a:link, .L3 a:visited{
+   color: #444659;
+   background:  none;
+   height: 25px;
+   font-size:9pt;
+   display: block;
+   text-decoration: none;
+   padding-left: 13px;
+}
+
+.L21 a:link span, .L21 a:visited span, .L22 a:link span, .L22 a:visited span, .L3 a:link span, .L3 a:visited span{
+  display:block;
+  height:25px;
+  line-height:25px;
+  padding-left:20px;
+  _padding:6px 0px 0px 20px;
+  padding-top:0px !important;
+  cursor:pointer;
+}
+
+/* 有三级菜单的二级菜单 */
+.L21 a:link, .L21 a:visited{
+   background:url("images/ar1.png") no-repeat 20px center;
+}
+.L21 a:hover{
+   background:#9ee7ff url("images/ar1.png") no-repeat 20px center;
+}
+.L21 a:link.active, .L21 a:hover.active, .L21 a:active.active, .L21 a:visited.active{
+   background:#9ee7ff url("images/arrow_d2.png") no-repeat 20px center;
+}
+.L21 a:hover span,
+.L21 a:link.active span, .L21 a:hover.active span, .L21 a:active.active span, .L21 a:visited.active span{
+   color: #383838;
+}
+
+/* 无三级菜单的二级菜单 */
+.L22 a:link, .L22 a:visited{
+   background:url("images/menu2_icon.png") no-repeat 20px center;
+}
+.L22 a:hover{
+   background:#9ee7ff url("images/menu2_icon.png") no-repeat 20px center;
+}
+.L22 a:link.active, .L22 a:hover.active, .L22 a:active.active, .L22 a:visited.active{
+   background:#9ee7ff url("images/menu2_icon_active.png") no-repeat 20px center;
+}
+
+/* 三级菜单 */
+.L3 a:link, .L3 a:visited{
+   background:url("images/menu2_icon.png") no-repeat 36px center;
+}
+.L3 a:link span, .L3 a:visited span{
+   padding-left:38px;
+}
+.L3 a:hover{
+   background:#c3f0ff url("images/menu2_icon.png") no-repeat 36px center;
+}
+.L3 a:link.active, .L3 a:hover.active, .L3 a:active.active, .L3 a:visited.active{
+   background:#c3f0ff url("images/menu2_icon_active.png") no-repeat 36px center;
+}
+
+.Ls a:link, .Ls a:visited, .Ls a:hover, .Ls a:active{
+   text-align:right;
+   padding-top:4px;
+   padding-right:4px;
+   height:20px;
+   font-size:9pt;
+   text-decoration: underline;
+   background:none;
+}
+.Ls a:hover, .Ls a:active{
+   background:#E2E5E6;
+}
+.setting:link, .setting:visited{
+   text-decoration: underline;
+   display:block;
+}

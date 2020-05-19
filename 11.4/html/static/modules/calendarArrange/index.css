@@ -1,0 +1,956 @@
+body {
+    /* text-align: center; */
+    font-size: 12px;
+    font-family:"Microsoft YaHei","simsun", "Arial",sans-serif;
+    position: relative;
+    /*overflow-x: hidden;*/
+   
+}
+body,html{
+    /*height: 100%;*/
+}
+button,table,label,input,select,p,div,textarea,a,h1,h2,h3,h4,span{
+        font-family:"Microsoft YaHei","Arial","simsun", sans-serif;
+        font-size: 12px;
+}
+ul li{
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    /* width: 100%; */
+    border-spacing: 0;
+    table-layout:fixed;
+   
+}
+label{
+    display: inline;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+input[type="text"]{
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 2px 0px;
+}
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin-top: 0;
+    height: 14px;
+    width: 14px;
+    padding: 0;
+    margin: 0;
+}
+select{
+    width: 80px;
+    margin-bottom: 0;
+    height: 26px;
+    line-height: 26px;
+}
+.omit{
+    overflow: hidden;/*内容超出后?藏*/
+    text-overflow: ellipsis;/* 超出内容?示?省略号*/
+    white-space: nowrap;/*文本不?行?行*/
+}
+.width45percent{
+    width: 45%;
+}
+.width40percent{
+    width: 40%;
+}
+.width35percent{
+    width: 35%;
+}
+.width25percent{
+    width: 25%;
+}
+.width20percent{
+    width: 20%;
+}
+.width15percent{
+    width: 15%;
+}
+.width10percent{
+    width: 10%;
+}
+.width5percent{
+    width: 5%;
+}
+
+
+table tr td {
+    /* overflow: hidden; */
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    vertical-align: middle;
+}
+.top{
+    font-weight: normal;
+}
+
+.popover{
+    z-index: 1000000;
+    font-weight: normal;
+    color: inherit;
+
+}
+.meetingCalendar .popover  p{
+    margin: 0;
+}
+.meetingCalendar #meetDayEventPopover .popover-content{
+    padding-left: 2px;
+
+}
+.meetingCalendar #meetDayEventPopover .popover-body div{
+    border-left: 4px solid #ccc;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.meetingCalendar .emptyContent {
+    margin-top: 80px;
+}
+/* .popover .popover-body{
+    background-color: #fff;
+    z-index: 1000000;
+} */
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
+    width: 95%;
+    /* padding-top: 40px;  */
+}
+.container.meetingCalendar{
+    width: 100%;
+
+}
+.calendar{
+    /*width: 97%;*/
+    /*height: 100%;*/
+    /*margin: 20px;*/
+    /*border-top: 1px solid #ccc;*/
+    box-sizing: border-box;
+    position: relative;
+    /*margin-top: 0;*/
+}
+
+.container .title {
+    height: 40px;
+    padding: 7.5px 20px;
+    text-align: left;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-radius: 0px;
+    border-bottom: 0;
+}
+
+.backgroundGradientColor {
+    background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228, 1) 100%, rgba(228, 228, 228, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228, 1) 100%, rgba(228, 228, 228, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228, 1) 100%, rgba(228, 228, 228, 1) 100%);
+}
+
+.container .title .title_img {
+    display: inline-block;
+    height: 20px;
+    font-size: 18px;
+}
+
+.container .title .title_name {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
+    font-weight: 700;
+    color: #666;
+    /*padding-left: 6px;*/
+    /*vertical-align: middle;*/
+}
+.calendarsView{
+    position: relative;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.container .btnGroup {
+    height: 40px;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-radius: 0px;
+    border-top: 0;
+}
+
+.btnGroup {
+    /*background: #F6F7F9;*/
+    text-align: center;
+}
+
+.btnGroup .btnLeftCompo {
+    float: left;
+    padding: 5px 20px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.btnGroup .btnRightCompo {
+    float: right;
+    padding: 5px;
+}
+
+.btnGroup .btnRightCompo .more {
+    display: inline-block;
+    height: 26px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+.btnGroup .btnLeftCompo .btn_applyMetting,
+.btnGroup .btnRightCompo .btn_queryMetting,
+.meetingCalendarQuery .btn_queryMetting,
+.btn_blue{
+    background-color: rgba(16, 142, 233, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(51, 153, 255, 1);
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 2px 10px;
+}
+
+.btnGroup .btnRightCompo .queryCompo {
+    width: 182px;
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    border-radius: 5px;
+    /* margin-top: 14px; */
+    position: relative;
+    margin-right: 15px;
+   
+}
+
+.btnGroup .btnRightCompo .input_query {
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    height: 24px;
+    width: 178px;
+    padding: 0;
+    box-sizing: border-box;
+    padding-right: 25px;
+}
+
+.btnGroup .btnRightCompo .query_icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 5px;
+    background-size: 20px 20px;
+    cursor: pointer;
+    color: rgba(204, 204, 204, 1);
+    font-size: 16px;
+}
+
+
+.meetingCalendar .fc-header{
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+
+
+.meetingCalendar .fc-header .fc-header-center .fc-button-next,
+.meetingCalendar .fc-header .fc-header-center .fc-button-prev {
+    background: transparent;
+    border: 0;
+}
+.meetingCalendar .fc-header .fc-header-center h2 {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.fc-button.calculateWeek ,.fc-button.fc-button-today{
+    padding: 2px 8px;
+    margin-top: 2px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.meetingCalendar .fc-header  .fc-button{
+    margin-bottom: 0;
+}
+.meetingCalendar .fc-header td{
+    padding: 5px;
+}
+.meetingCalendar .fc-header .fc-header-center .fc-button:focus {
+    outline: -webkit-focus-ring-color auto 0;
+    outline-width: 0;
+}
+.meetingCalendar .fc-header .fc-header-center .fc-button.fc-state-hover{
+    box-shadow: 0 !important;
+    -webkit-box-shadow:0 !important;
+}
+.meetingCalendar thead .fc-first.fc-last th{
+    border-width: 0 1px 1px 1px ;
+    border-right: 0;
+}
+.meetingCalendar thead .fc-first.fc-last th.fc-last{
+    border-right: 1px solid #ccc;
+}
+
+.meetingCalendar th.fc-agenda-axis{
+    border-width: 0 1px  0 1px ;
+}
+.meetingCalendar .fc-agenda-slots th{
+    border-width: 1px  1px 0;
+}
+.meetingCalendar .fc-widget-header{
+    margin-left: 0;
+}
+.meetingCalendarQuery{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    right: 0;
+    /* height: 100%; */
+    background: #fff;
+    z-index: 1050;
+    border: 1px  solid #ccc;
+    text-align: center;
+}
+.meetingCalendarQuery .queryFiled{
+    border-bottom: 1px solid #ccc;
+}
+.meetingCalendarQuery .queryFiled p{
+    margin-top: 15px;
+}
+.meetingCalendarQuery .queryFiled .selectDate{
+    width: 100px;
+}
+.meetingCalendarQuery .searchContent {
+    overflow-y: scroll;
+}
+.meetingCalendarQuery .queryContent .searchContentItem{
+    border-bottom: 1px solid  #ccc;
+    text-align: left;
+    padding-left: 10px;
+}
+.meetingCalendarQuery .queryContent .searchContentItem div{
+    border-left: 5px solid  #666;
+    padding-left: 15px;
+}
+.meetingCalendarQuery .queryContent .searchContentItem p{
+    margin-bottom: 5px;
+}
+.meetingCalendarQuery .queryContent .searchContentItem span{
+   display: inline-block;
+   width: 40%;
+}
+
+/* 蛻苓｡ｨ隗?崟 */
+
+.container .listView {
+    /*background: #F6F7F9;*/
+    color: #666;
+}
+
+.meetingCalendar .listView{
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+
+.container .listView .queryListCompo {
+    display: inline-block;
+}
+
+.container .listView .queryListCompo input {
+    width: 80px;
+    /* height: 20px; */
+    margin-bottom: 0;
+    padding: 2px 4px;
+    margin: 0 5px;
+}
+
+.container .listView .queryListCompo select {
+    width: 100px;
+     height: 26px; 
+    margin-bottom: 0;
+    margin: 0 5px;
+}
+
+.container .listView .btnRightList {
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px ;
+    padding-right: 7px;
+}
+
+.container .noneBorderBottom {
+    border-bottom: 0 !important;
+}
+
+.container .listView .listTable {
+    /*border: 1px solid #ccc;*/
+    border-top: 0;
+    padding: 10px 20px;
+    padding-top: 0;
+    width: 100%;
+    /* overflow: scroll; */
+    box-sizing: border-box;
+}
+
+.container .listView .table thead tr {
+    background: #d7d7d7;
+    height: 36px;
+}
+
+.container .listView .table tbody tr {
+    height: 37px;
+}
+
+.container .listView .table  tr td {
+    border-bottom: 1px solid #CCCCCC;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .listView .table tbody tr td:last-child,
+.container .listView .table thead tr td:last-child {
+    text-align: center;
+    /*padding-left: 10px;*/
+}
+
+.container .listView .table tbody tr td:last-child button {
+    border: 0;
+    color: #2F80D1;
+    background: transparent;
+    padding-right: 5px;
+}
+
+.container .listView .table tbody tr td:last-child button:focus {
+    outline: 0;
+}
+
+/* 讓｡諤∵??噪菫ｮ謾ｹ譬ｷ・? */
+
+
+.container>.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 50%;
+    z-index: 1050;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal-header,.modal-footer {
+    padding: 5px;
+}
+.modal-header {
+    padding:0  5px;
+}
+.modal-header .close{
+    margin-top: 10px;
+}
+.modal-content .modal-header{
+    text-align: left;
+}
+.modal-content .modal-title {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.modal-content .modal-body {
+    padding-left: 20px;
+}
+
+.modal-content .modal-body div {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.modal-content .modal-body select {
+    width: 150px;
+    height: 25px;
+}
+
+.modal-content .modal-body textarea {
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+/* 莨夊ｮｮ螳､驟咲ｽ? */
+
+.meetSetting.container {
+    /*border: 1px solid #ccc;*/
+    color: #666;
+    padding: 20px  30px;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.meetSetting.container .meetSetting_title {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.meetSetting.container .title_name {
+    font-size: 18px;
+    color: #666;
+    font-weight: 700;
+}
+
+.meetSetting.container {
+    /* overflow: scroll;
+    padding: 20px; */
+}
+
+.meetSetting.container table {
+    width: 100%;
+}
+
+.meetSetting.container table td {
+    border: 1px solid #ccc;
+    height: 40px;
+}
+.meetSetting.container .meetApplyDate span{
+    padding-right: 4px;
+}
+.meetSetting.container tr textarea{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 81%;
+}
+.meetSetting #mr_capacity,.meetSetting #mr_place{
+    width: 84%;
+}
+.meetSetting .input-group input.form-control{
+    line-height: 4px;
+}
+
+.textAlignLeft {
+    text-align: left;
+    padding-left: 14px;
+}
+.textAlignCenter,#calendar .textAlignCenter {
+    text-align: center !important;
+}
+
+.verticalAlignBottom {
+    vertical-align: bottom
+}
+
+.verticalAlignMiddle {
+    vertical-align: middle;
+}
+
+.marginRight20PX {
+    margin-right: 20px;
+}
+
+.noneBorderButton {
+    border: 0;
+    color: #2F80D1;
+    background: transparent;
+    font-size: 12px;
+}
+
+.noneBorderButton:focus {
+    outline: -webkit-focus-ring-color auto 0;
+    outline-width: 0;
+}
+
+.meetSetting.container table .meetServiceAdd {
+    width: 70%;
+}
+.meetSetting_content .btngroup{
+    margin: 20px;
+
+}
+#meeting_service{
+    display: inline;
+}
+.meetSetting_content .btngroup button{
+    padding: 5px 20px;
+    margin: 0  20px;
+}
+.red {
+    color: red;
+}
+
+.backgroundColor_ccc {
+    background-color: #ccc;
+}
+.activeShow{
+    display: inline !important;
+}
+.activeHidden{
+    display: none !important;
+}
+.width30PX{
+    width: 30px;
+}
+.width36PX{
+    width: 36px;
+}
+.width80PX{
+    width: 80px !important;
+}
+.width120PX{
+    width: 120px;
+}
+.width25PX{
+    width: 25px;
+}
+.timepicker{
+    display: inline;
+}
+.meetMatch{
+    width: 24px;
+    height: 24px;
+    margin:0  5px;
+    background: #eee;
+
+}
+.textAlignRight{
+    text-align: right !important;
+}
+.meetingDeviceTd>div{
+    display: inline;
+    padding-top: 10px;
+}
+.meetingDeviceTd>button{
+    height: 55px;
+}
+.meetMatchCell{
+    display: inline-block ;
+    position: relative;
+    padding: 0  10px;
+}
+.meetMatchCell:first-child{
+    padding-left: 0;
+}
+.meetMatchCell:first-child img.meetMatch{
+   margin-left: 0;
+}
+.meetMatchCell .iconfont,.addMeetingDeviceModal .iconfont,.mettingConfig  .iconfont{
+    font-size: 20px;
+}
+.meetMatchCell .iconfont,.mettingConfig  .iconfont{
+    position: relative;
+    top: 4px;
+    cursor: default;
+    padding: 0 4px;
+    font-size: 24px;
+
+}
+.meetSetting .dropdown-menu {
+    width: 90px;
+    min-width: 90px;
+}
+.meetSetting.container .bootstrap-timepicker-widget table td{
+    height: 30px;
+}
+.meetSetting.container .bootstrap-timepicker-widget table a{
+    padding: 4px 0;
+    width: 96%;
+}
+.addMeetingDeviceModal .iconfont{
+    display: inline-block;
+    text-align: center;
+    line-height: 37px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #fff;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.meetMatchCell .closeIcon{
+    position: absolute;
+    top: -7px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+
+    /*border-radius: 50%;*/
+    /*background: #666;*/
+    /*color: #fff;*/
+    text-align: center;
+    cursor: pointer;
+}
+.container>.addMeetingDeviceModal{
+    width: 290px;
+    left: 60%;
+}
+.addMeetingDeviceModal  ul{
+    margin: 0;
+}
+.addMeetingDeviceModal  ul li,#MeetingDeviceDataModal div{
+    width: 40px;
+    height: 40px;
+    text-align: left;
+    border: 1px solid #ccc;
+    /*float: left;*/
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+.addMeetingDeviceModal img{
+    border: 1px solid #fff;
+    margin: 2px;
+}
+.addMeetingDeviceModal img.selected,.addMeetingDeviceModal i.selected{
+    border: 1px dashed blue;
+}
+.addMeetingDeviceModal .meetMatch{
+    background: #fff;
+}
+.addMeetingDeviceModal .modal-body{
+    height: 160px;
+    overflow-y: scroll;
+}
+
+/* 莨夊ｮｮ螳､驟咲ｽ? */
+
+.noneBackgroundColor,
+.mettingConfig .noneBackgroundColor {
+    background-color: transparent;
+}
+
+.backgroundColorWhite,
+.mettingConfig .backgroundColorWhite {
+    background-color: #fff;
+}
+
+.noneBorder,
+.mettingConfig .listView .noneBorder {
+    border: 0;
+}
+
+.borderGrey {
+    border: 1px solid #ccc;
+}
+.colorGrey{
+    color: #ccc;
+}
+
+.mettingConfig .btnGroup {
+    border-bottom: 0;
+}
+
+.mettingConfig .listView {
+    border-top: 0;
+}
+
+.mettingConfig .pagination {
+    width: 100%;
+    padding-right: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: none;
+}
+
+.mettingConfig .pagination input {
+    width: 50px;
+    margin: 0 4px;
+}
+.mettingConfig table{
+     table-layout: fixed;
+}
+.meetApproval_list .meetApproval_m_name,.meetList_m_name{
+    padding-left: 30px;
+}
+.meetApproval_detail .modal{
+    width: 270px;
+    margin-left: -140px;
+}
+.meetApproval_detail .iconfont.meetMatch{
+    font-size: 24px;
+    background: #fff;
+    cursor: pointer;
+}
+.meetApproval_list.mettingConfig .iconfont{
+    cursor: default;
+    /*padding: 0 ;*/
+    font-size: 16px;
+}
+.meetSetting .errorIcon{
+       display: inline-block;
+    margin: 1px;
+    padding: 1px 10px;
+    border: 1px solid #FFCBC8;
+    background: #FFF1F0;
+    line-height: 20px;
+    position: relative;
+    top: 2px;
+}
+.meetSetting .errorIcon .iconfont{
+    color: red;
+}
+
+
+
+.fc-time-grid .fc-slats td{
+    height: 70px;;
+}
+.fc-ltr .fc-event-hori.fc-event-start,
+.fc-rtl .fc-event-hori.fc-event-end{
+	border-left-width: 1px;
+}
+.fc-event{
+    border: 0;
+    /* border-color: #fff; */
+    /* border-left-color: #fff; */
+    /* color: #fff; */
+}
+.fc-more{
+   border: 0;
+   text-align: center;
+   font-size: 20px;
+}
+.fc-more-event{
+    cursor: pointer;
+}
+.cycleImg{
+    height: 18px;
+}
+#meetWeekContent{
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 4px;
+    text-align: left;
+    padding-left: 6px;
+} 
+#meetWeekContent div{
+    display: inline-block;
+    padding: 5px 8px;
+    cursor: pointer;
+    width: 58px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#weekEventPopover{
+    width: 289px;
+    height: 172px;
+}
+#weekEventPopover .popover-content{
+    padding: 7px 20px;
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+#weekEventPopover .popover-content .prebtn{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    cursor: pointer;
+}
+#weekEventPopover .popover-content .nextbtn{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    cursor: pointer;
+
+}
+#meetWeekContent div.week:hover{
+    background: #ccc;
+}
+#meetWeekContent div.week.active{
+    background: #2A6CF0;
+    color: #fff;
+}
+
+/* ｻ瞑鯡ﾒﾉ・?鰓? */
+.meetApproval_detail{
+    background :#F6F7F9;
+    color: #666;
+    width: 100%;
+    /*border: 1px solid #ddd;*/
+}
+.meetApproval_detail .title{
+    border-width: 0;
+}
+.meetApproval_detailContent{
+    border: 1px solid #ccc;
+    margin: 30px 150px;
+    margin-top: 0;
+    padding-bottom: 30px;
+
+}
+.meetApproval_detailContent table{
+    width: 100%;
+}
+.meetApproval_detailContent table td{
+   height: 50px;
+   padding-right: 50px;
+   white-space: normal;
+}
+.meetApproval_detailContent table td:first-child{
+   width: 30%;
+   text-align: right;
+}
+.meetApproval_detailContent table td:last-child{
+   width: 69%;
+   text-align: left;
+}
+.meetApproval_btnGroup{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.meetApproval_btnGroup button{
+    margin: 0  20px;
+    padding: 5px 20px;
+}
+ .btn_bagroundWhite{
+    background: #fff;
+    color: #333;
+    border-color: #ccc;
+}
+
+#meetDatetimePopover p{
+    text-align: center;
+}
+#m_name,#meetApproval_btnGroup_meetApprovalOpt{
+    text-align:center;
+}

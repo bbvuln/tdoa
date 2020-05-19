@@ -1,0 +1,619 @@
+/*body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+	overflow:hidden;	
+}*/
+/*
+.body{
+	border:0px solid red;
+	width:100%;
+	overflow:hidden;	
+}
+
+.bodycolor { 
+	BACKGROUND: #FFFFFF;
+}
+*/
+/*-----------------------------左部导航开始--------------------------*/
+/*
+.bs-docs-sidenav {
+	width: 208px;
+	margin: 30px 0 0;
+	padding: 0;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	 border-radius: 6px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bs-docs-sidenav > li > a {
+	display: block;
+	width: 180px \9;
+	margin: 0 0 -1px;
+	padding: 8px 14px;
+	border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a 
+{
+	-webkit-border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a 
+{
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a 
+{
+	position: relative;
+	z-index: 2;
+	padding: 9px 15px;
+	border: 0;
+	text-shadow: 0 1px 0 rgba(0,0,0,.15);
+	-webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+	-moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+	box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+.bs-docs-sidenav .icon-chevron-right 
+{
+	float: right;
+	margin-top: 2px;
+	margin-right: -6px;
+	opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover 
+{
+	background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right 
+{
+	opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,.bs-docs-sidenav .active a:hover .icon-chevron-right 
+{
+	background-image: url(../img/glyphicons-halflings-white.png);
+	opacity: 1;
+}
+.bs-docs-sidenav.affix 
+{
+	top: 40px;
+}
+.bs-docs-sidenav.affix-bottom 
+{
+	position: absolute;
+	top: auto;
+	bottom: 220px;
+}
+@media (min-width: 1200px) 
+{
+	.bs-docs-container {
+		max-width: 970px;
+	}
+	.bs-docs-sidenav {
+		width: 208px;
+	}
+	.bs-docs-sidenav > li > a {
+		width: 180px \9;
+	}
+}
+*/
+/*-----------------------------左部导航结束--------------------------*/
+/*-----------------------------弹出窗口开始--------------------------*/
+/*
+.pop_storey_title
+{
+	width:350px;
+	height:60px;
+	margin-top:15px;
+	margin-left:110px;
+	font-size: 14px;
+	text-align:left;
+}
+.pop_storey_title2{
+	width:270px;
+	height:60px;
+	margin-top:10px;
+	margin-left:110px;
+	font-size: 14px;
+	text-align:left;
+}
+.pop_storey_title3{
+	width:400px;
+	margin-top:15px;
+	margin-left:110px;
+	font-size: 14px;
+	text-align:left;
+}
+
+.pop_storey_title4 
+{
+	width:340px;
+	margin-top:15px;
+	margin-left:55px;
+	font-size: 14px;
+	text-align:left;
+	float:left;
+}
+
+.window_new_left{
+	width:370px;
+	float:left;
+}
+
+.window_new_right{
+	width:370px;
+	float:left;
+}
+*/
+/*
+.icon24-pencil{
+	background:url(/static/modules/workflow/system/flow_form/css/images/form.png) no-repeat;
+	padding-left:36px;
+}
+/*
+/*-----------------------------弹出窗口结束--------------------------*/
+
+/*
+.guile_header{
+	width:100%;
+	height:45px;
+	background-color:#E4F1F9;
+	border:1px solid #ccc;
+}
+.guile_header_title{
+	width:250px;
+	margin-left:30px;
+}
+.guile_header_title>h3{
+	line-height: 30px;
+}
+*/
+
+/*-----------------------------左右布局的样式开始----------------------*/
+/*
+.nav-right-container{
+	border:1px solid #ffffff;
+	overflow:hidden;
+	zoom:1;
+	overflow-y:auto;
+}
+.nav-right{
+	width:100%;
+	height:100%;
+	margin-left:20px;
+	overflow:hidden;
+	overflow-y:auto;
+}
+*/
+/*-----------------------------左右布局的样式结束----------------------*/
+
+/*-----------------------------表单左右互换加 上下排序 布局样式开始-----------------*/
+/*
+.next_info{
+	border:0px solid red;
+	margin-left:25px;
+	height:200px;
+}
+.father_info{
+	float:left;
+}
+
+.next_step_left{
+	border:1px solid #d8d8d8;
+	width:260px;
+	height:200px;
+	margin-left:15px;
+	float:left;
+}
+
+.father_step_left{
+	float:left;
+}
+
+.change_step{
+	border:0px solid blue;
+	height:200px;
+	margin-left:8px;
+	float:left;
+}
+.next_step_right{
+	border:1px solid #d8d8d8;
+	height:200px;
+	width:260px;
+	margin-left:8px;
+	float:left;
+}
+*/
+
+
+/*
+.next_step_title{
+	border:0px solid red;
+	background:#f1f0e8;
+	line-height:30px;
+	height:30px;
+	font-weight:bold;
+}
+.next_step_information{
+	border:0px solid red;
+	height:170px;
+}
+*/
+
+
+
+
+
+
+/*
+.change_right{
+	border:0px solid red;
+	margin-top:80px;
+}
+.change_left{
+	margin-top:5px;
+}
+.change_up{
+	border:0px solid red;
+	margin-top:80px;
+}
+.change_down{
+	margin-top:5px;
+}
+*/
+/*
+.ready_step_title{
+	border:0px solid red;
+	background:#f1f0e8;
+	line-height:30px;
+	font-weight:900;
+	font-weight:bold;
+	height:30px;
+}
+.ready_step_information{
+	border:0px solid red;
+	height:170px;
+}
+.alternative_step{
+	border:0px solid red;
+	width:100px;
+	height:20px;
+}
+*/
+/*
+.nextStep{
+	border:0px solid red;
+	width:100px;
+	height:20px;
+}
+/*-----------------------------表单左右互换 上下排序 布局样式结束-----------------*/
+
+/*
+.img_tip{
+	border:0px solid red;
+	width:50px;
+	height:30px;
+	float:left;
+}
+.set_tip{
+	border:0px solid blue;
+	height:30px;
+	line-height:30px;
+	color:#4094bd;
+	font-weight:bold;
+	float:left;
+	
+}
+
+
+.guide-title-block{
+	width:100%;
+	padding-right:120px;
+	border:1px solid red;	
+}
+
+.flow_top_type{
+	margin:0px;
+	padding:0px;
+	margin-top:26px;
+	border-bottom:3px solid #0e86fe;
+	color:#0e86fe;
+	font-size:14px;
+	font-weight:bold;
+	width:950px;
+	margin-bottom:16px;
+	float:left;
+}
+.flow_top_type_left{
+	float:left;
+}
+.step_name_intro{
+	float:right;
+	margin-top:5px;
+	margin-right:5px;
+}
+*/
+/*----------------------------页面右侧顶部公共样式 结束  --------------------------------------*/
+/*---------------------------- 标题图片开始  --------------------------------------*/
+/*
+.icon20-basic,.icon20-basic_hover,.icon20-process_illustrate,.icon20-process_illustrate_hover,
+.icon20-work_name,.icon20-work_name_hover,.icon20-expand_field,.icon20-expand_field_hover,
+.icon20-unit_front,.icon20-unit_back,.icon20-basis,.icon20-operator,.icon20-intelligent,
+.icon20-syllable,.icon20-circulation,.icon20-condition_hover,.icon20-condition_2,.icon20-circulation_hover,
+.icon20-condition,.icon20-limit,.icon20-unit,.icon20-remind,.icon20-remind_hover,
+.icon20-basis_hover,.icon20-operator_hover,.icon20-intelligent_hover,.icon20-syllable_hover,.icon20-circulation_hover,.icon20-condition_3,.icon20-condition_4,
+.icon20-limit_hover,.icon20-unit_hover,.icon20-remind_hover,.icon20-remind_3,.icon20-remind_2,
+.icon20-form_condition,.icon20-form_condition_hover,.icon20-model,.icon20-model_hover,.icon20-report_part,.icon20-report_part_hover,
+.icon20-work_basic,.icon20-work_basic_hover
+{	
+	padding-left:36px;
+	display:block;
+	height:22px;
+	margin-top:5px;
+}*/
+/*-- 查询模版4个页面 图片的开始  --*/
+/*
+.icon20-form_condition{
+	background:url(images/form_condition.png) no-repeat;
+}
+.icon20-form_condition_hover{
+	background:url(images/form_condition_hover.png) no-repeat;
+}
+.icon20-model{
+	background:url(images/model.png) no-repeat;
+}
+.icon20-model_hover{
+	background:url(images/model_hover.png) no-repeat;
+}
+.icon20-report_part{
+	background:url(images/report_part.png) no-repeat;
+}
+.icon20-report_part_hover{
+	background:url(images/report_part_hover.png) no-repeat;
+}
+.icon20-work_basic{
+	background:url(images/work_basic.png) no-repeat;
+}
+.icon20-work_basic_hover{
+	background:url(images/work_basic_hover.png) no-repeat;
+}*/
+/*-- 查询模版4个页面 图片的结束 --*/
+/*-- 4个页面 图片的开始  --*/
+/*
+.icon20-basic{
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/basic.png) no-repeat;
+}
+.icon20-basic_hover{
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/basic_1.png) no-repeat;
+}
+.icon20-process_illustrate{
+	background:url(flow_guide/flow_type/css/images/intro.png) no-repeat;
+}
+.icon20-process_illustrate_hover{
+	background:url(flow_guide/flow_type/css/images/intro_1.png) no-repeat;
+}
+.icon20-work_name{
+	background:url(flow_guide/flow_type/css/images/work_name.png) no-repeat;
+}
+.icon20-work_name_hover{
+	background:url(flow_guide/flow_type/css/images/work_name_1.png) no-repeat;
+}
+.icon20-expand_field{
+	background:url(flow_guide/flow_type/css/images/field.png) no-repeat;
+}
+.icon20-expand_field_hover{
+	background:url(flow_guide/flow_type/css/images/field_1.png) no-repeat;
+}
+*/
+/*-- 4个页面 图片的结束-----------------------------------------------------------*/
+/*
+.icon20-unit_front{
+	background:url(images/unit_title_front.png) no-repeat;
+}
+.icon20-unit_back{
+	background:url(images/unit_title_back.png) no-repeat;
+}
+.icon20-basis{
+	background:url(images/basis_title.png) no-repeat;
+}
+.icon20-basis_hover{
+	background:url(images/basis_title_1.png) no-repeat;
+}
+.icon20-operator{
+	background:url(images/operator_title.png) no-repeat;
+}
+.icon20-operator_hover{
+	background:url(images/operator_title_1.png) no-repeat;
+}
+.icon20-intelligent{
+	background:url(images/intelligent_title.png) no-repeat;
+}
+.icon20-intelligent_hover{
+	background:url(images/intelligent_title_1.png) no-repeat;
+}
+.icon20-syllable{
+	background:url(images/syllable_title.png) no-repeat;
+}
+.icon20-syllable_hover{
+	background:url(images/syllable_title_1.png) no-repeat;
+}
+.icon20-circulation{
+	background:url(images/circulation_title.png) no-repeat;
+}
+.icon20-circulation_hover{
+	background:url(images/circulation_title_1.png) no-repeat;
+}
+
+.icon20-condition{
+	background:url(images/condition_title.png) no-repeat;
+}
+.icon20-condition_hover{
+	background:url(images/condition_title_1.png) no-repeat;
+}
+.icon20-condition_2{
+	background:url(images/condition_title_in.png) no-repeat;
+}
+.icon20-condition_3{
+	background:url(images/condition_title_out.png) no-repeat;
+}
+.icon20-condition_4{
+	background:url(images/condition_make.png) no-repeat;
+}
+.icon20-limit{
+	background:url(images/limit_title.png) no-repeat;
+}
+.icon20-limit_hover{
+	background:url(images/limit_title_1.png) no-repeat;
+}
+.icon20-unit{
+	background:url(images/unit_title.png) no-repeat;
+}
+.icon20-unit_3{
+	background:url(images/unit_title_3.png) no-repeat;
+}
+.icon20-unit_hover{
+	background:url(images/unit_title_1.png) no-repeat;
+}
+.icon20-remind{
+	background:url(images/remind_title.png) no-repeat;
+}
+.icon20-remind_hover{
+	background:url(images/remind_title_1.png) no-repeat;
+}
+.icon20-remind_2{
+	background:url(images/remind_title_3.png) no-repeat;
+}
+.icon20-remind_3{
+	background:url(images/remind_title_2.png) no-repeat;
+}*/
+/*
+.icon18-illustration,.icon18-void{
+	margin-left:8px;
+	width:24px;
+	height:24px;
+	padding-bottom:5px;
+	padding-left:16px;
+}
+/*
+.icon18-illustration{
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/tip.png) no-repeat;
+}
+.icon18-void{
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/ready_look.png) no-repeat;
+}
+
+.icon16-remind_1,.icon16-remind_2,.icon16-remind_3{
+	margin-left:2px;
+	width:16px;
+	height:20px;
+	padding-bottom:5px;
+	padding-left:16px;
+}
+
+.icon16-remind_1{
+	background:url(../images/email.png) no-repeat;
+}
+.icon16-remind_2{
+	background:url(../images/mobile.png) no-repeat;
+}
+.icon16-remind_3{
+	background:url(../images/sms.png) no-repeat;
+}
+*/
+/*
+.flow_piece{
+	border:0px solid red;
+	margin:0px;
+	padding:0px;
+    margin-bottom:8px;
+}
+
+.flow_title_name{ 
+	font-size:12px;
+	font-weight:bold;
+}
+.flow_content{
+	margin-top:5px;
+	margin-left:0px;
+}
+*/
+/*-----------------------------办公限时公共样式 结束--------------------------*/
+/*
+.work_bottom{
+height:40px;
+text-align: right;
+background-color: #fefefe;
+border-top: 1px solid #ddd;
+-webkit-border-radius: 0 0 6px 6px;
+-moz-border-radius: 0 0 6px 6px;
+border-radius: 0 0 6px 6px;
+-webkit-box-shadow: inset 0 1px 0 #ffffff;
+-moz-box-shadow: inset 0 1px 0 #ffffff;
+box-shadow: inset 0 1px 0 #ffffff;
+width:950px;
+margin-left:260px;
+margin-right: auto;
+}
+.btn_next{
+	margin-right:15px;
+	line-height:40px;
+	float:right;
+	margin-top:8px;
+}
+.btn_save{
+	line-height:40px;
+	margin-right:15px;
+	float:right;
+	margin-top:8px;
+}
+.btn_close{
+	line-height:40px;
+	float:right;
+	margin-top:8px;
+	margin-right:340px;
+}
+*/
+/*----------------------------页面底部公共样式 结束  --------------------------------------*/
+/*
+.left_body{
+	border:0px solid red;
+	width:403px;
+    float:left;
+}
+/*----------------------------工作名称/义号的样式  --------------------------------------*/
+
+
+/*---------------------------- 右侧顶头  提示的公共样式 --------------------------------------*/
+/*
+.icon_right_intro{
+	position:absolute;
+	top:28px;
+	right:160px;
+	font-weight:bold;
+	
+}*/
+/*必填样式*/
+/*
+.required{
+	color:red;
+	font-size:18px;
+	margin-top:3px;
+	margin-left:3px;
+	float:left;
+}
+
+.index_table_tr{    
+    background-color:#F5F5F5;
+}
+
+.step{
+	padding-left:20px;
+}
+*/

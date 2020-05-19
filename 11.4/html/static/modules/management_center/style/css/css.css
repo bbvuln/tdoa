@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
+    -webkit-text-size-adjust:100%
+}
+html, body, ul, li {
+    margin:0;
+    padding:0;
+    font-family:"微软雅黑";
+    font-size:12px;
+}
+ul, li {
+    list-style-type:none
+}
+table {
+    border-collapse:separate;
+    border-spacing:0
+}
+caption, th, td {
+    text-align:left;
+    font-weight:normal
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+}
+html{background:#f9f9f9; }
+ul, ol {
+    list-style:none
+}
+.clear {
+    clear:both;
+    height:0
+}
+.fr {
+    float:right
+}
+.tac {
+    text-align:center
+}
+a {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline
+}
+/*********  管理中心门户css样式表 *********/
+#management_Portal{ width:100%;  min-width:1100px; position:relative; overflow:hidden;}
+/**** 头部 ****/
+#management_Portal #header{  padding:0 2%; +padding:0 2% 0 3%; height:45px; /*background:url(../images/header_bj.jpg) repeat-x;*/ border-bottom:1px #d5d5d5 solid; }
+#management_Portal #header .logo{ width:290px; height:45px; float:left; margin-left:1%;}
+#management_Portal #header .logo_img{float:left; margin-left:1px;}
+#management_Portal #header .logo_text{ display:block; width:205px; height:44px; line-height:42px; font-family:"微软雅黑"; font-size:20px; color:#2f61a9; font-weight:bold; float:left; margin-left:5px;}
+
+#management_Portal #header .nav{ float:left;position:relative; width:50%;height: 45px;line-height:45px;}
+
+#management_Portal #header .nav ul li{ float:left;padding: 0 4px;height:45px;overflow:hidden;}
+
+#management_Portal #header .nav ul li a{display:block; /*height:45px;*/height:41px;line-height:41px; float:left; cursor:pointer;  color:#FFF; font-family:"微软雅黑"; color:#767676; font-size:15px; padding:0px 15px; font-weight:bold;}
+#management_Portal #header .nav ul li a:hover{ text-decoration:none;}
+#management_Portal #header .nav ul li a.current{ /*background:#adadad; color:#FFF;*/color: #05a;border-bottom: 4px solid #05a;}
+
+#management_Portal #header .nav ul li.more{position:relative;}
+#management_Portal #header .gengduo{ width:110px; float:left; position:absolute; background:#fff; top:45px; left:-2px; border:1px #d5d5d5 solid; border-top:none ; z-index:1111111111;}
+#management_Portal #header .nav ul li .gengduo ul{padding:2px 0; overflow:hidden;}
+#management_Portal #header .nav ul li .gengduo li{ width:106px; background:none; margin-left:2px; height:32px;}
+#management_Portal #header .nav ul li .gengduo li a{width:93px; padding:0px 0 0 13px; height:32px;  line-height:32px;}
+#management_Portal #header .nav ul li .gengduo li a:hover{ background:#cacaca; color:#fff;}
+
+#management_Portal #header .nav_more{ width:50px; height:45px; float:left;}
+#management_Portal #header .nav_more .left{ width:12px; height:19px; float:left; margin-top:13px;}
+#management_Portal #header .nav_more .right{ width:12px; height:19px; float:left;margin-top:13px; margin-left:10px;}
+#management_Portal #header .nav_more .left a{ display:block; width:12px; height:19px; background:url(../images/left.png) no-repeat; text-indent:-9999px;cursor:pointer; }
+#management_Portal #header .nav_more .right a{ display:block; width:12px; height:19px; background:url(../images/right.png) no-repeat; text-indent:-9999px;cursor:pointer; }
+#management_Portal #header .nav_more .left a.no{background:url(../images/left_no.png)}
+#management_Portal #header .nav_more .right a.no{background:url(../images/right_no.png)}
+
+
+
+#management_Portal #header .set_up{ width:95px; height:45px; background:url(../images/set_up.png) no-repeat left center;  float:left; padding-left:20px; +margin-right:2%;}
+#management_Portal #header .set_up a{line-height:44px; font-family:"微软雅黑"; color:#767676; font-size:15px; display:block;}
+#management_Portal #header .set_up a:hover{ text-decoration:none;}
+
+#management_Portal #header .togglestyle{position: absolute;top: 8px;right: 10px;width: 64px;height: 28px;background-image: url('../images/icon1.png');background-position: 0 0;}
+#management_Portal #header .togglestyle a{ display:inline-block; width: 32px;height: 28px;}
+#management_Portal #header .togglestyle a.default-style{ float:left}
+#management_Portal #header .togglestyle a{ float:right}
+#management_Portal #header .togglestyle a:hover{ text-decoration:none;}
+
+/****** 内容 ******/
+#management_Portal #content{ width:100%; padding:0 1%; +padding:0 1% 0 2%; overflow:hidden; border-top:1px #FFF solid; background: #fff;}
+#management_Portal #content .content_main{ margin-left:1%; margin-top:2px; padding-bottom:18px; overflow:hidden;}
+/**** 图表 ****/
+#management_Portal #content .content_1{ position:relative; width:31%;  height:250px; background-color:#0082da; float:left; margin-left:1%; margin-top:14px;border-radius: 4px;box-shadow: 0px 0px 8px #B3B3B3;}
+/**** 图表标题 ****/
+#management_Portal #content .title{ padding-left:10px; height:31px; line-height:30px; color:#f9fcff; font-size:14px;  font-family:"微软雅黑"; }
+#management_Portal #content .title span{ float:right; padding-right:10px;}
+#management_Portal #content .title a{ color:#fff; font-weight:bold;font-size:14px; font-family:"微软雅黑";}
+#management_Portal #content .title a:hover{ color:#FFF; text-decoration:none;  font-size:15px;}
+/*** 图表内容区 ***/
+#management_Portal #content .content_1{ position:relative; width:31%;  height:250px; background-color:#fff; float:left; margin-left:1%; margin-top:14px;}
+#management_Portal #content .container{ text-align:center; width:100%; margin-top:0px;  height:210px; overflow:hidden;}
+.container .content-mask{ position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;line-height: 250px;background: #FFF url('../images/loading.gif') no-repeat 50% 50%;     }
+
+/** 层 **/
+.mask{ width:100%; position:fixed; height:100%; background:url(../images/mask.png) repeat; +position:absolute; top:0px; }
+/*- 图标放大弹出层 -*/
+.content_pop{ width:850px; height:480px; }
+.content_pop .title{ padding-left:10px; height:31px; line-height:30px; color:#f9fcff; font-size:14px;  font-family:"微软雅黑"; background:url(../images/title.png) repeat-x;}
+.content_pop .title span{ float:right; padding-right:10px;}
+.content_pop .title a{ color:#efefef; font-size:12px; font-family:"宋体";}
+.content_pop .title a:hover{ color:#FFF; text-decoration:none;}
+.content_pop .container{ text-align:center; width:100%; margin-top:8px;  height:440px; overflow:hidden;}
+
+/*- 个性化设置弹出层 -*/
+.set_up_pop{ width:800px; height:430px; position:fixed;  +position:absolute;  left:50%; margin-left:-400px; background:#fff;}
+.set_up_pop .title{ width:768px; margin: 0px auto 0 auto; +margin:0px 0 0 14px; height:38px; line-height:38px; border-bottom:3px #277faa solid;}
+.set_up_pop .title span{ float:right; padding-right:5px;}
+.set_up_pop .title strong{ width:150px; height:42px; padding-left:38px; display:block; color:#277faa; font-size:18px; font-family:"微软雅黑"; background:url(../images/set_up.jpg) no-repeat left center;}
+.set_up_pop .title a{ color:#6a6a6a; font-size:14px; font-family:"宋体";}
+.set_up_pop .title a:hover{ text-decoration:none;}
+.set_up_1{ width:650px; height:310px; overflow:hidden; margin:5px auto 0 auto; +margin:20px 0 0 75px; }
+
+/*- 上下排序 -*/
+.set_up_1 .left_a{ width:24px; height:310px; float:left;}
+.set_up_1 .left_a .up_top{ width:24px; height:36px;text-indent:-9999px; margin-top:90px;}
+.set_up_1 .left_a .up_top a{ display:block; width:24px; height:36px; background:url(../images/set_up_top.jpg) no-repeat; }
+.set_up_1 .left_a .up_bottom{ width:24px; height:36px;text-indent:-9999px; margin-top:20px;}
+.set_up_1 .left_a .up_bottom a{ display:block; width:24px; height:36px; background:url(../images/set_up_bottom.jpg) no-repeat; }
+
+/*- 已选报表 -*/
+.set_up_1 .left{ width:274px; overflow:hidden; float:left; margin-left:12px;}
+.set_up_1 .set_up_a{ width:272px; height:265px; border:1px #d1d1d1 solid; border-radius: 4px; overflow:hidden;}
+.set_up_1 .set_up_a h2{ background:#e1e1e1; height:28px; line-height:28px; font-family:"微软雅黑"; border-bottom:1px #d1d1d1 solid; padding-left:16px; font-size:15px; color:#6a6a6a; font-weight:bold;}
+.set_up_1 .set_up_b{ width:272px; height:278px; border:0px; overflow:hidden;}
+.set_up_1 .set_up_a select{ width:272px; height:245px; border:0px;color:#969696; font-size:14px; }
+.set_up_1 .set_up_q{ width:60px; height:22px; margin:0 auto; padding-top:5px; +margin-left:50px;}
+.set_up_1 .set_up_q input{ width:60px; font-size:12px; text-align:center;}
+
+/*- 选项左右 -*/
+.set_up_1 .content{ width:36px; height:310px; float:left; margin-left:12px;}
+.set_up_1 .content .up_left{ width:36px; height:28px;text-indent:-9999px; margin-top:102px;}
+.set_up_1 .content .up_left a{ display:block; width:36px; height:28px; background:url(../images/set_up_left.jpg) no-repeat; }
+.set_up_1 .content .up_right{ width:36px; height:28px;text-indent:-9999px; margin-top:15px;}
+.set_up_1 .content .up_right a{ display:block; width:36px; height:28px; background:url(../images/set_up_right.jpg) no-repeat; }
+
+/*- 备选报表 -*/
+.set_up_1 .right{ width:274px; overflow:hidden; float:left; margin-left:12px;}
+.set_up_pop h3{ font-size:14px; color:#df0024; padding-left:110px; width: 360px; +width: 360px; float:left; }
+
+
+
+/*** 图表内容区 ***/
+.content_pop .content_1{ position:relative; width:31%;  height:250px; background-color:#0082da; float:left; margin-left:1%; margin-top:14px;}
+.content_pop .container{ text-align:center;  margin-top:8px;  height:210px; overflow:hidden;}
+
+
+.save { margin-top:2px; float:right; padding-right:26px; width: 240px;}
+.save input{ width:60px; font-size:12px; text-align:center; margin-left:18px;}
+
+/*- 最小宽度 -*/
+#management_Portal.min_width #content .content_1{  width:47%;}
+#management_Portal.min_width #content .content_2{  width:47%;}
+#management_Portal.min_width #content .content_3{  width:47%;}
+#management_Portal.min_width #content .content_4{  width:47%;}
+#management_Portal.min_width #content .content_5{  width:47%;}

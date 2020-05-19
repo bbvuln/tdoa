@@ -1,0 +1,273 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>通达OA系统运行常见问题</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<body>
+
+<a name="a0001"></a>
+<div class="block">
+<div class="head">目录或文件缺失</div>
+<div class="item">目录或文件缺失会影响OA服务无法启动或正常运行，建议先备份数据，然后卸载OA并重新安装，再恢复数据（备份和恢复数据的方法参考“开始菜单->程序->Office Anywhere->管理员使用说明”），或与我们的技术支持人员联系提供支持。</div>
+<div class="foot"><input type="button" value="关闭" onclick="" class="BigButtonA"></div>
+</div>
+
+<a name="a0002"></a>
+<div class="block">
+<div class="head">日志文件过大</div>
+<div class="item">可能是由于OA运行时间较长或出现错误，导致产生大量的日志记录，如果出现大量的错误记录，请联系我们的技术支持人员获取支持。</div>
+</div>
+
+<a name="a0003"></a>
+<div class="block">
+<div class="head">未找到当天日志</div>
+<div class="item">
+  <p>可能是由于相应的服务未启动或系统时间（时区）设置不正确，请检查服务运行状态和系统时间。</p>
+</div>
+</div>
+
+<a name="a0004"></a>
+<div class="block">
+<div class="head">未找到日志文件</div>
+<div class="item">相应的服务没有启动，请检查服务的运行状态。</div>
+</div>
+
+<a name="a0005"></a>
+<div class="block">
+<div class="head">OA服务完整性</div>
+<div class="item">如果缺少OA服务可能会影响OA的部分或全部功能使用，可以运行MYOA\bin\register.bat注册OA所有服务，或联系我们的技术支持人员咨询。</div>
+</div>
+
+<a name="a0006"></a>
+<div class="block">
+<div class="head">OA服务运行状态</div>
+<div class="item">
+<p>Office_Webe或MySQL5_OA服务处于停止状态，会导致OA无法访问。</p>
+<p>Office_Task服务停止运行会导致数据库备份、同步域用户等定时任务无法执行，也会导致OA在试用状态下运行，限制使用OA的用户数等。</p>
+<p>Office_IM服务停止运行会导致即时通讯功能无法使用。</p>
+<p>Office_Mail服务停止运行将导致不能收取Internet邮箱的邮件到OA系统中。</p>
+<p>Office_POP3服务停止运行后Outlook、Foxmail等邮件客户端工具将无法将OA中的邮件收取到客户端保存。</p>
+<p>Office_Index服务停止运行后会导致无法将新的附件文件添加到全文检索库中。</p>
+<p>Office_Daemon服务停止运行后将无法监控其它OA服务的运行状态，不能保证其它服务在停止后被自动启动。</p>
+</div>
+</div>
+
+<a name="a0007"></a>
+<div class="block">
+<div class="head">目录权限设置方法</div>
+<div class="item">
+由于OA的服务程序需要记录日志、读取和生成附件文件等，所以需要所有启动OA服务的操作系统账号具有以下目录的读写权限：<br />
+MYOA\attach<br />
+MYOA\logs<br />
+MYOA\tmp<br />
+MYOA\data5<br />
+MYOA\webroot\attachment<br />
+MYOA\ webroot\inc<br />
+打开“开始菜单 -> 控制面板 -> 管理工具 -> 服务”，找到对应的服务后点击鼠标右键打开“属性”对话框，点击“登录”标签即可看到启动OA服务的操作系统账号，默认为“本地系统帐户”（SYSTEM用户），请确保该账号有以上目录的读写权限。
+</div>
+</div>
+
+<a name="a0008"></a>
+<div class="block">
+<div class="head">连接数据库失败</div>
+<div class="item">
+  <p>请用记事本打开MYOA\bin\Service.ini，检查连接MySQL数据库的参数（主机名、端口、用户名、密码等）设置是否正确</p>
+</div>
+</div>
+
+<a name="a0009"></a>
+<div class="block">
+<div class="head">OA常用模块数据量</div>
+<div class="item">
+  <p>如果常用模块数据量大，可能会增大系统CPU、内存、磁盘I/O等负载，影响OA的访问速度。如果影响到OA的访问速度，可以进入OA的“系统管理->系统资源管理->数据归档”模块进行数据归档，降低系统负载，提高访问速度。</p>
+  <p class="red">归档数据查询，在归档数据的对应模块的查询页面，选择归档日期后进行查询。</p>
+</div>
+</div>
+
+<a name="a0010"></a>
+<div class="block">
+<div class="head">TCP连接数</div>
+<div class="item">由于一台服务器能够同时处理的TCP连接数量存在瓶颈（不同的服务器可处理的TCP连接数从1000-5000不等），如果TCP连接数较多，可能会影响OA的正常使用和访问速度，可以进一步分析连接数较多的程序，必要的话可以将不同的应用拆分到不同的服务器运行。</div>
+</div>
+
+<a name="a0011"></a>
+<div class="block">
+<div class="head">磁盘空间</div>
+<div class="item">磁盘空间用尽时会影响OA正常使用，导致不能上传文件等，此时可整理OA所在分区文件，将非OA文件转移到其它分区或磁盘，也可以到OA的“系统管理->附件管理”模块中添加新的OA附件存储路径为其它分区或磁盘。</div>
+</div>
+
+<a name="a0012"></a>
+<div class="block">
+<div class="head">默认附件路径</div>
+<div class="item">数据库中未查找到默认附件路径设置，会影响通达邮件服务、通达即时通讯服务等正常运行，请到OA的“系统管理->系统参数设置->OA服务设置”模块中进行设置。</div>
+</div>
+
+<div class="block">
+<a name="a0013"></a>
+<div class="head">互联网连接</div>
+<div class="item">
+  <p>如果OA服务器不能连接到互联网，则无法使用天气预报、资讯等功能，也无法自动检查系统更新，请检查网络设置。</p>
+  <p class="red">如果OA服务器通过代理服务器连接到互联网，则无法使用天气预报、外部邮件等功能，请检查上网方式。</p>
+</div>
+</div>
+
+<div class="block">
+<a name="a0014"></a>
+<div class="head">网络环境</div>
+<div class="item">
+  <p>如果没有网络连接或所有的网络连接都处于断开状态，则客户端无法访问OA服务器，请检查网络连接，确保其处于连接状态。</p>
+</div>
+</div>
+
+<a name="a0015"></a>
+<div class="block">
+<div class="head">未检测到加密锁</div>
+<div class="item">
+如果没有检测到加密锁，则OA会在试用版状态下运行，此时OA用户数会受到限制，超出限制的用户无法登录和使用OA。请确保加密锁已正常插入服务器的USB接口。
+</div>
+</div>
+
+<a name="a0016"></a>
+<div class="block">
+<div class="head">加密锁内部错误</div>
+<div class="item">
+如果没有检测到加密锁内部错误，可以尝试重新插拔加密锁，如果还出现错误，请联系我们的技术支持人员获取帮助。
+</div>
+</div>
+
+<div class="block">
+<div class="head">Office_Web服务参数</div>
+<div class="item">
+<a name="a1001"></a>
+<div class="sub-head">KeepAlive</div>
+<div class="sub-item">启用与客户端的保持性连接，如果设置为Off会影响系统性能，建议设置为On。</div>
+
+</div>
+</div>
+
+<div class="block">
+<div class="head">PHP参数</div>
+<div class="item">
+<a name="a1013"></a>
+<div class="sub-head">max_execution_time</div>
+<div class="sub-item">一个页面程序最大执行时间，单位秒，如果执行时间超出设定的值，会被自动中断，防止因程序死循环等导致系统资源被长期占用，系统无法使用的问题。建议设置为600~3600。</div>
+
+<a name="a1014"></a>
+<div class="sub-head">memory_limit</div>
+<div class="sub-item">一个页面程序最大占用内存限制，单位MB，防止一个页面占用内存过大，导致系统内存不足的情况。建议设置为128~512。</div>
+
+<a name="a1015"></a>
+<div class="sub-head">default_charset</div>
+<div class="sub-item">OA默认字符集，简体版为GBK，国际版为UTF-8，设置不正确会导致OA界面出现乱码。</div>
+
+<a name="a1016"></a>
+<div class="sub-head">upload_tmp_dir</div>
+<div class="sub-item">上传文件的临时保存目录，如果该目录不存在或没有读写权限，会导致OA无法上传附件，默认为MYOA\tmp目录。</div>
+
+<a name="a1017"></a>
+<div class="sub-head">upload_max_filesize</div>
+<div class="sub-item">单个上传文件的最大尺寸，单位MB，默认为200，如果设置过大，在网络条件不佳的情况下可能会导致上传失败。建议设置为100~1000。</div>
+
+<a name="a1018"></a>
+<div class="sub-head">max_file_uploads</div>
+<div class="sub-item">一个表单（一封邮件、一条新闻等）允许最多上传的文件个数，建议设置为10~300</div>
+
+<a name="a1019"></a>
+<div class="sub-head">post_max_size</div>
+<div class="sub-item">一个表单提交的内容（包括所有上传的附件）的最大尺寸限制，单位MB，建议设置为500~10000。</div>
+
+<a name="a1020"></a>
+<div class="sub-head">allow_url_fopen</div>
+<div class="sub-item">如果设置为Off则会导致部分OA功能不可用，默认为On。</div>
+
+<a name="a1021"></a>
+<div class="sub-head">extension</div>
+<div class="sub-item">该项目为PHP加载的功能扩展，如果缺少，会导致OA部分功能不可用。请联系我们的技术支持人员获取支持。</div>
+
+<a name="a1022"></a>
+<div class="sub-head">date.timezone</div>
+<div class="sub-item">OA系统时区设置，默认为Etc\GMT-8（北京时间），如果设置为其他时区，可能会导致OA无法登录或OA中邮件、公告、工作流等时间显示不正确。如非必要，请勿修改！</div>
+
+<a name="a1023"></a>
+<div class="sub-head">session.save_path</div>
+<div class="sub-item">OA服务器与客户端会话信息保存路径，默认为MYOA\tmp目录，如果该目录不存在或不可读写，可能会导致无法登录OA。</div>
+</div>
+</div>
+
+<div class="block">
+<div class="head">MySQL参数</div>
+<div class="item">
+<a name="a1031"></a>
+<div class="sub-head">port</div>
+<div class="sub-item">MySQL服务器的服务端口，<span class="red">如果修改过则还需要修改MYOA\bin\Service.ini和MYOA\webroot\inc\oa_config.php中对应的参数，否则会导致其他OA服务无法连接数据库。</span></div>
+
+<a name="a1032"></a>
+<div class="sub-head">basedir</div>
+<div class="sub-item">MySQL程序所在的目录，如果该目录不存在或设置错误，则数据库服务无法启动。</div>
+
+<a name="a1033"></a>
+<div class="sub-head">datadir</div>
+<div class="sub-item">MySQL的数据库文件保存目录，如果该目录不存在或不可读写，则数据库服务无法启动。</div>
+
+<a name="a1034"></a>
+<div class="sub-head">tmpdir</div>
+<div class="sub-item">MySQL的临时文件目录，如果该目录不存在或不可读写，则数据库服务无法启动。</div>
+
+<a name="a1035"></a>
+<div class="sub-head">character-set-server</div>
+<div class="sub-item">MySQL数据库默认字符集，简体版为GBK，国际版为UTF8，设置不正确会导致OA界面出现乱码。</div>
+
+<a name="a1036"></a>
+<div class="sub-head">wait_timeout</div>
+<div class="sub-item">服务器关闭非交互连接之前等待活动的秒数，默认30，建议设置为10~120。</div>
+
+<a name="a1037"></a>
+<div class="sub-head">interactive_timeout</div>
+<div class="sub-item">服务器关闭交互式连接前等待活动的秒数，默认30，建议设置为10~120。</div>
+
+<a name="a1038"></a>
+<div class="sub-head">max_connections</div>
+<div class="sub-item">MySQL同时处理的最大连接数，如果设置太小会影响系统访问速度，如果设置太大会降低系统稳定性，建议设置为100~2000。</div>
+
+<a name="a1039"></a>
+<div class="sub-head">innodb_buffer_pool_size</div>
+<div class="sub-item">MySQL数据库Innodb引擎的缓冲区大小，如果数据量很大时缓冲区设置太小，会严重影响系统性能，如果缓冲区设置太大，会大量占用内存空间。需要根据数据量大小进行调整，建议在128M~32G之间。</div>
+
+<a name="a1040"></a>
+<div class="sub-head">innodb_additional_mem_pool_size</div>
+<div class="sub-item">MySQL数据库Innodb引擎的额外缓冲区大小，无需设置过大，建议设置为2M~128M。</div>
+
+<a name="a1042"></a>
+<div class="sub-head">innodb_flush_log_at_trx_commit</div>
+<div class="sub-item">MySQL数据库Innodb引擎将数据变化刷新到日志文件的方式，默认为0，表示每秒钟刷新一次，该方式下如果出现断电等意外情况，可能会丢失1秒钟的数据。如果设置为1，表示实时刷新，如果出现断电等意外情况，数据完全不会丢失，但该方式会急剧增加磁盘I/O负载，降低系统性能。如非必要，请勿修改！</div>
+</div>
+</div>
+
+<div class="block">
+<div class="head">安全软件</div>
+<div class="item">
+<a name="a1051"></a>
+<div class="sub-head">小红伞、麦咖啡(Mcafee)</div>
+<div class="sub-item">有用户反映OA界面偶尔会出现can't create/write to file (error:17)等错误提示，<span class="red">建议安全软件排除对MYOA\data5和MYOA\tmp目录的扫描和限制。</span></div>
+
+<a name="a1052"></a>
+<div class="sub-head">江民杀毒软件、防火墙</div>
+<div class="sub-item">个别用户反映启动该软件后OA服务不能启动，关闭该软件后可以正常启动。</div>
+
+<a name="a1053"></a>
+<div class="sub-head">瑞星防火墙</div>
+<div class="sub-item">个别用户反映在Windows Server 2003系统上与Apache程序出现冲突，建议更新防火墙程序或排除对OA服务监控。</div>
+
+<a name="a1054"></a>
+<div class="sub-head">360安全卫士</div>
+<div class="sub-item">个别用户反映在开启该安全软件的情况下，安装OA时会导致个别文件无法创建，建议安装OA时停掉该安全软件。</div>
+
+<a name="a1055"></a>
+<div class="sub-head">金山卫士</div>
+<div class="sub-item">部分用户反映安装该安全软件后OA访问速度变慢，不定时出现网页无法显示的问题，建议更新该安全软件到新的版本或停止该安全软件运行。</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+    "status": "1",
+	"page": 2,
+	"totalpage": 10,
+	"data": [
+		{
+			"key":"0",
+			"medal_id": "0",
+			"name":"优秀员工",
+			"type": 0,
+			"grant_users": [
+				{
+					"userid": "admin",
+					"username": "系统管理员"
+				},
+				{
+					"userid": "lijia",
+					"username": "李佳"
+				}
+			],
+			"grant_depts": [
+				{
+					"dept_id": "0",
+					"dept_name": "销售部门"
+				},
+				{
+					"dept_id": "1",
+					"dept_name": "研发部"
+				}
+			],
+			"grant_privs": [
+				{
+					"priv_id": "0",
+					"priv_name": "行政经理"
+				},
+				{
+					"priv_id": "1",
+					"priv_name": "客服经理"
+				}
+			],
+			"start_date": "2017-11-29",
+			"valid_date": "1",
+			"is_auth": true
+		},
+		{
+			"key":"1",
+			"medal_id": "1",
+			"name":"季度之星",
+			"type": 1,
+			"grant_users": [
+				{
+					"userid": "admin",
+					"username": "系统管理员"
+				}
+			],
+			"grant_depts": [
+				{
+					"dept_id": "0",
+					"dept_name": "销售部门"
+				}
+			],
+			"grant_privs": [
+				{
+					"priv_id": "0",
+					"priv_name": "行政经理"
+				}
+			],
+			"start_date": "2017-11-29",
+			"valid_date": "70",
+			"is_auth": false
+		}
+	]
+}

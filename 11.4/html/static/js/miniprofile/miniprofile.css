@@ -1,0 +1,41 @@
+.miniprofile { font-size: 13px; font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif; position: absolute; padding: 5px; z-index: 100000; }
+.miniprofile-inner { background-color: #fafafa; line-height: 1.7; color: #555; width: 300px; padding: 5px 8px 4px 8px; text-align: left; border: 1px solid #ddd;}
+
+.miniprofile-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+
+.miniprofile-arrow,.miniprofile-arrow b { position: absolute; width: 0; height: 0; line-height: 0; border: 8px dashed #ddd; }
+.miniprofile-arrow b{ border: 8px dashed #fafafa; }
+.miniprofile-arrow-n { border-bottom-color: #ddd; }
+.miniprofile-arrow-s { border-top-color: #ddd; }
+.miniprofile-arrow-e { border-left-color: #ddd; }
+.miniprofile-arrow-w { border-right-color: #ddd; }
+
+.miniprofile-n .miniprofile-arrow,.miniprofile-n .miniprofile-arrow b { top: -2px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.miniprofile-nw .miniprofile-arrow,.miniprofile-nw .miniprofile-arrow b { top: -2px; left: 15px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+.miniprofile-ne .miniprofile-arrow,.miniprofile-ne .miniprofile-arrow b { top: -2px; right: 15px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+.miniprofile-s .miniprofile-arrow,.miniprofile-s .miniprofile-arrow b { bottom: -2px; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.miniprofile-sw .miniprofile-arrow,.miniprofile-sw .miniprofile-arrow b { bottom: -2px; left: 15px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.miniprofile-se .miniprofile-arrow,.miniprofile-se .miniprofile-arrow b { bottom: -2px; right: 15px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+.miniprofile-e .miniprofile-arrow,.miniprofile-e .miniprofile-arrow b { right: -2px; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+.miniprofile-w .miniprofile-arrow,.miniprofile-w .miniprofile-arrow b { left: -2px; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+.miniprofile-n .miniprofile-arrow b,.miniprofile-nw .miniprofile-arrow b,.miniprofile-ne .miniprofile-arrow b{ top: 0;left: 0;margin-left: -8px;margin-top: 1px; }
+
+.miniprofile-s .miniprofile-arrow b,.miniprofile-sw .miniprofile-arrow b,.miniprofile-se .miniprofile-arrow b{bottom: 0;left: 0;margin-left: -8px;margin-bottom: 1px;}
+
+.miniprofile-loading{ height: 100px; line-height: 100px; text-align: center; color: #888; background: url('loading.gif') no-repeat 50% 50%;}
+.mp-avator{ float:left; width: 40px; height: 40px; margin: 5px; overflow: hidden; }
+.mp-avator img{ width: 40px; height: 40px;}
+.mp-info{ margin-left: 60px; min-height: 65px;}
+.mp-info p{ margin: 0; padding: 0;}
+.mp-name{ font-size: 14px; font-weight: bold; margin: 3px 0px 0px 0px;}
+.mp-online{ font-size: 12px; float: right; color: #7FA7CC; line-height: 25px; font-weight: normal;}
+.mp-sign{ font-size: 12px; color: #888;}
+.mp-button{ transition: all ease 0.3s; padding:3px 8px; border: 1px solid #ddd; background: #fff; color: #666; border-radius: 3px; cursor: pointer;}
+.mp-button:hover{ border: 1px solid #bbb; background: #fff; color: #333; }
+.mp-ft{ margin-top: 5px; height: 30px; clear: both;}
+.mp-op-container{ float: left; }
+.mp-op-container .mp-button{ margin-right: 5px;}
+.mp-focus-container{ float: right; }
+.mp-button-unfocus{ background: #39e; color: #fff; }
+.mp-button-focus{  }

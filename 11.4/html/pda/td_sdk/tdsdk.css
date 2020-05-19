@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+.pages{
+    display: none;
+}
+.ui-form-item{
+    padding-left: 100px;
+}
+.ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio){
+    left: 10px;
+}
+.ui-form-item button{
+    margin-top: 7px;
+}
+.pda_attach{
+    border: none;
+}
+.pda_attach img{
+    display: inline-block;
+    width: 80px;
+}
+.filelist,.imagelist{
+    margin-left: -100px;
+}
+.imagelist img{
+    max-width: 80px;
+    max-height: 80px;
+}
+.filelist span{
+    line-height: auto;
+}

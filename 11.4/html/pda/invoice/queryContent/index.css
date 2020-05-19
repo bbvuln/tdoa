@@ -1,0 +1,135 @@
+.query-drawer-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: end;
+    -webkit-box-align: end;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+}
+.query-drawer-mask.show {
+    display: -webkit-box;
+}
+.query-drawer-mask .query-drawer-content.show {
+    transform: translateX(0%);
+}
+.query-drawer-mask .query-drawer-content {
+    position: relative;
+    width: 325px;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: transform 0.3s ease-out;
+    transform: translateX(100%);
+    padding: 0 20px 60px;
+    overflow: hidden;
+}
+.query-drawer-mask .bottom-btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0;
+}
+.query-drawer-mask .bottom-btns div {
+    display: inline-block;
+    width: 50%;
+    font-size: 17px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+}
+.query-drawer-mask .bottom-btns .submit {
+    background-color: #0e86fe;
+    color: #fff;
+}
+.query-drawer-mask .bottom-btns .reset {
+    border-top: 1px solid #f5f5f5;
+}
+.query-drawer-mask .option-title {
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #666;
+    padding: 13px 0;
+    margin-top: 7px;
+}
+.query-drawer-mask .invoice-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+.query-drawer-mask .invoice-list li {
+    width: 85px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.query-drawer-mask .invoice-list li.selected {
+    color: #0e86fe;
+    background-color: #dbedff;
+}
+.query-drawer-mask input {
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0;
+    color: #000;
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+.two-input input {
+    width: 130px;
+    padding-left: 0;
+    text-align: center;
+    float: left;
+}
+.two-input input:first-child {
+    margin-right: 23px;
+}
+.time-wrap.two-input input {
+    width: 131px;
+    padding: 0;
+    text-align: center;
+}
+.query-scroll {
+    position: absolute;
+    width: 325px;
+    right: 0;
+    /* height: 200px; */
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: auto;
+}
+.InvoiceNum-wrap,
+.SellerName-wrap,
+.name-wrap,
+.location-wrap {
+    display: none;
+}
+.InvoiceNum-wrap.show,
+.SellerName-wrap.show,
+.name-wrap.show,
+.location-wrap.show {
+    display: block;
+}

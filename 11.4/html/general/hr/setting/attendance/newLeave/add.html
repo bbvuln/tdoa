@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>年假设置</title>
+    <link rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/modules/attendance/personal/newLeave.css?20180604">
+    <script src="/static/js/jquery-1.10.2/jquery.min.js"></script>
+    <script src="/module/DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+<br>
+        <form action="" id="leaveAddContent" class="hide">
+            <table id="leave_add_table" class="table table-small table-bordered" width="450" align="center" >
+                <tbody>
+                    <tr>
+                        <td class="td_text td_title_width">
+                            计算标准:
+                        </td>
+                        <td class="" width="400">
+                            <input class="no_margin" type="radio" name="type" value="1" id="selfYear" onClick="annualLeave.calculateStandard(value)"><span class="radio_mar">本单位工龄</span>
+                            <input class="no_margin" type="radio" name="type" value="2" id="allYear" onClick="annualLeave.calculateStandard(value)"><span class="radio_mar">总工龄</span>
+                            <input class="no_margin" type="radio" name="type" value="0" id="handleYear" onClick="annualLeave.calculateStandard(value)"><span class="radio_mar">手动输入</span>
+                        </td>
+                        <!-- <td class="span1">
+
+                        </td>
+                        <td class="span3">
+
+                        </td> -->
+                    </tr>
+                    <!-- 非手动输入 -->
+                    <tr class="" id="no_manual">
+                        <td class="td_text td_title_width" style="line-height:30px;">
+                            计算类型:
+                        </td>
+                        <td class="">
+                            <select onChange="annualLeave.calculateType(value)" id="calculateSelect">
+                                <option value="0">按入职日期计算</option>
+                                <option value="1">按自然年计算</option>
+                            </select>
+                            <div class="hide convert_size" id="nature_handle"><input type="checkbox" id="checked_convert" class="no_margin" onClick="annualLeave.convertCheck()"><span id="yearType">当年工龄假期需进行折算</span></div>
+                        </td>
+                        <td class="td_text td_title_width" style="line-height:30px;">
+                            生效时间:
+                        </td>
+                        <td class="">
+                            <select id="effectSelect">
+                                <option value="0">入职即生效</option>
+                                <option value="1">入职满一年生效</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="convert_tr" class="hide">
+                        <td class="td_text td_title_width">
+                            折算方式:
+                        </td>
+                        <td class="">
+                            <select onChange="annualLeave.convertType(value)" id="daySelect">
+                                <option value="0">天</option>
+                                <option value="1">0.5天</option>
+                            </select>
+                        </td>
+                        <td class="td_text td_title_width">
+                            折算规则:
+                        </td>
+                        <td class="">
+                            <div id="dayChoice" class="hide">
+                                <input type="text" class="no_margin day_num" name="leave_all_day_min" maxlength="3">≤年假额度结余天数≤ 1 年假=1天
+                            </div>
+                            <div id="halfDayChoice" class="hide">
+                                <input type="text" class="no_margin day_num" name="leave_half_day_min" maxlength="3">≤年假额度结余天数≤<input type="text" onChange="annualLeave.numChangeText(value)" class="no_margin day_num" name="leave_half_day_max" maxlength="3">年假=0.5天,
+                                大于<input type="text" id="c_num" class="no_margin day_num" disabled></input>的结余天数默认计为1天
+                            </div>
+                            <span class="explain_info">说明：员工年假额度 = 年假天数/365*入职天数</span>
+                        </td>
+                    </tr>
+                    <!-- 手动输入 -->
+                    <tr id="manual" class="hide">
+                        <td class="td_text td_title_width leave_time_title">
+                            设置年假休息时间:
+                        </td>
+                        <td class="" width="805" colspan="3">
+                            开始时间:
+                            <select onChange="annualLeave.monthChange(value)" class="time_select time_margin" id="month">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select><span class="time_margin">月</span>
+                            <select onChange="" class="time_select time_margin" id="day">
+                            </select><span class="time_margin">日</span>
+                            <span class="time_margin">00:00:01</span>
+                            <br>
+                            <span class="leave_explain">结束时间是开始时间的前一天的23时59分59秒</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="ruleTable" class="table table-small table-bordered" width="450" align="center" >
+                <tbody>
+                    <tr>
+                        <td class="td_text td_title_width"> 
+                            <div>工龄计算规则:</div>
+                            <div>(单位：年)</div>
+                        </td>
+                        <td class="" id="leave_box">
+                            <div id="" class="div_leave_margin">
+                                工龄 ≥ <input type="text" class="day_num" name="work_years" id="must_years">&nbsp;&nbsp;享有年假天数:<input type="text" class="day_num" name="leave_days" id="must_days"><i class="icon-plus-sign handle_icon_cur add_margin" onClick="annualLeave.createLeaveTem()"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="0"  id="handle_table" class="table_margin_top" width="450" align="center" >
+                <tbody>
+                    <tr>
+                        <td colspan="2" align="center">
+                            
+                            <button type="button" class="btn btn-primary" title="保存" name="button"  onClick="annualLeave.submitLeaveInfo()">保存</button>
+							<button type="button" class="btn" title="返回" name="button" onClick="javascrtpt:window.location.href='/general/hr/setting/attendance/newLeave/list.html'">返回</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div id="loading" class="hide">
+            加载中......
+        </div>
+</body>
+</html>
+<script>
+    (function($){
+        $(document).ready(function(){
+            var leaveNum = 0;
+
+            var annualLeave = {
+                init:function(){
+                    var _this = this;
+                    _this.getLeaveInfo();
+                },
+                //计算标准
+                calculateStandard:function(value){
+                    var _this = this;
+                    var ruleTable = $('#ruleTable');
+                    var ruleTitle = $('#ruleTitle');
+                    var manual = $('#manual');
+                    var no_manual = $('#no_manual');
+                    var convert_tr = $('#convert_tr');
+                    var nature_handle = $('#nature_handle');
+                    var calculateSelect = $('#calculateSelect');
+                    var effectSelect = $('#effectSelect');
+                    var daySelect = $('#daySelect');
+                    var dayChoice = $('#dayChoice');
+                    var halfDayChoice = $('#halfDayChoice');
+                    $('#checked_convert').prop('checked',false);
+                    if(value==1||value==2){
+                        ruleTable.removeClass('hide');
+                        ruleTitle.removeClass('hide');
+                        manual.addClass('hide');
+                        no_manual.removeClass('hide');
+                        convert_tr.addClass('hide');
+                        calculateSelect.val('0');
+                        effectSelect.val('0');
+                        daySelect.val('0')
+                        nature_handle.addClass('hide');
+                        dayChoice.removeClass('hide');
+                        halfDayChoice.addClass('hide');
+                        $('input[name=leave_all_day_min]').val('');
+                        $('input[name=leave_half_day_min]').val('');
+                        $('input[name=leave_half_day_max]').val('');
+                        $('#c_num').val('');
+                        $('.div_leave_margin').each(function(index,value){
+                            if(index==0){
+                                return;
+                            }
+                            value.remove();
+                        })
+                        $('input[name=work_years]').val('');
+                        $('input[name=leave_days]').val('');
+                        leaveNum = 0;
+                    }else{
+                        _this.dayCreate(31);
+                        $('#day').html(_this.dayCreate('31'));
+                        $('#month').val('01');
+                        ruleTable.addClass('hide');
+                        ruleTitle.addClass('hide');
+                        manual.removeClass('hide');
+                        no_manual.addClass('hide');
+                        convert_tr.addClass('hide');
+                        nature_handle.addClass('hide');
+
+                    }
+                },
+                //计算方式
+                calculateType:function(value){
+                    var _this = this;
+                    value==0?_this.hiddenNature():_this.showNature();
+                },
+                showNature:function(){
+                    $('#nature_handle').removeClass('hide');
+                    $('#checked_convert').attr('checked',false);
+                },
+                hiddenNature:function(){
+                    $('#nature_handle').addClass('hide');
+                    $('#convert_tr').addClass('hide');
+                    $('#checked_convert').attr('checked',false);
+                    
+                },
+                //折算勾选
+                convertCheck:function(){
+                    if($('#checked_convert').prop('checked')){
+                        $('#convert_tr').removeClass('hide');
+                        $('#daySelect').val('0');
+                        $('#dayChoice').removeClass('hide');
+                        $('#halfDayChoice').addClass('hide');
+                    }else{
+                        $('#convert_tr').addClass('hide');
+                    }
+                    
+                },
+                //折算方式
+                convertType:function(value){
+                    var _this = this;
+                    if(value==0){
+                        $('#dayChoice').removeClass('hide');
+                        $('#halfDayChoice').addClass('hide');
+                        $('input[name=leave_half_day_min]').val('');                        
+                        $('input[name=leave_half_day_max]').val(''); 
+                    }else{
+                        $('#dayChoice').addClass('hide');
+                        $('#halfDayChoice').removeClass('hide');
+                        $('input[name=leave_all_day_min]').val('');
+                        $('input[name=leave_half_day_min]').val('');                        
+                        $('input[name=leave_half_day_max]').val(''); 
+                    }
+
+                },
+                //numC变化
+                numChangeText:function(value){
+                    $('#c_num').val(value);
+                },
+                //生成年假模板
+                createLeaveTem:function(){
+                    leaveNum +=1;
+                    var str  =  "<div class='div_leave_margin' id='leave_create_"+leaveNum+"'>"+
+                                "工龄 <span>≥</span> <input type='text' class='day_num' name='work_years'>&nbsp;&nbsp;享有年假天数:<input type='text' class='day_num' name='leave_days'>"+
+                                "<i class='icon-trash handle_icon_cur add_margin'  onClick='annualLeave.deleteLeaveRule("+leaveNum+")'></i>"+
+                                "</div>";
+                    
+                    $('#leave_box').append(str);
+                },
+                //删除工龄计算规则
+                deleteLeaveRule:function(id){
+                    $('#leave_create_'+id).remove();
+                },
+                //手动输入月
+                monthChange:function(value){
+                    var _this = this;
+                    var date=new Date;
+                    var year=date.getFullYear(); 
+                    
+                    if(value==1 || value==3 || value==5 || value==7 || value==8 || value==10 || value==12){
+
+                        $('#day').html(_this.dayCreate('31'));
+                        return;
+                    }
+
+                    if(value==4 || value==6 || value==9 || value==11){
+                        $('#day').html(_this.dayCreate('30'));
+                        return;
+                    }
+
+                    if(value==2){
+                        if(_this.isLeapYear(year)){
+                            $('#day').html(_this.dayCreate('29'));
+                        }else{
+                            $('#day').html(_this.dayCreate('28'));
+                        }
+                    }
+                },
+                //天数生成方法
+                dayCreate:function(day){
+                    var str = '';
+
+                    for(var i=1;i<=day;i++){
+                        if(i<10){
+                            i = '0'+i;
+                        }
+                        str+="<option value='"+i+"'>"+i+"</option>";
+                    }
+                    
+                    return str;
+                },
+                // 判断是不是闰年
+                isLeapYear:function(year){
+                    var cond1 = year % 4 == 0;  
+                    var cond2 = year % 100 != 0;  
+                    var cond3 = year % 400 ==0; 
+
+                    var cond = cond1 && cond2 || cond3;
+                    if(cond) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                },
+                //工龄计算规则数组生成
+                leaveDateArr:function(){
+                    var leaveArr = [];
+                    $('.div_leave_margin').each(function(index,value){
+                        var obj = {};
+                        obj.seniority = $('input[name=work_years]').eq(index).val();
+                        obj.leave = $('input[name=leave_days]').eq(index).val();
+                        leaveArr.push(obj);
+                    });
+
+                    return leaveArr;
+                },
+                //年假规则校验
+                leaveCheckWrite:function(arr){
+                    var bool = true;
+
+                    $.each(arr,function(index,value){
+                        if(value.seniority==''||value.leave==''){
+                            bool = false;
+                            return;
+                        }
+                    });
+
+                    return bool;
+                },
+                //年假规则数字校验
+                leaveCheckReg:function(arr){
+                    var bool = true;
+                    $.each(arr,function(index,value){
+                        if(!(/(^[0-9]\d*$)/.test(value.seniority)) || !(/(^[0-9]\d*$)/.test(value.leave))){
+                            bool = false;
+                            return;
+                        }
+                    })
+
+                    return bool;
+                },
+                leaveCheckRepeat:function(arr){
+                    var bool = true;
+                    for(var i = 0; i < arr.length; i++){
+                        for(var j = i + 1; j < arr.length; j++){
+                            if(arr[i].seniority === arr[j].seniority || arr[i].leave === arr[j].leave){
+                                bool = false;
+                            }
+                        }
+                    }
+
+                    return bool;
+                },
+                //折算规则min值的校验
+                leaveMinCheck:function(str){
+                    var bool = true;
+                    var arr = [];
+                    // var patrn = /^[0-9]*$/;
+                    arr = str.split('');
+                    if(arr[0]!=='0' || arr[1]!=='.' || !/^\d+$/.test(arr[2])){
+                        bool = false;
+                    }
+
+                    return bool;
+                },
+                //折算0.5天的max值校验
+                leaveHalfDayMaxCheck:function(str){
+                    var _this = this;
+                    var bool = true;
+                    if(!_this.leaveMinCheck(str)){
+                        bool = false;
+                    }else if(parseFloat(str)>=1){
+                        bool = false;
+                    }
+
+                    return bool;
+                },
+                //获取编辑数据
+                getLeaveInfo:function(){
+                    var _this = this;
+                    var params = {
+                        ATYPE:'get_annual_list'
+                    };
+                    $.ajax({
+                        type:'GET',
+                        url:'/general/hr/setting/attendance/leave/data.php',
+                        data:params,
+                        success:function(res){
+                            res = JSON.parse(res);
+                            if(res[0].status==1){
+                                var dataInfo = $.extend(true,[],res[0].data[0]);
+                                var selfYear = $('#selfYear');
+                                var allYear = $('#allYear');
+                                var handleYear = $('#handleYear');
+                                switch(dataInfo.LEAVE_BY_SENIORITY){
+                                    case '1':
+                                        selfYear.prop('checked',true);allYear.prop('checked',false);handleYear.prop('checked',false);
+                                        
+                                        break;
+                                    case '2':
+                                        selfYear.prop('checked',false);allYear.prop('checked',true);handleYear.prop('checked',false);
+                                        break;
+                                    case '0':
+                                        selfYear.prop('checked',false);allYear.prop('checked',false);handleYear.prop('checked',true);
+                                        break;
+                                    default:
+                                        return;
+                                }
+                                
+                                if(dataInfo.LEAVE_BY_SENIORITY == '1' || dataInfo.LEAVE_BY_SENIORITY == '2'){
+                                    switch(dataInfo.ANNUAL_EFFECTIVE_TIME){
+                                        case '0':
+                                            $('#effectSelect').val('0');
+                                            break;
+                                        case '1':
+                                            $('#effectSelect').val('1');
+                                            break;
+                                        default: 
+                                            return;
+                                    }
+                                    switch(dataInfo.ANNUAL_CALCULATION){
+                                        case '0':
+                                            $('#calculateSelect').val('0');
+                                            
+                                            break;
+                                        case '1':
+                                            $('#calculateSelect').val('1');
+                                            $('#nature_handle').removeClass('hide');
+                                            switch(dataInfo.ANNUAL_IS_CONVERT){
+                                                case '0':
+                                                    $('#convert_tr').addClass('hide');
+                                                    break;
+                                                case '1':
+                                                    $('#checked_convert').prop('checked',true);
+                                                    $('#convert_tr').removeClass('hide');
+                                                    switch(dataInfo.ANNUAL_CONVERT_METHOD){
+                                                        case '0':
+                                                            $('#daySelect').val('0');
+                                                            $('#dayChoice').removeClass('hide');
+                                                            $('#halfDayChoice').addClass('hide');
+                                                            $('input[name=leave_all_day_min]').val(dataInfo.ANNUAL_CONVERT_MIN);
+                                                            break;
+                                                        case '1':
+                                                            $('#daySelect').val('1');
+                                                            $('#dayChoice').addClass('hide');
+                                                            $('#halfDayChoice').removeClass('hide');
+                                                            $('input[name=leave_half_day_min]').val(dataInfo.ANNUAL_CONVERT_MIN);
+                                                            $('input[name=leave_half_day_max]').val(dataInfo.ANNUAL_CONVERT_MAX);
+                                                            $('#c_num').val(dataInfo.ANNUAL_CONVERT_MAX);
+                                                            break;
+                                                        default:
+                                                            return;
+                                                    }
+                                                    break;
+                                                default: 
+                                                    return;
+                                            }
+                                            break;
+                                        default: 
+                                            return;
+                                    }
+
+                                    $('#must_years').val(dataInfo.ANNUAL_RULE[0].seniority);
+                                    $('#must_days').val(dataInfo.ANNUAL_RULE[0].leave);
+                                    var str = '';
+                                    for(var i = 1;i<dataInfo.ANNUAL_RULE.length;i++){
+                                        leaveNum +=1;
+                                        str +=  "<div class='div_leave_margin' id='leave_create_"+leaveNum+"'>"+
+                                                "工龄 <span>≥</span> <input type='text' class='day_num' name='work_years' value='"+dataInfo.ANNUAL_RULE[i].seniority+"'>&nbsp;&nbsp;享有年假天数:<input type='text' class='day_num' name='leave_days' value='"+dataInfo.ANNUAL_RULE[i].leave+"'>"+
+                                                "<i class='icon-trash handle_icon_cur add_margin'  onClick='annualLeave.deleteLeaveRule("+leaveNum+")'></i>"+
+                                                "</div>";
+                                    }
+                                    $('#leave_box').append(str);
+                                }else{
+                                    $('#no_manual').addClass('hide');$('#convert_tr').addClass('hide');$('#convert_tr').addClass('hide');
+                                    $('#ruleTitle').addClass('hide');$('#ruleTable').addClass('hide');$('#manual').removeClass('hide');
+                                    var beginTime = dataInfo.ANNUAL_BEGIN_TIME.split('-');
+                                    $('#month').val(beginTime[1]);
+                                    _this.monthChange(beginTime[1]);
+                                    $('#day').val(beginTime[2]);
+                                }
+
+                                // $('#leaveAddContent').show();
+                                // $('#loading').hide();
+                                setTimeout(function(){
+                                    $('#leaveAddContent').show();
+                                },100)
+                            }
+
+                        },
+                        error:function(error){
+                            alert('获取数据失败');
+                        }
+                    })
+                },
+                //保存
+                submitLeaveInfo:function(){
+                    var _this = this;
+                    var params = {};
+                    params.ATYPE = 'set_annual_leave';
+                    params.LEAVE_BY_SENIORITY = $('input[name=type]:checked').val();
+                    params.ANNUAL_CALCULATION = $('#calculateSelect').val();
+                    params.ANNUAL_EFFECTIVE_TIME = $('#effectSelect').val();
+
+                    $('#checked_convert').prop('checked')?params.ANNUAL_IS_CONVERT='1':params.ANNUAL_IS_CONVERT='0';
+                    
+                    params.ANNUAL_CONVERT_METHOD = $('#daySelect').val();
+                    if(params.ANNUAL_CONVERT_METHOD=='0'){
+                        params.ANNUAL_CONVERT_MIN = $('input[name=leave_all_day_min]').val();
+                        params.ANNUAL_CONVERT_MAX = '1';
+                    }else{
+                        params.ANNUAL_CONVERT_MIN = $('input[name=leave_half_day_min]').val();
+                        params.ANNUAL_CONVERT_MAX = $('input[name=leave_half_day_max]').val();
+                    }
+
+                    
+
+                    params.ANNUAL_BEGIN_TIME = '-'+$('#month').val()+'-'+$('#day').val();
+                    params.ANNUAL_RULE = _this.leaveDateArr();
+
+                    if(params.LEAVE_BY_SENIORITY == '1' || params.LEAVE_BY_SENIORITY == '2'){
+                        if(params.ANNUAL_IS_CONVERT=='1'){
+                            if(params.ANNUAL_CONVERT_MIN == '' || params.ANNUAL_CONVERT_MAX == ''){
+                                alert('折算规则数值不得为空');
+                                return;
+                            }
+
+                            if(!_this.leaveMinCheck(params.ANNUAL_CONVERT_MIN)){
+                                alert('折算规则数值格式错误,请填写0.1-0.9的小数');
+                                return;
+                            }
+
+                            if(params.ANNUAL_CONVERT_METHOD == 1){
+                                if(!_this.leaveHalfDayMaxCheck(params.ANNUAL_CONVERT_MAX)){
+                                    alert('折算规则数值格式错误，请填写0.1-0.9的小数');
+                                    return;
+                                }
+                            }
+
+                            if(params.ANNUAL_CONVERT_MIN>params.ANNUAL_CONVERT_MAX){
+                                alert('折算规则数值大小关系错误');
+                                return;
+                            }
+                        }
+
+                        if(!_this.leaveCheckWrite(params.ANNUAL_RULE)){
+                            alert('请填写完整的年假规则');
+                            return;
+                        }
+                        
+                        if(!_this.leaveCheckReg(params.ANNUAL_RULE)){
+                            alert('年假规则的数值为自然数');
+                            return;
+                        }
+
+                        if(!_this.leaveCheckRepeat(params.ANNUAL_RULE)){
+                            alert('年假规则内容重复，请正确填写');
+                            return ;
+                        }
+                    }
+                    
+                    $.ajax({
+                        type:'POST',
+                        url:'/general/hr/setting/attendance/leave/data.php',
+                        data:params,
+                        success:function(res){
+                            res = JSON.parse(res);
+                            if(res.status == 1){
+                                window.location.href = '/general/hr/setting/attendance/newLeave/list.html';
+                            }else{
+                                alert(res.msg);
+                            }
+                        },
+                        error:function(error){
+                            alert('编辑失败');
+                        }
+
+                    })
+                }
+
+            };
+
+            annualLeave.init();
+            window.annualLeave = annualLeave;
+        });
+    })(jQuery);
+</script>

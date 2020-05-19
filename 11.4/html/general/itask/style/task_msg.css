@@ -1,0 +1,242 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+
+body {
+    background:#fff;
+    overflow:hidden;
+	font-size:14px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	padding:0 5px 0 5px;
+}
+input, select, textarea{outline:none;}
+.clear{clear:both;}
+
+
+.record { 
+    padding:5px;
+    height:90px;
+    margin-top:5px;
+}
+.record .record_time_left{
+    float:left; 
+	color:#a9a9a9; 
+	height:30px; 
+	line-height:30px; 
+}
+.record .record_time_right{
+    float:right; 
+	color:#a9a9a9; 
+	height:30px; 
+	line-height:30px; 
+}
+.record .record_main_left{
+    float:left;
+	width:100%;
+	position:relative;
+	top:0px;
+	left:0px;
+	height:60px;
+	height:auto !important;
+	min-height:60px;
+}
+.record .record_main_right{
+    float:right;
+	width:100%;
+	position:relative;
+	top:0px;
+	right:0px;
+	height:60px;
+	height:auto !important;
+	min-height:60px;
+}
+.record .record_main_right .record_content_right { 
+    position:absolute; 
+	top:0px; 
+	right:65px;
+	height:50px;
+	height:auto !important;
+	min-height:50px; 
+    width:50px;
+    width:auto !important;
+	min-width:50px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #8FDB30), color-stop(1, #6DC100));
+    background: -webkit-linear-gradient(top,#8FDB30 0,#6DC100 100%);
+	background:-moz-linear-gradient(top, #8FDB30, #6DC100, 100%);
+	background:-o-linear-gradient(top, #F4F4F4, #6DC100, 100%);
+	background:-ms-linear-gradient(top, #F4F4F4, #6DC100, 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8FDB30',endColorstr='#6DC100',GradientType=0);
+    background: linear-gradient(top,#8FDB30 0,#6DC100 100%);
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow: 0 1px 0 #ccc; 
+	padding:3px 5px;
+}
+.record .record_main_left .record_content_left{
+    position:absolute; 
+	top:0px; 
+	left:65px;
+	height:50px;
+	height:auto !important;
+	min-height:50px; 
+    width:50px;
+    width:auto !important;
+	min-width:50px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #EFEFEF), color-stop(1, #DFDFDF));
+    background: -webkit-linear-gradient(top,#EFEFEF 0,#DFDFDF 100%);
+	background:-moz-linear-gradient(top, #EFEFEF, #DFDFDF, 100%);
+	background:-o-linear-gradient(top, #EFEFEF, #DFDFDF, 100%);
+	background:-ms-linear-gradient(top, #EFEFEF, #DFDFDF, 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF',endColorstr='#DFDFDF',GradientType=0);
+    background: linear-gradient(top,#EFEFEF 0,#DFDFDF 100%);
+   	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow: 0 1px 0 #ccc; 
+	padding:3px 5px; 
+}
+
+.record .record_main_left .record_photo_left img,
+.record .record_main_right .record_photo_right img{ 
+    width: 100%;
+}
+.record .record_main_left .record_photo_left{ 
+    position:absolute; 
+	top:0px; 
+	left:0px;
+	height:50px; 
+	width:50px;
+	text-align:center;
+}
+
+.record .record_main_right .record_photo_right{ 
+    position:absolute; 
+	top:0px; 
+	right:0px;
+	height:50px; 
+	width:50px;
+	text-align:center;
+}
+.record .record_main_right .record_arrow_right{ 
+    position:absolute; 
+	top:6px; 
+	right:45px; 
+	border-style:solid; 
+	border-width:10px;
+	border-color:#fff  #fff #fff  #84D321; 
+	height:0px;
+	font-size:0;
+	line-height:0px;
+}
+.record .record_main_left .record_arrow_left{ 
+    position:absolute; 
+	top:6px; 
+	left:45px; 
+	border-style:solid; 
+	border-width:10px;
+	border-color:#fff  #EBEBEB #fff #fff; 
+	height:0px;
+	font-size:0;
+	line-height:0px;
+}
+
+#message{
+    width:100%;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#message #message-content {
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+#message #message-create{
+    position:absolute;
+    bottom:0;
+    left:0;
+	height:39px;
+	width:100%;
+	line-height:39px;
+	padding-top:4px;
+	margin-top:0px;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d5d4d9), color-stop(1, #E3E9ED));
+	background-image:-moz-linear-gradient(top, #d5d4d9, #E3E9ED);
+	background-image:-o-linear-gradient(top, #d5d4d9, #E3E9ED);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d5d4d9, endColorstr=#E3E9ED);/*IE<9>*/
+     -ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#d5d4d9, endColorstr=#E3E9ED)";/*IE8+*/	
+	border-bottom:1px solid #C2D2DB;
+}
+#message #message-create #message-input {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #A3B0B9;
+    border-radius: 15px 15px 15px 15px;
+	-moz-border-radius:15px 15px 15px 15px;
+	-webkit-border-radius:15px 15px 15px 15px;
+    -moz-box-shadow: 0 3px 2px 0 #C2D2DB inset;
+    -webkit-box-shadow: 0 3px 2px 0 #C2D2DB inset;
+    box-shadow: 0 3px 2px 0 #C2D2DB inset;
+    height: 30px;
+	padding:0px;
+    line-height: 30px;
+	padding-left:15px;
+	*padding-left:0px;
+	width:80%;
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+
+#message #message-create #message-input  input{
+    margin:0px;
+    height:20px;
+    display:inline-block;
+    margin-top:4px;
+    width:97%;
+    line-height:20px;
+    border:0 none;
+    font-size:14px;
+    color:#747D85;
+}
+#message #message-create a.addfile {
+    color: #207BD6;
+    display: inline-block;
+	float:left;
+    padding-left: 12px;
+    text-decoration: none;
+	position:relative;
+}
+#message #message-create  a.addfile:hover {
+    background-position: 0 -16px;
+    color: #9AA9B8;
+    float:left;
+    text-decoration: underline;
+}
+#message #message-create a.addfile input.addfile {
+    cursor: pointer;
+    left: -5px;
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+	overflow:hidden;
+	_width:1px;
+}
+
+#message #message-submit{  
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	margin-left:10px;
+}
+
+#no-msg {
+    padding-top:30px;
+    display:none;
+}

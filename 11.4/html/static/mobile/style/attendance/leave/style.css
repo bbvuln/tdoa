@@ -1,0 +1,132 @@
+*{
+    font-family: 'microsoft yahei';
+}
+.float_l{
+  float:left;
+}
+.float_r{
+    float:right;
+    border:1px solid;
+    padding:1px 5px;
+    border-radius: 5px;
+}
+.state_blue{
+    color:#00A5E0;
+}
+.state_green{
+    color:#00c795;
+}
+.year_rest{
+  color:#00CC00;
+  margin-right:20px;
+  font-size: 14px;
+  position:absolute;
+  top: 40px;
+  right: 0;
+  height: auto;
+}
+.thing_rest{
+  color:#FF0000;
+  margin-right:35px;
+  font-size: 14px;
+  position:absolute;
+  top: 40px;
+  right: -16px;
+}
+.position_re{
+  position:relative;
+}
+div.ui-form-item{
+    clear: both;
+}
+.ui-form-item input{
+    float: right;
+    width: 200px;
+    height:38px;
+    margin:3px 0;
+    border: none;
+}
+
+.create_form .ui-form-item textarea{
+  resize: none;
+  padding-left: 0;
+  border:none;
+}
+#leave_submit{
+    margin-right: 20px;
+}
+#yearRest{
+  display: none;
+  height: auto;
+  font-size: 14px;
+}
+#yearRest input{
+  float: none;
+  width: 40px;
+  height: 30px;
+}
+#yearRest span{
+  color:red;
+}
+.ui-select-group{
+    float: right;
+    margin-left: 0;
+}
+.ui-select-group .ui-select{
+    width:200px;
+}
+.ui-select select{
+    padding-left: 12px;
+}
+.leave_area{
+    height: auto;
+}
+/*pÑùÊ½ÐÞ¸Ä*/
+.line_div{
+  margin-right: 80px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width:80%;
+  overflow: hidden;
+  color:#777;
+  font-size: 14px;
+}
+.line_span{
+  /*margin-right: 80px;*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width:70%;
+  overflow: hidden;
+  display: inline-block;
+  /*color:#777;*/
+  font-size: 14px;
+}
+.redReason{
+    color:red;
+    font-size: 14px;
+}
+.leave_reason{
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.7em;
+  display: block;
+  width:100%;
+  word-break:break-word;
+}
+.leave_span{
+    padding-left: 20px;
+}
+.leave_span1{
+    padding-left: 50px;
+}
+.leave_span2{
+    padding-left: 65px;
+}
+.leave_span3{
+    padding-left: 50px;
+}
+.ui-btn-wrap{
+    text-align: center;
+}

@@ -1,0 +1,1 @@
+select LIST_FLDS_STR from FLOW_TYPE where FLOW_ID='2'

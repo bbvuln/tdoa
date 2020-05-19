@@ -1,0 +1,76 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {
+	font-size:14px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	font-family:Helvetica,Arial,sans-serif;
+}
+a{text-decoration: none;}
+#main_bottom{
+   margin:0px auto;
+   width:100%;
+   height:40px;
+   /* background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #1991DE), color-stop(1, #0F80C6)); */
+	/* background-image:-moz-linear-gradient(top, #1991DE, #0F80C6); */
+	/* background-image:-o-linear-gradient(top, #1991DE, #0F80C6); */
+	background-color:#0e86fe;
+   overflow:hidden;
+   box-shadow:5px 0 0 0 #999;
+	-moz-box-shadow:5px 0 0 0 #999;
+	-webkit-border-shadow:5px 0 0 0 #999;
+   text-shadow: 0 -1px 1px #254F7A;
+}
+#main_bottom .online{
+   color:#fff;
+   font-size:12px;
+   text-align:left;
+   height:40px;
+   line-height:40px;
+   float:left;
+   margin-left:10px;
+}
+#main_bottom .online input{
+   color:#ff0000;
+   font-weight:bold;
+   border:0px;
+   background:transparent;
+   text-align:center;
+}
+#main_bottom .user_name{
+   color:#fff;
+   font-weight:bold;
+   text-align:left;
+   height:40px;
+   line-height:40px;
+   float:left;
+   margin-left:10px;
+}
+
+.ButtonC{
+   margin-top:6px;
+   display:inline-block;
+   /* background: -moz-linear-gradient(19% 75% 90deg, #36A3E7, #0D85CE); */
+   /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#36A3E7), to(#0D85CE)); */
+   font-family:helvetica,sans-serif;
+   font-size:13px;
+   line-height:30px;
+   color:#FFFFFF;
+   font-weight:bold;
+   border:1px solid #045985;
+   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+   border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+.ButtonC span{
+   text-align:center;
+   padding:3px 8px;
+   display: block;
+   height:20px;
+   line-height:20px;
+   border-radius: 0.5em 0.5em 0.5em 0.5em;
+   border-top: 1px solid rgba(255, 255, 255, 0.3);   
+}
+#main_bottom .message, #main_bottom .relogin{float:right;width:60px;}
+#main_bottom .relogin{margin-right:10px;margin-left:10px;width:auto;}
+#main_bottom .message, #main_bottom .message span{border-radius: 0 0.5em 0.5em 0;padding:auto 0px;}
+#main_bottom .oa, #main_bottom .oa span{border-radius: 0.5em 0 0 0.5em;border-right:0px;padding:auto 0px;}
+

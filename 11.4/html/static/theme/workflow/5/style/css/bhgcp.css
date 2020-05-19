@@ -1,0 +1,14 @@
+.text_stlyech{background:url(../images/form.jpg) right -28px;width: 290px; height:28px; float:left; border:0px;}
+.input_textch{ float:left;}
+.text_stlyec{background:url(../images/form.jpg) right -28px;width: 280px; height:28px; float:left; border:0px;}
+.text_grayc {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+	color: #7e97ad;
+	display: block;
+	margin-top:8px;	
+	line-height:30px;
+	width:70px;
+	float:left;
+}
+.text_stlye1c{ float:left; border:0px; width: 200px; padding-left:5px; height:28px; background:url(../images/form.jpg) left 0px; font-family: "ËÎÌå"; font-size:12px; }

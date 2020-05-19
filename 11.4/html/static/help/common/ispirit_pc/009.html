@@ -1,0 +1,15 @@
+<h4 style="font-family:'微软雅黑'"><span>用户已登录上即时通讯，为何在组织-在线中只能看到单位的名称？</span></h4>
+<hr>
+
+<h5><span>原因：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;">
+这是用户的user_online表溢出了，但是系统没有报错，导致系统没有检查出用户是否已经登录上OA，这样就会造成这种看似奇怪的现象。
+</p>
+<h5><span>解决方法：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;">
+修复user_online表问题解决。
+</p>
+
+
+
+

@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'td_auto', new FCKDialogCommand( 'td_auto', "宏控件属性", FCKPlugins.Items['td_auto'].Path + 'td_auto.php', 380, 250 ) ) ;

@@ -1,0 +1,22 @@
+.TreeNode img { 
+	border:0px
+}
+.TreeNode a span { 
+	font:12px Arial ËÎÌו;
+	margin-left:3px;
+	padding:2;
+	height:17;
+	cursor:hand;
+}
+.TreeNode .Anchor { 
+	color:#000000;
+	text-decoration:none;
+}
+.TreeNode .selected { 
+	color:#FFFFFF;
+	text-decoration:none
+}
+.TreeNode .selected span{ 
+	background-color:#3366cc;
+}
+.

@@ -1,0 +1,31 @@
+.vjs-default-skin .vjs-play-control{
+    background: url(images/btn.png) no-repeat 0 0;
+}
+.vjs-default-skin.vjs-playing .vjs-play-control{
+    background: url(images/btn.png) no-repeat -60px 0;
+}
+.vjs-default-skin .vjs-fullscreen-control {
+    background: url(images/btn.png) no-repeat -120px 0;
+}
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control {
+    background: url(images/btn.png) no-repeat -120px -36px;
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-0, .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0 {
+    background: url(images/btn.png) no-repeat -166px -36px;
+}
+.vjs-default-skin .vjs-mute-control, .vjs-default-skin .vjs-volume-menu-button{
+    background: url(images/btn.png) no-repeat -166px 0;
+}
+.vjs-default-skin .vjs-big-play-button{
+    background: url(images/btn.png) no-repeat 0 -36px;
+
+}
+.vjs-default-skin .vjs-play-control:before ,
+.vjs-default-skin.vjs-playing .vjs-play-control:before ,
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before ,
+.vjs-default-skin .vjs-mute-control:before , .vjs-default-skin .vjs-volume-menu-button:before ,
+.vjs-default-skin .vjs-mute-control.vjs-vol-0:before , .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0 :before ,
+.vjs-default-skin .vjs-big-play-button:before ,
+.vjs-default-skin .vjs-fullscreen-control:before {
+    display: none;
+}

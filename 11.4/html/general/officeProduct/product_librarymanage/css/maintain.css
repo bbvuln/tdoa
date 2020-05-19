@@ -1,0 +1,235 @@
+
+#list_seach_box,#details_list_seach_box,#select_box{
+    float:right;
+    position: relative; 
+}
+#select_box{
+    margin-right:20px;
+}
+select{
+    height:28px;
+}
+#list_search_int,#details_list_search_int{
+    margin-bottom:0;
+    padding-left:30px;
+}
+.search_icon_box{
+    display:block;
+    position: absolute;
+    top: 1px;
+    left:3px;
+    width:28px;
+    height:26px;
+    cursor: pointer;
+    background:#fff;
+    line-height:28px;
+}
+#search_icon{
+    margin-top:5px;
+    margin-left:5px;
+}
+#goods_tab,#goods_details_tab{
+    margin: 0 auto;
+}
+.use_handle{
+    color:#108EE9;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#goods_tab,#goods_details_tab{
+    margin: 0 auto;
+}
+.use_handle{
+    color:#108EE9;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#page,#detailsPage{
+    float: right;
+    margin-right: 1%;
+}
+.is_red{
+    color:red;
+}
+.handle_box{
+    width:500px;
+    /* height:50px; */
+    margin:0 auto;
+    margin-bottom:10px;
+    position: relative;
+}
+.title_box{
+    display: inline-block;
+    width:80px;
+    margin-right: 10px;
+    text-align: right;
+}
+#maintain_box{
+    height:295px!important;
+}
+#details_box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+}
+.pointer{
+    cursor: pointer;
+}
+#maintainDetailsContent{
+    width:1100px;
+    /* height:100%; */
+    /* background:gold; */
+}
+.head_box{
+    width:100%;
+    min-height:66px;
+    /* background:purple; */
+}
+#pro_name{
+    /* width:150px; */
+    height:100%;
+    line-height:66px;
+    font-size:16px;
+    margin-left:24px;
+    float:left;
+    margin-right:18px;
+    color:#0e87fe;
+}
+#pro_info_box{
+    width:100%;
+    /* height:100px; */
+    /* float:left; */
+    background:#f7f8f9;
+    border-radius: 6px;
+}
+.info_details_box{
+    /* width:230px; */
+    height:66px;
+    padding-left:24px;
+    float:left;
+    color:#333;
+    font-size:14px;
+    line-height:66px;
+}
+.info_title{
+    line-height:50px;
+    text-align: left;
+}
+.content_box{
+    width:100%;
+    /* background:purple; */
+    margin-top:16px;
+}
+.info_list_box{
+    width:100%;
+    height:120px;
+    padding-top:30px;
+    /* background:blue; */
+    position: relative;
+}
+.time_title{
+    position: absolute;
+    top:0;
+    left:45px;
+    line-height: 12px;
+    font-size:14px;
+    color:#333;
+}
+.vertical_line{
+    width:2px;
+    height:100%;
+    background:#0e87fe;
+    position: absolute;
+    top: 0px;
+    left:20px;
+}
+.vertical_ball{
+    width:14px;
+    height:14px;
+    background:#0e87fe;
+    border-radius:50%;
+    position: absolute;
+    top: 0px;
+    left:14px;
+}
+.vertical_border_ball{
+    width:30px;
+    height:30px;
+    background:#0e87fe;
+    border-radius:0 0 100% 0;
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.maintain_info_box{
+    width:304px;
+    height:102px;
+    margin-left:45px;
+    /* background:yellow; */
+    float:left;
+    position: relative;
+    border:2px solid #0e87fe;
+    border-radius: 3px;
+}
+.handle_type_ball{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position: absolute;
+    border:2px solid #fff;
+    line-height:30px;
+    text-align: center;
+    top:6px;
+    left:6px;
+    background:#0e87fe;
+    color:#fff;
+} 
+.handle_details_box{
+    width:230px;
+    height:84px;
+    /* padding:6px 0; */
+    margin-left: 60px;
+    background:#fff;
+    font-size:14px;
+    color:#333;
+    position: absolute;
+    top: 8px;
+}
+.li_info{
+    padding-bottom:3px;
+}
+.no_list{
+    width:70px;
+    margin:0 auto;
+}
+.apply_short {
+    width: 80px;
+}
+#handle_user_name{
+    resize:none!important;
+    /* border-bottom:0!important;
+    border-radius:4px 4px 0 0; */
+    padding-bottom:21px!important;
+}
+.power_btn_box{
+    width: 217px;
+    height: 20px;
+    background: #eee;
+    position: absolute;
+    top: 43px;
+    left: 95px;
+}
+.orgAdd{
+    color:#207BD6;
+    cursor: pointer;
+    float:right;
+    margin-right: 20px;
+}
+.orgClear{
+    color:#9AA9B8;
+    cursor: pointer;
+    float:right;
+    margin-right: 10px;
+}

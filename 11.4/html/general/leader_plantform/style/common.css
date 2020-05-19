@@ -1,0 +1,64 @@
+.T_textorg{color: #FF9900;}
+.T_textred{color: #d14;}
+.T_textblue{color: #4D9FD7;}
+.T_fb{font-weight: bold;}
+
+.mod{border: 1px solid #E5E5E5;border-radius: 2px 2px 0 0;margin-bottom: 20px;}
+.mod_hd{background-color: #f7f7f7;height: 50px;line-height: 50px;border-bottom: 1px solid #E5E5E5;}
+.mod_hd_title{color: #007FB6;font-size: 14px;font-weight: bold;margin-left: 20px;}
+.mod_hd_title .mod_hd_title_desc{color: #8d8d8d;}
+.mod_hd_tabs{float: right;margin-right: 20px;}
+.mod_hd_tabs li{float: left;border:1px solid #E5E5E5;list-style-type: none;background-color: #ffffff;border-left-width: 0;margin-top: 9px;height: 40px;line-height: 40px;}
+.mod_hd_tabs li a{display:block;padding:0 10px;text-decoration: none;color: #B3B3B3;height: 38px;line-height: 40px;font-weight: bold;outline: none;}
+.mod_hd_tabs li.mod_hd_tab_first{border-left: 1px solid #E5E5E5;}
+.mod_hd_tabs li.active a{color: #43C6F2;text-decoration: none;border-bottom: 1px solid #ffffff;border-top: 3px solid #43C6f2;height: 37px;line-height: 34px;}
+.mod_hd_tabs li a:active{background-color: #ffffff;}
+.mod_hd_btns{float: right;margin-right: 10px;/*margin-top: 12px;*/}
+.mod_hd_btns button{cursor: pointer;}
+.mod_bd{padding: 10px;position: relative;}
+
+.mod_bd .mod_bd_nav{height: 20px;line-height: 20px;display: none;position: absolute;bottom: 10px;width: 100%;left:0;}
+.mod_bd .mod_bd_nav .pagenav{float: right;margin-right: 10px;}
+.mod_bd .mod_bd_nav .pagenav a{font-size: 12px;}
+.mod_bd .mod_bd_nav .pagenav .uparrow, .mod_bd .mod_bd_nav .pagenav .downarrow{width: 0;height: 0;overflow: hidden;display: inline-block;border: 4px solid;}
+.mod_bd .mod_bd_nav .pagenav .uparrow {border-style: dashed solid dashed dashed;border-bottom-color: transparent;border-left-color: transparent;border-top-color: transparent;margin-right: 8px;}
+.mod_bd .mod_bd_nav .pagenav .downarrow {border-style: dashed dashed dashed solid;border-bottom-color: transparent;border-right-color: transparent;border-top-color: transparent;margin-top: 5px;margin-left: 8px;}
+.mod_bd .mod_bd_nav .pagenav .change-pre, .mod_bd .mod_bd_nav .pagenav .change-nxt {line-height: 18px;}
+.mod_bd .mod_bd_nav .pagenav a{color: #999;}
+.mod_bd .mod_bd_nav .pagenav a:hover, .mod_bd .mod_bd_nav .pagenav a:hover em{color: #0360AF;}
+.mod_bd .mod_bd_nav .pagenav a.unavailable, .mod_bd .mod_bd_nav .pagenav a.unavailable:hover, .mod_bd .mod_bd_nav .pagenav a.unavailable:hover em, .mod_bd .mod_bd_nav .pagenav .unavailable{color: #999;cursor: default;text-decoration: none;font-style: normal;}
+.mod_bd .mod_bd_nav .pagenav em.unavailable{margin: 0 5px;}
+
+.mod.mod_ul_dot .mod_bd ul li {background: transparent url(imgs/dot.gif) no-repeat left center;padding-left: 10px;}
+
+.mod_ft{height: 30px;line-height: 30px;}
+.mod_bd_col{width: 50%;}
+.mod_bd .mod_bd_inner .mod_bd_inner_col_half{width: 50%;float: left;}
+.mod_bd_inner li{padding: 3px 0;}
+.table.T_table{margin-bottom: 0;}
+.T_table .progress{width: 100px;height: 16px;float: left;margin: 2px 5px 0 0; }
+.T_table .progress .bar{height: 16px;line-height: 16px;}
+.T_table.table thead th{vertical-align: middle;}
+.T_fb{font-weight: bold;}
+.T_loading{height: 60px;line-height: 60px;background: transparent url(imgs/loading.gif) center center no-repeat;}
+.mod_bd .T_loading{height: 100%;line-height: 100%;min-height: 100px;}
+.func_items{font-size:14px;}
+
+
+/* 信息流模块样式 */
+.mod.simple_mod{border: none;}
+.simple_mod .mod_hd{border: none;background-color: transparent;}
+.simple_mod .mod_hd .mod_hd_title{margin-left: 0;}
+.simple_mod .mod_hd .mod_hd_tabs{margin-right: 0;}
+.simple_mod .mod_hd_tabs li{border: none;}
+.simple_mod .mod_hd_tabs li a{border-bottom: 2px solid transparent;border-top: none;height: 26px;line-height: 26px;}
+.simple_mod .mod_hd_tabs li a:hover{border-bottom-color: #B3B3B3;}
+.simple_mod .mod_hd_tabs li.active a{border-bottom-color: #43C6f2;}
+
+.simple_mod .mod_bd{padding-left:0;padding-right: 0;}
+.simple_mod .mod_bd ul{margin-left: 0;}
+.simple_mod .mod_bd_inner_cover{float: left;}
+.simple_mod .mod_bd_inner_content{background-color: #dff7ff;margin-left: 183px;padding-left: 10px;}
+.simple_mod .mod_bd_inner_content h4{font-size: 14px;font-weight: bold;}
+.P_br{position: absolute;bottom: 0;right: 0;background: url(imgs/square_62.png) no-repeat 0 0;height: 62px; width: 62px;}
+.supervise_content{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}

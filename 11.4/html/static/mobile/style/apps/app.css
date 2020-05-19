@@ -1,0 +1,350 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-size: 14px;
+    /*position: relative;*/
+}
+.ui-icon, [class^=ui-icon-] {
+    font-size: 25px;
+    line-height: 50px;
+    margin-bottom: 5px;
+    color: #fff;
+    
+}
+.ui-icon-wrap{
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.ui-icon-sponsor{
+    background-color: #ff8e6b;
+}
+.ui-icon-todo,
+.ui-icon-monitor{
+    background-color: #f6bf26;
+}
+.ui-icon-finished{
+    background-color: #78c06e;
+}
+.ui-icon-searchwork{
+    background-color: #6bb5ce;
+}
+.ui-icon-manage{
+    background-color: #ff8e6b;
+}
+.ui-icon-transfer,
+.ui-icon-tmp_market{
+    background-color: #6ed7c3;
+}
+
+.ui-slider{
+    padding-top: 0px;
+}
+.ui-workflow-wrap .ui-slider .ui-slider-item{
+    height: auto;
+    padding-bottom: 35px;
+}
+.ui-slider-dots{
+    left: 50%;
+    right: auto;
+    margin-left: -20px;
+}
+.ui-slider-dots .ui-state-active {
+    background: #999;
+}
+.ui-slider-dots > b{
+    background: #c5c5c5;;
+}
+.ui-workflow-wrap{
+	background-color: #f8f8f8;
+	margin-bottom: 20px;
+}
+.ui-workflow-banner{
+	height:150px;
+	width: 100%;
+    display: none;
+}	
+.ui-workflow-nav{
+	background-color: #fff;
+	padding: 15px 0;
+}
+.ui-workflow-title{
+    font-size: 16px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #1fa3ff;
+}
+.ui-workflow-collect{
+	background-color: #fff;
+	position: relative;
+	margin-top: 20px;
+    padding-bottom: 5px;
+}
+.norecord{
+    margin-left: 5px;
+    color: #c7c7cc;
+}
+.ui-workflow-collect label{
+    margin: 0px 15px 10px 0;
+    font-size: 14px;
+}
+.ui-workflow-collect-more{
+	position: absolute;
+	right: 15px;
+	top: 10px;
+    display: none;
+}
+.ui-workflow-collect li{
+	display: inline-block;
+}
+.ui-workflow-avatar-wrap h4{
+	text-align: center;
+}
+.ui-workflow-avatar-wrap div{
+	margin: 0 auto;
+}
+.ui-workflow-list{
+	clear: both;
+	margin-top: 20px;
+	background-color: #fff;
+}
+.ui-list-link>li:after{
+	right: 20px;
+}
+.ui-list li h4 {
+	font-size: 14px;
+	margin-right: 22px;
+}
+.ui-list>li {
+	margin-left: 20px;
+	cursor:pointer;
+}
+.ui-workflow-scroller{
+    width: 91%;
+    height: 40px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.scroll-content{
+    white-space:nowrap;  
+}
+/*层级菜单*/
+.allflow-btn{
+    display: inline-block;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+.allflow-iconbtn{
+    color: #bbb;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+#masklayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #000;
+    display: none;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+.allflow-menu-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 520px;
+    z-index: 11;
+    background-color: #fff;
+    display: none;
+}
+.allflow-menu-header{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.allflow-menu-panel .ui-workflow-title{
+    margin-left: 0;
+}
+.allflow-menu-body{
+    /*background-color: #e00;*/
+}
+.allflow-menu-left{
+    float: left;
+    height: 100%;
+    overflow: auto;
+    font-size: 13px;
+    
+}
+.allflow-menu-panel .allflow-menu-left li.on{
+    background-color: #eee;
+    margin-left: 0;
+    padding-left: 15px;
+}
+.allflow-menu-left li:hover{
+    cursor: pointer;
+}
+/*.allflow-menu-left li{*/
+/*    background-color: #f00;*/
+/*    height: 30px;*/
+/*    line-height: 30px;*/
+/*}*/
+.allflow-menu-left h4{
+    height: 20px;
+    line-height: 20px;
+    /*background-color: #ff0;*/
+}
+.allflow-menu-left .ui-nowrap{
+    text-overflow: clip;
+}
+.allflow-menu-right{
+    height: 100%;
+    overflow: auto;
+    background-color: #eee;
+}
+#commonflow_main{
+    display: none;
+}
+.allflow-menu-right .ui-list{
+    background-color: #eee;
+}
+.allflow-menu-footer{
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    text-align: center;
+}
+.allflow-menu-panel .ui-list-link>li:after {
+    right: 10px;
+}
+.allflow-menu-left .ui-badge-num {
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    min-width: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #aaa;
+}
+.allflow-menu-right .ui-badge-num {
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    min-width: 15px;
+    background: #eee;
+    color: #aaa;
+}
+.iconlogo-img{
+    font-size: 80px;
+    color: #ddd;
+    text-align: center;
+}
+.allflow-menu-panel .ui-list-link .ui-list-info {
+    padding-right: 15px;
+}
+.allflow-menu-panel .ui-list>li {
+     margin-left: 0px;
+     padding-left: 15px;
+}
+.allflow-menu-panel .ui-list>li:hover{
+    background: #f9f9f7;
+}
+.allflow-menu-panel .ui-list li h4 {
+    font-size: 13px;
+    margin-right: 0; 
+}
+.iconflow-style{
+    color: #bbb;
+    font-size: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.allflow-menu-footer .ui-icon-panel-arrowup{
+    color: #bbb;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+
+/*首次向导 tianlin*/
+.intro{
+	display: none;
+}
+.intro.active{
+	display: block;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+.intro-layer{
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+    background-color: #333;
+	position: absolute;
+}
+.intro-panel{
+	width: 220px;
+	position: absolute;
+	top: 290px;
+    left: 110px;
+	border-radius: 16px;
+}
+.intro-arrow{
+	background: url('/static/images/intro-arrow.png');
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	opacity: .9;
+}
+.intro-content{
+	text-align: left;
+	margin-top: 35px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+}
+.intro-know {
+	position: absolute;
+	bottom: -55px;
+	right: 10px;
+	padding: 5px 15px;
+	border: 2px solid #f1f1f1;
+	border-radius: 4px;
+	color: #fff;
+    font-weight: bold;
+}
+.banner .ui-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 25%;
+}

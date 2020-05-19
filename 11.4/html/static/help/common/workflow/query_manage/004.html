@@ -1,0 +1,11 @@
+<h4 style="font-family:'微软雅黑'"><span>为什么工作流归档时提示参数无效？</span></h4>
+<hr>
+
+<h5><span>原因：</span></h5>
+<p style="font-size:1.1em;line-height:22px;margin-left:24px;">
+是由于myoa\webroot\inc\oa_config.php中修改了附件上传类型导致的。<br/>
+</p>
+<h5><span>解决方法:</span></h5>
+<p style="font-size: 0.9em;line-height:22px;margin-left:24px;">
+若$UPLOAD_LIMIT修改为2的话，$UPLOAD_LIMIT_TYPE中必须加上html后缀。 注：附件格式后缀加上后，后边必须要加上frm,myd,myi。
+</p>

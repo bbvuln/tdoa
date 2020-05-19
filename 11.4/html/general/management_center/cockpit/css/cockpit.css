@@ -1,0 +1,229 @@
+html, body {
+    height: 100%;
+    min-width: 1200px;
+    min-height:800px;
+    overflow: auto;
+    padding: 0;
+}
+body {
+    position: relative;
+    margin: 0;
+    background: #02335d;
+}
+#wrapper{
+    position: absolute;
+    height: 100%;
+    width: 1280px;
+    margin-left: -640px;
+    left: 50%;
+}
+.bg{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+}
+.highcharts-container {
+    margin: 40px auto;
+    border: 1px solid rgba(96, 186, 226, 0.4);
+    background: rgba(64, 103, 140, 0.34902);
+    box-shadow: 0 0 0 2px rgba(41, 71, 84, 0.38);
+    border-radius: 5px;
+}
+#canvas, .container, .container-left, .container-right{
+    position: absolute;
+    left: 50%;
+}
+#canvas {
+    opacity: 0.7;
+    top: 5px;
+    margin-left: -242px;
+}
+.container {
+    top: 5px;
+    margin-left: -242px;
+    z-index: 1;
+}
+.container-left {
+    width: 250px;
+    height: 200px;
+    margin-left: -568px;
+    top: 55px;
+}
+.container-right {
+    width: 250px;
+    height: 200px;
+    margin-left: 289px;
+    top: 55px;
+}
+.container-bottom{
+    position: absolute;
+    top: 420px;
+    height: 250px;
+    width: 530px;
+    left: 50%;
+    margin-left: -285px;
+}
+.menu-l-b{
+    position: absolute;
+    top: 386px;
+    left: 40px;
+    width: 330px;
+    z-index: 99;
+}
+.menu-r-b{
+    position: absolute;
+    top: 386px;
+    right: 40px;
+    width: 300px;
+    z-index: 99;
+}
+.menu-l-b .reportbtn{
+    color: #fff;
+    width: 65px;
+    height: 50px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+.menu-l-b .reportbtn span,.menu-r-b .reportbtn span{
+    width: 100%;
+    font-size: 10px;
+    margin-top: 33px;
+    height: 22px;
+    background: #000;
+    color: #fff;
+    line-height: 22px;
+    opacity: .5;
+}
+.menu-l-b .reportbtn:hover span,.menu-r-b .reportbtn:hover span{
+    opacity: 0.9;
+    color: #fff;
+    background: #333;
+}
+.menu-l-b .reportbtn11{
+    margin-left: 65px;
+}
+.menu-l-b .reportbtn12{
+    margin-left: 235px;
+    margin-top: 12px;
+}
+.menu-r-b .reportbtn{
+    color: #fff;
+    width: 65px;
+    height: 50px;
+    margin: 0;
+    margin-right: 80px;
+}
+.menu-r-b .reportbtn14{
+    margin-right: 0px;
+}
+.menu-r-b .reportbtn15{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.menu-r-b .reportbtn16{
+    margin-top: 12px;
+}
+.container-bottom .title{
+    height: 36px;
+    width: 300px;
+    left: 60px;
+    position: absolute;
+    top: 77px;
+    font-weight: bold;
+    font-style: italic;
+    overflow: hidden;
+}
+.i-know{
+    display: none;
+    right: 160px;
+    position: absolute;
+    display: block;
+    top: 120px;
+    color: #EC3D3D;
+    font-size: 13px;
+    z-index: 10;
+    cursor: pointer;
+}
+.i-know:hover{
+    color: #EE6161;
+}
+.tip{
+    display: none;
+}
+.tip.active{
+    display: block;
+}
+.level1{
+    color: #97cf54;
+}
+.level2{
+    color: #05a;
+}
+.level3{
+    color: #fdc006;
+}
+.level4{
+    color: #fe8562;
+}
+.container-bottom .robot{
+    display: none;
+    position: absolute;
+    top: -422px;
+    right: -231px;
+    width: 604px;
+    height: 587px;
+    background: url('../images/robot.png') no-repeat 0px 0px;
+    z-index: 9;
+}
+.chartwrapper{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.chartwrapper.active{
+    display: block;
+}
+.chartwrapper h5 {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.chartwrapper .highcharts-container{
+    margin-top: 10px;
+}
+.operation{
+    position: absolute;
+    bottom: 20px;
+    height: 55px;
+    width: 100%;
+    left: 0px;
+}
+.reportbtn {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-left: 15px;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #05a;
+}
+.reportbtn span{
+    text-align: center;
+    display: block;
+    width: 38px;
+    height: 32px;
+    overflow: hidden;
+    font-weight: bold;
+}
+.reportbtn:hover span{
+    color: #424242;
+}
+.reportbtn1{margin-left: 24px;}
+.reportbtn2,.reportbtn6,.reportbtn7,.reportbtn8{color: #009C64;}
+.reportbtn3{color:#9C1010;}
+.reportbtn6{margin-left: 52px;}
+.reportbtn8{margin-left: 10px;}

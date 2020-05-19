@@ -1,0 +1,98 @@
+*{padding:0px;margin:0px;}
+body{
+   background:#fff ;
+	/* url('images/bg_pda.png') center top no-repeat; */
+   font-size:14px;
+   color:#383838;
+}
+#logo{
+	background: #2E4B89 url('/static/theme/10/logo_pad.png') center 10px no-repeat;
+	-webkit-transition: background-position 0.5s ease-in-out;
+}
+#form{
+	position: relative;
+	margin: 0px auto;
+	top: 320px;
+	padding-top:0px;
+	width: 100%;
+	background: white  url('images/form_pad.png') center top no-repeat;
+	height: 400px;
+}
+@media (max-width: 768px) {
+	#logo{
+		background: #2E4B89 url('/static/theme/10/logo_pda.png') center 30px no-repeat;
+	}
+	#form{
+		top: 	400px;
+		width: 768px;
+	}
+} 
+#cloud{
+	background: url('images/cloud_pad.png') center top no-repeat;
+	position:absolute;
+	top: -80px;
+	height: 80px;
+	left:0;
+	width:100%;
+}
+#form_input{
+	padding-left: 365px;
+	height: 150px;
+	padding-top: 60px;
+}
+
+#form_input>div{
+	height: 55px;
+	position: absolute;
+	left: 50%; 
+	margin-left: -60px;
+
+}
+#form_input .user{
+	top:125px;
+}
+#form_input .pwd{
+	top:185px;
+}
+
+#form_submit{
+   margin:0px auto;
+   margin-bottom:20px;
+	top:280px;
+	left:50%;
+	position:absolute;
+	margin-left:-214px;
+   width:425px;
+   height:60px;
+}
+#msg{
+	margin: 0px auto;
+	line-height: 30px;
+	text-align: center;
+	color: #D83B3B;
+	position: absolute;
+	left: 50%;
+	margin-left: -112px;
+	top: 30px;
+}
+input.text{
+	border: 0px #CCC solid;
+	padding: 0px 5px;
+	width: 228px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 24px;
+	background: transparent;
+	outline: none;
+	color: #727272;
+}
+input.submit{
+	width: 425px;
+	height: 60px;
+	background: url("images/submit_pad.png") center top no-repeat;
+	background-size: 425px 60px;
+	-o-background-size: 425px 60px;
+	-webkit-background-size: 425px 60px;
+	border: 0px;
+	cursor: pointer;
+}

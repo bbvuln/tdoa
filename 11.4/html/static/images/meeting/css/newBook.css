@@ -1,0 +1,355 @@
+html,body {
+	height: 100%;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.meeting {
+  /* width: 80px; */
+  height: 70px;
+  /* border-top:2px solid #fff;
+  border-bottom:2px solid #fff; */
+  color: #fff;
+  background: #2cabe3;
+  font-family: "Î¢ÈíÑÅºÚ";
+  font-size: 12px;
+  border-radius:6px;
+}
+
+.meeting p {
+	overflow: hidden;
+  font-family: "Î¢ÈíÑÅºÚ";
+	padding: 0 5px;
+	margin: 0;
+	line-height: 24px;
+	/* padding-left: 5px; */
+}
+.active p{
+	color:#2cabe3!important;
+}
+.container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.odd {
+	background: url(../images/book/book_odd.jpg) repeat-x left top;
+}
+
+.even {
+	background: url(../images/book/book_even.jpg) repeat-x left top;
+}
+
+.axis-y-date .odd {
+	/* background: url(../images/book/book_date_even.jpg) repeat-x left top; */
+	background:#c5ebfc;
+}
+
+.axis-y-date .even {
+	/* background: url(../images/book/book_date_even.jpg) repeat-x left top; */
+	background:#c5ebfc;
+}
+
+.meeting.active {
+	cursor: pointer;
+	/* background: url(../images/book/meeting_active_c.jpg) repeat-x left top; */
+	background:#edf3ff;
+}
+
+.meeting.active .ui-resizable-w {
+	background: url(../images/book/meeting_active_w_new.png) no-repeat left top;
+}
+
+.meeting.active .ui-resizable-e {
+	background: url(../images/book/meeting_active_e_new.png) no-repeat left top;
+	right:-1px;
+}
+
+.meeting {
+	/* background: url(../images/book/meeting_bg.jpg) repeat-x left top; */
+	/* border-right: 1px solid #91d1ae; */
+}
+
+.meeting.status0 {
+	/* background: url(../images/book/meeting_bg0.jpg) repeat-x left top; */
+}
+
+.meeting.status1 {
+	/* background: url(../images/book/meeting_bg1.jpg) repeat-x left top; */
+}
+
+.meeting.status2 {
+	/* background: url(../images/book/meeting_bg2.jpg) repeat-x left top; */
+}
+
+.meeting.status3 {
+	/* background: url(../images/book/meeting_bg3.jpg) repeat-x left top; */
+}
+.meeting.status6 {
+	background: url(../images/book/booker_status_0.png) repeat-x left top;
+}
+
+.meeting.past {
+	background: url(../images/book/meeting_past.jpg) repeat-x left top;
+}
+
+.meeting.now {
+	background: url(../images/book/meeting_now.jpg) repeat-x left top;
+}
+
+.axis-x {
+	height: 29px;
+	width: 1081px;
+	float: left;
+	margin-top: 3px;
+}
+.axis-x div {
+   background: url("../images/book/axis_x.jpg") repeat-x scroll left top transparent;
+   color: white;
+   float: left;
+   height: 29px;
+   line-height: 14px;
+   text-align: center;
+   width: 60px;
+   font-family: Î¢ÈíÑÅºÚ;
+   font-size: 12px;
+}
+
+.axis-x div.first {
+	/* background: url(../images/book/axis_x_first.jpg) repeat-x left top; */
+}
+
+.axis-x div.last {
+	width: 61px;
+	/* background: url(../images/book/axis_x_last.jpg) repeat-x left top; */
+}
+
+.top-l {
+	margin-top: 4px;
+	width: 100%;
+	padding-left: 4px;
+	background: url(../images/book/top_left.jpg) no-repeat left top;
+}
+
+.top-r {
+	padding-right: 3px;
+	background: url(../images/book/top_right.jpg) no-repeat right top;
+	width: 900px;
+}
+
+.top-c {
+	height: 80px;
+	background-color: #97a9b3;
+	padding: 10px 10px;
+	color: white;
+
+}
+
+.top-c p {
+	padding: 10px 20px;
+}
+
+.legend {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.legend b {
+	float: left;
+}
+.legend img {
+	padding-right: 5px;
+  vertical-align: middle;
+}
+.legend label {
+	float: left;
+	width: 80px;
+	padding-left: 10px;
+}
+.text-left {
+	display: inline-block;
+	padding-left: 3px;
+	background: url(../images/book/text-l.jpg) no-repeat left top;
+}
+
+.text-right {
+	height: 28px;
+	display: inline-block;
+	background: url(../images/book/text-r.jpg) no-repeat right top;
+	padding-right: 10px;
+	padding-top: 2px;
+}
+
+.text-right input {
+	margin-top: 4px;
+	background-color: transparent;
+	border: none;
+	color: #555555;
+}
+
+.top-query-btn {
+  background-color: transparent;
+  border: none;
+	width: 74px;
+	height: 28px;
+	background: url(../images/book/query.jpg) no-repeat right top;
+}
+
+.table-name {
+  margin-left: 0px;
+  width: 1400px;
+}
+
+.axis-y-name {
+	height: 350px;
+	text-align: center;
+	width: 170px;
+	border-top: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+}
+
+.axis-y-date {
+	text-align: left;
+	width: 152px;
+	/* padding: 0px 10px; */
+	background:#c5ebfc;
+}
+
+.axis-y-date .item {
+  height: 50px;
+  line-height: 50px;
+}
+
+.axis-y-name span {
+	position: relative;
+	top: 45%;
+}
+
+.pselect
+{
+	position: relative;
+	background-color: transparent;
+	width:180px;
+	height: 29px;
+	overflow: hidden;
+	border-width:0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	background-image: url(../images/room/selecticon.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.selectlist
+{
+	position: relative;
+	background-color: transparent;
+	TOP:-2px;
+	left:-2px;
+	border-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	width:200px;
+	display:block;
+	height: 29px;
+	line-height: 29px;
+	overflow:hidden;
+  font-family: "Î¢ÈíÑÅºÚ";
+  font-size: 14px;
+}
+.chrome-row-up {
+	padding-bottom:15px;
+	height: 25px;
+}
+.chrome-row-l {	
+	float:left;
+	width:300px;
+}
+.chrome-row-r {
+	float:left;
+	width:490px;
+}
+.chrome-h2 {
+	float: left;
+	width: 80px;
+	height: 22px;
+	padding-top: 7px;
+}
+.chrome-button {
+	float:left;
+	width:80px;
+}
+
+.meeting-sp {
+  width: 2883px;
+  height: 5px;
+  background-color: #828f97;
+}
+
+.drag-helper {
+  z-index: 100;
+  position: absolute;
+  background-color: gray;
+  display: none;
+  opacity: 0.3;
+  filter:Alpha(opacity=30);
+}
+
+.meeting table {
+  width: 100%;
+}
+
+.meeting .date {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
+
+
+.meeting .time {
+  color: red;
+  text-align: center;
+}
+
+.meeting .start-time, .meeting .end-time {
+  display: none;
+}
+
+.meeting.active .content, .meeting.active .time-info{
+  text-align: center;
+}
+.meeting.active{
+	height:70px;
+}
+.meeting.active.long .start-time, .meeting.active.long .end-time {
+  width: 72px;
+  display: table-cell;
+  /* background: url(../images/book/meeting_time.jpg) repeat-x right top; */
+}
+
+.status-0 {
+	background: url(../images/book/booker_status_0.png) repeat-x left top;
+}
+.contentwrapper{
+	float:left;
+	position:relative;
+	padding-left:152px;
+}
+.contentwrapper .content_left{
+	width:152px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.more_img{
+	padding:0px 8px;
+}
+.more_title{
+	font-size:8px;
+}

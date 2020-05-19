@@ -1,0 +1,95 @@
+.importwebmail{
+    margin: 10px;
+	width: 700px;
+    margin: 0 auto;
+}
+.importwebmail .header{
+    margin-bottom:15px;
+}
+.importwebmail .pagination{
+    width: 400px;
+    margin: 0px 3px;
+    text-align: right;
+}
+.importwebmail .content{
+    clear:both;
+    width:1115px;
+}
+.importwebmail .content,
+.selectfile{
+    background: #fff;
+    padding: 6px 0px;
+    text-align:center;
+}
+.selectfile label{
+    text-align: center;
+    display:inline-block;
+}
+.selectfile .excel_file{
+    width:40px; 
+    position:absolute; 
+    top:0px; 
+    right:0px; 
+    height:30px; 
+    filter:alpha(opacity:0);
+    opacity: 0;
+    cursor:pointer;
+}
+.selectfile label .input-append{
+    position:relative;
+}
+.selectfile label,
+.selectfile label .input-append,
+#webmail{
+    margin-bottom: 0px;
+}
+#webmail{
+	width: 1115px;
+	table-layout:fixed;
+}
+#webmail thead tr th,
+#webmail tbody tr td{
+    text-align: center;
+}
+#webmail tr th,
+#webmail tr td{
+	padding: 6px 0px;
+}
+.editarea a{
+	display:inline-block;
+	text-decoration:none;
+	margin-right:3px;
+}
+.pagination,
+.set-pagenum{
+    float:right;
+    margin: 0px 3px;
+}
+.set-pagenum{
+    margin-bottom:10px;
+}
+.set-pagenum-input{
+    width:50px;
+    margin-left:6px;
+    margin-right:6px;
+}
+.footer{
+    border-top: 1px solid #DDD;
+    height: 28px;
+    line-height: 28px;
+    text-align:left;
+}
+.footer label{
+    display: inline-block;
+    margin-top: 7px;
+}
+.footer label input,
+.footer label i{
+    margin-right: 3px;
+}
+.footer label.checkall{
+	margin-left: 25px;
+}
+.footer label.delete{
+    color: #D85A70;
+}

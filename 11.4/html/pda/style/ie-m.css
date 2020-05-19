@@ -1,0 +1,36 @@
+@media screen and (min-width:0\0) {
+
+/**
+for IE mobile
+*/
+html{-ms-touch-action:none;}
+body{color:#777777;background-color:#FFFFFF;overflow: hidden; }
+.wrapper{background-color:#FAFAFA;}
+#header{background-image:none;box-shadow:none;}
+#m_nav{position:absolute; z-index:2;left:50%;margin-left:-10px;width:40px;height:18px;padding:0;text-align:center;display:none;}
+#m_scroller li .app_table td i{top:-10px;right:-10px;box-shadow:none;border:none;background-color:black;}
+#m_nav #pagebar{display:none;height:18px;margin:0px auto;padding:0;}
+#m_nav #pagebar li {display:block;float:left;list-style:none;padding:0; margin:0;text-indent:-9999em;width:18px; height:18px;-webkit-border-radius:9px;-moz-border-radius:9px;-o-border-radius:9px;border-radius:9px;background:#ddd;overflow:hidden;margin-right:4px;cursor:pointer;}
+#m_scroller li .app_table {border-collapse:collapse;width:101%;height:90%;}
+#m_scroller li .app_table td{height:100px;border:1px solid #EEEEEE;}
+#m_scroller li .app_table td .app{display:block;width:60px;height:60px;background-image:url("/pda/style/images/pda_icons_IE.png");background-repeat:none;margin:0px auto;border-radius: 0 0 0 0;background-size:240px 240px;-o-background-size:240px 240px;-webkit-background-size:240px 240px;}
+#m_scroller li .app_sms{background-position:0px 0px;}
+#m_scroller li .app_email{background-position:-60px 0px;}
+#m_scroller li .app_notify{background-position:-120px 0px;}
+#m_scroller li .app_news{background-position:-180px 0px;}
+#m_scroller li .app_calendar{background-position:0px -60px;}
+#m_scroller li .app_diary{background-position:-60px -60px;}
+#m_scroller li .app_folder{background-position:-120px -60px;}
+#m_scroller li .app_workflow{background-position:-180px -60px;}
+#m_scroller li .app_query{background-position:0px -120px;}
+#m_scroller li .app_address{background-position:-60px -120px;}
+#m_scroller li .app_zipcode{background-position:-120px -120px;}
+#m_scroller li .app_weather{background-position:-180px -120px;}
+/*#m_scroller li .app_message{background-position:0px -180px;}*/
+#m_scroller li .app_settings{background-position:-60px -180px;}
+#m_scroller li .app_reportshop{display:block;width:60px;height:60px;background-image:url("/static/theme/13/images/app_icons/reportshop.jpg");background-repeat:none;margin:0px auto;border-radius: 0.5em 0.5em 0.5em 0.5em;background-size:60px 60px;}
+#m_scroller li .app_management{display:block;width:60px;height:60px;background-image:url("/static/theme/13/images/app_icons/reportshop.jpg");background-repeat:none;margin:0px auto;border-radius: 0.5em 0.5em 0.5em 0.5em;background-size:60px 60px;}
+.scroller .comm-list{color:black;-ms-user-select: none;}
+.scroller .comm-list li.iScrollHover h3, .scroller .comm-list li.iScrollHover p{color:black;-ms-user-select: none;}
+
+}

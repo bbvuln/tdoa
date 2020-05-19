@@ -1,0 +1,128 @@
+
+div.CalAllDay{background:#D6E4EF;border:1px #E4ECF3 solid;position:relative;margin: 1px 0px;padding:0px 3px;}
+
+a.CalLevel1:link, a.CalLevel1:hover, a.CalLevel1:active, a.CalLevel1:visited, span.CalLevel1 {
+   display:inline-block;
+   color:#FF0000;
+   padding-left:16px;
+   background:url("/images/flag.gif") no-repeat;
+   background-position:0px 0px;
+}
+a.CalLevel2:link, a.CalLevel2:hover, a.CalLevel2:active, a.CalLevel2:visited, span.CalLevel2 {
+   display:inline-block;
+   color:#FF9933;
+   padding-left:16px;
+   background:url("/images/flag.gif") no-repeat;
+   background-position:0px -40px;
+}
+a.CalLevel3:link, a.CalLevel3:hover, a.CalLevel3:active, a.CalLevel3:visited, span.CalLevel3 {
+   display:inline-block;
+   color:#00AA00;
+   padding-left:16px;
+   background:url("/images/flag.gif") no-repeat;
+   background-position:0px -20px;
+}
+a.CalLevel4:link, a.CalLevel4:hover, a.CalLevel4:active, a.CalLevel4:visited, span.CalLevel4 {
+   display:inline-block;
+   color:#6F7274;
+   padding-left:16px;
+   background:url("/images/flag.gif") no-repeat;
+   background-position:0px -160px;
+}
+
+span.CalLevel1 {
+   line-height:16px;
+   background-position:0px -4px;
+}
+span.CalLevel2 {
+   line-height:16px;
+   background-position:0px -44px;
+}
+span.CalLevel3 {
+   line-height:16px;
+   background-position:0px -24px;
+}
+span.CalLevel4 {
+   line-height:16px;
+   background-position:0px -164px;
+}
+a.CalColor:link, a.CalColor:hover, a.CalColor:active, a.CalColor:visited, span.CalColor {
+   display:inline-block;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px -150px;
+}
+a.CalColor1:link, a.CalColor1:hover, a.CalColor1:active, a.CalColor1:visited, span.CalColor1 {
+   display:inline-block;
+   color:#FF0000;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px 0px;
+}
+a.CalColor2:link, a.CalColor2:hover, a.CalColor2:active, a.CalColor2:visited, span.CalColor2 {
+   display:inline-block;
+   color:#9A9519;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px -25px;
+}
+a.CalColor3:link, a.CalColor3:hover, a.CalColor3:active, a.CalColor3:visited, span.CalColor3 {
+   display:inline-block;
+   color:#00AA00;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px -50px;
+}
+a.CalColor4:link, a.CalColor4:hover, a.CalColor4:active, a.CalColor4:visited, span.CalColor4 {
+   display:inline-block;
+   color:#FF9933;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px -75px;
+}
+
+a.CalColor5:link, a.CalColor5:hover, a.CalColor5:active, a.CalColor5:visited, span.CalColor5 {
+   display:inline-block;
+   color:#0e86fe;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px -100px;
+}
+
+a.CalColor6:link, a.CalColor6:hover, a.CalColor6:active, a.CalColor6:visited, span.CalColor6 {
+   display:inline-block;
+   color:#4D318D;
+   padding-left:25px;
+   background:url("/images/color_flag.png") no-repeat;
+   background-position:0px -125px;
+}
+
+span.CalColor {
+   line-height:16px;
+   background-position:0px -152px;
+}
+span.CalColor1 {
+   line-height:16px;
+   background-position:0px -2px;
+}
+span.CalColor2 {
+   line-height:16px;
+   background-position:0px -27px;
+}
+span.CalColor3 {
+   line-height:16px;
+   background-position:0px -53px;
+}
+span.CalColor4 {
+   line-height:16px;
+   background-position:0px -77px;
+}
+span.CalColor5 {
+   line-height:16px;
+   background-position:0px -102px;
+}
+span.CalColor6 {
+   line-height:16px;
+   background-position:0px -127px;
+}
+

@@ -1,0 +1,11 @@
+<h4 style="font-family:'微软雅黑'"><span>为什么手机短信在停止服务器和重插短信猫后还会不停的自动发送？</span></h4>
+<hr>
+
+<h5><span>原因：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;margin-left:24px;">
+这种现象是手机短信的发送状态无法回写到数据库。
+</p>
+<h5><span>解决方法:</span></h5>
+<p style="font-size: 1.1em;line-height:22px;margin-left:24px;">
+首先在系统管理-信息交流设置-手机短信设置-短信发送管理中找到这条短信，看看他的状态是否是未发送，如果显示未发送删掉这条短信。如果显示已发送，重启数据库服务，或者重启服务器。
+</p>

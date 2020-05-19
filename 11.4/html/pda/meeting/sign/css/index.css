@@ -1,0 +1,88 @@
+html{
+    height:100%;
+    overflow: hidden;
+}
+body{
+    position: relative;
+    height:100%;
+}
+#sign_head{
+    margin-top:60px;
+    margin-bottom:82px;
+    width:100%;
+    height:150px;
+    /* background:red; */
+}
+#head_img{
+    /* width:120px;
+    height:105px; */
+    width:114px;
+    height:82px;
+    display: block;
+    margin:0 auto 20px;
+}
+#meeting_name{
+    width:240px;
+    height:auto;
+    text-align: center;
+    margin:0 auto;
+    /* background:green; */
+    /* overflow: auto; */
+    word-wrap:break-word;
+    word-break:break-all;
+    color:#333;
+}
+#login_content{
+    width:100%;
+    height:120px;
+    /* background:red; */
+}
+#user_name,#user_password{
+    width:250px;
+    height:40px;
+    border-bottom:1px solid #b6daff;
+    margin:0 auto;
+}
+.input-wrap input{
+    border: none;
+    width: 188px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    margin-left:16px;
+}
+#user_password{
+    margin-top:28px;
+}
+#sign_box{
+    width:100%;
+    height:70px;
+    /* background:red; */
+    margin-top:40px;
+}
+#sign_btn{
+    width:146px;
+    height:30px;
+    display: block;
+    margin:0 auto;
+}
+#user_name i img,#user_password i img{
+    width: 20px;
+    position: relative;
+    top: 4px;
+}
+#sign_foot{
+    position: absolute;
+    bottom:62px;
+    width:100%;
+    height:70px;
+}
+#foot_img{
+    width:100%;
+    height:100%;
+}
+.input-wrap:hover {
+    border-bottom: 1px solid #0e86fe!important;
+}

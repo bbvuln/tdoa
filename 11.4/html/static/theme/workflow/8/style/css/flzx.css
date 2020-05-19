@@ -1,0 +1,103 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+html{height:100%;}
+ul, ol {list-style:none;}
+.clear{ clear:both; overflow:hidden;}
+.fr{float:right;}
+.tac{text-align:center;}
+body {
+	text-transform:capitalize;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: #fcfcfc;
+}
+.container{
+	width: 100%;
+	background-color: #fcfcfc;
+	overflow:hidden;
+}	
+.form_body_1 {
+	width: 686px;
+	margin:0 auto;
+	background-color: #ffffff;
+	border:1px #c2c0c0 solid;
+	overflow:hidden;
+}
+.cent_er{
+	width:100%;
+	overflow:hidden;
+	margin-left:30px;
+}
+
+.head_er{
+    font-family: "微软雅黑", "宋体";
+	font-size: 34px;
+	color: #999999;
+	line-height:80px;
+	width:630px;
+	border-bottom:1px #cccccc solid;
+	overflow:hidden;
+	text-align: center;
+	margin:0 auto;
+}
+.line{
+	background-color:#ffffff;
+	border-bottom:1px #cccccc solid;
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+
+.form_row {
+	width:100%;
+	overflow:hidden;
+}
+.text_li {
+	line-height: 30px;
+	text-align:left;
+	float:left;
+}
+.text_gray {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #414141;
+	display: block;
+	margin-top:8px;
+	padding-left:2px;
+	line-height:30px;
+}
+.input_text{ float:left;}
+.input_text input{ padding-top:10px; line-height:12px;}
+.text_stlye{ float:left; border:0px; padding-top:0px;font-family: "宋体"; font-size:12px;height:30px; background:url(../images/form.jpg) left 0px;width: 140px;padding-left:4px;}
+#text_stlye{margin-top:5px;}
+.text_stlye2{ float:left; border:0px; padding-top:0px;font-family: "宋体"; font-size:12px;height:30px;background:url(../images/form.jpg) right -30px;width: 140px;}
+.text_stlye input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#656565;}
+.text_stlye1{ float:left; border:0px; width: 180px; padding-left:4px; height:30px; background:url(../images/form.jpg) left 0px; font-family: "宋体"; font-size:12px; }
+.text_stlye11{background:url(../images/form.jpg) right -30px;width: 180px; height:30px; float:left; border:0px;}
+.text_stlye1 input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#999999;}
+.text_stlye_z{
+	float:left; border:0px; width: 620px; padding-left:4px; height:30px; background:url(../images/form.jpg) left 0px; font-family: "宋体"; font-size:12px; 
+}
+.text_stlye_z1{
+	background:url(../images/form.jpg) right -30px;width: 620px; height:30px; float:left; border:0px;
+}
+.text_stlye_z input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#999999;}
+.form_textarea{ background-color:#ffffff; width:100%; min-height:85px; float:left; background-repeat:repeat-x; background-position:left bottom; margin-top:12px;}
+.textarea_gray{
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color:#414141;
+	display: block;
+	line-height:30px;
+}
+.textarea_6{ width:630px; background-color:#f7f7f9; border:1px #cccccc solid;}
+.textarea_top{ width:100%; height:6px;float:left;  position:relative;}
+.textarea_bottom{ width:100%; height:4px;float:left; position:relative;}
+.textarea_61{ width:4px; height:4px; float:left; background-image:url(../images/textarea-1.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;left:-1px; top:-1px;z-index:1111111;}
+.textarea_62{ width:4px; height:4px; float:right; background-image:url(../images/textarea-2.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;right:-1px; top:-1px;z-index:1111111;}
+.textarea_63{ width:4px; height:4px; float:left; background-image:url(../images/textarea-3.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;left:-1px; bottom:-1px;z-index:1111111;}
+.textarea_64{ width:4px; height:4px; float:right; background-image:url(../images/textarea-4.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;right:-1px; bottom:-1px;z-index:1111111;}
+.textarea_stlye{ border:0px; overflow:auto; background:none; font-size:12px; float:left;font-family: "宋体";color:#656565;}
+.textarea_a{border:0px; overflow:auto; background:none; font-size:12px; float:left; min-height:70px; line-height:20px; padding:0px 10px;}

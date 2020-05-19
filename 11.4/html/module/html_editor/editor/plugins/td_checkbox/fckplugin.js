@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'td_checkbox', new FCKDialogCommand( 'td_checkbox', "复选框属性", FCKPlugins.Items['td_checkbox'].Path + 'td_checkbox.php', 380, 210 ) ) ;

@@ -12,7 +12,7 @@ services:
     image: redis:latest
     command: redis-server --requirepass 123456
   web:
-    image: tdoa:11.6
+    image: bbvuln/tdoa:11.6
     volumes:
       - ./php.ini:/usr/local/etc/php/php.ini
       - ./oa_config.php:/var/www/html/inc/oa_config.php

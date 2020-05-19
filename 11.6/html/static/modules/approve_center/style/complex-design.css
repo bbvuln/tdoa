@@ -1,0 +1,202 @@
+#draggable {
+    height: 33px;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.complexCtrlContentsWrapper  .label-info{
+    background-color: #fff;
+    color: #7d7d7d;
+    font-weight: normal;
+    border-radius: 0px;
+}
+.complexCtrlContentsWrapper .ui-complexCtrlContents-left{
+    float: left;
+    width: 71.5%;
+    border: 1px solid #ccc;
+    min-height: 300px;
+}
+.complexCtrlContentsWrapper .ui-complexCtrlContents-right{
+    float: left;
+    width: 28%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-height: 533px;
+    overflow: auto;
+
+}
+.ui-complexCtrlContents-right .wrapper {
+    position: relative;
+}
+
+.ui-complexCtrlContents-right  .u-input-tag-label{
+    width: 85%;
+}
+.ui-complexCtrlContents-right  .ui-sort-type{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ui-complexCtrlContents-right  .ui-sort-type input[type="radio"], input[type="checkbox"]{
+    margin: 0;
+}
+.ui-complexCtrlContents-right  .radio input[type="radio"], .checkbox input[type="checkbox"]{
+    float: initial;
+    margin-left: 0px;
+}
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.u-label-save-btn{
+    width: 85%;
+    margin: 65% 2% 2% 2%;
+}
+.complexCtrlContentsWrapper #complexPopoverTitle{
+    color: #1989e8;
+}
+.ui-left-top-title{
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+.complexCtrlContentsWrapper .ui-complexCtrlContents-left .row-wrapper{
+    position: relative;
+    margin: 0 25px 0 5px;
+}
+.complexCtrlContentsWrapper .ui-complexCtrlContents-right .wrapper {
+    text-align: center;
+}
+
+.complexCtrlContentsWrapper .ui-complexCtrlContents-right .wrapper .u-wrapper-title {
+    margin:5px auto;
+}
+.ui-left-top-wrapper{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.ui-left-center-wrapper{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 48px;
+}
+.ui-left-center-wrapper p {
+    margin: 0 0 0px;
+    margin-left: 5px;
+}
+.ui-left-center-title{
+    height: 46px;
+    float: left;
+    line-height: 46px;
+    display: inline-block;
+}
+.complexCtrlContentsWrapper input.cke_dialog_ui_input_text, input.cke_dialog_ui_input_password, textarea.cke_dialog_ui_input_textarea{
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    width: inherit;
+}
+.u-single-row-box{
+    width: 100%;
+    margin: 2px 0px;
+    background: #e6e6e6;
+    padding: 3px 3px;
+}
+.u-single-col-box{
+    border: 1px dotted #ccc;
+    height: 30px;
+}
+.field{
+    width:100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ccc;
+}
+.u-tag-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.u-tag-del{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background: #C7C7C7;
+    width: 18px;
+    text-align: center;
+    height: 18px;
+    line-height: 21px !important;
+    border-radius: 10px;
+    font-size: 17px !important;
+    color: #fff;
+    z-index: 99;
+	cursor: pointer;
+}
+.row-del-show-flag{
+    display: none;
+}
+.u-row-del{
+    position: absolute;
+    right: -22px;
+    top: 8px;
+    background: red;
+    width: 15px;
+    text-align: center;
+    height: 15px;
+    line-height: 15px !important;
+    border-radius: 10px;
+    font-size: 12px !important;
+    color: #fff;
+    z-index: 99;
+	cursor: pointer;
+}
+.u-label-tag{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    padding: 0;
+}
+.u-tag-select-activ{
+    border: 1px dashed #1989e8;
+}
+.ui-state-hover{
+    background-color:#ddd;
+}
+.ui-state-active{
+    border: 2px dashed #28FF28;
+}
+.ui-field-tag{
+    float: left;
+    margin-left: 5px; 
+    cursor: move;
+}
+#inputColsContentPanel{
+    height: 440px;
+    overflow: auto;
+}
+.ui-right-title-wrapper{
+    text-align: center;
+}
+.ui-right-content-wrapper{
+    margin: 5px 15px 5px 15px;
+}
+.complexCtrlContentsWrapper  .ui-right-content-wrapper input.cke_dialog_ui_input_text, input.cke_dialog_ui_input_password, textarea.cke_dialog_ui_input_textarea{
+    width: 240px;
+}
+
+.ui-complexCtrlContents-right .ui-right-top-wrapper{
+
+}
+.ui-complexCtrlContents-right .ui-right-bottom-wrapper{
+
+}

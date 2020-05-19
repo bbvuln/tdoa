@@ -1,0 +1,25 @@
+body {background: #E2E5E6; margin: 0px; padding: 0px;}
+#Treeview{padding:0 0 0 5;}
+
+img
+{
+   cursor:pointer;
+}
+
+a.MzTreeNode
+{
+   color:#393939;
+   margin-left:0px;
+   padding:3 0 0 3px;
+   height:20px;
+   line-height:20px;
+   text-decoration:none;
+}
+
+a.MzTreeNode:hover{
+   color:#2f7fd8;
+}
+
+.MzTreeLeaf{
+   
+}

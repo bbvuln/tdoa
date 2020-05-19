@@ -1,0 +1,15 @@
+<h4 style="font-family:'微软雅黑'"><span>办公用品管理员离职了，更改办公用品管理员怎么处理？</span></h4>
+<hr>
+
+<h5><span>解决方法:</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+&lt;?$ADD_USER_ID = "新管理员用户名";<br/>
+$query="SELECT PRO_ID,PRO_AUDITER from OFFICE_PRODUCTS";<br/>
+$cursor= exequery($connection,$query);<br/>
+while($ROW=mysql_fetch_array($cursor)){$PRO_ID=$ROW["PRO_ID"];<br/>
+$PRO_AUDITER=$ROW["PRO_AUDITER"];<br/>
+$PRO_AUDITER=$PRO_AUDITER.$ADD_USER_ID.",";<br/>
+$query2="update OFFICE_PRODUCTS set PRO_AUDITER='$PRO_AUDITER' where PRO_ID='$PRO_ID'";<br/>
+exequery($connection,$query2);}?&gt;<br/>
+将以上脚本中的 新管理员用户名， 用户需要设置的用户的用户名替换，多个用户用逗号分隔。然后存为1.php文件中，然后放到MYOA/webroot/update目录下，重新登录oa系统，点升级即可。
+</p>

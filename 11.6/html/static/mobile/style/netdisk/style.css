@@ -1,0 +1,87 @@
+*{
+    font-family: 'microsoft yahei';
+}
+.right_box p{
+    width: 100%;
+}
+.right_box span{
+    color:#666;
+    font-size: 12px;
+    float: left;
+}
+.float_l{
+    float: left;
+}
+.net_i{
+	width: 31px;
+    height: 31px;
+    padding: 8px 0px 10px 0px;
+}
+.ui-list-op-delete {
+    position: absolute;
+    right: -80px;
+    top: 0px;
+}
+.ui-list-op-delete button{
+    height:60px;
+    border-radius:0;
+    border:none;
+    width:80px;
+    font-size:1.2em;
+    margin:0;
+}
+.line_span{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 19px;
+  width: 260px;
+}
+.line_func{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+    width: 260px;
+}
+.file_size{
+    margin-left: 10px;
+}
+.pda_attach {
+  padding: 0;
+  color: black;
+}
+#netWork_list_ul li.person-list-item{
+    height:60px;
+}
+#netWork_list_ul .ui-list-info{
+    margin-top: 8px;
+}
+.icon-wrapper{
+    float: left;
+    margin:6px 6px 0 0 ;
+}
+.netdisk-item-opt{
+    width: 100%;
+}
+.full_screen{
+    width: 100%;
+}
+.netdisk-item-opt i{
+    display: inline;
+    float: left;
+    font-size: 43px;
+}
+.netdisk-item-opt a{
+    border: none;
+    margin-top: 8px;
+	background: #fff;
+}
+#folder_name{
+    padding-left: 100px;
+}
+.ui-icon-imge,.ui-icon-word,.ui-icon-xls,.ui-icon-ppt,.ui-icon-apk,.ui-icon-video,.ui-icon-audio{
+    margin-top: 3px;
+}

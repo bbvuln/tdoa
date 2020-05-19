@@ -1,0 +1,55 @@
+html,body{
+	height:100%;
+	width:100%;
+	overflow:hidden;	
+}
+
+.tab-pane{
+	width:100%;
+	height:auto;
+	margin-bottom:80px;
+}
+.search_area{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+.search_normal{
+	
+}
+.search_adv{
+	
+}
+.data_list{
+	width:800px;
+	margin-top:50px;
+}
+
+.form-search-senior{
+	display: none;
+}
+.input-append-senior{
+	
+}
+
+.senior_flow_id{
+	width:475px;
+	float:left;
+}
+
+.senior_time_out_flag{
+	width:150px;
+
+	float:left;
+}
+
+.senior_user_str{
+	width:230px;
+	float:left;
+}
+
+.senior_search{
+	width:330px;
+	float:right;
+}

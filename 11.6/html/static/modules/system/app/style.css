@@ -1,0 +1,75 @@
+@font-face {font-family: 'appiconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"appiconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+}
+
+.container{margin-top: 20px;}
+.T_bggray{background-color: #F6F6F6;}
+.inner-frame{height: 100%;width: 100%;}
+.mobile-area{width: 50%;height: 620px;float: left;}
+.mobile-area-wrapper{width: 291px;height:620px;background: transparent url('images/iphone.png?2019') no-repeat center center;position: relative;float: right;margin-right: 40px;}
+.app-list{width: 50%;height: 620px;float: left;overflow-y: auto;}
+.app-list-wrapper{border: 1px solid #cdcdcd;}
+.app-list-wrapper .app-list-title{border-bottom: 1px solid #cdcdcd;padding: 5px 0;font-size: 14px;font-weight: bold;text-indent: 10px;box-shadow: 0 1px 2px rgba(0,0,0,0.2);}
+.app-list-items{list-style-type: none;margin: 0;}
+.app-list-items li{padding:8px 10px;}
+.app-list-items li img{width: 30px;height: 30px;}
+form{margin: 0;}
+
+#mobile-screen{width: 244px;height: 398px;position: absolute;top:92px;left:23px;-webkit-user-select: none;}
+#mobile-screen .mobile-nav-title{margin-top: 18px;font-size: 14px;font-weight: bold;text-align: center;color: #fff;margin-bottom: 8px;}
+#mobile-screen .app-list-wrapper{padding-top: 30px;height:317px;border-left: 0 none;overflow: hidden;border: 0 none;}
+#mobile-screen .app-list-items li{float:left;width: 61px;padding: 6px 0;text-align: center;min-height:75px;}
+#mobile-screen .list-item-title{display: block;-webkit-transform:scale(0.9);font-size: 10px;color:#666;margin-top: 5px;}
+.mobile-nav-screen{height: 8px;position: absolute;bottom: 30px;width: 100%;line-height: 0;text-align: center;}
+.mobile-nav-screen a{height: 8px;width: 8px;display: inline-block;line-height: 0;border-radius: 8px;background-color: #999}
+.mobile-nav-screen a.active{background-color: #0e86fe;}
+#mobile-screen .app-list-items{float: left;width: 244px;height: 267px;}
+.app-list-wrapper-slider{position: relative;width: 1220px;width:30000px;width:max-content;}
+
+.app-list-items .list-item-btn{float:right;margin-top: 3px;margin-right: 10px;}
+.app-list-items .list-item-btn .btn{font-weight: normal;cursor: pointer;}
+.app-list-items .list-item-title{font-size: 14px;}
+
+.mobile-screen-thumb{width: 100px;float: left;height: 618px;}
+.mobile-screen-thumb #mobile-screen-thumb{position: relative;width: 100%;overflow: hidden;height: 545px;}
+.mobile-screen-thumb #mobile-screen-thumb .app-list-items{position: absolute;top:0;bottom: 0;}
+.mobile-area .mobile-screen-thumb li{width:54px;height: 83px;background: transparent url('images/iphone_thumb.png?2019') no-repeat left center;border:1px solid #cdcdcd;padding: 0;margin: 12px auto;text-align: center;cursor: pointer;position: relative;z-index: 1;float: left;margin-left: 23px}
+.mobile-area .mobile-screen-thumb li div{opacity: 0;-ms-filter:0;width: 100%;height: 84px;float: left;}
+.mobile-area .mobile-screen-thumb li:hover div,
+.mobile-area .mobile-screen-thumb li.active div{filter:alpha(opacity=50);opacity: 0.2;transition: opacity 200ms ease-in;background-color: #000;}
+.mobile-area .mobile-screen-thumb li:hover span,
+.mobile-area .mobile-screen-thumb li.active span{background-color: #fff;}
+.mobile-area .mobile-screen-thumb li span{font-size: 14px;font-family: Arial;width: 30px;height: 30px;line-height:30px;display: block;background-color: #efefef;margin:0 auto;margin-top: 27px;border-radius: 30px;background-color: #EFEFEF;position: absolute;z-index: 2;margin-left: 12px;}
+.mobile-area .mobile-screen-thumb li.mobile-screen-add{background-image: none;border-style: dashed;}
+.mobile-screen-thumb .app-list-arrow{display:block;background-color: #efefef;width: 100%;text-align: center;}
+.app-list-arrow.arrow-up{top: 31px;border-bottom: 1px solid #cdcdcd;}
+.app-list-arrow.arrow-down{bottom: 0;border-top: 1px solid #cdcdcd;}
+.app-list .app-list-items li img{width: 32px;height: 32px;}
+
+.modal-body-left{width: 128px;float: left;}
+.modal-body-right{float: left;}
+#manageModal .modal-body{padding: 0;height: 340px;max-height:340px;overflow-y: hidden;}
+#manageModal .modal-header .nav{margin-bottom: 0}
+.modal-body-wrapper{padding: 15px;display: none}
+.modal-body-wrapper .form-horizontal .control-label{width: 100px}
+.modal-body-wrapper .form-horizontal .controls{margin-left: 120px}
+.modal-body-wrapper .form-horizontal{margin-bottom: 0}
+
+#app_wrapper{height: 128px;width: 128px;border: 1px solid #cdcdcd;background-color: #efefef;position: relative;}
+#app_wrapper #upload_cover{position: absolute;bottom: 0;width: 100%;height: 30px;cursor: pointer;line-height: 30px;text-align: center;color: #fff;text-shadow: 0 1px 0 rgba(0,0,0,1);z-index: 2}
+#app_wrapper_result{margin-top: 10px;}
+#app_wrapper img{height: 128px;width: 128px;}
+/*#app_wrapper #upload_cover .webuploader-pick{position: absolute;top:0;bottom: 0;width: 100%;background-color: #000;opacity: 0.5;filter: alpha(opacity=50);z-index: 1;}*/
+

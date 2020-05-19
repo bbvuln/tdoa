@@ -1,0 +1,80 @@
+body {background:#fff; font-size:9pt; margin: 0px; padding: 0px;}
+/* other */
+img {border: none; vertical-align: middle;}
+
+a:link{color: #383838; text-decoration: none;}
+a:visited{color: #383838; text-decoration: none;}
+a:hover {color: #333333; text-decoration: underline;}
+a:active{color: #383838; text-decoration: underline;}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   border-top:1px #fff solid;
+}
+
+img{
+   border:0px;
+   width:16px;
+   height:16px;
+}
+.L1{
+   border-bottom:1px #FFFFFF solid;
+}
+.L1 a:link, .L1 a:visited{
+   color: #383838;
+   background:#ebebeb url("../10/images/ar1.png") no-repeat right center;
+   font-size:9pt;
+   display: block;
+   text-decoration: none;
+   height: 30px;
+   line-height: 30px;
+   border-bottom:1px #D6D6D6 solid;
+}
+
+.L1 a:link span, .L1 a:visited span{
+   padding-left:10px;
+   cursor:pointer;
+   display:block;
+}
+.L1 a:hover{
+   color: #383838;
+   background: #F1F1F1 url("../10/images/ar1.png") no-repeat right center;
+}
+/*  一级菜单 active 效果  */
+.L1 a:link.active, .L1 a:hover.active, .L1 a:active.active, .L1 a:visited.active{
+   background: #F1F1F1 url("../10/images/arrow_d1.png") no-repeat right center;
+}
+.L1 a:link.active span, .L1 a:hover.active span, .L1 a:active.active span, .L1 a:visited.active span{
+   color: #383838;
+}
+
+.moduleContainer{display:none;background:#F8F9FE;padding: 5px;padding-bottom: 0px;}
+.moduleContainer .blank{line-height:30px;padding-left: 5px;}
+.module {margin-bottom:10px;position:relative;}
+.module .detail{position:absolute;top:3px;right:25px;z-index:100;cursor:pointer;}
+.module .header:link,
+.module .header:hover,
+.module .header:active,
+.module .header:visited
+{color:#383838;padding-left: 5px;line-height:25px;background:#F8F9FE;font-weight:normal;border-top:0 none;}
+.module .module_body{border:1px solid #D8D8FE;word-wrap:break-word;word-break:break-all;background-color:#FFFFFF;line-height:16px;padding:5px;}
+
+a.page:link,
+a.page:hover,
+a.page:active,
+a.page:visited{display:inline;background:none;text-decoration:underline;font-weight:normal;}
+
+.module_icon{height:17px;display:inline-block;background:transparent url("/static/images/ipanel/t-1.jpg") no-repeat 0 0;margin:0px 3px;padding-left:18px;}
+.ichat{background-position:0px 0px;float:right;}
+.idetail{background-position:0px -36px;float:right;}
+
+.ichat_hover{background-position:0px -20px;float:right;}
+.idetail_hover{background-position:0px -56px;float:right;}
+
+table .ntd{width:80px;height:17px;}
+.ctable{font-size:9pt;}
+.hr{border-bottom:1px dotted #6086D9;margin:8px 0px;}
+.nspan{color:#d6790e;width:80px;height:17px;}
+.titlespan{color:#5b80d0;font-style:normal;}

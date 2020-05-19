@@ -1,0 +1,139 @@
+@media(min-width: 500px){
+    .image_file_folder .ui-grid-halve li{
+        width: 33.3%;
+    }
+    .image_file_folder .folder_container .ui-icon-folder{
+        padding-top: 35%;
+        font-size: 230px;
+    }
+}
+.image_file_folder{
+    background: #f3f3f3;
+}
+.image_file_folder .ui-grid-halve{
+    padding-right: 5px;
+}
+.image_file_folder .ui-grid-halve li{
+    padding-right: 10px;
+}
+.image_file_folder .ui-grid-halve li img{
+    height: 94%;
+    width: 94%;
+    margin: 3% 3%;
+}
+.image_file_folder .ui-grid-halve-img{
+  padding-top: 98%;
+  background: #fff;
+}
+.image_file_folder .ui-grid-halve-img .folder_container{
+  width: 94%;
+  height: 94%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  margin: 3%;
+  text-align: center;
+}
+.folder_container .ui-icon-folder{
+    display: block;
+    font-size: 136px;
+    color: #80D0FA;
+    height: 40%;
+    padding-top: 25%;
+}
+.image_file_folder .ui-grid-halve-img .folder_container h4{
+	margin-top: 55%;
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#nofile{
+    height: 78%;
+}
+.pda_attach.proviewImage{
+    position: static;
+    padding: 0px;
+}
+.ui-picture-preview-modal,.ui-picture-preview-folder{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 94%;
+    width: 94%;
+    z-index: 998;
+    display: none;
+}
+.feed_check{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #red;
+    position: absolute;
+    top: 8px;
+    right: -3px;
+	background-size: 70% 70%;
+    background: url(./check.png) no-repeat 100px 100px;
+}
+.feed_check.active{
+    background: url(./check.png) no-repeat 0px 0px;
+    background-size: 70% 70%;
+}
+.submit-btn{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 999;
+    padding: 0;
+	margin-left: -15px;
+}
+.submit-btn .ui-btn {
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0;
+	height: 48px;
+    line-height: 48px;
+}
+.border-form{
+    border: 1px solid red;
+}
+.ui-list-info span{
+    padding: 0px 10px 0px 0px;
+    display: inline-block;
+}
+.attend-info-border{
+    border-bottom: 1px solid #dad7d7;
+}
+.attendance-info-list{
+    margin-left: 20px;
+}
+.attendance-info-list span{
+    margin-left: 50px
+}
+.mark-font{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+.attend-search-info{
+    margin-left: 95px;
+}
+.form1,.form2{
+    padding: 10px 10px 30px 10px;
+}
+.ui-modal-title{
+    text-align: center;
+}
+.ui-cover-layer{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+#folder_name{
+    margin-left: 25%;
+    width: 65%;
+    height 40px;
+}

@@ -1,0 +1,9 @@
+<h4 style="font-family:'微软雅黑'"><span>在公共文件夹放1T大小的文件,会不会影响性能？</span></h4>
+<hr>
+<h5><span>解决方法:</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+1T这么大的文件建议您直接拷贝到网络硬盘目录下。附件的路径可以修改，将OA系统里各模块上传的附件放到其他磁盘目录下，您参考：附件路径的修改方法：
+可以把附件备份目录修改下路径放到其他盘。 用记事本修改d:\myoa\webroot\inc\oa_config.php $ATTACH_PATH2=realpath($ROOT_PATH."../")."/attach/"; 这句可以改为 
+$ATTACH_PATH2="e:/attach/"; 然后您把d:\myoa\attach下文件拷贝到e:\attach下。 
+</p>
+<p style="font-size: 1.1em;line-height:22px;color:red;">注意：路径修改后需要把邮件服务配置中的附件路径做相应修改。</p>

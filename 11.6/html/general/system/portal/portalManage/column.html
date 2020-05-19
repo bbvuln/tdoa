@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>栏目管理</title>
+    <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/modules/portal/portalManage/css/index.css">
+    <link href="/static/js/jquery-1.10.2/jquery-ui/css/flick/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/js/jstree/dist/themes/default/style.min.css" />
+    <script src="/static/js/jquery-1.10.2/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery-1.10.2/template/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.10.2/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/static/js/jstree/dist/jstree.min.js"></script>
+    <script src="/static/modules/portal/portalManage/column.js"></script>
+	<style>
+		.column_explain{
+			color:red;
+			float:right;
+			margin-top:30px;
+		}
+		.relation_portal{
+			height:30px;
+			background:#ddd;
+			color:red;
+			line-height:30px;
+		}
+	</style>
+</head>
+<body>
+    <div class="column_table_box">
+            <button class="btn back_por_btn" type="button" onClick="columnManage.backPortalManage()">返回门户管理</button>
+			<span class="column_explain hide">栏目属性修改后，当前门户和其他关联门户会同时修改，请谨慎操作。</span>
+        <!-- 表格渲染 -->
+        <table class="table table-bordered table-hover">
+            <thead id="column_head">
+                <tr>
+                    <th class="span4">栏目名称</th>
+                    <!-- <th class="span2">导航栏目</th> -->
+                    <th class="span3">打开方式</th>
+                    <th class="span2">状态</th>
+                    <th class="span2">操作</th>
+                </tr>
+            </thead>
+            <tbody id="columnSortable" class="column_tbody">
+            </tbody>
+            <script id="column_tpl" type="text/x-jquery-tmpl">
+                
+                {{if columnListInfo.length != 0}}
+                    {{each(i,item) columnListInfo}}
+                        <tr id=${item.column_id} class="column_tr">
+                            {{if item.level == 1}}
+                                <td>${item.column_name}</td> 
+                            {{else item.level == 2}}
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${item.column_name}</td> 
+                            {{else}}
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${item.column_name}</td>
+                            {{/if}}
+                            
+                            <!-- <td>${item.nav_flag}</td>   -->
+                            <td>${item.link_target}</td>  
+                            {{if item.use_flag == 1}}
+                                <td class="use_status">启用</td>
+                            {{else}}
+                                <td class="no_use">停用</td>
+                            {{/if}}  
+                            <td class="porHandle">
+                                
+                                    {{if item.page_id==0 && item.is_old==0}}
+                                        <span class="handle_btn" style="color:#aaa" onClick="">停用</span>
+                                    {{else}}
+                                        {{if item.use_flag == 1}}
+                                            <span class="handle_btn" onClick="columnManage.changeStatus(${item.column_id})">停用</span>
+                                        {{else}}
+                                            <span class="handle_btn" onClick="columnManage.changeStatus(${item.column_id})">启用</span>
+                                        {{/if}}
+                                    {{/if}}
+                                
+                                    <span class="handle_btn" onClick="columnManage.editModalShow(${item.column_id})">编辑</span>
+                            </td>  
+                        </tr>   
+                    {{/each}}
+                {{else}}
+                    <tr>
+                        <td style="text-align:center;" colspan="8" >暂无数据</td>
+                    </tr>
+                {{/if}}
+            </script>
+        </table>
+        <!-- 编辑模态框 -->
+        <div class="modal hide fade" id="editModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4>栏目编辑</h4>
+                    </div>
+                    <div class="modal-body" id="edit_box"></div>
+                    <div class="modal-footer">
+                        
+                        <button href="javascript:;" class="btn btn-primary" onClick="columnManage.submitEdit()">确定</button>
+						<button href="javascript:;" class="btn" onClick="columnManage.editModalHide()">关闭</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- 编辑模板  -->
+        <script id="column_edit" type="text/x-jquery-tmpl">
+			<marquee class="relation_portal hide" id="relation_run">${msg}</marquee>
+            <ul id="edit_ul">
+                <li>
+                    栏目名称: <input type="text" id="column_name" value="${column_name}"/>
+                </li>
+                <li id="treeLi">
+                    父级栏目:
+                    <span id="column_parent">
+                        <div class="parentName" id="parentInp" onClick="columnManage.parentNameHandle(event)">
+                            <span class="parent_text" id="parentText" onClick="">${p_column_name}</span>
+                            <i class="icon-chevron-down i_right" id="parentIcon" onClick=""></i>
+                        </div>
+                        <div id="parentTree" class="hide"></div>
+                    </span>
+                </li>
+                <!-- {{if level == '1'}}
+                <li class="">
+                    首页导航:
+                    <span id="column_nav">
+                        <input type="radio" class="column_nav_int" name="nav_flag" value="1" onClick="columnManage.radioChange(value,'nav_flag')">添加首页导航
+                        <input type="radio" class="column_nav_int status_stop" name="nav_flag" value="0" onClick="columnManage.radioChange(value,'nav_flag')">不添加首页导航
+                    </span>
+                </li>
+                {{else}}
+                <li class="">
+                    首页导航:
+                    <span id="column_nav">
+                        <input type="radio" class="column_nav_int" name="nav_flag" value="1" disabled onClick="columnManage.radioChange(value,'nav_flag')">添加首页导航
+                        <input type="radio" class="column_nav_int status_stop" name="nav_flag" value="0" disabled onClick="columnManage.radioChange(value,'nav_flag')">不添加首页导航
+                    </span>
+                </li>
+                {{/if}} -->
+                <li>
+                    页面内容:
+                    <span id="column_content">
+                        <input type="radio" class="column_con_type" name="content" value="0" onClick="columnManage.radioChange(value,'column_type')" disabled>子栏目
+                        <input type="radio" class="column_con_type" name="content" value="1" onClick="columnManage.radioChange(value,'column_type')" disabled>CMS自定义页面
+                        <input type="radio" class="column_con_type" name="content" value="2" onClick="columnManage.radioChange(value,'column_type')" disabled>外部链接
+                        <input type="radio" class="column_con_type" name="content" value="3" onClick="columnManage.radioChange(value,'column_type')" disabled>RSS订阅数据                        
+                    </span>
+                </li>
+                <li id="open_li">
+                    打开方式:
+                    <span id="column_open">
+                        <input type="radio" class="column_open_type" name="open" value="1" onClick="columnManage.radioChange(value,'link_target')">当前窗口
+                        <input type="radio" class="column_open_type" name="open" value="2" onClick="columnManage.radioChange(value,'link_target')">新窗口
+                        <input type="radio" class="column_open_type" name="open" value="3" onClick="columnManage.radioChange(value,'link_target')">弹出窗口
+                        <!-- <input type="radio" class="column_open_type" name="open" value="4" onClick="columnManage.radioChange(value,'link_target')">父窗口                        -->
+                    </span>
+                </li>
+                <li id="status_li">
+                    是否启用:
+                    <span id="column_status">
+                        <input type="radio" class="column_status_radio" name="status" value="1" onClick="columnManage.radioChange(value,'use_flag')">启动
+                        <input type="radio" class="column_status_radio status_stop" name="status" value="0" onClick="columnManage.radioChange(value,'use_flag')">停用
+                    </span>
+                </li>
+            </ul>
+        </script>
+    </div>
+</body>
+</html>

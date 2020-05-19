@@ -1,0 +1,11 @@
+<h4 style="font-family:'微软雅黑'"><span>签章不能保存？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;">
+1）首先检查控件的DATA_ID有没有跟签章控件重复的。<br/>
+2）检查本机加载的签章控件版本号，在C:\WINDOWS\Downloaded Program Files目录下可以看到，如果版本太低的话，跟高版本的OA不配套，需要将对应版本D:\OA\webroot\module\websign目录下的websign.dll文件发给用户替换，然后在ie关闭的情况下，删除C:\WINDOWS\Downloaded Program Files下的WebObject Class，然后重新登录OA，重新加载控件。（64位的不能加载、32位的可以加载）。
+</p>
+
+
+

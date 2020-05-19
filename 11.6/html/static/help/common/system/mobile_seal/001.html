@@ -1,0 +1,12 @@
+<h4 style="font-family:'微软雅黑'"><span>签章授权文件的安装？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size: 1.1em;line-height:22px;">
+签章授权文件包含两个文件，WebSign.dll和WebSign_Setup.exe，WebSign.dll是用在服务器上的，WebSign_Setup.exe是装在客户端的。<br/>
+将WebSign.dll文件放置在D:\OA\webroot\module\websign下覆盖原有文件就可以了。<br/>
+如果覆盖完成后客户端盖章还是有“试用”水印的话，就在浏览器关闭的状态下删除C:\WINDOWS\Downloaded Program Files下的WebObject Class，重新登录oa盖章时系统会重新加载插件，重新加载后就没有问题了。如果重新加载还是无效的话就按照上述操作删除C:\WINDOWS\Downloaded Program Files下的WebObject Class，然后用WebSign_Setup.exe在客户端安装一下，再重新登录oa进行盖章。
+</p>
+
+
+

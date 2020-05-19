@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+</head>
+<link rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/help/style/css/main.css" />
+<script>
+function show_baidu()
+{
+	var keyword =document.getElementById("keyword");
+	var url = 'http://www.baidu.com/s?wd=通达OA'+" "+keyword.value;
+	var url =encodeURI(url);
+	window.open(url);
+}
+</script>
+<body>
+<div class="top">
+	<div class="search">
+		<form class="form-search" name="searchform" id="searchform" action="search.php">
+			<input name="flag" type="hidden" value="0"/>
+			<span class="bg"><input name="keyword" id="keyword" type="text" class="span5 search-query" placeholder=" 请输入关键词进行搜索" value=""/></span>
+			<span><button type="submit" id="submit" class="newbtn-left" ></button> </span>
+			<span><button type="button"  class="newbtn-right" onclick='show_baidu();'></button></span>
+		</form>
+	</div>
+</div>
+<h4>&nbsp;当前位置：通达OA社区自助服务站</h4>
+    <div class="query-result">
+        <div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=80" target="_blank">工作流常见问题</a>
+		</div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=82" target="_blank">个人事务/行政</a></div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=83" target="_blank">人力资源/考勤机</a></div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=84" target="_blank">CRM/tIDE</a></div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=85" target="_blank">精灵PC版、MAC版、移动版</a></div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=88" target="_blank">OA 组件</a></div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=87" target="_blank">软件升级及注册</a></div>
+		<div class="question">
+			<a class="link" href="http://club.tongda2000.com/forum.php?mod=forumdisplay&fid=89" target="_blank">其他常见问题</a>
+	</div>

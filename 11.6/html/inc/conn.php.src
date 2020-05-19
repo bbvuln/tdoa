@@ -1,0 +1,241 @@
+<?php
+
+function OpenConnection($MYSQL, $SELECT_DB)
+{
+	if (!function_exists("mysql_pconnect")) {
+		echo _("PHP配置有误，不能调用Mysql函数库，请检查有关配置");
+		exit();
+	}
+
+	$C = @mysql_pconnect($MYSQL["host"], $MYSQL["user"], $MYSQL["pwd"], MYSQL_CLIENT_COMPRESS);
+
+	if ($C === false) {
+		PrintError(_("不能连接到MySQL数据库，请检查：1、MySQL服务是否启动；2、MySQL被防火墙阻止；3、连接MySQL的用户名和密码是否正确。"));
+		exit();
+	}
+
+	$Q = "SET character_set_connection=" . MYOA_DB_CHARSET . ",character_set_results=" . MYOA_DB_CHARSET . ",character_set_client=binary;";
+
+	if (!mysql_query($Q, $C)) {
+		PrintError(_("设置字符集失败"));
+		exit();
+	}
+
+	if ($SELECT_DB == "") {
+		$SELECT_DB = $MYSQL["db"];
+	}
+
+	if (!@mysql_select_db($SELECT_DB, $C)) {
+		PrintError(sprintf(_("数据库 %s 不存在"), $SELECT_DB));
+		exit();
+	}
+
+	return $C;
+}
+
+function exequery($C, $Q, $QUERY_MASTER, $LOG)
+{
+	$cursor = @db_query($Q, $C, $QUERY_MASTER);
+
+	if (!$cursor) {
+		PrintError("<b>" . _("SQL语句:") . "</b> " . $Q, $LOG);
+	}
+
+	return $cursor;
+}
+
+function db_query($Q, $C, $QUERY_MASTER)
+{
+	$Q = sql_injection($Q);
+	if (MYOA_DB_USE_REPLICATION && ($QUERY_MASTER || ((strtolower(substr(ltrim($Q), 0, 6)) != "select") && (strtolower(substr(ltrim($Q), 0, 3)) != "set")))) {
+		if (($C == TD::$_res_conn) && ($C != TD::$_res_conn_master)) {
+			if (!is_resource(TD::$_res_conn_master)) {
+				TD::$_res_conn_master = openconnection(TD::$_arr_db_master, TD::$_arr_db_master["db"]);
+			}
+
+			$C = TD::$_res_conn_master;
+		}
+		else {
+			if (($C == TD::$_res_conn_crscell) && ($C != TD::$_res_conn_crscell_master)) {
+				if (!is_resource(TD::$_res_conn_crscell_master)) {
+					TD::$_res_conn_crscell_master = openconnection(TD::$_arr_db_master, TD::$_arr_db_master["db_crscell"]);
+				}
+
+				$C = TD::$_res_conn_crscell_master;
+			}
+		}
+	}
+
+	return @mysql_query($Q, $C);
+}
+
+function db_set_charset($CHARSET, $C)
+{
+	return mysql_set_charset($CHARSET, $C);
+}
+
+function PrintError($MSG, $LOG)
+{
+	echo "<fieldset style=\"line-height:150%;font-size:12px;\">";
+	echo "<legend>&nbsp;" . _("错误，请联系管理员: {$MSG}") . "&nbsp;</legend>";
+	echo "<b>" . _("文件：") . "</b>" . $_SERVER["SCRIPT_NAME"];
+
+	if (mysql_errno() == 1030) {
+		echo "<br>" . _("请联系管理员到 系统管理-数据库管理 中修复数据库解决。");
+	}
+
+	echo "</fieldset>";
+	$LOG_PATH = realpath(MYOA_ROOT_PATH . "../logs");
+	if ($LOG && file_exists($LOG_PATH) && is_writable($LOG_PATH)) {
+		$DATA = date("[Y-m-d H:i:s]") . "\r\n";
+		$DATA .= _("错误#") . mysql_errno() . ": " . mysql_error() . "\r\n";
+		$DATA .= strip_tags($MSG) . "\r\n";
+		$DATA .= _("文件：") . td_htmlspecialchars($_SERVER["REQUEST_URI"]) . "\r\n";
+		$DATA .= "\r\n";
+		$LOG_FILE = $LOG_PATH . "/mysql_error.log";
+		$FP = @fopen($LOG_FILE, "a");
+
+		if ($FP) {
+			fwrite($FP, $DATA);
+			fclose($FP);
+		}
+	}
+
+	if ($LOG) {
+		exit();
+	}
+}
+
+function sql_injection($db_string)
+{
+	$clean = "";
+	$error = "";
+	$old_pos = 0;
+	$pos = -1;
+	$db_string = str_replace("&#160;", " ", $db_string);
+
+	while (true) {
+		$pos = strpos($db_string, "'", $pos + 1);
+
+		if ($pos === false) {
+			break;
+		}
+
+		$clean .= substr($db_string, $old_pos, $pos - $old_pos);
+
+		while (true) {
+			$pos1 = strpos($db_string, "'", $pos + 1);
+			$pos2 = strpos($db_string, "\\", $pos + 1);
+
+			if ($pos1 === false) {
+				break;
+			}
+			else {
+				if (($pos2 == false) || ($pos1 < $pos2)) {
+					$pos = $pos1;
+					break;
+				}
+			}
+
+			$pos = $pos2 + 1;
+		}
+
+		$clean .= "\$s\$";
+		$old_pos = $pos + 1;
+	}
+
+	$clean .= substr($db_string, $old_pos);
+	$clean = trim(strtolower(preg_replace(array("~\s+~s"), array(" "), $clean)));
+	$fail = false;
+	if ((strpos($clean, "union") !== false) && (preg_match("~(^|[^a-z])union($|[^[a-z])~s", $clean) != 0)) {
+		$fail = true;
+		$error = _("联合查询");
+	}
+	else {
+		if ((2 < strpos($clean, "/*")) || (strpos($clean, "--") !== false) || (strpos($clean, "#") !== false)) {
+			$fail = true;
+			$error = _("注释代码");
+		}
+		else {
+			if ((strpos($clean, "sleep") !== false) && (preg_match("~(^|[^a-z])sleep($|[^[a-z])~s", $clean) != 0)) {
+				$fail = true;
+				$error = "sleep";
+			}
+			else {
+				if ((strpos($clean, "benchmark") !== false) && (preg_match("~(^|[^a-z])benchmark($|[^[a-z])~s", $clean) != 0)) {
+					$fail = true;
+					$error = "benchmark";
+				}
+				else {
+					if ((strpos($clean, "load_file") !== false) && (preg_match("~(^|[^a-z])load_file($|[^[a-z])~s", $clean) != 0)) {
+						$fail = true;
+						$error = _("Load文件");
+					}
+					else {
+						if ((strpos($clean, "cast") !== false) && (preg_match("~(^|[^a-z])mid($|[^[a-z])~s", $clean) != 0)) {
+							$fail = true;
+							$error = "cast";
+						}
+						else {
+							if ((strpos($clean, "ord") !== false) && (preg_match("~(^|[^a-z])ord($|[^[a-z])~s", $clean) != 0)) {
+								$fail = true;
+								$error = "ord";
+							}
+							else {
+								if ((strpos($clean, "ascii") !== false) && (preg_match("~(^|[^a-z])ascii($|[^[a-z])~s", $clean) != 0)) {
+									$fail = true;
+									$error = "ascii";
+								}
+								else {
+									if ((strpos($clean, "extractvalue") !== false) && (preg_match("~(^|[^a-z])extractvalue($|[^[a-z])~s", $clean) != 0)) {
+										$fail = true;
+										$error = "extractvalue";
+									}
+									else {
+										if ((strpos($clean, "updatexml") !== false) && (preg_match("~(^|[^a-z])updatexml($|[^[a-z])~s", $clean) != 0)) {
+											$fail = true;
+											$error = "updatexml";
+										}
+										else {
+											if ((strpos($clean, "into outfile") !== false) && (preg_match("~(^|[^a-z])into\s+outfile($|[^[a-z])~s", $clean) != 0)) {
+												$fail = true;
+												$error = _("生成文件");
+											}
+											else {
+												if ((strpos($clean, "exp") !== false) && (preg_match("~(^|[^a-z])exp($|[^[a-z])~s", $clean) != 0)) {
+													$fail = true;
+													$error = _("exp");
+												}
+												else {
+													if ((stripos($db_string, "update") !== false) && (stripos($db_string, "user") !== false) && (stripos($db_string, "set") !== false) && (stripos($db_string, "file_priv") !== false)) {
+														$fail = true;
+														$error = "set file_priv";
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	if ($fail) {
+		echo _("不安全的SQL语句：") . $error . "<br />";
+		echo td_htmlspecialchars($db_string);
+		exit();
+	}
+	else {
+		return $db_string;
+	}
+}
+
+include_once "inc/td_config.php";
+include_once "inc/utility.php";
+
+?>
+

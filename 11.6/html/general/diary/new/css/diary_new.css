@@ -1,0 +1,115 @@
+.wrapper {
+    width: 1024px;
+    margin: 10px auto;
+}
+label {
+    cursor: auto;
+}
+label>input[type="checkbox"] {
+    vertical-align: text-bottom;
+}
+.diary-new-list{
+    padding: 0px;
+    /* border: 1px solid #DBDBDB; */
+    background: #fff;
+/*    height: 555px;*/
+}
+.diary-new-list dt{
+    color: #666;
+}
+.diary-new-list dt i{
+    font-style: normal;
+    font-weight: normal;
+}
+.diary-new-list dd{
+    margin-bottom: 5px;
+}
+.diary-info-list{
+    padding: 10px;
+    border: 1px solid #DBDBDB;
+}
+.diary-new-list label{
+    font-size: 14px;
+}
+.diary-info-list dt{
+    color: #666;
+}
+.diary-info-list dt i{
+    font-style: normal;
+    font-weight: normal;
+}
+.diary-info-list dd{
+    margin-bottom: 5px;
+}
+.diary-header{
+    margin:0;
+    list-style:none;
+    margin-bottom: 5px;
+}
+.diary-header-item {
+    position: relative;
+    border-top: 0;
+}
+.diary-header-item.sub {
+    padding: 1px 18px;
+    padding-left: 40px;
+    border-top: 0;
+}
+.diary-header-title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.diary-auto {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    margin-right: 0px;
+}
+.diary-hr {
+    height: 1px;
+    border: 0px;
+    border-bottom:1px solid #DBDBDB;
+}
+.row {
+    margin-left: -12px;
+}
+
+.form-horizontal .control-label {
+  float: left;
+  width: 55px;
+  padding-top: 5px;
+  text-align: right;
+}
+#share .textarea{
+    margin-bottom: 10px;
+}
+
+.form-horizontal .controls {
+    *display: inline-block;
+    *padding-left: 20px;
+    margin-left: 60px;
+    *margin-left: 0;
+}
+.form-horizontal .controls:first-child {
+    *padding-left: 60px;
+}
+.input-xlarge {
+    width: 565px;
+}
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 0px;
+}
+.span9 {
+    width: 815px;
+}
+.feed-cmt-content {
+    padding: 4px;
+}
+.feed-cmt-reply-handle {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

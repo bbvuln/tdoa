@@ -1,0 +1,53 @@
+#prcs_in_tab{
+	border:0px;
+}
+td ,tr,tbody,table{
+	border:0px;
+}
+#addarea{
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+
+.condition_sponsor_content{
+	width:950px;
+	height:auto;
+}
+.circulation_sponsor_revise_left{
+
+	margin-top:15px;
+	float:left;	
+	display:inline-block;
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
+	text-rendering: optimizelegibility;
+}
+.appnub{
+	margin-right:15px;
+}
+.circulation_sponsor_select{
+	margin-left:25px;
+	width:170px;
+	margin-top:8px;
+	float:left;
+}
+.circulation_sponsor_select2{
+	margin-left:25px;
+	width:110px;
+	margin-top:8px;
+	float:left;
+}
+.circulation_sponsor_checkbox{
+	width:110px;
+	margin-top:8px;
+	margin-left:25px;
+	font-weight: bold;
+	float:left;
+}
+.condition_note{
+	width:400px;
+	color:#E63231;
+	clear:both;
+}

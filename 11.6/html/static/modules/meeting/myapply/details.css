@@ -1,0 +1,316 @@
+.Summary{
+    width:100%;
+    background:#f5f7f9;
+}
+.Summary_title{
+   width:90%;
+   margin:0 auto;
+   font-weight: 700;
+   font-style: normal;
+   color: #666666;
+   font-size: 18px;
+   padding-top: 20px;
+   /* margin-bottom: 30px; */
+}
+.m_content p {
+    vertical-align:middle;
+}
+.register{
+    position: absolute;
+    right:30px;
+    cursor: pointer;
+    top:0;
+}
+.content{
+    width:90%;
+    position: relative;
+    margin:0 auto;
+    border-width: 1px;
+    background-color:#ffffff;
+    border-style: solid;
+    border-color: #cccccc;
+}
+.btn_center {
+    padding-bottom:40px;
+    text-align: center;
+}
+
+.content_time .content_font{
+    display: inline-block;
+    padding-left:20px;
+}
+.attend {
+    background-color:#169cd5;
+    box-sizing: border-box;
+    border-width: 1px;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #169cd5;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+}
+.content_header{
+    width:50%;
+    text-align: center;
+    margin:30px auto;
+}
+.content_header p {
+    display: inline;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+    font-style: normal;
+}
+.content_header span{
+    width: 40px;
+    height: 18px;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+.end_starts{
+    background-color: #cccccc;
+    color: #FFFFFF;
+}
+.start_starts{
+    background-color: #ddeefe;
+    color: #108EE9;
+}
+.have_starts{
+    background-color: #00ff66;
+    color: #FFFFFF;
+}
+.read_conten_title{
+    display: block;
+    float: left;
+    width:10%;
+    font-size: 13px;
+    color: #666666;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+#myReject_txt{
+    width:90%;
+    display: block;
+    margin: 0 auto;
+}
+.read_conten_text{
+    display: block;
+    float: left;
+    width:90%;
+    font-size: 13px;
+    color: #666666;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+.read_conten{
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.meetMatch{
+    width: 24px;
+    height: 24px;
+    margin:0  5px;
+    background: #fff;
+    font-size: 24px!important;
+
+}
+.Summary_content{
+    width:80%;
+    margin: 20px auto;
+}
+.content_font{
+    font-size: 14px;
+    color: #333;
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+}
+.content_tit{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+}
+
+.content_row{
+padding-bottom: 20px;
+display: block;
+height: auto;
+}
+.content_title{
+    display: block;
+    float: left;
+    width:90px;
+    margin-right:30px;
+}
+.content_row_lef{
+    float: left;
+    width:60%;
+}
+.content_row_right{
+    float: left;
+    width:40%;
+}
+
+
+.Summary_title{
+    width:90%;
+    margin:0 auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(102, 102, 102);
+    font-size: 18px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+ }
+#details_content{
+    width:850px;
+    background:#FFFFFF;
+    border:1px solid #ccc;
+    margin:0 auto;
+    margin-bottom:40px;
+}
+.registerc_content{
+  position: relative;
+}
+.register{
+    position: absolute;
+    top:0;
+    right:0;
+}
+#details_header{
+    width:100%;
+    overflow: hidden;
+}
+.meeting_name{
+    width:60%;
+    height:65px;
+    margin:0 auto;
+    /* line-height:140px; */
+    /* text-align: center;
+    vertical-align: middle; */
+}
+.meeting_name_span{
+    display:inline-block;
+    width:100%;
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+    color:#333;
+    margin:0;
+    margin-top:46px;
+    margin-bottom: 54px;
+}
+#img_info{
+    width:465px;
+    /* background:red; */
+    margin-left:202px;
+    float:left;
+}
+.img_info_boxs{
+    float:left;
+    width:88px;
+    /* height:100%; */
+    /* background:gold; */
+    margin-right:100px;
+}
+.last_img_info_boxs{
+    margin-right:0px;
+}
+.meeting_title{
+    display: inline-block;
+    margin:14px 0px;
+    width:100%;
+    text-align: center;
+    font-size:13px;
+    color:#333;
+}
+.meeting_info_box{
+    display: inline-block;
+    width:100%;
+    text-align: center;
+    font-size:14px;
+    color:#333;
+}
+#details_body{
+    width:600px;
+    margin: 0 auto;
+}
+.meeting_information{
+   width:48%;
+   margin:0 1%;
+}
+#m_content{
+    overflow: auto;
+}
+.meeting_left{
+    float: left;
+}
+.meeting_right{
+    float: right;
+}
+.metting_content{
+    width: 100%;
+    float: left;
+    margin-bottom: 36px;
+}
+.meeting_information_title{
+    display:block;
+    font-weight: bold;
+    font-size:16px;
+    text-align: left;
+    color:#0e86fe;
+    float:left;
+    margin-bottom:16px;
+}
+.meeting_information_content{
+    width:100%;
+    font-size:14px;
+    text-align: left;
+    color:#333;
+    float:left;
+}
+.reminder_time{
+    font-size:14px;
+    color:#333;
+}
+#clear_both{
+    width:100%;
+    height:10px;
+    clear: both;
+}
+.icon_img{
+    width:60px;
+    height:60px;
+    margin-left:13px;
+}
+.template_icon{
+   width: 16px;
+   height: 16px;
+   cursor: pointer;
+   color: #0e86fe;
+}
+.Scope_title{
+    float: left;
+    width: 120px;
+}
+.Scope_content{
+    float: right;
+    width: 480px;
+}
+.Scope{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.press_btn{
+    width: 84px;
+    height: 28px;
+    margin:0 5px;
+    line-height: 18px;
+    border-radius: 4px;
+}

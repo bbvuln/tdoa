@@ -1,0 +1,7 @@
+html{overflow: scroll;overflow: hidden;height: 100%;}
+body{height: 100%;}
+.p_page{position: relative;width: 100%;margin: 0 auto;height: 100%;}
+.p_nav{font-size: 14px;background-color: #fff;padding: 5px 0 5px 3px;border-bottom: 2px solid #449DCF;}
+.p_nav ul{margin-bottom: 0;margin: 0 auto;padding-left: 3%;}
+.p_page #content{position: absolute;left:0;right: 0;bottom: 0;top:46px;background-color: #f6f7f9;}
+.p_page #p_iframe {position: absolute;top: 5px;left: 0;right: 0;bottom: 0;height: 100%;width: 100%;}

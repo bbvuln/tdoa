@@ -1,0 +1,91 @@
+html,body{
+	height:100%;
+	overflow:auto;
+}
+.nav-left{
+	width:200px;
+	border:0px solid #ccc;
+}
+.nav-right{
+	width:auto;
+	border:0px solid #ccc;
+	border-top:0px solid red;
+	float:left;	
+}
+.form_top{
+	border-top:0px solid red;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:0px;
+	width:950px;
+	height:30px;
+	
+}
+.form_tab_infos{
+	border:0px solid  #ccc;
+	border-top:0px solid red;
+	margin-top:30px;
+}
+.form_botoom{
+	border:0px solid red;
+}
+#save_form{
+	margin-left:200px;
+}
+#back_form{
+	margin-left:20px;
+}
+#tab_form td{
+	text-align:center;
+}
+#tab_form th{
+	text-align:center;
+}
+#tab_flow td{
+	text-align:center;
+}
+#tab_flow th{
+	text-align:center;
+}
+.new_form_info{
+	border:0px solid red;
+}
+.parent_name{
+	border:0px solid red;
+	margin-top:10px;
+	margin-left:120px;
+}
+.form_order_num{
+	border:0px solid red;
+	margin-top:10px;
+	margin-left:120px;
+}
+.form_name{
+	border:0px solid red;
+	margin-top:10px;
+	margin-left:120px;
+}
+.department_name{
+		border:0px solid red;
+		margin-top:10px;
+		margin-left:120px;
+}
+.main_info{
+	border:0px solid red;
+}
+.main_left{
+	border:1px solid red;
+	float:left;
+}
+.main_right{
+	border:1px solid red;
+	float:left;
+}
+.bottom_infos{
+	border:0px solid red;
+		
+}
+.save_info{
+	margin-left:370px;
+	margin-right:10px;
+}

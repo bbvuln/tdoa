@@ -1,0 +1,172 @@
+.office-product-list.ui-container {
+    background-color: #f3f3f3;
+}
+.tabs-wrap {
+    height: 42px;
+}
+.home-tabs {
+    height: 41px;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+.home-tabs .tab {
+    display: inline-block;
+    width: 33.3%;
+    font-size: 16px;
+}
+.home-tabs .tab .text {
+    width: 60px;
+    /* border-bottom: 2px solid #0e86fe; */
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+}
+.home-tabs .tab.active .text {
+    color: #0e86fe;
+    border-color: #0e86fe;
+}
+.office-product-list .ui-searchbar-wrap {
+    background-color: #fff;
+}
+.office-product-list .ui-searchbar {
+    background-color: #f3f3f3;
+    margin: 0 12px;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
+}
+.office-product-list .ui-searchbar-wrap .ui-searchbar-input {
+    display: block;
+}
+.office-product-list
+    .ui-searchbar-wrap
+    .ui-searchbar-input
+    input::-webkit-input-placeholder {
+    color: #dbdbdb;
+    font-size: 15px;
+}
+.office-product-list .ui-searchbar .ui-icon-search {
+    color: #dbdbdb;
+}
+.office-product-list .apply-list {
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    top: 98px;
+    bottom: 0;
+    /* overflow-x: auto; */
+}
+.office-product-list .ui-list {
+    background-color: transparent;
+    width: auto;
+    padding: 0 12px;
+}
+.office-product-list .ui-refresh .ui-refresh-up,
+.office-product-list .ui-refresh .ui-refresh-down {
+    background-color: transparent;
+    border-color: transparent;
+}
+.office-product-list .apply-list .apply-list-item {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    /* background-image: url(/pda/officeProduct/applylist/img/png_bg2@3x.png); */
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 16px 25px 16px;
+}
+.apply-list-item .line {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    background-image: url(/pda/officeProduct/applylist/img/png_bg3@3x.png);
+    background-size: cover;
+}
+.apply-list-item .line .left,
+.apply-list-item .line .right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+}
+.apply-list-item .line .left {
+    left: -10px;
+}
+.apply-list-item .line .right {
+    right: -10px;
+}
+.office-product-list .apply-list .apply-list-item .trans-flag,
+.office-product-list .apply-list .apply-list-item .state {
+    line-height: 40px;
+}
+.office-product-list .apply-list .apply-list-item .trans-flag {
+    font-size: 16px;
+    color: #0e86fe;
+}
+.office-product-list .apply-list .apply-list-item .state {
+    font-size: 14px;
+    color: #666;
+    float: right;
+}
+.office-product-list .product-name,
+.office-product-list .product-number,
+.office-product-list .product-date {
+    height: 16px;
+    position: relative;
+}
+.office-product-list .product-name img,
+.office-product-list .product-number img,
+.office-product-list .product-date img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    /* background-color: red; */
+}
+.office-product-list .apply-list .apply-list-item .text {
+    font-size: 16px;
+    color: #666;
+}
+.office-product-list .apply-list .apply-list-item .value-wrap {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    padding: 0 0 0 30px;
+}
+.office-product-list .apply-list .apply-list-item .value.red {
+    color: #fc3f3f;
+}
+.office-product-list .apply-list .apply-list-item .value.zhi {
+    margin: 0 5px 0 5px;
+}
+.office-product-list .apply-list .empty {
+    margin-top: 100px;
+}
+.office-product-list .apply-list .empty .img {
+    width: 150px;
+    height: 82.5px;
+    display: block;
+    margin: 0 auto;
+}
+.office-product-list .apply-list .empty .empty-text {
+    text-align: center;
+    color: #c2c6d0;
+    margin-top: 5px;
+}
+.office-product-list .product-name {
+    margin-top: 16px;
+}
+.office-product-list .product-number {
+    margin-top: 19px;
+}
+.office-product-list .product-date {
+    margin-top: 19px;
+}

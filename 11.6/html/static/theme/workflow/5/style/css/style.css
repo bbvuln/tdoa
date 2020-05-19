@@ -1,0 +1,93 @@
+﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+html{height:100%;}
+ul, ol {list-style:none;}
+.clear{ clear:both; overflow:hidden;}
+.fr{float:right;}
+.tac{text-align:center;}
+body {
+	text-transform:capitalize;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: #fcfcfc;
+}
+.container{
+	width: 100%;
+	background-color: #fcfcfc;
+	overflow:hidden;
+}	
+.form_body {
+	width: 686px;
+	margin:0 auto;
+	background-color: #ffffff;
+	border:1px #c2c0c0 solid;
+	overflow:hidden;
+}
+.form_body_1{ 
+     width:630px; 
+	 margin: 0 auto;
+}
+.head_er{
+    font-family: "微软雅黑", "宋体";
+	font-size: 34px;
+	color: #ffffff;
+	height:80px;
+	line-height:80px;
+	width:686px;
+}
+.line{
+	background-color:#7e97ad;
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+.cent_er{
+	width:100%;
+	overflow:hidden;
+}
+.form_row {
+	width:100%;
+	overflow:hidden;
+}
+.text_li {
+	line-height: 28px;
+	text-align:left;
+	float:left;
+}
+.text_gray {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #7e97ad;
+	display: block;
+	margin-top:8px;
+	padding-left:2px;
+	line-height:30px;
+}
+.input_text{ float:left;}
+.input_text input{ padding-top:10px; line-height:12px;}
+.text_stlye{ float:left; border:0px; padding-top:0px;font-family: "宋体"; font-size:12px;height:28px; background:url(../images/form.jpg) left 0px;width: 140px;padding-left:4px;}
+.text_stlye2{ float:left; border:0px; padding-top:0px;font-family: "宋体"; font-size:12px;height:28px;background:url(../images/form.jpg) right -28px;width: 140px;}
+.text_stlye input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#656565;}
+.text_stlye1{ float:left; border:0px; width: 226px; padding-left:5px; height:28px; background:url(../images/form.jpg) left 0px; font-family: "宋体"; font-size:12px; }
+.text_stlye11{background:url(../images/form.jpg) right -28px;width: 226px; height:28px; float:left; border:0px;}
+.text_stlye1 input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#656565;}
+.form_textarea{ background-color:#ffffff; width:100%; min-height:85px; float:left; background-repeat:repeat-x; background-position:left bottom; margin-top:12px;}
+.textarea_gray{
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color:#7e97ad;
+	display: block;
+	line-height:32px;
+}
+.textarea_6{ width:630px; background-color:#ebf4fd; border:1px #9ec1d5 solid;height:109px;}
+.textarea_top{ width:100%; height:6px;float:left;  position:relative;}
+.textarea_bottom{ width:100%; height:6px;float:left; position:relative;}
+.textarea_61{ width:6px; height:6px; float:left; background-image:url(../images/textarea_1.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;left:-1px; top:-1px;z-index:1111111;}
+.textarea_62{ width:6px; height:6px; float:right; background-image:url(../images/textarea_2.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;right:-1px; top:-1px;z-index:1111111;}
+.textarea_63{ width:6px; height:6px; float:left; background-image:url(../images/textarea_3.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;left:-1px; bottom:-1px;z-index:1111111;}
+.textarea_64{ width:6px; height:6px; float:right; background-image:url(../images/textarea_4.jpg);background-repeat:no-repeat; overflow:hidden;position:absolute;right:-1px; bottom:-1px;z-index:1111111;}
+.textarea_stlye{ border:0px; overflow:auto; background:none; font-size:12px; float:left;font-family: "宋体";color:#656565;}
+.textarea_a{border:0px; overflow:auto; background:none; font-size:12px; float:left; min-height:70px; line-height:20px; padding:0px 10px;}
+#text_stlye{ float:left; border:0px; height:25px; line-height:25px; padding-top:0px; background:none; font-family: "宋体"; font-size:12px; color:#656565;margin-top:3px;}

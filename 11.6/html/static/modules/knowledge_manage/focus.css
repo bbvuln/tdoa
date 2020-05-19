@@ -1,0 +1,87 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.expert-block-wrapper{
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #999;
+    line-height: 25px;
+    font-size: 13px;
+    background: #FFF;
+}
+.expert-block{
+    margin: 0px 20px 20px 20px;
+}
+li.expert-item{
+    list-style: none;
+    border-bottom: 1px dotted #ddd;
+    padding: 10px 0;
+}
+li.expert-item .expert-info{
+    width: 420px;
+}
+.expert-info-abstract{
+    font-weight: bold;
+    color: #259;
+    float:left;
+    font-size: 14px;
+}
+.expert-info-dept{
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    line-height: 22px;
+}
+.expert-info-study-field{
+    display: inline-block;
+    float: left;
+}
+.expert-info-study-details{
+    display: inline-block;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+.expert-portrait{
+    margin-right: 10px;
+}
+.expert-portrait img{
+    width: 45px;
+    height: 45px;
+	max-width: 45px;
+    margin-top: 5px;
+	border-radius: 50%;
+}
+.expert-btns .btn{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.block-hd h5{
+    margin: 0;
+    border-bottom: 1px solid #DDD;
+    padding: 10px;
+}
+.block-hd-name{
+    margin-right: 5px;
+}
+.block-hd-count{
+    margin: 0px 3px;
+}
+.empty-tip{
+    color: #999;
+    text-align: center;
+    padding-top: 10px;
+}
+.expert-info-title{
+    float: right;
+}

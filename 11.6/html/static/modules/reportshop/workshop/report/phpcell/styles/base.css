@@ -1,0 +1,330 @@
+﻿@charset "utf-8";
+
+/* 
+	@名称: base
+	@功能: 重设浏览器默认样式
+*/
+
+/* 添加让用户可以自定义字体 */
+html{
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea{
+	font:12px/1.5 'Microsoft Yahei','Simsun';
+	color:#444;
+}
+input,select,textarea{
+	font-size:100%;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{
+	border-collapse:collapse;border-spacing:0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{
+	text-align:inherit;
+}
+
+/* 去除默认边框 */
+fieldset,img{
+	border:0;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{
+	display:block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym{
+	border:0;font-variant:normal;
+}
+
+/* 一致的 del 样式 */
+del {
+	text-decoration:line-through;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:500;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+	list-style:none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {
+	text-align:left;
+}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+}
+
+q:before,q:after {
+	content:'';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+	text-decoration:underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+	text-decoration:none;
+}
+
+/* 清理浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.clearfix {
+	zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .hidden {
+	display:none;
+}
+
+/* ie6 */
+* html,* html body{
+	background-image:url(about:blank);
+	background-attachment:fixed;
+}
+* html .ie6fixedTL{
+	position:absolute;
+	left:expression(eval(document.documentElement.scrollLeft));
+	top:expression(eval(document.documentElement.scrollTop));
+}
+* html .ie6fixedBR{
+	position:absolute;
+	left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));
+	top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
+
+
+
+
+/* 设置内联, 减少浮动带来的bug */
+.fl,.fr {
+	display:inline;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+
+/* ul行内排列 */
+
+ul.line:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+ul.line {
+	zoom:1; /* for IE6 IE7 */
+}
+
+ul.line > li {
+	float:left;
+	margin: 0 5px 5px 0;
+}
+/* 文字对齐方式 */
+.tl {
+	text-align:left !important;
+}
+.tc {
+	text-align:center !important;
+}
+.tr {
+	text-align:right !important;
+}
+
+/* 内容溢出，滚动条设置 */
+.over-hidden {
+	overflow:hidden;
+}
+.over-hidden-x {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.over-hidden-y {
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.over-auto {
+	overflow:auto;
+}
+.over-auto-x {
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.over-auto-y {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+
+/* 外补丁 */
+*.mg0{
+	margin: 0 !important;
+}
+*.mg0-x{
+	margin: auto 0 !important;
+}
+*.mg0-y{
+	margin: 0 auto !important;
+}
+*.mg5{
+	margin: 5px !important;
+}
+*.mg5-x{
+	margin: auto 5px !important;
+}
+*.mg5-y{
+	margin: 5px auto !important;
+}
+*.mg10 {
+	margin: 10px !important;
+}
+*.mg10-x {
+	margin: auto 10px!important;
+}
+*.mg10-y {
+	margin: 10px auto!important;
+}
+*.mg20 {
+	margin: 20px!important;
+}
+*.mg20-x {
+	margin: auto 20px!important;
+}
+*.mg20-y {
+	margin: 20px auto!important;
+}
+*.mg30 {
+	margin: 30px!important;
+}
+*.mg30-x {
+	margin: auto 30px!important;
+}
+*.mg30-y {
+	margin: 30px auto!important;
+}
+
+/* 宽度 */
+.Width100 {
+	width:100%;
+}
+.Width95 {
+	width:95%;
+}
+.Width90 {
+	width:90%;
+}
+.Width85 {
+	width:85%;
+}
+.Width80 {
+	width:80%;
+}
+.Width75 {
+	width:75%;
+}
+.Width70 {
+	width:70%;
+}
+.Width65 {
+	width:65%;
+}
+.Width60 {
+	width:60%;
+}
+.Width55 {
+	width:55%;
+}
+.Width50 {
+	width:50%;
+}
+.Width45 {
+	width:45%;
+}
+.Width40 {
+	width:40%;
+}
+.Width35 {
+	width:35%;
+}
+.Width30 {
+	width:30%;
+}
+.Width25 {
+	width:25%;
+}
+.Width20 {
+	width:20%;
+}
+.Width15 {
+	width:15%;
+}
+.Width10 {
+	width:10%;
+}
+.Width5 {
+	width:5%;
+}
+
+/* table布局 */
+.tablelayout{
+	table-layout:fixed;
+}
+
+span.must
+{
+	color: red;
+}

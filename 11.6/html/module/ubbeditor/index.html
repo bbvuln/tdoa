@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<meta http-equiv="Content-Type" content="text/html;" />
+<script type="text/javascript" src="/inc/js/ispirit.js"></script>
+<title>Editor</title>
+</head>
+<script type="text/javascript">
+function GetURLParams()
+{
+   var URLParams={};
+   var A=document.location.search.substr(1).split('&');
+   for (var i=0;i<A.length;i++)
+   {
+      var B=A[i].split('=');
+      var C=decodeURIComponent(B[0]);
+      var D=decodeURIComponent(B[1]);
+      URLParams[C]=D;
+   }
+   return URLParams;
+}
+</script>
+<body style="margin:0px;padding:0px;">
+<script type="text/javascript">
+var URLParams = GetURLParams();
+var Value = parent && parent.document.getElementById(URLParams['InstanceName']) ? parent.document.getElementById(URLParams['InstanceName']).value : "";
+document.write('<textarea id="' + URLParams['InstanceName'] + '" name="' + URLParams['InstanceName'] + '" style="width:' + URLParams['Width'] + ';height:' + URLParams['Height'] + ';">' + Value + '</textarea>');
+document.write('<scr' + 'ipt type="text/javascript" src="' + URLParams['BasePath'] + 'lang/' + URLParams['Language'] + '.js"><\/scr' + 'ipt>');
+document.write('<scr' + 'ipt type="text/javascript" src="' + URLParams['BasePath'] + 'editor.js"><\/scr' + 'ipt>');
+</script>
+<script type="text/javascript">
+document.write('<scr' + 'ipt type="text/javascript">var ' + URLParams['InstanceName'] + '_nEditor = new UBBEditor(\'' + URLParams['InstanceName'] + '\', \'' + URLParams['StartFocus'] + '\', \'' + URLParams['CtrlEnter'] + '\');' + URLParams['InstanceName'] + '_nEditor.tInit(\'' + URLParams['InstanceName'] + '_nEditor\', \'' + URLParams['BasePath'] + '\');<\/scr' + 'ipt>');
+document.write('<scr' + 'ipt type="text/javascript">' + URLParams['InstanceName'] + '_nEditor.tLoadToolbar(' + URLParams['InstanceName'] + '_nEditor.tEI(' + URLParams['InstanceName'] + '_nEditor.tid + \'-divPanel\'));<\/scr' + 'ipt>');
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+.container{
+    width: 600px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 0 10px;
+    border: 1px solid #ddd
+	/* border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd; */
+}
+.header-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    /* background: #40a9ff; */
+    z-index: -1;
+}
+.profile_info{
+    z-index: 100;
+    position: relative;
+}
+.profile_info_pic{
+	text-align: center;
+	width: 120px;
+    height: 175px;
+}
+.profile_info_operation{
+    padding: 5px;
+}
+.profile_info_pic .media-object{
+    margin: 10px 0px 0px 0px; 
+    margin-top: 21px;
+    background: #fff;
+}
+.profile_info_content{
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 140px;
+    right: 0px;
+}
+.profile-info-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.profile-info-online{
+	margin-right: 10px;
+}
+.profile-info-focus{
+	color: #1687CB;
+	float: right;
+}
+.profile-info-focus a,.profile-info-focus a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.profile-info-department{
+    /*display: block;*/
+}
+.profile_info_content .info-line{
+	line-height: 22px;
+}
+.profile_info_content .info-line.sign{
+    height: 22px;
+    width: 300px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.miniprofile-medal-list{
+	margin-top: 3px;
+}
+.profile_info_operation button{
+    cursor: pointer;
+}
+.profile-nav{
+    z-index: 12;
+    width: 600px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.profile-nav.fixed{
+    z-index: 99;
+    position: fixed;
+    width: 600px;
+    top: 0px;
+}
+.profile-bd{
+    width:600px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.profile-bd .tab-content .tab-pane .mod{
+    margin-bottom: 10px;
+    color: #333;
+}
+.tab-pane .tab-pane-left,
+.tab-pane .tab-pane-right{    
+    width: 270px;
+    float: left;
+}
+.tab-pane .tab-pane-left{
+    margin-right: 20px;
+}
+.mod table{
+    width:100%;
+}
+.mod .multi-row{
+    color: #696969;
+    font-weight: bold;
+}
+.emotions{
+    width: 28px;
+}
+.document{
+	margin-bottom: 10px;
+}
+.document .nav-links a.link{
+    color: #686868;
+}
+.tab-pane{
+    padding: 20px;
+}
+.tab-pane .mod .bd ul{
+    float: left;
+}
+.tab-pane .mod .bd .time{
+    margin-right: 8px;
+}
+#detail .mod{
+    width: 240px;
+    padding: 10px;
+    padding-left: 20px;
+}
+#knowledge .mod{
+    width: 538px;
+}
+#knowledge .mod .bd ul li a{
+    width: 500px;
+}
+ul.know_nav{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #DDD;
+}
+ul.know_nav .navitem{
+    width: 165px;
+    float: left;
+    text-align: center;
+}
+ul.know_nav .navitem .navitem_a{
+    position: relative;
+    padding-top: 25px;
+    height: 25px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #686868;
+    cursor: default;
+}
+ul.know_nav .know_nav_num{
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 20px;
+    line-height: 20px;
+}
+.know_nav_title{
+    font-weight: bold;
+    color: #686868;
+}
+.stararea{
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+.stararea .staritem{
+    float: left;
+    width: 24px;
+    height: 16px;
+    background: url(images/star-mini.png) no-repeat 0px 0px;
+    display: inline-block;
+    *zoom:1;
+    *display:inline;
+}
+.stararea .staritem.on{
+    background-position:0 -21px;
+}
+#hr .mod{
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+    padding-left: 25px;
+}
+.incentive_area{
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+.incentive_table{
+    margin-bottom: 0px;
+}

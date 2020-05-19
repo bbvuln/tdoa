@@ -1,0 +1,213 @@
+html{
+	margin:0px;
+	padding:0px;
+	height:100%;	
+    overflow-y:hidden;
+}
+body{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	/*	
+    min-width:960px;
+    */
+	overflow:auto;
+}
+.bodycolor { 
+	BACKGROUND: white;
+}
+.clear{ 
+	clear:both; 
+	float:none;
+}
+.float_left{
+	float:left;
+}
+.float_right{
+	float:right;
+}
+.pub_top_div{
+	margin: 0 auto;
+	width:1000px;
+}
+.pub_top_wrap_div{
+	margin: 0 auto;
+	width:1000px;
+	border-bottom: 3px solid #0e86fe;
+	padding-bottom:0px;
+}
+.pub_main_div{
+	margin: 0 auto;
+	width:1000px;
+	margin-top:15px;
+}
+.pub_head_tr{
+	background: #e4f1f9;
+}
+.pub_modal_top_text{
+	color:rgb(51, 61, 111);
+	font-size:16px;
+	font-weight:bold;
+}
+.defin_main_body
+{
+	float:left;
+}
+.main_left{
+	margin-left:30px;
+	float:left;
+}
+.main_right{
+	margin-left:30px;
+	float:left;
+}
+.title_tip{
+	color:rgb(41, 46, 162);
+	font-size:16px;
+	font-weight:bold;
+	width:200px;
+	margin-top:12px;
+}
+/*----   主体显示的统一样式---*/
+.f_dialog_block{
+	margin-left:80px;
+}
+.f_field_block{
+    margin-top:4px;
+    margin-bottom:4px;
+    display:block;
+    text-align:left;
+}
+.f_field_block_small{
+	padding:0px;
+	margin:0px;
+    margin-top:1px;
+    margin-bottom:1px;
+    
+}
+.f_field_label{ 
+	margin:0px;
+	padding:0px；	
+}
+.f_field_title{
+	font-size:12px;
+	font-weight:bold;
+	margin-left:2px;
+	margin-right:2px;
+}
+.f_field_ctrl{
+	margin-top:5px;
+	margin-left:2px;
+}
+.f_field_ctrl_small{
+	margin-top:1px;
+	margin-left:2px;
+}
+.f_field_explain_label{
+	width:90%;
+	margin:0px;
+	padding:0px;
+	float:left;
+	margin-bottom:5px;
+	border:0px;
+
+}
+.f_field_explain_title_red{
+	color:red;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+.f_field_explain_title_blue{
+	color:blue;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+.f_field_explain_title_green{
+	color:green;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+/*--必填*样式 --*/
+.f_field_required{
+	color:red;
+	font-size:12px;
+	margin-top:0px;
+	margin-left:2px;
+	margin-right:2px;
+	
+}
+/*--办公用品信息管理 样式开始--*/
+.top_info
+	{
+    height:50px;
+    margin:0 auto;
+	border-bottom: 3px solid #0e86fe;
+}
+.top_info_left{
+	width:280px;
+    height:50px;
+    float:left;
+	margin-left:10px;
+}
+.icontop-basic_hover{
+	display:block;
+	width:200px;
+	line-height:50px;	
+	padding-left:30px;
+	background:url(/static/modules/workflow/system/images/guide_title.png) no-repeat;
+	background-position:0px 10px;
+	
+}
+.top_info_right{
+	margin-right:10px;
+    margin-top:10px;
+    float:right;
+}
+
+#bottom_info{
+  	width:100%;
+	float:left;
+}
+#bottom_info_left{
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	width:240px;
+    float:left;
+    display:block;
+    overflow:auto;
+}
+.bottom_info_right{
+	margin-left:250px;
+	margin-top:10px;
+	/*
+	overflow:auto;	*/
+}
+.title_name{
+	line-height:50px;
+	font-weight:bold;
+	font-size:20px; 
+	margin-left:5px; 
+	color:#0e86fe;
+}
+/*办公用品信息管理css样式定义开始*/
+#product_manage_tree{
+	margin-left:15px;
+}
+.info_btn_div
+{
+	margin-top:10px;
+}
+.new_main_top{
+	border-bottom: 3px solid #0e86fe;
+	width:1250px;
+}
+.label_font{
+color: rgb(41, 46, 162);
+font-size: 16px;
+font-weight: bold;
+width:200px;
+}
+/*办公用品信息管理css样式定义结束*/

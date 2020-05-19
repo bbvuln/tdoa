@@ -1,0 +1,183 @@
+.notify-auditing-list.ui-container {
+    background-color: #f3f3f3;
+}
+.tabs-wrap {
+    /* height: 42px; */
+}
+.home-tabs {
+    height: 41px;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+.home-tabs .tab {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+}
+.home-tabs .tab .text {
+    width: 60px;
+    /* border-bottom: 2px solid #0e86fe; */
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+}
+.home-tabs .tab.active .text {
+    color: #0e86fe;
+    border-color: #0e86fe;
+}
+.notify-auditing-list .ui-searchbar-wrap {
+    background-color: #fff;
+}
+.notify-auditing-list .ui-searchbar {
+    background-color: #f3f3f3;
+    margin: 0 12px;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
+}
+.notify-auditing-list .ui-searchbar-wrap .ui-searchbar-input {
+    display: block;
+}
+.notify-auditing-list
+    .ui-searchbar-wrap
+    .ui-searchbar-input
+    input::-webkit-input-placeholder {
+    color: #dbdbdb;
+    font-size: 15px;
+}
+.notify-auditing-list .ui-searchbar .ui-icon-search {
+    color: #dbdbdb;
+}
+.notify-auditing-list .apply-list {
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    /* overflow-x: auto; */
+}
+.notify-auditing-list .ui-list {
+    background-color: transparent;
+    width: auto;
+    padding: 0 12px;
+}
+.notify-auditing-list .ui-refresh .ui-refresh-up,
+.notify-auditing-list .ui-refresh .ui-refresh-down {
+    background-color: transparent;
+    border-color: transparent;
+}
+.notify-auditing-list .apply-list .apply-list-item {
+	height:64px;
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 10px 24px 10px;
+	overflow:hidden;
+}
+.notify-auditing-list .apply-list .apply-list-item .trans-flag,
+.notify-auditing-list .apply-list .apply-list-item .state {
+    line-height: 40px;
+}
+.notify-auditing-list .apply-list .apply-list-item .trans-flag {
+    font-size: 16px;
+    color: #0e86fe;
+}
+.notify-auditing-list .apply-list .apply-list-item .state {
+    font-size: 14px;
+    color: #666;
+    float: right;
+}
+.notify-auditing-list .notify-name,
+.notify-auditing-list .notify-number,
+.notify-auditing-list .notify-date {
+    /* height: 16px; */
+    position: relative;
+}
+.notify-auditing-list .notify-name img{
+	width:25px;
+	height:25px;
+	position: absolute;
+	top: 0px;
+    left: 0;
+}
+.notify-auditing-list .notify-number img,
+.notify-auditing-list .notify-date img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    /* background-color: red; */
+}
+.notify-auditing-list .apply-list .apply-list-item .text {
+    font-size: 16px;
+    color: #666;
+}
+.notify-auditing-list .apply-list .apply-list-item .value-wrap {
+    display: block;
+    font-size: 16px;
+    color: #333;
+	
+}
+.notify_name{
+	font-weight:bold;
+	color:#333;
+	padding: 0 0px 0 35px;
+    width:70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notify_peo{
+	font-size:13px!important;
+	color:#666!important;
+	padding: 0 15px 0 35px;
+	display:inline-block!important;
+}
+.notify_date{
+	font-size:13px!important;
+	color:#666!important;
+	display:inline-block!important;
+}
+.notify-auditing-list .apply-list .apply-list-item .value.red {
+    color: #fc3f3f;
+}
+.notify-auditing-list .apply-list .apply-list-item .value.zhi {
+    margin: 0 5px 0 5px;
+}
+.notify-auditing-list .apply-list .empty {
+    margin-top: 100px;
+}
+.notify-auditing-list .apply-list .empty .img {
+    width: 150px;
+    height: 82.5px;
+    display: block;
+    margin: 0 auto;
+}
+.notify-auditing-list .apply-list .empty .empty-text {
+    text-align: center;
+    color: #c2c6d0;
+    margin-top: 5px;
+}
+.notify-auditing-list .notify-name {
+    margin-top: 15px;
+}
+.notify-auditing-list .notify-number {
+    margin-top: 15px;
+}
+.notify-auditing-list .notify-date {
+    margin-top: 19px;
+}
+.apply_title{
+	position:absolute;
+	right:0;
+	top:0;
+	color:#0e86fe;
+	font-size:14px;
+}

@@ -1,0 +1,128 @@
+html{overflow: scroll;overflow: hidden;height: 100%;}
+body{height: 100%;}
+.header{height: 40px;min-width: 960px;background: #449DCF;-webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);-moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);box-shadow: 0 1px 10px rgba(0,0,0,.1);border-width: 0 0 1px;}
+.header_logo{height: 40px;float: left;margin-left: 18px;min-width: 300px;display:block;}
+.header .header_tool{float: right;margin-right: 10px;margin-left: 300px;}
+.header .header_tool{background: #449DCF;}
+.header .header_tool .dropdown-toggle{color: #fff;outline: none;}
+.header .header_tool .dropdown-toggle:hover{background: #fff;color: #888;}
+.header .header_tool .open .dropdown-toggle{color: #888;background: #fff;}
+.navbar .nav > li > a,
+.navbar .nav > li > a:visited,
+.navbar .nav > li > a:focus{color: #fff;text-shadow: none;}
+.navbar .nav > li > a:hover{background: #fff;}
+.navbar .nav .notify_item_num .badge{padding: 1px 9px;vertical-align: middle;margin-left: 3px;display: none;}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle{background-color: #FFFFFF;color: #555555;z-index: 994;position: relative;}
+.dropdown-panel{position: absolute;min-width: 200px;left: 0;right: auto;top: 40px;background-color: #fff;-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);box-shadow: 0 0 5px rgba(0,0,0,.2);visibility: hidden;}
+.pull-right .dropdown-panel{left: auto;right: 0;}
+.dropdown.open .dropdown-panel{visibility: visible;z-index: 993;}
+#gbmpiw{display: inline-block;line-height: 9px;padding-left: 20px;position: relative;}
+#gbmpdv{background: #FFF;border-bottom: 1px solid #BEBEBE;-moz-box-shadow: 0 2px 4px rgba(0,0,0,.12);-o-box-shadow: 0 2px 4px rgba(0,0,0,.12);-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);position: relative;z-index: 1;padding-bottom: 10px;}
+#gbmpi, #gbmpid{border: none;display: inline-block;height: 48px;width: 48px;}
+.gbpc{display: inline-block;margin: 16px 0 10px;padding: 0 20px;vertical-align: top;}
+.gbpc .gbps{color: #000;font-weight: bold;}
+.gbpc .gbps, .gbpc .gbps2{display: block;/* margin: 0 20px;*/}
+.gbps2,.gbmlbw{color: #666;display: block;font-size: 12px;}
+.gbmpiaa{display: block;margin-top: 20px;}
+.gbmc{width: 300px;padding: 0;}
+.gbmpala, .gbmpalb,.gbmpalc{line-height: 27px;padding: 5px 20px;white-space: nowrap;text-align: right;}
+.gbmpalc{text-align: center;}
+.gbmpala{padding-left: 10px;text-align: left;}
+.navbar .btn{margin-top: 0;}
+#gbmpal{width: 100%;}
+#gbmpal button{cursor: pointer;}
+
+#notify_panel{width: 420px;left: auto;right: 0;z-index: 991;}
+#new_noc_list{height: 320px;overflow: auto;background: #fafafa;display: none;}
+#nocbox_tips{height: 320px;line-height:320px;background-color:#FFF;font-size:14px;}
+#new_noc_title{line-height:32px;border-bottom:1px solid #ddd;}
+.navbar .nav > li > a.w-icon{
+    padding: 6px;
+    height: 28px;
+}
+.n-icon{
+    display: inline-block;
+    *zoom: 1;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.header .header_tool .w-icon:hover{
+    background: none;
+}
+.active .icon-notify,.open .icon-notify,.open .w-icon:hover .icon-notify{
+    background: url('imgs/notify-active.png') no-repeat 0 0;
+}
+.w-icon:hover .icon-home{
+    background: url('imgs/home-hover.png') no-repeat 0 0;
+}
+.w-icon:hover .icon-loginout{
+    background: url('imgs/loginout-hover.png') no-repeat 0 0;
+}
+.w-icon:hover .icon-notify{
+    background: url('imgs/notify-hover.png') no-repeat 0 0;
+}
+.icon-home{
+    background: url('imgs/home.png') no-repeat 0 0;
+}
+.icon-loginout{
+    background: url('imgs/loginout.png') no-repeat 0 0;
+}
+.icon-notify{
+    background: url('imgs/notify.png') no-repeat 0 0;
+}
+.noc_iterm_title{height:32px;line-height:32px;font-size:13px;font-weight:bold;color:#666666;padding-left:10px;}
+.noc_iterm_close, .noc_iterm_time{float:right;margin-right:10px;}
+.noc_iterm_read, .noc_iterm_cancel{font-weight: normal;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;height:16px;width:16px;background:transparent url('./imgs/tools_icon.png') no-repeat 0 0;cursor:pointer;float:right;margin-right:10px;margin-top: 8px;}
+.noc_iterm_data{ margin:0;}
+.noc_iterm_data li{list-style:none;border-bottom:1px solid #fff;border-top:1px solid #eee;padding:10px;padding-left:30px;font:normal normal 12px/1.6 Lucida Console,consolas,"Arial";cursor:pointer;}
+.noc_iterm_data li p{ margin:0;}
+.noc_iterm_info{color:#666666;font-weight:bold;cursor:pointer;}
+.noc_iterm_content{color:#807e7e;cursor:pointer;}
+.noc_iterm_time{color:#ff7403;}
+.noc_iterm_data li:hover{background-color:#FFFFFF;}
+.noc_iterm_view{color:#999;float:right;padding-right:10px;padding-left:10px;}
+.noc_iterm_view a, .noc_iterm_view a:link, .noc_iterm_view a:visited .noc_iterm_view a:hover {color:#317ed8;text-decoration:none;}
+.noc_iterm_num{float:left;margin-left:10px;}
+.noc_iterm_num span{color:#ff7403;margin:0 5px;font-weight: bold;}
+.noc_iterm_func{float: right;margin-right: 10px;}
+.noc_iterm_func a{color: #999999;text-decoration: none;font-size: 12px;padding:5px;}
+.noc_iterm_func a:hover{color: #0088cc;}
+
+.noc_iterm_history{float:right;margin-right:15px;}
+.noc_iterm_history a{color:#888;}
+
+a.noc_iterm_cancel{background-position: 0 0;}
+a.noc_iterm_cancel:hover{background-position: -16px 0;}
+a.noc_iterm_read{background-position: 0 -16px;}
+a.noc_iterm_read:hover{background-position: -16px -16px;}
+#nocbox_tips .red{padding:0px 2px;color:red;font-family:Lucida Console,consolas;}
+#new_noc_list p.tips{height: 320px;line-height:320px;padding:0;margin: 0;text-align: center;color:#cdcdcd;}
+
+.content{position: absolute;top:41px;bottom: 30px;width: 100%;}
+.content_side{width: 169px;border-right: 1px solid #c5c5c5;box-shadow: 2px 0  3px rgba(0,0,0,0.1);position: absolute;top:0;bottom: 0;left:0;}
+
+.content_side .content_side_funcs{padding-top: 10px;position: absolute;top:0;bottom: 0;left:0;right:0;}
+.content_side .content_side_funcs .funcs{height: 58px;line-height: 54px;display: block;padding-left: 58px;color: #019adf;text-decoration: none;text-align: left;font-size: 14px;font-weight: bold;font-family: 'Microsoft YaHei';position: relative}
+.content_side .content_side_funcs a.funcs:hover, .content_side .content_side_funcs a.active{color: #ffffff;background: transparent url(imgs/side_a_bg.jpg) center center no-repeat;}
+.content_side .content_side_funcs a.funcs span{width:35px;height: 35px;line-height: 35px;background-color: #efefef;position: absolute;left: 15px;top: 9px;background: transparent url(imgs/icons.png) 0 0 no-repeat;}
+.content_side .content_side_funcs a.funcs.func_desktop span{background-position: 0 0;}
+.content_side .content_side_funcs a.funcs.func_control span{background-position: 0 -45px;}
+.content_side .content_side_funcs a.funcs.func_decision span,.content_side .content_side_funcs a.funcs.func_manage span{background-position: 0 -90px;}
+.content_side .content_side_funcs a.funcs.func_supervise span,.content_side .content_side_funcs a.funcs.func_official span{background-position: 0 -135px;}
+.content_side .content_side_funcs a.funcs.func_document span,.content_side .content_side_funcs a.funcs.func_develop span{background-position: 0 -180px;}
+.content_side .content_side_funcs a.funcs.func_notices span,.content_side .content_side_funcs a.funcs.func_media span{background-position: 0 -225px;}
+.content_side .content_side_funcs a.funcs.func_knowledge span{background-position: 0 -270px;}
+.content_side .content_side_funcs a.funcs:hover span,
+.content_side .content_side_funcs a.funcs.active span{background-position-x: -45px;}
+.content_side .content_side_funcs .funcs_ul{background: transparent url(imgs/dot.png) 40px 0 repeat-y;margin: 0;clear: both;}
+.content_side .content_side_funcs .funcs_ul li{height: 30px;line-height: 30px;*height:28px;*line-height: 28px;}
+.content_side .content_side_funcs .funcs_ul li a{display: block;text-align: left;margin-left: 65px;color: #64749d;text-decoration: none;font-family: 微软雅黑;}
+.content_side .content_side_funcs .funcs_ul li a:hover, 
+.content_side .content_side_funcs .funcs_ul li.active a{font-weight: bold;}
+.content_main{position: absolute;left:170px;top:0;bottom:0;right:0;}
+.content_main #iframe{position: absolute;top:0;left:0;right:0;bottom: 0;height: 100%;width: 100%;}
+
+.footer{height: 30px;line-height: 30px;background-color: #008dcc;position: absolute;bottom: 0;width: 100%;text-align: center;color: #ffffff;}

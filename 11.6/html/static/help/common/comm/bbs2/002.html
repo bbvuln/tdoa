@@ -1,0 +1,13 @@
+<h4 style="font-family:'微软雅黑'"><span>集成了discuz X2论坛，登录OA系统，为什么不能同步登录论坛？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+可按以下几种情况检查：<br/>
+到论坛Ucenter中检查下添加的应用是否通讯成功，如果没有，检查下是否将Ucenter中添加应用的配置信息拷贝到\MYOA\webroot\inc\uc_client\config.inc中，注意第一行必须加上&lt;?php 然后从第二行粘贴配置信息。检查下是否是以创始人身份进入的Ucenter。<br/>
+检查下系统管理-系统参数设置中“UCenter集成选项”是否启用。<br/>
+检查下访问OA系统的地址、安装论坛的ip及UCenter集成的ip地址三者是否一致。<br/>
+如果是部分用户不能同步登录论坛，检查下 “UCenter集成选项”那设置的字段的字符长度是否大于3小于15，若不是，请替换user.php（下载地址：通达网站/OA知识库/Office Anywhere 高级应用技巧/OA与Discuz!论坛集成/X2）。检查下用户的个人资料-电子邮件地址是否为空或与其他用户相同，若是，请到Discuz!X2的注册设置中设置“是否允许同一Email地址注册多个用户”为是。
+</p>
+
+

@@ -1,0 +1,447 @@
+/* 
+body{
+    font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,'Arial Negreta', 'Arial Normal', 'Arial';
+} */
+textarea{ 
+    resize:none;
+}
+.table{
+    width:90%;
+}
+td{
+    vertical-align: middle;
+}
+#center{
+    width:1070px;
+    margin:0 auto;
+}
+#apply_tab,#apply_more_tab,#content_tab{
+    margin:0 auto;
+}
+#apply_tab{
+    margin-top:30px;
+}
+#apply_tab td,#apply_more_tab td,#content_tab td{
+    vertical-align: middle;
+    /* padding:0px 8px!important; */
+}
+#content_box{
+    width:90%;
+    margin:0 auto;
+    border:1px solid #ddd;
+}
+#content_title_box{
+    width:100%;
+    height:60px;
+    line-height:60px;
+}
+.content_title{
+    display: block;
+    margin-left: 3.5%;
+}
+#more_btn,#up_more_btn{
+    width:202px;
+    height:26px;
+    margin:0 auto;
+    margin-bottom: 10px;
+    text-align:center;
+    font-size:12px;
+    color:#c7c7c7;
+    line-height:26px;
+    border-left:1px solid #c7c7c7;
+    border-right:1px solid #c7c7c7;
+    border-bottom:1px solid #c7c7c7;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:6px;
+    cursor: pointer;
+}
+.edui-editor{
+    width:100%!important;
+}
+.title_td{
+    width:12%;
+    height:60px;
+    padding:0px!important;
+    text-align:center!important;
+}
+.title_td_content{
+    width:12%;
+    height:60px;
+    padding:0px!important;
+    /* text-align:center!important; */
+}
+.title_info{
+    text-align:center;
+    /* display:block; */
+    /* float:left; */
+}
+#form1 input[type="text"]{
+    margin:0px!important;
+}
+.must_read{
+    text-align:center;
+    /* display:block; */
+    color:red;
+    margin-left:5px;
+}
+.currency_read{
+    width:335px;
+}
+.short_time{
+    width:150px;
+}
+.participants{
+    height:120px;
+    padding:0px!important;
+    text-align:center!important;
+}
+.participants_must_read{
+    color:red;
+    margin-left:5px;
+}
+#M_ATTENDEE_NAMES{
+    width:816px;
+    height:50px;
+    /* border-radius:4px 4px 0 0; */
+    padding-bottom:20px;
+}
+.power_box,.prople_user{
+    /* line-height:120px; */
+    position: relative;
+    float:left;
+}
+#form1 .orgAdd {
+    color: #207BD6;
+    /* padding-left: 12px;
+    background: url(/static/theme/10/images/org_select.png) no-repeat; */
+    background-position: 0px 0px;
+    cursor: pointer;
+    /* position:absolute; */
+    /* bottom: 9px; */
+    /* right: 200px; */
+    line-height:20px;
+    float:right;
+    margin-right: 20px;
+}
+#form1 .orgClear{
+    color: #9AA9B8;
+    cursor: pointer;
+    /* position:absolute; */
+    /* bottom: 9px; */
+    /* right: 140px; */
+    line-height:20px;
+    float:right;
+    margin-right: 10px;
+}
+.use_box{
+    /* height:60px;
+    line-height:60px; */
+    position: relative;
+}
+#MODERATOR_NAMES,#RECORDER_NAMES{
+    height:20px;
+    margin-bottom: 0px;
+    width:335px;
+    /* border-radius:4px 4px 0 0; */
+    padding-bottom:20px;
+}
+.double_title{
+    display: block;
+}
+.advance_time{
+    width: 62px;
+    height: 16px!important;
+}
+.currency_tr{
+    height:60px;
+}
+.controls{
+    float:left;
+    margin-right:10px;
+}
+#remind_select{
+    width:100px;
+    margin-bottom:0px;
+}
+.out_man{
+    position:relative;
+    /* width:80%; */
+}
+#TO_WEBMAIL{
+    height:20px;
+    width: 816px;
+    margin-bottom: 0px;
+    padding-bottom:20px;
+    /* line-height:60px; */
+}
+.tmpl_btn{
+    color:#1687cb;
+    cursor: pointer;
+}
+#cycle_rate{
+    width:40px;
+}
+#cycle_time{
+    display: inline-block;
+    margin-left:10px;
+}
+#CYCLE_END_DATE{
+    width:120px;
+}
+#month_time{
+    width:30px;
+}
+#cycle_month_first,#cycle_month_second{
+    width:90px;
+    margin-bottom:0px;
+}
+.query_box{
+    height:180px;
+    text-align:center!important;
+}
+.query_people{
+    margin-top:10px;
+    float:left;
+}
+.query_title{
+    display: inline-block;
+    float:left;
+    line-height:40px;
+    margin-right:30px;
+}
+#QUERY_DEPT_NAMES,#QUERY_PRIV_NAMES,#QUERY_USER_NAMES{
+    height:20px;
+    width:746px;
+    padding-bottom:20px;
+}
+.remind_title{
+    display: inline-block;
+    float:left;
+    margin-top:5px;
+}
+.remind_ctr{
+    float:left;
+}
+.first_ctr{
+    margin-left: 18px;
+}
+#deviceBox{
+    width:660px;
+    height:60px;
+    position: relative;
+    float:left;
+}
+#deviceContent{
+    float:left;
+    width:600px;
+    height:60px;
+    /* background:greenyellow; */
+    overflow: hidden;
+    position: relative;
+}
+#leftBtn,#rightBtn{
+    width:30px;
+    height:60px;
+    float:left;
+    cursor: pointer;
+}
+#img_box{
+    width:600px;
+    white-space:nowrap;
+    position:absolute;
+    height:60px;
+    font-size: 0;
+    /* letter-spacing: -3px; */
+}
+.device_div{
+    display: inline-block;
+    width:60px;
+    height:60px;
+    /* background:cyan; */
+    position: relative;
+}
+#number_time{
+    width:30px;
+    margin-right:10px;
+}
+.device_icon{
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-left: 6px;
+    border:2px solid #fff;
+    position: absolute;
+}
+.device_icon_i{
+    font-size:24px!important;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 6px;
+    margin-left: 6px;
+    border:2px solid #fff;
+    cursor: default;
+    position: absolute;
+}
+.public_device_img{
+    border:2px dashed #d7d7d7;
+}
+.choice_device_img{
+    border:2px dashed #1687cb;
+}
+#applyDevice{
+    display: block;
+    float:left;
+    margin-top: 20px;
+    margin-left: 50px;
+    color:#1687cb;
+    cursor: pointer;
+}
+.directionBtn{
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: block;
+}
+.handle_box {
+    width: 214px;
+    margin:40px auto;
+}
+#back_info {
+    margin-left:40px;
+}
+#inviteModal{
+    width:50%;
+}
+#invite_box{
+    width:100%;
+    height:400px;
+    padding:0px;
+}
+#inviteMenu{
+    width:100%;
+    /* height:300px; */
+    float:left;
+    margin-bottom:10px;
+    /* background:greenyellow; */
+    /* border:1px solid #d7d7d7; */
+}
+#inviteList{
+    width:150px;
+    margin-top:10px;
+    margin-left:10px;
+}
+#inviteContent{
+    width:99.5%;
+    /* height:300px; */
+    float:left;
+    border:1px solid #d7d7d7;
+    border-radius:5px;
+    /* background:red; */
+}
+.need_lab{
+    padding:0px;
+}
+
+#notesBtn,#occupyInfoBtn{
+    width:142px;
+    height:28px;
+    border-radius: 4px;
+}
+#occupyInfoBtn{
+    margin-left:10px;
+}
+.add_icon,.clear_icon{
+    font-size:14px!important;
+    margin-right: 4px;
+}
+.conference_services{
+    min-width:100px;
+}
+.checkbox{
+    padding-left:0px!important;
+    width:100px;
+}
+
+
+.my-check-,.my-check-label{
+    display: inline;
+}
+.regular-checkbox {
+    display: none;
+}
+.regular-checkbox + .my-check-label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 6px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+.regular-checkbox + .my-check-label:active, .regular-checkbox:checked + .my-check-label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + .my-check-label {
+    background-color: #0E86FE;
+    border: 1px solid white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+
+
+.regular-checkbox:checked + .my-check-label:after {
+    content: '\2714';
+    font-size: 10px;
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    color: white;
+}
+
+#tmpl_name{
+    margin-left:20px;
+}
+
+label>input[type="checkbox"] {
+    vertical-align: text-bottom;
+    margin-left:0!important;
+}
+.power_btn_box{
+    height:20px;
+    border-radius:0 0 4px 4px;
+    background:#eee;
+}
+.M_ATTENDEE_NAMES_btn_box{
+    width:828px;
+    position: absolute;
+    top: 54px;
+    left: 1px;
+}
+.MODERATOR_NAMES_btn_box,.RECORDER_NAMES_btn_box{
+    width:347px;
+    position: absolute;
+    top: 24px;
+    left: 1px;
+}
+.TO_WEBMAIL_btn_box{
+    width:828px;
+    background:#fff;
+    position: absolute;
+    top: 24px;
+    left: 1px;
+}
+.QUERY_DEPT_NAMES_btn_box{
+    width:758px;
+    position: absolute;
+    top: 24px;
+    left: 1px;
+}
+.yes_btn{
+    width: 84px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 18px;
+}

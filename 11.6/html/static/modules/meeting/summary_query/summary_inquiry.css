@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none !important;
+}
+.myPopup_txt{
+    text-align: center;
+}
+
+.myPopup_txt img{
+    width: 32px;
+    height:32px;
+}
+.search_icon{
+    color:rgba(204, 204, 204, 1);
+    display: inline-block;
+   line-height: 26px;
+   cursor: pointer;
+}
+
+.list {
+    width: 100%;
+    position: relative;
+    background: inherit;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.list_title {
+    width: 100%;
+    height: 43px;
+    position: relative;
+}
+.list_header{
+    width:100%;
+    box-sizing: border-box;
+    height:30px;
+    margin-bottom: 20px;
+}
+
+.Summary_title {
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    color: #666666;
+    position: absolute;
+    left: 45px;
+    top: 12px;
+}
+.list_body_time input{
+    width: 96px;
+    margin:0;
+    height: 30px;
+}
+.list_body_search input{
+    width: 130px;
+    margin:0;
+    height: 30px;
+
+}
+.resgin {
+    width:58px;
+    height: 30px;
+    background-color: rgba(16, 142, 233, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    font-weight: 500;
+    padding: 1px 4px;
+    font-size: 12px;
+    font-style: normal;
+    border-style: solid;
+    border-color: rgba(174, 174, 174, 0);
+    border-radius: 5px;
+    color: #fff;
+    -moz-box-shadow: none;
+}
+.press_btn {
+    width: 60px;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 10px;
+    border: none;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+}
+.list_body_select_title{
+    font-size: 12px;
+    color: #666666;
+    font-weight: 400;
+    font-style: normal;
+}
+.list_body_time{
+    float: right;
+    margin-right: 10px;
+}
+.list_body_search{
+    float: right;
+    margin-right: 10px;
+}
+.list_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#query{
+    float: right;
+}
+.list_body {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.list_table_header {
+    width: 100%;
+    background: inherit;
+    height: 36px;
+    background-color: #d7d7d7;
+    border: none;
+}
+
+.list_table_row {
+    width: 100%;
+    background: inherit;
+    height: 37px;
+    color: #666666;
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+}
+
+.list_table_row span {
+    font-size: 12px;
+}
+.table_personnel{
+    width: 10%;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+.table_checkbox .checkbo_input{
+    margin:0 10px;
+}
+.table_Apply{
+    width: 15%;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+.table_seance {
+    width: 20%;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.table_place {
+    width: 10%;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.table_state {
+    width: 10%;
+    font-size: 13px;
+    text-align: center;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+td,th{
+    padding: 0 5px;
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+.table_operation {
+    font-size: 13px;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+.table_operation span{
+    margin-right:20px;
+    font-size: 12px;
+    color: #2F80D1;
+    cursor: pointer;
+}
+#page ul {
+    float: right;
+}
+.cry_face_tab {
+    height: 80px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.cry_face_tab td {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cry_face {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}

@@ -1,0 +1,200 @@
+*{padding:0px;margin:0px;}
+body{
+   margin:0px;
+}
+
+#left{
+   width:188px;
+   padding-left:20px;
+   vertical-align:top;
+   font-size:12px;
+}
+
+.BlockTop{
+   width:178px;
+}
+
+#left_top{
+   width:178px;
+   height:79px !important;
+   background:url('images/diary.jpg') left center no-repeat;
+}
+#Toolbar{
+   width:178px;
+   height:35px;
+   text-align:center;
+}
+#Toolbar a.ToolBtn2{
+   width:50px !important;
+   width:55px;
+}
+#Toolbar a.ToolBtn2 span{
+   display:block;
+}
+
+#PrevMonth{
+   display:inline-block !important;
+   display:inline;
+   width:20px;
+   height:20px !important;
+   height:30px;
+   background:url('images/cal_arrow.png') -5px center no-repeat;
+   cursor:pointer;
+}
+#YearMonth{
+   display:inline-block !important;
+   display:inline;
+   width:90px;
+   margin-bottom:0px !important;
+   margin-bottom:6px;
+}
+#NextMonth{
+   display:inline-block !important;
+   display:inline;
+   width:20px;
+   height:20px !important;
+   height:30px;
+   background:url('images/cal_arrow.png') -35px center no-repeat;
+   cursor:pointer;
+}
+#calendar{
+   width:178px;
+   border:1px #95bede solid;
+   border-top:0px;
+   margin-bottom:10px;
+   text-align:center;
+   font-size:12px;
+}
+#calendar .head{
+   color:#6aad44;
+   font-weight:bold;
+}
+#calendar td{
+   height:20px;
+   border-bottom:1px #cdcdcd solid;
+   border-right:1px #cdcdcd solid;
+   cursor:pointer;
+}
+#calendar td.hover,
+#calendar td.active{
+   background:#c8e08c;
+}
+
+.container{
+   width:176px !important;
+   width:178px;
+   border:1px #95bede solid;
+   border-top:0px;
+   margin-bottom:10px;
+}
+.container a{
+   display:block;
+   height:20px;
+   line-height:20px;
+   padding-left:18px;
+   color:#393939;
+   background:url('images/dot.png') 5px 6px no-repeat;
+   overflow:hidden;
+}
+.container a.more{
+   text-align:right;
+   background:none;
+}
+
+
+#right{
+   height:100%;
+   vertical-align:top;
+}
+
+/*  diary_body.php begin     */
+.TableTop .subject{
+   font-size:14px;
+   color:#383838;
+}
+.TableTop .subject a{
+   color:#383838;
+}
+.TableTop .operate{
+   font-size:12px;
+   font-weight:normal;
+   text-align:right;
+   color:#383838;
+}
+.TableTop .operate a{
+   color:#383838;
+}
+#diary_body_topbar{
+   height:32px;
+}
+
+.last_10dairy{
+	font-size:14px;
+	font-weight:bold;
+	float:right;
+}
+
+.body_content{
+   text-align: center;
+}
+.one_diary{
+	text-align:left;
+	margin-bottom:10px;
+	border-bottom: 1px #CDCDCD solid;
+}
+
+.diary_type {
+   padding:10px;
+	color: #999;
+	font-size: 12px;
+	background-color: #ffffff;
+	border-left: 1px #CDCDCD solid;
+	border-right: 1px #CDCDCD solid;
+}
+
+.diary_comment {
+	color: #999;
+	font-size: 12px;
+	background-color: #ffffff;
+	border-left: none;
+	border-right: none;
+}
+
+.diary_comment_replay {
+	border:#666 1px dashed;
+  padding:8px;margin:8px; 
+  text-align:left;
+  background-color:#fff; zoom:1;
+  filter:alpha(opacity=70);
+  opacity:0.7;
+  background-color:none;
+}
+
+.content {
+  PADDING-RIGHT: 20px;
+	PADDING-LEFT: 20px;
+	PADDING-BOTTOM: 8px;
+  PADDING-TOP: 8px;
+	COLOR: #252927;
+	line-height: normal;
+	font-size: 12px;
+	background-color: #ffffff;
+	border-left: 1px #CDCDCD solid;
+	border-right: 1px #CDCDCD solid;
+}
+.operate{
+   text-align:right;
+}
+#readbody{
+}
+.replycontent{
+  padding-left: 14px;
+}
+
+.operatebar{
+	padding:4px;
+	text-align: right;
+   background: #edf6db;
+   border: 1px #CDCDCD solid;
+}
+/*  diary_body.php end     */

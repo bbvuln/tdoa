@@ -1,0 +1,40 @@
+{
+    "status": "1",
+	"data": [
+		{
+			"id":"0",
+			"name":"销售之星",
+			"type": "0",
+			"icon": "./test.png",
+			"valid_date": "70",
+			"source": "1",
+			"desc": "这是一段描述",
+			"getdate": "2017年12月21日",
+			"is_outdate": true
+		},
+		{
+			"id":"1",
+			"name":"销售之星1",
+			"type":"1",
+			"icon": "./test.png",
+			"valid_date": "1",
+			"source": "2",
+			"desc": "这是一段描述1",
+			"rules": "20~30",
+			"getdate": "2017年12月22日",
+			"is_outdate": false
+		},
+		{
+			"id":"2",
+			"name":"销售之星2",
+			"type": "1",
+			"icon": "./test.png",
+			"valid_date": "30",
+			"source": "3",
+			"desc": "这是一段描述2",
+			"rules": "50~100",
+			"getdate": "2017年12月23日",
+			"is_outdate": false
+		}
+	]
+}

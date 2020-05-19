@@ -1,0 +1,86 @@
+.mainBody
+{
+    BACKGROUND-COLOR:#f5fbff;
+    MARGIN:0;
+    OVERFLOW-Y:hidden;
+    MARGIN-TOP:0;
+}
+
+.cbToolbar
+{
+    HEIGHT:50px;
+    WIDTH:100%;
+    BACKGROUND-COLOR:#fff;
+}
+
+.cbToolbar .f-btn-query{
+    margin: 0 5px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.cbToolbar .f-output-select{
+    margin: 0 5px;
+    padding: 0 15px;
+}
+
+.cbToolbar .f-output-arrow{
+    vertical-align: baseline;
+    margin-left: 5px;
+}
+
+
+.cbToolbar  a.f-output-menu-item:hover {
+    background: #ecf6fd !important;
+    color:gray;
+}
+
+
+.tbButton, .tbButtonDown, .tbButtonRaise
+{
+    width:84px;
+    height:35px;
+    text-align:left;
+    font-size:16px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    color: #52515l;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    background: url(images/button_bg.png) no-repeat center center;
+}
+
+button img{
+    height:22px;
+    width:27px;
+    vertical-align:middle;
+}
+
+.tbButtonDown
+{
+    BORDER-COLOR:threeddarkshadow threedhighlight threedhighlight threeddarkshadow;
+}
+
+.tbDisabled
+{
+    width:84px;
+    height:35px;
+    text-align:left;
+    font-size:16px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    color: #8a8989;
+    filter:alpha(opacity=35);
+    margin-left: 4px;
+    margin-right: 4px;
+    CURSOR:default;
+    background: url(images/button_bg2.png) no-repeat center center;
+}
+
+span.sep {
+    margin:2;
+    background-color: buttonface;
+    border-top: 5px solid buttonshadow;
+    border-left: 1px solid buttonshadow;
+    border-bottom: 5px solid buttonhighlight;
+    border-right: 1px solid buttonhighlight;
+}

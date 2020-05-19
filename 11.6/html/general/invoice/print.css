@@ -1,0 +1,28 @@
+#myModal.modal #content,
+#myModal.modal td {
+    box-sizing: content-box;
+}
+@media print {
+    .comm_table2 {
+        visibility: hidden;
+        height: 0;
+    }
+    #fpcc_dzfp {
+        color: #015293 !important;
+    }
+    .content_td_blue {
+        color: #574b9d !important;
+    }
+    .tip {
+        display: none;
+    }
+    .result_table button {
+        visibility: hidden;
+    }
+    .content-key {
+        font-weight: normal;
+    }
+    .not-pass .btns {
+        visibility: hidden;
+    }
+}

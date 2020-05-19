@@ -1,0 +1,97 @@
+*{margin:0px;padding:0px;}
+
+A.A1:link { COLOR: #003366; TEXT-DECORATION: underline;}
+A.A1:visited { COLOR: #003366; TEXT-DECORATION: underline}
+A.A1:active  { COLOR: #124164; TEXT-DECORATION: underline}
+A.A1:hover   { COLOR: #124164; TEXT-DECORATION: underline}
+
+img{border:0px;}
+body{
+	background: url('bg.jpg') -200px -83px;;
+}
+#navPanel{
+	width: 100%;
+	height: 30px;
+	padding-top:4px;
+	font-size:13px;
+	background: url('menu_top_bg.png') top left repeat-x;
+}
+#navMenu{
+	float: left;
+	white-space: nowrap;
+	padding: 0px 20px;
+	height: 26px;
+	overflow:hidden;
+}
+#navMenu a
+{
+   float:left;
+	overflow:hidden;
+	color:#FFFFFF;
+	text-decoration: none;
+   padding-left:5px;
+	height: 26px;
+}
+#navMenu a span{
+   float:left;
+   cursor:pointer;
+	padding:3px 5px 3px 5px;
+	height: 26px;
+}
+#navMenu a:hover
+{
+	color:#000000;
+   font-weight:bold;
+   background: url('menu_top_active_l.png') no-repeat left top;
+}
+#navMenu a:hover span
+{
+   background: url('menu_top_hover_r.png') no-repeat right top;
+}
+#navMenu a.active
+{
+	color:#000000;
+   font-weight:bold;
+   background: url('menu_top_active_l.png') no-repeat left top;
+}
+#navMenu a.active span, #navMenu a:hover span
+{
+	height: 26px;
+   background: url('menu_top_active_r.png') no-repeat right top;
+}
+
+#navMenu a span span.close, #navMenu a span span.over{
+   height:16px;
+   width:16px;
+   float:right;
+	margin-left:10px;
+   cursor:pointer;
+	padding: 0px;
+	background:url('/static/images/close_square.png') no-repeat center center;
+}
+
+#navMenu a.active span span.close, #navMenu a:hover span span.close{
+   height:16px;
+   background:url('/static/images/close_square_over.png') no-repeat center center;
+}
+.mutiwork #navMenu a{
+   _width:110px;   
+}
+*+html .mutiwork #navMenu a{
+   width:105px;
+}
+*+html #navMenu a span span.close{
+   margin-left:0px;      
+}
+.mutiwork #navMenu a span span.close{
+   _margin-left:10px;   
+}
+#north{
+    height:30px;
+}
+#center{
+    top:30px;
+}
+* html{
+    padding-bottom:30px;
+}

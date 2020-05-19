@@ -1,0 +1,13 @@
+*{margin:0;padding:0}
+
+.module {text-align:center;border:1px #1E5CA5 solid; padding: 0px;margin:0px 5px;}
+.module_body {clear:both;font-size: 9pt;margin: 0 !important; overflow: auto; padding: 5px 5px;}
+.listColor {border: none;}
+.listColor .head {padding-left:6px;height:27px;}
+.listColor .moduleHeader {height:27px;}
+.listColor .module_body {border: 2px #1E5CA5 solid;border-top:none;}
+
+#navMenu{float: left;white-space: nowrap;margin-top:2px;height: 25px;overflow:hidden;}
+#navMenu a{color: #000;float:left;overflow:hidden;text-decoration: none;padding-left:5px;height: 25px;margin-right:5px;}
+#navMenu a span{float:left;cursor:hand;padding:6px 10px 3px 5px;height: 25px;font-size:14px;}
+#navMenu a.active{font-weight: bold;color: blue;}

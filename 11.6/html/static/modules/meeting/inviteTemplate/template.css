@@ -1,0 +1,237 @@
+.attendance-title{
+    padding-left: 55px;
+}
+textarea{ 
+    resize:none;
+}
+#center{
+    width:1070px;
+    margin:0 auto;
+}
+.table{
+    width:90%;
+}
+#tmpl_tab{
+    margin:0 auto;
+    margin-bottom:50px;
+}
+.must_read{
+    color:red;
+}
+input{
+    margin-bottom:0!important;
+}
+#template_name{
+    margin-left:30px;
+    width:79.35%;
+}
+.orgAdd {
+    color: rgb(32, 123, 214);
+    padding-left: 12px;
+    /* background: url(/static/theme/10/images/org_select.png) 0px 0px no-repeat; */
+    background-position: 0px 0px;
+    cursor: pointer;
+    float:right;
+    margin-right: 20px;
+}
+.orgClear{
+    color: #9AA9B8;
+    cursor: pointer;
+    float:right;
+    margin-right: 10px;
+}
+.power_box{
+    margin-left:100px;
+    width:80%;
+    margin-bottom:10px;
+    position: relative;
+}
+.text_style{
+    height:30px;
+    width:598px;
+}
+.power_msg{
+    float:left;
+    margin-left:30px;
+    margin-top:10px;
+}
+.parameter_td{
+    background:#f7f7f7;
+}
+.common_td{
+    height:30px;
+}
+.text_box{
+    width:100%;
+    height:332px;
+    /* border:1px solid #a7a7a7; */
+    margin-left:5px;
+}
+.preview_btn{
+    float:right;
+}
+/* #editorBuild{
+    width:100%;
+    margin:0 auto;
+} */
+.parameter_name{
+    float:left;
+    background:#fff;
+    height:24px;
+    padding:0 2px;
+    line-height:24px;
+    margin-right:20px;
+}
+a {
+    outline: none;
+}
+a:visited {
+    color: #1687cb;
+    text-decoration: none;
+}
+a:link {
+    color: #1687cb;
+    text-decoration: none;
+}
+a.addfile, a.selfile, a.addimage, a.add_image_multi, a.add_swfupload {
+    color: #0e86fe;
+    cursor: pointer;
+}
+a.addfile_drag, a.addfile, a.selfile, a.addimage, a.add_swfupload {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+a.addfile {
+    width: 60px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    padding-left: 18px;
+    background: url(/static/images/attach/add.png) no-repeat left center;
+    cursor: pointer;
+}
+input[type="file"].addfile, input.addfile {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 20px;
+    width: 110px;
+    font-size: 20px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+a.selfile:link, a.selfile:visited {
+    text-decoration: none;
+}
+a.selfile {
+    padding-left: 18px;
+    background: url(/static/images/attach/add_selfile.png) no-repeat left center;
+    cursor: pointer;
+}
+.modal{
+    left:45%;
+}
+#invite_box{
+    width:100%;
+    height:325px;
+    /* background-image: url(/static/modules/meeting/images/1.jpg);
+    background-size:cover; */
+    padding:0;
+    overflow-y: scroll;
+}
+#inviteModal{
+    width:50%;
+}
+.tmpl_out_box{
+    width:100%;
+    height:800px;
+    /* background: url(/static/modules/meeting/images/tmpl1.jpg) no-repeat; */
+    background-size:100% 800px;
+    overflow: hidden;
+}
+.handle_box {
+    width:214px;
+    margin:40px auto;
+}
+#back_info {
+    margin-left:40px;
+}
+.tmpl_in_box{
+    width:70%;
+    height:80%;
+    margin: 0 auto;
+    margin-top:3%;
+}
+#set_img_chiose{
+    width:70px;
+    height:40px;
+    /* border:1px solid red; */
+    display: block;
+    float:left;
+    margin-left:30px;
+}
+#invite_img{
+    width:40px;
+    height:40px;
+}
+#upload_img_btn{
+    width: 60px;
+    height:40px;
+    line-height:40px;
+    background:cyan;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    padding-left: 18px;
+    background: url(/static/images/attach/add.png) no-repeat left center;
+    cursor: pointer;
+    color: #1687cb;
+    margin-left:30px;
+}
+#up{
+    width:60px;
+    height:20px;
+    position:absolute;
+    opacity:0;  
+    filter:alpha(opacity=0);
+    z-index:99;
+    margin-top:10px;
+    cursor: pointer;
+    margin-left:30px;
+}
+.device_icon{
+    width:60px;
+    height:40px;
+}
+.td_title{
+    text-align: center!important;
+    vertical-align: middle!important;
+}
+
+.power_btn_box{
+    width:610px;
+    height:20px;
+    border-radius:0 0 4px 4px;
+    background:#eee;
+    position: absolute;
+    top: 34px;
+    left: 1px;
+}
+.add_icon,.clear_icon{
+    font-size:14px!important;
+    margin-right: 4px;
+}
+.yes_btn{
+    width: 84px;
+    height: 28px;
+    line-height: 18px;
+    border-radius: 4px;
+}
+#DEPT_NAMES,#PRIV_NAMES,#USER_NAMES{
+    padding-bottom:20px;
+}

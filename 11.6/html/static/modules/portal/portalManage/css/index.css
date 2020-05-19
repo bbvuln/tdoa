@@ -1,0 +1,359 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.portal_table_box{
+    width:98%;
+    height:auto;
+    position: relative;
+    margin:auto;
+}
+.use_status{
+    color:#2EBA07;
+    font-weight: bold;
+}
+.no_use{
+    color:#FE5500;
+    font-weight: bold;    
+}
+.handle_btn{
+    color:#108EE9;
+    font-weight: bold;
+    cursor: pointer;
+}
+.build_btn{
+    margin-bottom:20px;
+}
+.porHandle{
+    width:302px;
+    height:100%;
+    position: relative;
+}
+.maskTd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+}
+.move{
+    cursor:move;
+}
+#cloneModal{
+    width:470px;
+}
+#portal_name{
+    margin-left:30px;
+    margin-top:8px;
+    width:300px;
+}
+#portal_icon_box{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    border-radius:50%;
+    background: #678ace;
+}
+#portal_icon{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    /* margin-left:30px; */
+    /* position: absolute; */
+    /* background:#678ace; */
+}
+#portal_status{
+    margin-left:48px;
+    display: inline-block;
+}
+#avatarPick{
+    margin-bottom: 10px;
+}
+.status_radio,.column_nav_int,.column_con_type,.column_open_type,.column_status_radio{
+    margin-bottom:8px !important;
+    margin-right:3px !important;
+
+}
+.status_stop{
+    margin-left: 80px !important;
+}
+#edit_ul{
+    margin:0 auto;
+    position: relative;
+    display: block;
+    width:600px;
+}
+#edit_ul>li{
+    width:595px;
+    height:50px;
+    line-height:50px;
+}
+.power_btn{
+    color:#0088CC;
+    cursor: pointer;
+}
+#dra_btn{
+    float:right;
+}
+.power_margin{
+    margin-left:38px;
+    margin-top:17px;
+}
+.text_style{
+    width:355px;
+    overflow-y:auto;
+    resize: none;
+}
+#portal_power,#column_nav,#column_content,#column_open,#column_status,#column_parent{
+    margin-left:30px;
+    display: inline-block;
+    position: relative;
+}
+#portal_keep{
+    margin-left:10px;
+    display: inline-block;
+    position: relative;
+}
+.setKeepTime{
+    display: inline;
+}
+#editModal{
+    width:700px;
+}
+#edit_box{
+    min-height:225px;
+    overflow:auto;
+    overflow-y: scroll;
+}
+.power_status{
+    margin-bottom:8px !important;
+    margin-right:3px !important;
+}
+.no_limit{
+    margin-left: 3px!important;
+}
+#keep_power{
+    width:20px;
+    height:10px;
+    margin-bottom:5px;
+    line-height:10px;
+}
+#iconModal{
+    width:700px;
+}
+#icon-list{
+    position: relative;
+    float: left;
+    margin:0;
+}
+#icon-list li{
+    float:left;
+    margin-left:5px;
+    background:#678ace;
+    cursor: pointer;
+    border:2px solid #fff;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    position: relative;
+}
+.upload-icon{
+    position: relative;
+    float: left;
+    width:250px;
+    bottom: -8px;
+}
+.left{
+    float: left;
+    width: 250px
+}
+.filePicker{
+    position: relative;
+    width:70px;
+    height:24px;
+    border-radius:5px;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    line-height:24px;
+    cursor: pointer;
+}
+.filePicker:hover{
+    opacity:0.7;
+}
+.filePicker>div{
+    width:72px;
+    height:24px;
+}
+.selected{
+    border-color:lightskyblue!important;
+}
+.right {
+    position: absolute;
+    width:74px;
+    height:74px;
+    left: 283px;
+    bottom: -8px;
+}
+
+.right img {
+    border: 2px solid white;
+    cursor: pointer;
+    width:74px;
+    height:74px;
+    border-radius:50%;
+}
+.right img.selected {
+    border-color:lightskyblue
+}
+#new-portrait-wrapper .avatar-small-wrapper {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius:50%;
+}
+.avatar-small-wrapper img{
+    max-width: none;
+}
+#new-portrait-wrapper .portrait-content {
+    width: 68%;
+    float: left;
+}
+.webuploader-element-invisible {
+    position: absolute;
+    font-size: 100px;
+    right: -100px;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+.up-icon-btn{
+    margin-top: 0px;
+}
+.column_table_box{
+    width:80%;
+    height:auto;
+    position: relative;
+    margin:auto;
+    margin-top:30px;
+}
+#column_name{
+    margin-left:30px;
+    margin-top:8px;
+    width:300px;
+}
+.column_nav{
+    margin-bottom:8px !important;
+    margin-right:3px !important;
+}
+.parentName{
+    width:314px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #eee;
+    border-radius:3px;
+}
+.parent_text{
+    margin-left:5px;
+}
+.i_right{
+    float: right;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+#parentTree{
+    position: absolute;
+    width: 312px;
+    height:160px;
+    overflow-y: auto;
+    border: 2px solid #ccc;
+    background: #eee;
+    z-index: 999;
+}
+#clone_box{
+
+}
+#clone_div{
+    width:300px;
+    margin:0 auto;
+    overflow: hidden;
+}
+#clone_content{
+    display:block;
+    margin-top:10px;
+}
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 360px;
+    padding: 15px;
+}
+.back_por_btn{
+    margin-bottom: 30px;
+}
+#icon_box{
+    height:325px!important;
+}
+.modal.fade.in {
+    top: 5%;
+}
+.parentMask{
+    background:#f7f7f7;
+    color:#ddd;
+}
+#portal_seach_box{
+    float: right;
+    /* margin-left: 30%; */
+    margin-right: 25px;
+    position: relative;
+}
+#portal_search_int{
+    margin-bottom:0;
+}
+.search_icon_box{
+    display:block;
+    position: absolute;
+    top: 1px;
+    right:2px;
+    width:28px;
+    height:26px;
+    cursor: pointer;
+    background:#fff;
+}
+#search_icon{
+    margin-top:5px;
+    margin-left:8px;
+}
+#build_new_portal{
+    float:left;
+}
+.icon_li_img{
+    width: 54px;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+.icon_title{
+    position: relative;
+    top: -20px;
+}
+.up_img{
+    /* position: inherit!important;
+    margin-left: 37px!important; */
+    border-radius: 50%!important;
+    width: 50px!important;
+    height: 50px!important;
+    top:0!important;
+    left:0!important;
+}
+.jcrop-selection div:first-child { 
+    border-radius: 50%; 
+}

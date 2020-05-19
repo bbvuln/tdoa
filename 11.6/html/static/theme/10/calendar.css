@@ -1,0 +1,365 @@
+*{padding:0px;margin:0px;}
+body{
+   margin:0px 20px 5px 20px;
+}
+
+.PageHeader{
+   padding-left:175px;
+   background:url('images/calendar.jpg') left center no-repeat;
+}
+.page_top{
+   width:82%; 
+   margin:0 auto;
+}
+.PageHeader .header-right .calendar-view{
+   display:inline-block;
+   width:20px;
+   height:20px;
+   background:url('/static/images/calendar_view.png') 0px center no-repeat;
+   margin-left:10px;
+   
+}
+.PageHeader .header-right {
+   white-space:nowrap; 
+}
+.PageHeader .header-right .list-view{
+   background-position:0px 0px;
+}
+.PageHeader .header-right .list-view:hover{
+   background-position:0px -20px;
+}
+.PageHeader .header-right .day-view{
+   background-position:-27px 0px;
+}
+.PageHeader .header-right .day-view:hover{
+   background-position:-27px -20px;
+}
+.PageHeader .header-right .week-view{
+   background-position:-53px 0px;
+}
+.PageHeader .header-right .week-view:hover{
+   background-position:-53px -20px;
+}
+.PageHeader .header-right .month-view{
+   background-position:-78px 0px;
+}
+.PageHeader .header-right .month-view:hover{
+   background-position:-78px -20px;
+}
+
+div.Date{
+   color:#0167cb;
+}
+
+div.CalAllDay{background:#f2f2f2;border:1px #cccccc solid;position:relative;margin: 1px 0px;padding:0px 3px;}
+
+a.CalLevel1:link, a.CalLevel1:hover, a.CalLevel1:active, a.CalLevel1:visited, span.CalLevel1 {
+   display:inline-block;
+   color:#FF0000;
+   padding-left:16px;
+   background:url("/static/images/flag.gif") no-repeat;
+   background-position:0px 0px;
+}
+a.CalLevel2:link, a.CalLevel2:hover, a.CalLevel2:active, a.CalLevel2:visited, span.CalLevel2 {
+   display:inline-block;
+   color:#FF9933;
+   padding-left:16px;
+   background:url("/static/images/flag.gif") no-repeat;
+   background-position:0px -40px;
+}
+a.CalLevel3:link, a.CalLevel3:hover, a.CalLevel3:active, a.CalLevel3:visited, span.CalLevel3 {
+   display:inline-block;
+   color:#00AA00;
+   padding-left:16px;
+   background:url("/static/images/flag.gif") no-repeat;
+   background-position:0px -20px;
+}
+a.CalLevel4:link, a.CalLevel4:hover, a.CalLevel4:active, a.CalLevel4:visited, span.CalLevel4 {
+   display:inline-block;
+   color:#6F7274;
+   padding-left:16px;
+   background:url("/static/images/flag.gif") no-repeat;
+   background-position:0px -160px;
+}
+
+span.CalLevel1 {
+   line-height:16px;
+   background-position:0px -4px;
+}
+span.CalLevel2 {
+   line-height:16px;
+   background-position:0px -44px;
+}
+span.CalLevel3 {
+   line-height:16px;
+   background-position:0px -24px;
+}
+span.CalLevel4 {
+   line-height:16px;
+   background-position:0px -164px;
+}
+a.CalColor:link, a.CalColor:hover, a.CalColor:active, a.CalColor:visited, span.CalColor {
+   display:block;
+   background-color:#3a87ad;
+   background-position:0px -150px;
+}
+a.CalColor1:link, a.CalColor1:hover, a.CalColor1:active, a.CalColor1:visited, span.CalColor1 {
+   display:block;
+   background-color:rgb(255, 136, 124);
+   background-position:0px 0px;
+}
+a.CalColor2:link, a.CalColor2:hover, a.CalColor2:active, a.CalColor2:visited, span.CalColor2 {
+   display:block;
+   background-color:rgb(252, 226, 89);
+   background-position:0px -25px;
+}
+a.CalColor3:link, a.CalColor3:hover, a.CalColor3:active, a.CalColor3:visited, span.CalColor3 {
+   display:block;
+   background-color:rgb(105, 240, 164);
+   background-position:0px -50px;
+}
+a.CalColor4:link, a.CalColor4:hover, a.CalColor4:active, a.CalColor4:visited, span.CalColor4 {
+   display:block;
+   background-color:rgb(245, 181, 46);
+   background-position:0px -75px;
+}
+
+a.CalColor5:link, a.CalColor5:hover, a.CalColor5:active, a.CalColor5:visited, span.CalColor5 {
+   display:block;
+   background-color:rgb(70, 214, 219);
+   background-position:0px -100px;
+}
+a.CalColor6:link, a.CalColor6:hover, a.CalColor6:active, a.CalColor6:visited, span.CalColor6 {
+   display:block;
+   background-color:rgb(219, 173, 255);
+   background-position:0px -125px;
+}
+
+span.CalColor {
+   line-height:16px;
+   background-position:0px -152px;
+}
+span.CalColor1 {
+   line-height:16px;
+   background-position:0px -2px;
+}
+span.CalColor2 {
+   line-height:16px;
+   background-position:0px -27px;
+}
+span.CalColor3 {
+   line-height:16px;
+   background-position:0px -53px;
+}
+span.CalColor4 {
+   line-height:16px;
+   background-position:0px -77px;
+}
+span.CalColor5 {
+   line-height:16px;
+   background-position:0px -102px;
+}
+span.CalColor6 {
+   line-height:16px;
+   background-position:0px -127px;
+}
+
+/**********************鼠标选择css样式***************************/
+.selectItem {
+	position:absolute;
+	cursor:pointer;
+}
+.selectItem .head {
+	height:15px;
+	background:#465679;
+	border-right:solid #465679 1px;
+	border-left:solid #465679 1px;
+	font: 11px Arial,Sans-serif;
+	color:white;
+}
+.selectItem .content {
+	background:#b2d1ec;
+	border-right:solid #465679 1px;
+	border-left:solid #465679 1px;
+	font: 11px Arial,Sans-serif;
+	color:white;
+}
+.selectItem  table {
+	width:100%;
+}
+.selectItem .content table td {
+	word-break:break-all;
+}
+.selectItem table .TL {
+	width:3px;
+	height:3px;
+	background:url("/static/images/calendar/LT.gif");
+}
+.selectItem table .TR {
+	width:3px;
+	height:3px;
+	background:url("/static/images/calendar/RT.gif");
+}
+.selectItem table .TC {
+	background:#465679;
+}
+.selectItem table .BL {
+	width:3px;
+	height:3px;
+	background:url("/static/images/calendar/LB.gif");
+}
+.selectItem table  .BR {
+	width:3px;
+	height:3px;
+	background:url("/static/images/calendar/RB.gif");
+}
+.selectItem table .BC {
+	background:#7589b8;
+	border-bottom:solid #465679 1px;
+}
+/**********************日程查询样式***************************/
+#cal_table{
+	width:95%;
+	margin:0 auto;
+	background-color:#FFF;
+	border-top:0px;
+}
+#cal_table th, #cal_table td{
+	border-left: 1px solid #999898;
+}
+#cal_table td{
+	border-top: 1px solid #999898;
+}
+#week_tr td{
+	border-top:none;
+}
+#cal_table{
+	border: 1px solid #999898;
+	border-left: none;
+	border-top:none;
+}
+.week{
+}
+.first_tr{
+	color:#000;
+	height:40px; 
+	background-color:#EBEBEB;
+}
+.tbl_header{
+	background-color:#f5f5f5;
+}
+.tbl_header td{
+	text-align:center;
+	font-weight:bold;
+}
+.new_affair{
+	display:block;
+	text-align:center;
+	border:1px dashed #999;
+	visibility:hidden; 
+	margin-bottom:5px;
+	z-index:100;
+}
+.new_affair a{
+	display:block;
+	text-decoration:none;
+	color:#888;
+}
+.new_affair a:hover{
+	text-decoration:none;
+}
+.tbl_header td a{
+	text-decoration:none;
+}
+#name{
+	text-align:center;
+	font-weight:bold; 
+}
+.table_head{
+	background-color:#EBEBEB;
+}
+#zhou{
+	text-align:center;
+	font-weight:bold; 
+}
+#rightDate{
+	position:absolute; 
+	top:9px;
+	right:12px;
+	z-index:101;
+}
+#rightDate a{
+	text-decoration:none;
+	cursor:pointer;
+}
+/**********************新建事务css样式***************************/
+.head{
+	width:650px; 
+	margin:0 auto; 
+	height:50px; 
+	line-height:50px;
+}
+.head_top{
+	width:650px; 
+	margin:0 auto;
+	padding-top:20px; 
+	padding-bottom:10px; 
+	background-color:#FFF;
+}
+#color-group{
+	width:40px;
+	float:left;
+	z-index:99;
+}
+#color{
+	position:absolute;
+	display:block;
+	width:20px;
+	height:20px;
+	background-color:#3a87ad;
+}
+#color_menu{
+	display:none;
+	width:165px;
+	z-index:100;
+	border:none;
+}
+#color_menu a{
+	width:20px;
+	height:20px;
+	padding:0px;
+	float:left;
+}
+.buttonGroupBottom{
+	clear:both;
+	margin-top:20px;
+	padding-left:55px;
+	*+padding-left:180px !important;
+}
+.bottomButtons{
+	width:650px;
+	padding-top:20px;
+	padding-left:90px;
+}
+.checkGroup1{
+	width:160px;
+	*+padding-left:100px !important;
+}
+.remindTimeLabel{
+	width: 650px; 
+	text-align: left;
+	padding-left:96px;
+}
+.remindTimeLabel span{
+	margin-left:11px;
+}
+.queryButtonGroup{
+	margin-top:20px;
+	*+padding-left:180px !important;
+}
+.noteButtons{
+	width: 475px;
+    position: absolute;
+    bottom: 7px;
+	text-align:center;
+}

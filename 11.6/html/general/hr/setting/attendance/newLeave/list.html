@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>年假设置管理</title>
+    <link rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/modules/attendance/personal/newLeave.css?20180604">
+    <script src="/static/js/jquery-1.10.2/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/module/DatePicker/WdatePicker.js"></script>
+    <script src="/static/js/jquery-1.10.2/template/jquery.tmpl.min.js"></script>    
+    
+</head>
+<body class="bodycolor" style="padding-top:10px;">
+    <form action="" id="leaveContent" class="hide">
+        <table id="leave_add_table" class="table table-bordered table-600" align="center" >
+			<tr>
+				<td class="center" colspan="2">年假设置管理</td>
+			</tr>
+            <tbody>
+                <tr>
+                    <td class="td_text td_title_width">
+                        计算标准:
+                    </td>
+                    <td class="" width="200">
+                        <span class="" id="calculateType"></span>
+                    </td>
+                </tr>
+                <!-- 非手动输入 -->
+                <tr class="hide" id="no_manual">
+                    <td class="td_text td_title_width">
+                        计算类型:
+                    </td>
+                    <td class="">
+                        <span id="calculateWay"></span>
+                        <div class="convert_size font-gray hide" id="nature_handle"><input type="checkbox" id="checked_convert" checked="true" disabled class="no_margin" onClick=""><span id="yearType">当年工龄假期需进行折算</span></div>
+                    </td>
+                    <td class="td_text td_title_width">
+                        生效时间:
+                    </td>
+                    <td class="">
+                        <span id="effectTime"></span>
+                        <!-- <select id="effectSelect">
+                            <option value="0">入职即生效</option>
+                            <option value="1">入职满一年生效</option>
+                        </select> -->
+                    </td>
+                </tr>
+                <tr id="convert_tr" class="hide">
+                    <td class="td_text td_title_width">
+                        折算方式:
+                    </td>
+                    <td class="">
+                        <span id="convertWay"></span>
+                        <!-- <select onChange="annualLeave.convertType(value)" id="daySelect">
+                            <option value="0">天</option>
+                            <option value="1">0.5天</option>
+                        </select> -->
+                    </td>
+                    <td class="td_text td_title_width">
+                        折算规则:
+                    </td>
+                    <td class="">
+                        <div id="dayChoice" class="hide">
+                            <span id="dayMin"></span>≤年假额度结余天数≤ 1 年假=1天
+                        </div>
+                        <div id="halfDayChoice" class="hide">
+                            <span id="halfDayMin"></span>≤年假额度结余天数≤<span id="halfDayMax"></span>年假=0.5天,
+                            大于<span id="c_num"></span>的结余天数默认计为1天
+                        </div>
+                    </td>
+                </tr>
+                <!-- 手动输入 -->
+                <tr id="manual" class="hide">
+                    <td class="td_text td_title_width">
+                        设置年假休息时间:
+                    </td>
+                    <td class="" width="805" colspan="3">
+                        开始时间:
+                        <span id="month"></span>月
+                        <span id="day"></span>日
+                        <span class="time_margin">00:00:01</span>
+                        <br>
+                        <span class="leave_explain">结束时间是开始时间的前一天的23时59分59秒</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="ruleTable" class="table table-bordered hide table-600" align="center" >
+            <tbody>
+                <tr>
+                    <td class="td_text td_title_width"> 
+                        <div>工龄计算规则:</div>
+                        <div>(单位：年)</div>
+                    </td>
+                    <td class="" id="leave_box">
+                        <div id="" class="">
+                            工龄 ≥ <span id="work_years">1</span>&nbsp;&nbsp;享有年假天数:<span id="leave_days">5</span>  
+                        </div>
+                        <div id="" class="">
+                            工龄 ≥ <span id="work_years">1</span>&nbsp;&nbsp;享有年假天数:<span id="leave_days">5</span>  
+                        </div>
+                        <div id="" class="">
+                            工龄 ≥ <span id="work_years">1</span>&nbsp;&nbsp;享有年假天数:<span id="leave_days">5</span>  
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0"  id="handle_table" class="table_margin_top table-600" align="center" >
+            <tbody>
+                <tr>
+                    <td colspan="2" align="center" style="text-align:center">
+                        <button type="button" class="btn btn-primary" title="保存" name="button" onClick="javascrtpt:window.location.href='/general/hr/setting/attendance/newLeave/add.html'">编辑</button>
+						<button type="button" class="btn" title="返回" name="button" onClick="javascrtpt:window.location.href='/general/hr/setting/attendance/#dutyOrno'">返回</button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div id="loading" class="hide">
+        加载中.......
+    </div>
+</body>
+</html>
+<script>
+    (function($){
+        $(document).ready(function(){
+
+            var leaveListInfo = {
+                init:function(){
+                    this.getLeaveInfo();
+                },
+                //获取渲染数据
+                getLeaveInfo:function(){
+                    var params = {
+                        ATYPE:'get_annual_list'
+                    };
+                    $.ajax({
+                        type:'GET',
+                        url:'/general/hr/setting/attendance/leave/data.php',
+                        data:params,
+                        success:function(res){
+                            res = JSON.parse(res);
+                            if(res[0].status==1){
+
+                                var dataInfo = $.extend(true,[],res[0].data[0]);
+                                switch(dataInfo.LEAVE_BY_SENIORITY){
+                                    case '1':
+                                        $('#calculateType').text('本单位工龄');
+                                        // $('#no_manual').removeClass('hide');
+                                        $('#no_manual').show();
+                                        // $('#manual').addClass('hide');
+                                        $('#manual').hide();
+                                        // $('#ruleTitle').removeClass('hide');
+                                        $('#ruleTitle').show();
+                                        // $('#ruleTable').removeClass('hide');
+                                        $('#ruleTable').show();
+                                        break;
+                                    case '2':
+                                        $('#calculateType').text('总工龄');
+                                        // $('#no_manual').removeClass('hide');
+                                        $('#no_manual').show();
+                                        // $('#manual').addClass('hide');   
+                                        $('#manual').hide();   
+                                        // $('#ruleTitle').removeClass('hide');
+                                        $('#ruleTitle').show();
+                                        // $('#ruleTable').removeClass('hide');                                     
+                                        $('#ruleTable').show();                                     
+                                        break;
+                                    case '0':
+                                        $('#calculateType').text('手动输入');
+                                        // $('#manual').removeClass('hide');
+                                        $('#manual').show();
+                                        // $('#no_manual').addClass('hide');                                      
+                                        $('#no_manual').hide();                                      
+                                        break;
+                                    default:
+                                        return;
+                                }
+                                if(dataInfo.LEAVE_BY_SENIORITY == '1' || dataInfo.LEAVE_BY_SENIORITY == '2'){
+                                    switch(dataInfo.ANNUAL_CALCULATION){
+                                        case '0':
+                                            $('#calculateWay').text('按入职日期计算');
+                                            break;
+                                        case '1':
+                                            $('#calculateWay').text('按自然年计算');
+                                            break;
+                                        default: 
+                                            return;
+                                    }
+
+                                    switch(dataInfo.ANNUAL_EFFECTIVE_TIME){
+                                        case '0':
+                                            $('#effectTime').text('入职即生效');
+                                            break;
+                                        case '1':
+                                            $('#effectTime').text('入职满一年生效');
+                                            break;
+                                        default: 
+                                            return;
+                                    }
+
+                                    switch(dataInfo.ANNUAL_IS_CONVERT){
+                                        case '0':
+                                            // $('#nature_handle').addClass('hide');
+                                            $('#nature_handle').hide();
+                                            // $('#convert_tr').addClass('hide');
+                                            $('#convert_tr').hide();
+                                            break;
+                                        case '1':
+                                            // $('#nature_handle').removeClass('hide');
+                                            $('#nature_handle').show();
+                                            // $('#convert_tr').removeClass('hide');                                        
+                                            $('#convert_tr').show();                                        
+                                            break;
+                                        default: 
+                                            return;
+                                    }
+                                
+                                    switch(dataInfo.ANNUAL_CONVERT_METHOD){
+                                        case '0':
+                                            $('#convertWay').text('天');
+                                            // $('#dayChoice').removeClass('hide');
+                                            $('#dayChoice').show();
+                                            $('#dayMin').text(dataInfo.ANNUAL_CONVERT_MIN);
+                                            break;
+                                        case '1':
+                                            $('#convertWay').text('0.5天');
+                                            // $('#halfDayChoice').removeClass('hide');
+                                            $('#halfDayChoice').show();
+                                            $('#halfDayMin').text(dataInfo.ANNUAL_CONVERT_MIN);
+                                            $('#halfDayMax').text(dataInfo.ANNUAL_CONVERT_MAX);
+                                            $('#c_num').val(dataInfo.ANNUAL_CONVERT_MAX);
+
+                                            break;
+                                        default:
+                                            return;
+                                    }
+
+                                    var str = '';
+                                    $.each(dataInfo.ANNUAL_RULE,function(index,value){
+                                        str +=  "<div>"+
+                                                    "工龄 ≥ <span>"+value.seniority+"</span>&nbsp;&nbsp;享有年假天数:<span>"+value.leave+"</span>"+  
+                                                "</div>";
+                                    });
+
+                                    $('#leave_box').html(str);
+
+                                }else{
+                                    var beginTime = dataInfo.ANNUAL_BEGIN_TIME.split('-');
+                                    $('#month').text(beginTime[1]);
+                                    $('#day').text(beginTime[2]);
+                                }
+                                
+                                // $('#leaveContent').show();
+                                // $('#loading').hide();
+                                setTimeout(function(){
+                                    $('#leaveContent').show();
+                                },100)
+                            }
+
+                        },
+                        error:function(error){
+                            alert('获取数据失败');
+                        }
+                    })
+                }
+            }
+
+            window.leaveListInfo = leaveListInfo;
+            leaveListInfo.init();
+        });
+    })(jQuery)
+</script>

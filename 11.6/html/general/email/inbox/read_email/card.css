@@ -1,0 +1,91 @@
+*{padding:0px;margin:0px;}
+body{
+   font-size:12px;
+   padding:5px;
+   background:#ebebeb;
+}
+table{
+   font-size:12px;
+   border-collapse:collapse;
+}
+a:link,
+a:hover,
+a:active,
+a:visited,{
+   color:#000;
+   text-decoration:none;
+}
+img{
+   border:0px;
+}
+a img{
+   border:0px;
+}
+
+table.card{
+}
+table.card td{
+   padding:3px;
+   vertical-align:top;
+}
+table.card td.left{
+   padding-right:0px;
+   width:40px;
+}
+table.card td.right{
+   padding-left:0px;
+   width:100%;
+}
+.avatar{
+   float:left;
+   padding:2px 5px 0px 3px;
+   width:48px !important;
+   height:48px !important;
+   width:56px;
+   height:56px;
+   background: url('images/avatar_bg.png') left top no-repeat;
+   text-align:center;
+}
+.avatar img{
+   width:48px;
+}
+.info{
+   float:left;
+   padding-left:10px;
+   margin-top:5px;
+}
+.MessageBox .msg .info {   
+   float:none;
+}
+.name{
+   font-size:14px;
+   font-weight:bold;
+   width:80px;
+   padding-bottom:5px;
+}
+.online{
+   color:#00aa00;
+   line-height:18px;
+   padding:2px;
+   padding-left:18px;
+}
+.offline{
+   color:#a0a0a0;
+   padding-left:0px;
+}
+.online-0{
+   background:url('/static/images/client_type_0.png') left center no-repeat;
+}
+.online-1{
+   background:url('/static/images/client_type_1.png') left center no-repeat;
+}
+.online-2{
+   background:url('/static/images/client_type_2.png') left center no-repeat;
+}
+.online-5{
+   background:url('/static/images/client_type_5.png') left center no-repeat;
+}
+.online-6{
+   background:url('/static/images/client_type_6.png') left center no-repeat;
+}
+

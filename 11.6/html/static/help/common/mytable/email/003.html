@@ -1,0 +1,10 @@
+<h4 style="font-family:'微软雅黑'"><span>发送或收取带附件的外部邮件时，附件打不开？</span></h4>
+<hr>
+<h5><span>解决方法:</span></h5>
+<p style="font-size: 1.1em;line-height:22px;">
+1)带有附件的邮件发送总显示失败：系统管理-系统参数设置-OA服务设置中默认附件路径和MYOA\webroot\inc\oa_congfig中的附件路径配置不一致。<br/>
+2)收取带有附件的外部邮件，打开附件报错：附件已被删除或者转移，原因可能有3个：<br/>
+a.附件在服务器上\MYOA\attach\email中被删除了。<br/>
+b.服务控制中心-其它服务配置-邮件服务配置中的附件路径和MYOA\webroot\inc下的oa_congfig中的配置路径不一致。<br/>
+c.用户可能迁移过服务器或者重装过OA，但是路径不是D盘，导致oa_config.php和邮件服务配置中的邮件附件路径与实际的\MYOA\attach这个路径不一致。
+</p>

@@ -1,0 +1,159 @@
+#ManualCheck {
+    width: 410px;
+    /* height: 362px; */
+}
+#ManualCheck .modal-header {
+    height: 36px;
+    background-color: #f4faff;
+    font-size: 0;
+    padding: 0 20px 0 32px;
+    border-radius: 5px;
+}
+#ManualCheck .bill-list {
+    height: 260px;
+    overflow: auto;
+    font-size: 0;
+    padding-top: 20px;
+    margin-right: -27px;
+}
+#ManualCheck .modal-header h3 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    height: 36px;
+    line-height: 36px;
+}
+#ManualCheck .header-tip {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    top: -1px;
+    margin-left: 15px;
+}
+#ManualCheck .btn {
+    width: 90px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.webuploader-container {
+    position: relative;
+    width: 100px;
+    height: 28px;
+}
+
+#select-file div:nth-child(2) {
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+#ManualCheck .bill-list-item {
+    display: inline-block;
+    width: 115px;
+    height: 100px;
+    margin: 0 17px 20px 0;
+    text-align: center;
+    position: relative;
+}
+#ManualCheck .bill-list-item .td-iconfont {
+    font-size: 40px;
+    line-height: normal;
+}
+#ManualCheck .bill-list-item .file-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 16px;
+}
+#ManualCheck .modal-body {
+    padding: 0 30px 0 30px;
+    margin-top: 20px;
+}
+#ManualCheck .modal-footer {
+    background-color: #fff;
+    border: none;
+    text-align: center;
+}
+#ManualCheck .modal-footer .btn {
+    width: 84px;
+    height: 28px;
+}
+#ManualCheck .modal-footer .btn.submit {
+    margin-left: 20px;
+}
+#ManualCheck .upload-file {
+    margin-right: 15px;
+}
+#ManualCheck .empty {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -35px;
+    display: none;
+}
+#ManualCheck .empty.show {
+    display: block;
+}
+#ManualCheck .bill-list-item.hover .remove {
+    display: block;
+}
+
+#ManualCheck .bill-list-item .remove {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    color: #f33055;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    font-size: 24px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+#ManualCheck .check-list li {
+    margin-bottom: 20px;
+}
+#ManualCheck .check-list li input {
+    float: right;
+    width: 210px;
+    height: 28px;
+    text-align: left;
+}
+#ManualCheck #c-billingDate {
+    cursor: auto;
+}
+#ManualCheck .check-list li .DATE {
+    float: right;
+    margin: 5px 2px 0 0;
+}
+#ManualCheck .td-icon-asterisk {
+    color: red;
+    font-size: 12px;
+}
+#ManualCheck .check-tip {
+    color: red;
+    display: none;
+}
+#ManualCheck .check-tip.show {
+    display: block;
+}
+.c-totalAmount-wrap {
+    display: none;
+}
+.show-amount .c-totalAmount-wrap {
+    display: block;
+}
+.show-amount .c-checkCode-wrap {
+    display: none;
+}
+.c-checkCode-wrap {
+    display: block;
+}

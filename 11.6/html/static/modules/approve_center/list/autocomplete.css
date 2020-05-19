@@ -1,0 +1,101 @@
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete {position: absolute; cursor: default;}	
+.ui-autocomplete-loading { background: white url('/static/images/loading_16.gif') right center no-repeat; }
+.ui-autocomplete-category {padding-left:5px;line-height:22px;}
+.ui-autocomplete-category span.category-text{display:inline-block;background:#fff url('/images/file_tree/folder.gif') no-repeat 5px center;font-weight:bold;padding-left:25px;}
+.ui-autocomplete-input{display:inline;}
+.TableList{line-height:18px;}
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/* Menu
+----------------------------------*/
+.ui-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	border:1px #cccccc solid;
+	background:#fff;
+	float: left;
+	overflow-y:auto;
+	max-height:242px;
+	width:166px;
+}
+
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+	display:block;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:0px 4px;
+	height:20px;
+	line-height:20px;
+	zoom:1;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+.ui-menu .ui-menu-item a span.root{
+	display:inline-block;background:url('/images/file_tree/root.png') no-repeat left center;padding-left:22px;
+}
+.ui-menu .ui-menu-item a span.leaf{
+	display:inline-block;background:url('/images/file_tree/workflow.gif') no-repeat left center;padding-left:22px;
+}
+
+.ui-menu .ui-menu-item a.lineCenter{
+	background:url('/images/menu/tree_blank.gif') no-repeat 4px center;padding-left:25px;
+}
+
+.ui-menu .ui-menu-item a.lineBottom{
+	background:url('/images/menu/tree_blankl.gif') no-repeat 4px center;padding-left:25px;
+}
+
+.ui-menu .ui-menu-item a.hack img{
+	position:relative;
+	top:-2px;
+}
+
+.ui-menu .ui-menu-item a.selected {
+    background-color:#ccc;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	background-color:#c4de83;
+	color:#fff;
+}
+
+.ui-combobox {
+	position: relative;
+	display: inline-block;
+}
+
+.ui-combobox-dropdown {
+	position: absolute;
+	top:0;
+	bottom:0;
+	padding: 0;
+	cursor:pointer;
+	height:16px;
+	width:20px;
+	border-top:1px solid #c0bbb4;
+	border-right:1px solid #c0bbb4;
+	border-bottom:1px solid #c0bbb4;
+	background:#eee;
+}
+.ui-combobox-dropdown span {
+    width:16px;
+    height:16px;
+    background-image: url("/images/dropdown.gif");
+    display:inline-block;
+    margin-left:2px;
+}

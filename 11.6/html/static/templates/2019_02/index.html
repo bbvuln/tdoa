@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{title}</title>
+<meta http-equiv="Content-Type" content="text/html; charset={charset}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" type="text/css" href="{static_server}/static/templates/2019_02/index.css?20190823"/>
+<link rel="shortcut icon" href="{static_server}/static/images/tongda.ico" />
+<script src="{static_server}/static/js/jquery-1.10.2/jquery.min.js"></script>
+
+{javascript}
+</head>
+<body onload="javascript:document.form1.{focus_filed}.focus();" scroll="auto">
+
+<div>
+{update_tips}
+<form  class="login_form" name="form1" method="post" action="logincheck.php" {autocomplete} onsubmit="{form_submit}">
+    <div class="login-content">
+            <div class="login-header">
+                <img alt="Office Anywhere" src="/static/templates/2019_02/logo.png" />
+			</div>
+            <div class="login-center">
+                <div class="login-card">
+                    <h3>
+                        <span class="login-title active" data-type="acount">账号登录</span>
+                        <span class="login-title-separator">|</span>
+                        <span class="login-title" data-type="scan">扫描登录</span></h3>
+                    <div id="tip" class="login-tip"></div>
+                    <div id="acount" class="login-card-body">
+                        <div class="login-form-item">
+							<i><img src="/static/templates/2019_02/username.png"></i>
+							<span class="login-title-separator">|</span>
+							<input type="text" id="name" class="login-input"  name="UNAME" maxlength="20" autocomplete="off" onmouseover="this.focus()" onfocus="this.select()" value="{username_cookie}" placeholder="请输入账号"/>
+						</div>
+                        <div class="login-form-item">
+							<i><img src="/static/templates/2019_02/password.png"></i>
+							<span class="login-title-separator">|</span>
+							<input type="password" id="password" class="login-input"  name="PASSWORD" autocomplete="new-password" onmouseover="this.focus()" onfocus="this.select()" maxlength="200" value="" placeholder="请输入密码"/>
+						</div>
+						<input type="hidden" name="encode_type" value="1">
+						<button type="submit" id="submit" class="login-btn" title="登录"></button>
+                    </div>
+                    <div id="scan" class="login-card-body">
+                        <div class="codeImage-wrap">
+                            <img src="" alt="" id="codeImg" /></div>
+                        <p>打开
+                            <a href="http://www.tongda2000.com/download/2017.php?#download_code" style="color: #008AE7">通达OA移动版</a>扫一扫
+						</p>
+					</div>
+                </div>
+            </div>
+            <div class="login-footer">
+                <p>北京通达信科科技有限公司</p>
+            </div>
+            <div class="msg">
+                <div>{tips}</div>
+                <div>{usb_key_option}</div>
+                <div>{miibeian}</div>
+                <div>{antivirus_script}</div>
+            </div>
+        </div>
+{usbkey_object}
+</form>
+</div>
+
+<script>
+(function($){
+    $(document).ready(function(){
+        var login = {
+        params: {
+            codeuid: "",
+            codestate: ""
+        },
+        init: function() {
+            this.bindEvent();
+        },
+		msgIE:function (){
+            if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<9){
+                $('#scan').empty().append('<span class="lower-tip">您的浏览器版本过低，暂不支持扫码登录功能，请下载IE9及以上版本</span>');
+            }
+        },
+        acountValidate: function(user_name, password, _csrf) {
+            var self = this;
+			var encode_type = $("input[name='encode_type']").val();
+            $.ajax({
+                url: '/login/logincheck',
+                type: 'post',
+                data: {
+                    user_name: user_name,
+                    password: password,
+					encode_type:encode_type
+                },
+                success: function(response) {
+                    //console.log(response)
+                    if (response.status == 1) {
+						window.location.href = response.data.url;
+					} else {
+                        self.showTip(response.msg)
+                    }
+
+                }
+            })
+        },
+		 // 获取二维码
+        getCodeImg: function() {
+            var self = this;
+            $.ajax({
+                url: '/general/login_code_uid.php',
+                type: 'post',
+                success: function(response) {
+                    //console.log(response);
+					var resArr = response.split('{"')
+                    var obj = '{"'+resArr[resArr.length-1];
+                    var response = JSON.parse(obj)
+					uid = response.code_uid;
+                    $("#codeImg").attr("src", "/general/login_code.php?codeuid=" + uid);
+				
+                    self.params.codestate = setInterval(function() {
+                        self.getcodecheck(uid)
+                    },
+                    1000);
+                },
+                error: function(err) {
+                    console.error("获取二维码失败：" + JSON.stringify(err));
+                }
+            })
+        },
+        // 监听二维码状态
+        getcodecheck: function(uid) {
+            var self = this;
+            $.ajax({
+                url: '/general/login_code_check.php',
+                type: 'post',
+                data: {
+					codeuid:uid
+				},
+                success: function(res) {
+                    res = JSON.parse(res);
+                    if (res.status == 1) {
+                        var codetype = res.data.type;
+                        if (codetype == "invalid") { //二维码失效
+                            $("#codeImg").attr("src", "/static/templates/2019_02/code_err.png");
+                           window.clearInterval(self.params.codestate);
+							//return false;
+                        } else if (codetype == "notscan") { //未扫码
+                            return false;
+                        } else if (codetype == "scan") { //扫码未确认
+                            //window.clearInterval(self.params.codestate);
+                            $("#codeImg").attr("src", "/static/templates/2019_02/right.png");
+                        } else if (codetype == "confirm") { //扫码成功
+                            window.clearInterval(self.params.codestate);
+							var param = {
+                                TOKEN:res.data.token,
+								CODEUID:res.data.codeuid
+                            }
+                            $.ajax({
+                                url:'logincheck_code.php',
+                                type:'post',
+                                data: param,
+                                success:function(res){
+                                    res = JSON.parse(res); 
+                                    if(res.status==1){
+                                        window.location.href=res.url;
+                                    }
+                                    if(res.status==0){
+                                        alert(res.msg);
+                                        window.clearInterval(self.params.codestate);
+                                    }
+                                }
+                            })
+                        }
+                    }
+                },
+                error: function(err) {
+                    console.error("获取二维码状态失败：" + JSON.stringify(err));
+                }
+            })
+        },
+        bindEvent: function() {
+		var self = this;
+			// 切换登录方式
+			$(".login-card").delegate(".login-title", "click", function() {
+                var type = $(this).attr("data-type");
+                $(".login-card .login-title").removeClass("active");
+                $(this).addClass("active");
+                $(".login-card-body").hide();
+                $("#" + type).show();
+                if (type == "scan") {
+					self.msgIE();
+                    self.getCodeImg();
+                } else {
+                    window.clearInterval(self.params.codestate);
+                }
+
+            });
+			 // 登录
+            $("#acount").delegate("#submit", "click",function() {
+				var name = $("input[name='UNAME']").val(),
+					pasd =  $("input[name='PASSWORD']").val(),
+					user_name = $.trim(name),
+					password =$.trim(pasd);
+				self.acountValidate(user_name, password);
+            });
+			// 回车键
+			$('#name, #password').bind('keypress',function(event){//监听用户名和密码回车事件
+				if(event.keyCode == "13")    
+				{  	
+					var name = $("input[name='UNAME']").val(),
+						pasd =  $("input[name='PASSWORD']").val(),
+						user_name = $.trim(name),
+						password =$.trim(pasd);
+						self.acountValidate(user_name, password);
+					
+				}
+			});
+        },
+        showTip: function(value) {
+            $("#tip").text(value).css("visibility", "visible");
+            setTimeout(function() {
+                $("#tip").text("").css("visibility", "hidden");
+            },
+            2000)
+        }
+    }
+    window.login = login;
+    login.init();
+    })
+})(jQuery)
+</script>
+</body>
+</html>

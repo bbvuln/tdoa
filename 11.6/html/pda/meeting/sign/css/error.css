@@ -1,0 +1,29 @@
+html{
+    height:100%;
+    overflow: hidden;
+}
+body{
+    position: relative;
+    height:100%;
+}
+#error_content,#success_content{
+    width:100%;
+    height:60px;
+    margin-top:200px;
+    /* background:red; */
+}
+#error_img,#success_img{
+    width:54px;
+    height:54px;
+    display: block;
+    margin:0 auto;
+}
+#error_p,#success_p{
+    /* font-size:32px; */
+    color:#333;
+    text-align: center;
+}
+#error_msg{
+    color:red;
+    text-align: center;
+}

@@ -1,0 +1,223 @@
+.office-product-list.ui-container {
+    background-color: #f3f3f3;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.tabs-wrap {
+    height: 42px;
+}
+
+.office-product-list .ui-searchbar-wrap {
+    background-color: #fff;
+    position: relative;
+}
+.office-product-list .ui-searchbar {
+    background-color: #f3f3f3;
+    margin: 0 12px 0 12px;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
+}
+.office-product-list .ui-searchbar-wrap .ui-searchbar-input {
+    display: block;
+}
+.office-product-list .ui-searchbar-wrap .query-img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 18px;
+    top: 16px;
+}
+.office-product-list
+    .ui-searchbar-wrap
+    .ui-searchbar-input
+    input::-webkit-input-placeholder {
+    color: #dbdbdb;
+    font-size: 15px;
+}
+.office-product-list .ui-searchbar .ui-icon-search {
+    color: #dbdbdb;
+}
+.office-product-list .apply-list {
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 0;
+    left: 0;
+    right: 0;
+    top: 56px;
+    bottom: 0;
+}
+.office-product-list.show-reimbursement .apply-list {
+    bottom: 79px;
+}
+.office-product-list#used .apply-list,
+.office-product-list#approval .apply-list {
+    bottom: 0;
+}
+.office-product-list#used .btns,
+.office-product-list#used .reimbursement-btn,
+.office-product-list#approval .btns,
+.office-product-list#approval .reimbursement-btn {
+    height: 0;
+    overflow: hidden;
+}
+.office-product-list .ui-list {
+    background-color: transparent;
+    width: auto;
+    padding: 0 12px;
+}
+.office-product-list .ui-refresh .ui-refresh-up,
+.office-product-list .ui-refresh .ui-refresh-down {
+    background-color: transparent;
+    border-color: transparent;
+}
+.office-product-list .apply-list .apply-list-item {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    /* background-image: url(/pda/officeProduct/applylist/img/png_bg2@3x.png); */
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 16px 0 16px;
+    position: relative;
+}
+.apply-list-item .line {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    background-image: url(/pda/officeProduct/applylist/img/png_bg3@3x.png);
+    background-size: cover;
+}
+.apply-list-item .line .left,
+.apply-list-item .line .right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+}
+.apply-list-item .line .left {
+    left: -10px;
+}
+.apply-list-item .line .right {
+    right: -10px;
+}
+.office-product-list .apply-list .apply-list-item .trans-flag,
+.office-product-list .apply-list .apply-list-item .state {
+    line-height: 40px;
+}
+.office-product-list .apply-list .apply-list-item .trans-flag {
+    font-size: 16px;
+    color: #0e86fe;
+}
+.office-product-list .apply-list .apply-list-item .state {
+    font-size: 14px;
+    color: #666;
+    float: right;
+}
+
+.office-product-list .apply-list .apply-list-item .text {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.office-product-list .apply-list .empty .img {
+    width: 150px;
+    height: 82.5px;
+    display: block;
+    margin: 0 auto;
+}
+.office-product-list .apply-list .empty .empty-text {
+    text-align: center;
+    color: #c2c6d0;
+    margin-top: 5px;
+}
+
+.office-product-list
+    .apply-list
+    .apply-list-item
+    .title.top-border
+    .title-text {
+    height: 35px;
+    line-height: 35px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    background: transparent;
+}
+.loading.show {
+    z-index: 10002;
+    display: -webkit-box;
+}
+
+.loading .ui-loading-cnt {
+    width: 130px;
+    height: 110px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+}
+.loading .ui-loading-bright {
+    margin: 18px 0 8px;
+}
+
+
+/* 导航条 */
+.navigationMenu{
+    position: fixed;
+    right: 10px;
+}
+.navigationMenu span{
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+}
+.submenu{
+    margin-left: 12px;
+}
+.addressLists .item{
+    padding: 8px 0;
+    padding-left: 16px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+.addressLists  .ui-list>li,.addressLists  .ui-list{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.ui-searchbar input{
+    padding: 0;
+    height: 32px;
+}

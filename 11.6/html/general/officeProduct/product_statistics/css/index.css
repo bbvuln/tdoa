@@ -1,0 +1,199 @@
+
+#content{
+    width:100%;
+    height:100%;
+    /* background:greenyellow; */
+    /* border-top:1px solid #D9D9D9; */
+}
+select{
+    height:28px;
+}
+#goodsTable>table{
+    margin:0 auto;
+}
+#goodsTable_cost>table{
+    margin:0 auto;
+}
+#navigation{
+    width:240px;
+    height:100%;
+    background:#fff;
+    border:1px solid #D9D9D9;
+    border-top:0;
+    float:left;
+}
+.nav_box{
+    width:100%;
+    height:52px;
+    border-bottom:1px solid #D9D9D9;
+    /* text-align: center; */
+    line-height:52px;
+    font-size:14px;
+    color:#333;
+}
+.nav_box:hover{
+    color:#0e86fe;
+}
+
+.icon_statistics_title{
+    color:#0e86fe;
+    font-size:20px;
+}
+.pointer{
+    cursor: pointer;
+}
+.icon_statistics,.icon_use,.icon_maintain,.icon_repair,.icon_scrap,.icon_access{
+    font-size:20px;
+    margin-right:12px;
+    margin-left:50px;
+}
+.icon_statistics{
+    color:#fc6280;
+}
+.icon_use{
+    color:#97c15b;
+}
+.icon_maintain{
+    color:#ffb64d;
+}
+.icon_repair{
+    color:#ab7967;
+}
+.icon_scrap{
+    color:#7c4dff;
+}
+.icon_access{
+    color:#4680ff;
+}
+.checked_box{
+    background:#DBEDFF;
+    color:#0e86fe;
+}
+#right_box{
+    float:left;
+}
+#chart_box{
+    width:900px;
+    margin:0 auto;
+}
+#search_box{
+    width:890px;
+    height:50px;
+    margin-top:20px;
+}
+#search_dept,#time,#search_type,#search_goods,#search_user_dept,#search_use_type,#search_user,#search_c_type,#search_c_goods{
+    display: inline;
+    margin-left:10px;
+}
+#select_dept,#select_goods,#select_type,#select_use_type{
+    width:100px;
+}
+#statisticsBtn{
+    /* float:right; */
+    margin-left:10px;
+}
+#chart_info{
+    width:100%;
+    position: relative;
+}
+#goodsTable,#goodsTable_cost{
+    /* position: absolute;
+    top:0px; */
+    width:100%;
+}
+#goodsTable tbody tr:hover > td{
+    background-color: #fff;
+}
+#table_title_h5,#table_title_cost{
+    text-align: center;
+}
+#goods_tab{
+    margin-bottom:50px!important;
+}
+#goods_table_head>tr>th{
+    vertical-align: middle;
+}
+#goods_list_tbody>tr>td{
+    vertical-align: middle;
+}
+.yes_btn{
+    width: 84px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 18px;
+}
+.use_box {
+    position: relative;
+    display: inline;
+}
+#USER_NAMES{
+    height: 20px;
+    margin-bottom: 0px;
+    width: 135px;
+    /* border-radius: 4px 4px 0 0; */
+    padding-bottom: 20px;
+}
+.USER_NAMES_btn_box{
+	width: 140px;
+    position: absolute;
+    top: 12px;
+    left: 1px;
+}
+.power_btn_box {
+    height: 20px;
+    border-radius: 0 0 4px 4px;
+    background: #eee;
+}
+.orgAdd {
+    color: #207BD6;
+    background-position: 0px 0px;
+    cursor: pointer;
+    /* position: absolute; */
+    /* bottom: 9px; */
+    /* right: 200px; */
+    line-height: 20px;
+    float: right;
+    margin-right: 10px;
+}
+.orgClear {
+    color: #9AA9B8;
+    cursor: pointer;
+    /* position: absolute; */
+    /* bottom: 9px; */
+    /* right: 140px; */
+    line-height: 20px;
+    float: right;
+    margin-right: 10px;
+}
+#select_cost_good{
+    width:86px;
+    height:20px;
+    padding:3px 6px;
+    border:1px solid #ccc;
+    display: inline-block;
+    position: relative;
+    top:10px;
+    line-height:28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#search_cost_goods{
+    
+}
+#search_c_goods>.ms-parent{
+    width:100px!important;
+}
+#table_title_h5{
+    position: relative;
+}
+#costIcon,#goodIcon{
+    position: absolute;
+    right:12px;
+    cursor: pointer;
+}
+#goods_list_tbody_cost>tr>td{
+    vertical-align: middle;
+}
+#goodsTable_cost tbody tr:hover > td{
+    background-color: #fff;
+}

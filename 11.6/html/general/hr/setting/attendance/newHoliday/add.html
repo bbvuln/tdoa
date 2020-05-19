@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增免签节假日</title>
+    <link rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/modules/attendance/personal/newHoliday.css?20180531">
+    <script src="/static/js/jquery-1.10.2/jquery.min.js"></script>
+    <script src="/static/js/module.js"></script>
+    <script src="/module/DatePicker/WdatePicker.js"></script>
+</head>
+<script>
+
+
+</script>
+<body class="bodycolor" style="padding-top:10px;">
+    <form action="">
+        <table class="table table-small table-bordered" width="450" align="center">
+			<tr>
+				<td class="center" colspan="2">新增免签节假日</td>
+			</tr>
+            <tbody id="holiday_table">
+                <tr>
+                    <td class="td_text span2">适用范围:</td>
+                    <td>
+                        <input type="hidden" name="DEPT_IDS" id="DEPT_IDS" value="">
+                        <textarea name="DEPT_NAMES" id="DEPT_NAMES" rows="3"  class="SmallStatic holiday_power ele_mar" wrap="yes" readonly></textarea>
+                        <span href="javascript:;" class="handle_btn handle_icon_cur orgAdd" onClick="SelectDept('','DEPT_IDS','DEPT_NAMES','','form1','1')" title='添加管理员'>添加</span>
+                        <span href="javascript:;" class="handle_btn handle_icon_cur" onClick="ClearUser('DEPT_IDS', 'DEPT_NAMES')" title='清空管理员'>清空</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_text span2">节假日名称:</td>
+                    <td>
+                        <input type="text" name="HOLIDAY_NAME" class="holidayName ele_mar" size="30" maxlength="10" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_text span2">起止日期:</td>
+                    <td>
+                        <input type="text" name="BEGIN_DATE" class="ele_mar input-small" size="10" maxlength="10" id="BEGIN_DATE" value="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'#F{$dp.$D(\'END_DATE\')}'})" onChange="" autocomplete="off">
+                        <span class="padding_line">-</span>
+                        <input type="text" name="END_DATE" class="input-small" size="10" maxlength="10" id="END_DATE" value="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'BEGIN_DATE\')}'})" style="margin-left:3px;" onChange="" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_text span2" >放假调休:</td>
+                    <td id="rest_big_box">
+                        <div id="rest_box" class="span8">
+                                <!-- ,maxDate:'#F{$dp.$D(\'REST_END_DATE\')}' -->
+                            <input type="text" name="REST_BEGIN_DATE" data-item class="" size="10" maxlength="10" id="REST_BEGIN_DATE" value="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'BEGIN_DATE\',{M:-1})}'})" onClick="holidayAdd.delRedClass(this)" autocomplete="off">
+                            <span class="padding_font">补</span>
+                            <input type="text" name="REST_END_DATE" class="" size="10" maxlength="10" id="REST_END_DATE" value="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'BEGIN_DATE\')}',maxDate:'#F{$dp.$D(\'END_DATE\')}'})" onClick="holidayAdd.delRedClass(this)" style="margin-left:3px;" autocomplete="off">
+                            <i class="icon-plus-sign handle_icon_cur" onClick="holidayAdd.restTimeAdd()"></i>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center" style="text-align:center">
+                        
+                        <button type="button" class="btn btn-primary" onClick="window.holidayAdd.addHoliday()" title="添加日期" name="button">添加</button>
+						<button type="button" class="btn" onClick="javascrtpt:window.location.href='/general/hr/setting/attendance/newHoliday/list.html'" title="返回节假日列表" name="button">返回</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</body>
+</html>
+<script>
+    (function($){
+        $(document).ready(function(){
+            
+
+            var restNum = 0;
+            
+            var beginSign = false;
+            var endSign = false;
+            
+
+            var holidayAdd = {
+                init:function(){
+                    
+                },
+                //添加放假调休行
+                restTimeAdd:function(){
+                    restNum +=1;
+                    var str  =  "<div id='rest_box_"+restNum+"' class='span8'><input type='text' name='REST_BEGIN_DATE' class='' size='10' maxlength='10' id='REST_BEGIN_DATE_"+restNum+"' value='' onfocus=\"WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\\'BEGIN_DATE\\',{M:-1})}'})\" onClick='holidayAdd.delRedClass(this)' autocomplete='off'/>"+
+                                "<span class='time_line'>补</span>"+
+                                "<input type='text' name='REST_END_DATE' class='' size='10' maxlength='10' id='REST_END_DATE_"+restNum+"' value='' onfocus=\"WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\\'BEGIN_DATE\\')}',maxDate:'#F{$dp.$D(\\'END_DATE\\')}'})\" onClick='holidayAdd.delRedClass(this)' style='margin-left:3px;' autocomplete='off'/>"+
+                                "<i class='icon-trash handle_icon_cur handle_icon-left'  onClick='holidayAdd.deleteRest("+restNum+")'></i></div>";
+                    
+                    $('#rest_big_box').append(str);
+
+                },
+                //删除调休行
+                deleteRest:function(id){
+                    $('#rest_box_'+id).remove();
+                },
+                //放假调休数据生成
+                restDayInfo:function(){
+                    var dateArr = [];
+                    var dayArr = [];
+
+                    $('input[name=REST_BEGIN_DATE]').each(function(index,ele){
+                        var obj = {};
+                        obj.day_work = ele.value;
+                        dateArr.push(obj);
+                    });
+                    
+                    $('input[name=REST_END_DATE]').each(function(index,ele){
+                        dateArr[index].day_rest = ele.value;
+                    })
+                    
+                    $.each(dateArr,function(index,value){
+                        if(value.day_work!=''&&value.day_rest!=''){
+                            dayArr.push(value);
+                        }
+                    })
+                    return dayArr;
+                },
+                //验证放假调休时间是否为空
+                isRestNull:function(){
+                    var bool = true;
+                    var rest_begin_date = $('input[name=REST_BEGIN_DATE]');
+                    var rest_end_date = $('input[name=REST_END_DATE]');
+                    rest_begin_date.each(function(index,ele){
+                        if(ele.value==''&&rest_end_date.eq(index).val()==''){
+							$(ele).removeClass('border_red')
+                            //ele.classList.remove('border_red');
+                            rest_end_date.eq(index).removeClass('border_red');
+                            bool = true;
+                        }else if(ele.value==''){
+							$(ele).addClass('border_red')
+                            //ele.classList.add('border_red');
+                            bool = false;
+                        }else if(rest_end_date.eq(index).val()==''){
+                            rest_end_date.eq(index).addClass('border_red');
+                            bool = false;
+                        }
+                    });
+
+                    return bool;
+                },
+                //验证是否存在重复补班
+                repeatRest:function(arr){
+                    for(var i=0;i<arr.length;i++){
+                        for(var j=i+1;j<arr.length;j++){
+                            if(arr[i].day_work == arr[j].day_work || arr[i].day_rest == arr[j].day_rest){
+                                
+                                return false;
+                            }
+                            
+                        }
+                    }
+                    
+                    return true;
+                },
+                //验证休班时间是否在假期范围内
+                isRestIn:function(){
+                    var bool = true;
+                    var rest_end_date = $('input[name=REST_END_DATE]');
+                    var beginTime = $('#BEGIN_DATE').val();
+                    var endTime = $('#END_DATE').val();
+                    function isIn(date,begin,end){
+                        var theDate = new Date(date);
+                        var theBegin = new Date(begin);
+                        var theEnd = new Date(end);
+                        var isBig = (Date.parse(theDate) - Date.parse(theBegin)) / 1000 / 60 / 60 / 24;
+                        var isSmall = (Date.parse(theEnd) - Date.parse(theDate)) / 1000 / 60 / 60 / 24;
+                        if(isBig>=0&&isSmall>=0){
+                            return true;
+                        }else{
+                            return false;
+                        }
+                    }
+                    rest_end_date.each(function(index,ele){
+                        if(ele.value!=''){
+                            if(!isIn(ele.value,beginTime,endTime)){
+                                bool = false;
+                                return;
+                            }
+                        }
+                        
+                    });
+
+                    return bool;
+                },
+                //去除红色提醒
+                delRedClass:function(ele){
+					$(ele).removeClass('border_red')
+                    //ele.classList.remove('border_red');
+                },
+                //校验调休时间不在假期内
+                isRestInTime:function(){
+                    var bool = true;
+                    Date.prototype.format = function() {  
+                        var str = '';  
+                        var mouth = (this.getMonth() + 1)>=10?(this.getMonth() + 1):('0'+(this.getMonth() + 1));  
+                        var day = this.getDate()>=10?this.getDate():('0'+this.getDate());  
+                        str += this.getFullYear() + '-';   
+                        str += mouth + "-";   
+                        str += day;   
+                        return str; 
+                    };
+    
+                    function holidayDate() {  
+                        var begin = $('#BEGIN_DATE').val();
+                        var end = $('#END_DATE').val();
+                        var ab = begin.split("-");  
+                        var ae = end.split("-");  
+                        var db = new Date();  
+                        db.setUTCFullYear(ab[0], ab[1] - 1, ab[2]);  
+                        var de = new Date();  
+                        de.setUTCFullYear(ae[0], ae[1] - 1, ae[2]);  
+                        var unixDb = db.getTime();  
+                        var unixDe = de.getTime();
+                        var dateStr = '';  
+                        for (var k = unixDb; k <= unixDe;) {  
+                            dateStr +=(new Date(parseInt(k))).format();
+                            k = k + 24 * 60 * 60 * 1000;  
+                        }  
+        
+                        return dateStr;
+                    }
+                    
+                    
+                    $('input[name=REST_BEGIN_DATE]').each(function(index,ele){
+                        if(ele.value!=''){
+                            if(holidayDate().indexOf(ele.value)!= -1){
+                                bool = false;
+                                return ;
+                            }
+                        }
+                        
+                    })
+                    
+                    return bool;
+
+                },
+                //添加
+                addHoliday:function(){
+                    var _this = this;
+
+                    var dayArr = _this.restDayInfo();
+                    
+                    if($('#DEPT_IDS').val()==''){
+                        alert('适用范围不能为空!');
+                        return;
+                    }
+                    if($('input[name=HOLIDAY_NAME]').val()==''){
+                        alert('节假日名称不能为空!');
+                        return;
+                    }
+
+                    if($('input[name=BEGIN_DATE]').val()==''){
+                        alert('起始日期不能为空!');
+                        return;
+                    }
+
+                    if($('input[name=END_DATE]').val()==''){
+                        alert('结束日期不能为空!');
+                        return;
+                    }
+
+                    if(!_this.isRestNull()){
+                        alert('放假调休时间不完整!');
+                        return;
+                    }
+                    
+                    if(!_this.isRestInTime()){
+                        alert('调班时间不可在假期范围内！');
+                        return;
+                    }
+
+                    if(!_this.isRestIn()){
+                        alert('休班时间不在假期范围内!');
+                        return;
+                    }
+
+                    if(!_this.repeatRest(dayArr)){
+                        alert('放假调休时间存在重复,请修改');
+                        return;
+                    }
+                    
+
+                    var params = {};
+                    params.depts = $('#DEPT_IDS').val();
+                    params.holiday_name = $('input[name=HOLIDAY_NAME]').val();
+                    params.begin_date = $('input[name=BEGIN_DATE]').val();
+                    params.end_date = $('input[name=END_DATE]').val();
+                    params.day_off = dayArr;
+                    params.action = 'addholiday';
+
+
+                    $.ajax({
+                        type:'POST',
+                        url:'/general/hr/setting/attendance/holiday/holiday.php',
+                        data:params,
+                        success:function(res){
+                            res = JSON.parse(res);
+                            if(res[0].status == 1){
+                                alert('添加节假日成功');
+                                window.location.href = '/general/hr/setting/attendance/newHoliday/list.html';
+                            }else if(res[0].status == 0){
+                                alert(res[0].msg);
+                            }else if(res[0].status == 2){
+                                alert(res[0].dept_name+'时间设置有冲突');
+                            }
+                        },
+                        error:function(){
+                            alert('添加失败');
+                        }
+                    });
+
+                    // window.location.href = '/general/hr/setting/attendance/newHoliday/list.html';
+                }
+            };
+
+            holidayAdd.init();
+            window.holidayAdd = holidayAdd;
+        });
+
+    })(jQuery);
+</script>

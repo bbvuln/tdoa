@@ -1,0 +1,11 @@
+<h4 style="font-family:'微软雅黑'"><span>流程设计器中新建步骤时为何保存不上？</span></h4>
+<hr>
+
+<h5><span>原因：</span></h5>
+<p style="font-size:1.1em;line-height:22px;margin-left:24px;">
+经检查，flow_process表缺少plugn_save字段导致。<br/>
+</p>
+<h5><span>解决方法:</span></h5>
+<p style="font-size:1.1em;line-height:22px;margin-left:24px;">
+记事本打开，alter table flow_process add `PLUGIN_SAVE`text NOT NULL;另存为sql格式，系统管理-数据库管理中脚本导入即可。
+</p>

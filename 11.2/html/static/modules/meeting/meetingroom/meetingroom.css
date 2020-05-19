@@ -1,0 +1,163 @@
+textarea{ 
+    resize:none;
+}
+#meetingroom_tab,#build_modal_tab,#edit_modal_tab{
+    margin: 0 auto;
+}
+
+#build_modal_tab,#build_modal_tab tr td,#edit_modal_tab,#edit_modal_tab tr td{
+    border:0;
+}
+.attendance-title{
+    padding-left:55px;
+}
+.mustWrite{
+    color:red;
+}
+#buildNewMeetingRoom,#editMeetingRoom{
+    width:650px;
+}
+.modal_mr_name{
+    width:80px;
+    height:30px;
+    line-height:30px;
+    float: left;
+    margin-right: 19px;
+}
+#is_use_new,#is_use_edit{
+    float: left;
+    margin-top:9px;
+    margin-right:10px;
+}
+.modal_use{
+    height:30px;
+    line-height:30px;
+}
+.powerChoice{
+    float: left;
+    position: relative;
+}
+.user_text{
+    width:350px;
+    height:40px;
+}
+.orgAdd {
+    color: #207BD6;
+    padding-left: 12px;
+    /* background: url(/static/theme/10/images/org_select.png) no-repeat; */
+    background-position: 0px 0px;
+    cursor: pointer;
+    float:right;
+    margin-right: 20px;
+}
+.use_btn{
+    color: #9AA9B8;
+    cursor: pointer;
+    float:right;
+    margin-right: 10px;
+}
+.use_handle{
+    color:#108EE9;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#mr_seach_box{
+    float:right;
+    position: relative;
+}
+#mr_search_int{
+    margin-bottom:0;
+}
+.search_icon_box{
+    display:block;
+    position: absolute;
+    top: 1px;
+    right:2px;
+    width:28px;
+    height:26px;
+    cursor: pointer;
+    background:#fff;
+}
+#search_icon{
+    margin-top:5px;
+    margin-left:8px;
+}
+#page{
+    float:right;
+    margin-right:1%;
+}
+.no_use{
+    color:#a7a7a7;
+}
+.del_explain,.del_explain_last{
+    float:left;
+    margin-left:30px;
+    margin-top:5px;
+    margin-right:5px;
+}
+.del_explain_last{
+    margin-top:0;
+}
+#del_box{
+    height:130px;
+}
+#del_time_box,#last_time_box{
+    width:400px;
+    margin:0 auto;
+    margin-top:26px;
+}
+#del_time_box{
+    margin-top: 30px;
+}
+#DEL_DATE{
+    width:189px;
+}
+#last_time{
+
+}
+.more{
+    cursor: default;
+    position: relative;
+}
+.more_box{
+    position: absolute;
+    width:300px;
+    left:10px;
+    top:10px;
+    background:#ddd;
+    border-radius:5px;
+    padding:2px 10px;
+}
+.cry_face{
+    margin:0 5px;
+}
+.table thead tr th,
+.table tbody tr td
+{
+    vertical-align: middle;
+}
+#USER_NAMES,#USER_NAMES_EDIT{
+    /* border-radius:4px 4px 0 0; */
+    padding-bottom:20px;
+}
+.USER_NAMES_btn_box{
+    width:361px;
+    height:20px;
+    /* border:1px solid #ccc; */
+    /* border-top:0; */
+    border-radius:0 0 4px 4px;
+    background:#eee;
+    position: absolute;
+    top: 44px;
+    left: 2px;
+}
+.add_icon,.clear_icon{
+    font-size:14px!important;
+    margin-right: 4px;
+}
+.new_btn{
+    width: 84px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 18px;
+}

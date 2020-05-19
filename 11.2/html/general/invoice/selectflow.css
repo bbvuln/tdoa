@@ -1,0 +1,72 @@
+#selectFlow {
+    width: 879px;
+    height: 440px;
+    margin-left: -440px;
+}
+.m-btn {
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0e86fe;
+    color: white;
+    cursor: pointer;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#selectFlow h3 {
+    font-size: 16px;
+    color: #666;
+}
+#selectFlow .modal-body {
+    height: 344px;
+}
+#selectFlow .m-btn {
+    display: inline-block;
+    margin-top: 0;
+}
+#selectFlow .modal-footer {
+    text-align: center;
+    background-color: #fff;
+}
+#selectFlow .flow-item {
+    width: 240px;
+    height: 116px;
+    margin-top: 34px;
+    border: 2px solid #eee;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 0 16px 0 16px;
+    position: relative;
+    cursor: pointer;
+}
+#selectFlow .flow-item:hover,
+#selectFlow .flow-item.select {
+    background-color: #cceaff;
+}
+#selectFlow .flow-item img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    margin-top: 18px;
+}
+#selectFlow .flow-item .flow-name {
+    text-align: center;
+    margin-top: 5px;
+}
+#selectFlow .modal-body {
+    padding: 0 15px;
+}
+#selectFlow .modal-header .close {
+    height: 20px;
+    line-height: 20px;
+}

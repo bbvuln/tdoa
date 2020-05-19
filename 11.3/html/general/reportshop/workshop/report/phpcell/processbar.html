@@ -1,0 +1,111 @@
+    <script type="text/javascript" language="JavaScript">
+
+        //: 判断网页是否加载完成
+        document.onreadystatechange = function () {
+            if(document.readyState=="complete") {
+                document.getElementById('divprogressbar').style.display='none';
+                var $irame = $('#bottom iframe').eq(1);
+                $irame.contents().find('#detail_tabs>div').css("overflow-x","auto");
+                $irame.contents().find('#detail_tabs>div').css("overflow-y","hidden");
+                $irame.height($irame.contents().find('body').height());
+                var max_width = $irame.contents().find('#showdiv').width();
+                $irame.contents().find('#showdiv table').each(function(){
+                    if(max_width){
+                        if($(this).width()>max_width){
+                            max_width = $(this).width();
+                        }
+                    }else{
+                        max_width = $(this).width();
+                    }
+                });
+                $irame.contents().find('#showdiv .gridlines').each(function(){
+                    if(max_width){
+                        if($(this).width()>max_width){
+                            max_width = $(this).width();
+                        }
+                    }else{
+                        max_width = $(this).width();
+                    }
+                });
+
+                $irame.width(max_width);
+
+                $('#bottom>span').css( "position","fixed");
+                $('#bottom>span').css("bottom", "10px");
+                $('#bottom>span').each(function(i,e){
+                    if(i == 0){
+                        $(e).css("left", "10px");
+                    }else{
+                        var lp = $('#bottom>span').eq(i-1).offset().left;
+                        var wp = $('#bottom>span').eq(i-1).width();
+                        var nlp = lp+wp+26;
+                        $(e).css("left", nlp + "px");
+                    }
+                });
+                $irame.contents().find('#detail_tabs').height($irame.contents().find('#detail_tabs').height() - 15);
+                $irame.contents().find('#detail_tabs>div').height( $irame.contents().find('#detail_tabs>div').height() - 15);
+                $irame.contents().find('#detail_tabs .ui-jqgrid-view').height( $irame.contents().find('#detail_tabs .ui-jqgrid-view').height() - 5);
+            }
+        }
+        window.onresize = function(){
+            var $irame = $('#bottom iframe').eq(1);
+            var max_width = document.documentElement.clientWidth;
+
+            $irame.contents().find('#showdiv table').each(function(){
+                if(max_width){
+                    if($(this).width()>max_width){
+                        max_width = $(this).width();
+                    }
+                }else{
+                    max_width = $(this).width();
+                }
+            });
+            $irame.contents().find('#showdiv .gridlines').each(function(){
+                if(max_width){
+                    if($(this).width()>max_width){
+                        max_width = $(this).width();
+                    }
+                }else{
+                    max_width = $(this).width();
+                }
+            });
+            $irame.width(max_width);
+        }
+
+    </script>
+
+<div id="divprogressbar"
+     style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; background-color: #ffffff; filter: alpha (     opacity =     100 ); z-index: 50000">
+    <div style="text-align: center; padding-top: 200px">
+        <table align="center" border="1" width="37%" cellspacing="0"
+               cellpadding="4" style="border-collapse: collapse" bgcolor="#FFFFEC"
+               height="87">
+            <tr>
+                <td bgcolor="#3399FF" style="font-size: 12px;" height="24"
+                    align="center">
+                    友情提示, 数据正在载入中...
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 12px; line-height: 200%" align="center">
+                    网页正在载入数据中.请耐心等待...
+                    <!--<marquee style="border: 1px solid #000000" direction="right"-->
+                             <!--width="300" scrollamount="5" scrolldelay="10" bgcolor="#ECF2FF">-->
+                        <!--<table cellspacing="1" cellpadding="0">-->
+                            <!--<tr height=8>-->
+                                <!--<td bgcolor=#3399FF width=8></td>-->
+                                <!--<td></td>-->
+                                <!--<td bgcolor=#3399FF width=8></td>-->
+                                <!--<td></td>-->
+                                <!--<td bgcolor=#3399FF width=8></td>-->
+                                <!--<td></td>-->
+                                <!--<td bgcolor=#3399FF width=8></td>-->
+                                <!--<td></td>-->
+                            <!--</tr>-->
+                        <!--</table>-->
+                    <!--</marquee>-->
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<h4 style="font-family:'微软雅黑'"><span>打印模板为何会显示“试用”水印？</span></h4>
+<hr>
+<h5><span>解决方法:</span></h5>
+<ol style="font-size:1.1em;line-height:22px;">
+<li>打印模板需要在安装精确打印组件后重新制作。</li>
+<li>打开loadaip.php，查看version版本号是多少，试用版的版本号是3,0,4,8，授权文件要比这个版本号高，应该是3,0,5,0，如果loadaip.php文件里的版本号是3,0,4,8，手动将其改为高版本的，保存后客户端会重新下载安装该插件。</li>
+<li>如果按上述操作后，客户端没有提示安装插件，那就在浏览器关闭的状态下删除C:\WINDOWS\Downloaded Program Files下的HWTDPostil Control，重新登录oa后进入打印模板界面系统会重新加载这个插件。</li>
+</ol>

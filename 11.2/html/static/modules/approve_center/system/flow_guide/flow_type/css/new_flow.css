@@ -1,0 +1,91 @@
+/*----------------------------新建流程页面自定义的样式 --------------------------------------*/
+/*------------新建流程页面导航小图标样式 --------*/
+.icon18-void{
+	width:24px;
+	height:24px;
+	padding-bottom:5px;
+	padding-left:16px;
+}
+.icon18-void{/*-- 预览表单图标  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/ready_look.png) no-repeat;
+}
+.icon20-basic,.icon20-basic_hover,.icon20-process_illustrate,.icon20-process_illustrate_hover,
+.icon20-work_name,.icon20-work_name_hover,.icon20-expand_field,.icon20-expand_field_hover
+	{	
+	padding-left:36px;
+	display:block;
+	height:22px;
+	margin-top:5px;
+}
+.icon20-basic{/*-- 基本属性  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/basic.png) no-repeat;
+}
+.icon20-basic_hover{/*-- 基本属性-点击后  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/basic_1.png) no-repeat;
+}
+.icon20-process_illustrate{/*-- 流程说明  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/intro.png) no-repeat;
+}
+.icon20-process_illustrate_hover{/*-- 流程说明-点击后  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/intro_1.png) no-repeat;
+}
+.icon20-work_name{/*-- 工作名称/义号  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/work_name.png) no-repeat;
+}
+.icon20-work_name_hover{/*-- 工作名称/义号-点击后  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/work_name_1.png) no-repeat;
+}
+.icon20-expand_field{/*-- 扩展字段  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/field.png) no-repeat;
+}
+.icon20-expand_field_hover{/*-- 扩展字段-点击后  --*/
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/field_1.png) no-repeat;
+}
+.number_tip{
+	margin-top:10px;
+	font-weight:bold;	
+}
+.left_body{/*-- 右侧页面 左边布局  --*/
+	width:403px;
+    float:left;
+}
+.right_body{/*-- 右侧页面 右边布局  --*/
+	width:403px;
+    float:left;
+}
+.main_content{
+	float:left;
+}
+.flow_main_body_left{
+	float:left;
+}
+.flow_name{
+	color:rgb(60, 40, 143);
+	font-size:12px;
+	float:left;
+	font-weight:normal;
+}
+.flow_intro{
+	color:#94918c;
+	float:left;
+}
+#flow_name{
+	margin-bottom:0px;
+	width:170px;
+}
+#form_select > span {
+	float:left;
+}
+.view_form{
+	color:#3880f5;
+	text-decoration:none;
+	float:left;
+	margin-top:3px;
+}
+.select_form{
+	float:left;
+}
+#form_select{
+	float:left;
+	padding-bottom:10px;
+}

@@ -1,0 +1,1 @@
+FCKCommands.RegisterCommand( 'doc_checkbox', new FCKDialogCommand( 'doc_checkbox', "复选框属性", FCKPlugins.Items['doc_checkbox'].Path + 'doc_checkbox.php', 380, 210 ) ) ;

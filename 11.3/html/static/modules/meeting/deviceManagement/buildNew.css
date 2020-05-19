@@ -1,0 +1,236 @@
+.attendance-title{
+    padding-left:55px;
+}
+*{
+    font-family:"Î¢ÈíÑÅºÚ";
+}
+.table {
+    width: 90%;
+}
+td{
+    vertical-align: middle!important;
+}
+#build_new_tab{
+    margin:0 auto;
+}
+#build_new_tab td{
+    padding:0;
+    display:table-cell;
+}
+.must_in{
+    color:red;
+}
+.device_info,.device_info_big{
+    display:block;
+    text-align: center;
+    height:75px;
+    line-height:75px;
+}
+.device_info_big{
+    height:180px;
+    line-height:180px;
+}
+#device_name,#device_no{
+    width:50%;
+    margin-left: 8%;
+    margin-top: 22px;
+}
+#device_name_build{
+    width:50%;
+    margin-left: 8%;
+    margin-top: 22px;
+    float:left;
+}
+#fixed_assets{
+    display: inline-block;
+    height:30px;
+    line-height:30px;
+    float:left;
+    margin-top:22px;
+    margin-left:15px;
+    color:#108EE9;
+    cursor: pointer;
+}
+#device_type,#device_mr{
+    width:80%;
+    margin-left: 8%;
+    margin-top: 22px;
+}
+#device_describe{
+    width:92%;
+    height:140px;
+    margin-left:3.3%;
+    margin-top:16px;
+    resize:none;
+}
+.handle_box{
+    width:214px;
+    margin:40px auto;
+}
+.handle_box_build{
+    width:340px;
+    margin:40px auto;
+}
+#back_info,#resetBtn{
+    margin-left:40px;
+}
+.device_icon_box{
+    /* background:red; */
+    width:80%;
+    height:75px;
+}
+#set_img{
+    color:#108EE9;
+    line-height:75px;
+    margin-left:30px;
+    cursor: pointer;
+    float:left;
+}
+#set_img_chiose{
+    color:#108EE9;
+    line-height:72px;
+    margin-left:58px;
+    cursor: pointer;
+    float:left;
+}
+.device_icon{
+    width:24px;
+    height:24px;
+    /* background:red; */
+    margin-bottom: 5px;
+}
+#device_icon{
+    width:24px;
+    height:24px;
+    /* background:red; */
+    margin-bottom: 5px;
+}
+#icon_table{
+    margin: 0 auto;
+    width:400px!important;
+}
+#icon_table img{
+    display: block;
+    text-align: center;
+    margin-left:30px;
+    margin-top:30px;
+}
+#icon_table i{
+    display: block;
+    text-align: center;
+    margin-left:30px;
+    margin-top:30px;
+    cursor: default;
+}
+.device_icon_font{
+    /* display: block;
+    width:30px;
+    height:30px; */
+    font-size:24px!important;
+    width:24px;
+    height:24px;
+    /* background:red; */
+    margin-bottom: 5px;
+}
+#device_icon_font{
+    font-size:24px!important;
+    width:24px;
+    height:24px;
+    /* background:red; */
+    margin-bottom: 5px;
+}
+#icon_table td{
+    height:82px;
+}
+.icon_div{
+    width:100%;
+    height:100%;
+    /* background:red; */
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+.chiosIcon{
+    box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow:0px 0px 10px #666;
+    -webkit-box-shadow:0px 0px 10px #666;
+    border:1px solid #0e86fe;
+
+}
+.icon_file{
+    width:30px;
+    display: block;
+    float:left;
+    margin-left:22px;
+    margin-top:22px;
+    position: relative;
+}
+.icon_file input{
+    width:30px;
+    opacity:0;  
+    filter:alpha(opacity=0);
+    position: absolute;
+    z-index:99;
+}
+#up_icon{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    z-index: 10;
+}
+#fixed_assets_modal{
+    width:750px;
+    left:45%;
+}
+#assets_query_box{
+    width:100%;
+    height:50px;
+    /* background:red; */
+    border-bottom:1px solid #d7d7d7;
+}
+#assets_num_box,#assets_name_box,#assets_dept_box{
+    float:left;
+    width:200px;
+    margin-left: 10px;
+}
+#fixed_assets_box{
+    height:300px;
+}
+#fixed_assets_box th{
+    border-left:0;
+}
+#fixed_assets_box td{
+    height:20px;
+    border-left:0;
+}
+#fixed_assets_box input,#fixed_assets_box select{
+    width:120px;
+}
+#assets_tab{
+    width:100%!important;
+    border-right:0;
+}
+#assets_list_box{
+    margin-top:20px;
+}
+#page{
+    float:right;
+}
+#assets_query_btn{
+    margin-left:10px;
+}
+.iconImg{
+    font-size:20px!important;
+}
+.device_icon_title{
+    margin-top:12px;
+    margin-left:3px;
+}
+#edit_back_info{
+    margin-left:40px;
+}
+.yes_btn{
+    width: 84px;
+    height: 28px;
+    line-height: 18px;
+    border-radius: 4px;
+}

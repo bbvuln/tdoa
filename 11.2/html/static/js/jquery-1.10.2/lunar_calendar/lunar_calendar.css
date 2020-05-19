@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #E0ECFD;
+    color: #686868;
+}
+.cal_wrapper{
+    width: 750px;
+    background: #FFF;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.cal_header{
+    height: 40px;
+    position: relative;
+    padding-top: 20px;
+    background: #E0ECFD;
+}
+.cal_content{
+    clear: both;
+}
+.header_l{
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: #50C1E9;
+}
+.header_r{
+    width: 100%;
+    background: #3baeda;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.header_l,.header_r{
+    border-radius: 3px;
+}
+.header_l .cal_date{
+    /* color: #fbf576; */
+    /* border-right: 1px dotted #FFF; */
+    /* width: 60%; */
+    /* height: 40px; */
+    /* line-height: 40px; */
+    margin-top: 5px;
+    /* float: left; */
+    font-size: 16px;
+    /* text-align: center; */
+}
+.noFestival .cal_date{
+    position: relative;
+    top: 13px;
+}
+.header_l .cal_lunar{
+    color: #FFF;
+    width: 39%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 0px;
+    font-weight: bold;
+}
+.header_l .cal_lunar span{
+    display: block;
+}
+.header_r .cal_year,
+.header_r .cal_month,
+.header_r .cal_curmonth{
+    display: inline-block;
+    *zoom:1;*display:inline;/* 修复ie6/7不支持inline-block属性 */
+    margin-right: 20px;
+}
+.header_r .cal_year{
+    background-position: 95%;
+    background: url(images/toolbarButton-menuArrows.png) no-repeat 50px 10px;
+}
+.header_r .cal_year select{
+    font-size: 12px;
+    width: 70px;
+    height: 25px;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+}
+.header_r .cal_curmonth button{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 20px;
+    color: #FFF;
+    text-align: center;
+    vertical-align: baseline;
+    cursor: pointer;
+    background-color: #76CFEE;
+    border: none;
+}
+.toggle_group select{
+    width: 60px;
+    outline: none;
+    height: 25px;
+    border: none;
+    padding-left: 10px;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.toggle_group .arrow{
+    color: #FFF;
+    padding: 4px 8px 5px 8px;
+    cursor: pointer;
+}
+.cal_content table{
+    width: 100%;
+    table-layout: fixed;
+}
+.cal_content thead{
+    border-bottom: 1px solid #ddd;
+}
+.cal_content thead tr{
+    background: #f7f7f7;
+}
+.cal_content td,.cal_content th{
+    text-align: center;
+    padding: 10px;
+    line-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.cal_content th{
+    padding: 5px 10px;
+}
+.cal_content .cal_day{
+    border-right: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+.cal_content .day_num{
+    font-size: 18px;
+}
+.cal_content .weekend,.cal_content .cal_day .festival{
+    color: #FF7C7C;
+}
+.cal_content .cal_day.today{
+    background: #50c1e9;
+    color: #FBF576;
+}
+.current_hover{
+    background: #A4D3EE;
+    /*color: #FBF576 !important;*/
+    color: #FFFF00;
+}
+.cal_todayInfo{
+    width: 60%;
+    height: 100%;
+    float: left;
+    color: #fbf576;
+    border-right: 1px dotted #FFF;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+}
+.solarFestivalColor{
+    color: #1874CD;
+}
+.current_hover .solarFestivalColor{
+    color: #FBF576;
+}
+.solarTerm{
+    color: limegreen;
+}
+.today .solarTerm{
+    color: #FBF576;
+}
+.current_hover .solarTerm{
+    color: #FBF576;
+}
+.lunarFestivalColor{
+    color: #ff0000;
+}
+.current_hover .lunarFestivalColor{
+    color: #FBF576;
+}
+.blackFriday{
+    color: black;
+}
+.current_hover .blackFriday{
+    color: #FBF576;
+}
+.day_lunar{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.unrendered_cell{
+    border: none !important;
+}
+.recover_cellCss{
+    border-bottom: 1px dotted #ccc;
+    border-radius: 4px;
+    border-right: 1px dotted #ccc;
+}
+/*
+ 适应移动设备 
+ */
+@media screen and (max-width: 500px){
+    .cal_wrapper{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .cal_header{
+        padding-top: 0px;
+    }
+    .header_l,.header_r{
+        width: 100%;
+        float: left;
+        border-radius: 0px;
+    }
+    .header_l{
+        position: relative;
+    }
+    .header_r{
+        text-align: center;
+    }
+    .header_r .cal_year,
+    .header_r .cal_month,
+    .header_r .cal_curmonth{
+        display: inline-block;
+        margin-right: 2px;
+    }
+    .cal_content .cal_day{
+        border: none;
+    }
+    .cal_content td,.cal_content th{
+        padding: 5px;
+    }
+    .cal_content th span{
+        display: none;
+    }
+}

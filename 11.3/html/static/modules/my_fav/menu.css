@@ -1,0 +1,125 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+html
+{
+    overflow:hidden;
+}
+body
+{
+    background:#f3f3f3;
+}
+img
+{
+    border:0px;
+}
+
+#tabs
+{
+    width:100%;
+    height:40px;
+    padding-left:8px;
+    border-bottom:1px #c6c2c3 solid;
+    background:url('images/tabs_bg.png') left top repeat-x;
+    overflow:hidden;
+}
+#tabs a
+{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    color: #616161;
+    text-decoration:none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    padding:0px 6px 0px 0px;
+}
+#tabs a.last
+{
+    background:none;
+}
+#tabs a span
+{
+    display:block;
+    padding:0px 5px;
+    _padding:10px;
+    cursor:pointer;
+}
+#tabs a:hover span
+{
+    color:#0d7dca;
+}
+#tabs a.current span
+{
+    color:#0d7dca;
+    background:url('images/bg.png') bottom center no-repeat;
+}
+#tabs a span i
+{
+    display: inline-block;
+    *zoom: 1;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    padding-right:3px;
+}
+#tabs #tab_1 i
+{
+    background:url('images/1.png') left center no-repeat;
+}
+#tabs #tab_1:hover i,
+#tabs #tab_1.current i
+{
+    background:url('images/1_hover.png') left center no-repeat;
+}
+#tabs #tab_2 i
+{
+    background:url('images/2.png') left center no-repeat;
+}
+#tabs #tab_2:hover i,
+#tabs #tab_2.current i
+{
+    background:url('images/2_hover.png') left center no-repeat;
+}
+#tabs #tab_3 i
+{
+    background:url('images/3.png') left center no-repeat;
+}
+#tabs #tab_3:hover i,
+#tabs #tab_3.current i
+{
+    background:url('images/3_hover.png') left center no-repeat;
+}
+
+#panels
+{
+    padding:0px;
+    overflow-y:auto;
+    border-top:1px #fff solid;
+}
+#panels a
+{
+    display:inline-block;
+    width:88px;
+    text-decoration:none;
+    text-align:center;
+    margin:20px 5px 20px 5px;
+    color:#2e2e2e;
+    font-size:12px;
+    float: left;
+}
+#panels a img
+{
+    width:50px;
+    height:50px;
+}
+#panels a span
+{
+    display:block;
+    height:14px;
+    margin-top: 3px;
+    overflow:hidden;
+    text-align:center;
+}

@@ -1,0 +1,210 @@
+/*-----------------------------左部导航部分 是bootstrap自带样式开始--------------------------*/
+.bs-docs-sidenav {
+	width: 208px;
+	margin: 30px 0 0;
+	padding: 0;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	 border-radius: 6px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bs-docs-sidenav > li > a {
+	display: block;
+	width: 180px \9;
+	margin: 0 0 -1px;
+	padding: 8px 14px;
+	border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a 
+{
+	-webkit-border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a 
+{
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a 
+{
+	position: relative;
+	z-index: 2;
+	padding: 9px 15px;
+	border: 0;
+	text-shadow: 0 1px 0 rgba(0,0,0,.15);
+	-webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+	-moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+	box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+.bs-docs-sidenav .icon-chevron-right 
+{
+	float: right;
+	margin-top: 2px;
+	margin-right: -6px;
+	opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover 
+{
+	background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right 
+{
+	opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,.bs-docs-sidenav .active a:hover .icon-chevron-right 
+{
+	background-image: url(../images/glyphicons-halflings-white.png);
+	opacity: 1;
+}
+.bs-docs-sidenav.affix 
+{
+	top: 40px;
+}
+.bs-docs-sidenav.affix-bottom 
+{
+	position: absolute;
+	top: auto;
+	bottom: 220px;
+}
+@media (min-width: 1200px) 
+{
+	.bs-docs-container {
+		max-width: 970px;
+	}
+	.bs-docs-sidenav {
+		width: 208px;
+	}
+	.bs-docs-sidenav > li > a {
+		width: 180px \9; /* Override the previous IE8-9 hack */
+	}
+}
+/*-----------------------------左部导航部分 是bootstrap自带样式结束--------------------------*/
+/*-----------------------------自定义左右布局样式的开始----------------------*/
+.nav-right-container{
+	border:1px solid #ffffff;
+	overflow:hidden;
+	zoom:1;
+	overflow-y:auto;
+}
+.nav-right{
+	/* width:100%; */
+	/* height:100%; */
+	margin-left:20px;
+	overflow:hidden;
+	overflow-y:auto;
+
+}
+.flow_top_type_left{
+	float:left;
+}
+.step_name_intro{
+	float:right;
+	margin-top:5px;
+	margin-right:5px;
+}
+/*----------------------------框架页面底部公共样式开始  --------------------------------------*/
+.work_bottom{
+height:30px;
+margin:0 auto;
+float:center;
+text-align: center;
+clear:both;
+background-color: #fefefe;
+border-top: 1px solid #ddd;
+-webkit-border-radius: 0 0 6px 6px;
+-moz-border-radius: 0 0 6px 6px;
+border-radius: 0 0 6px 6px;
+-webkit-box-shadow: inset 0 1px 0 #ffffff;
+-moz-box-shadow: inset 0 1px 0 #ffffff;
+box-shadow: inset 0 1px 0 #ffffff;
+}
+.work_center{
+	width:304px;
+	margin:0 auto;
+	text-align: center;
+}
+.btn_next{
+	margin-right:15px;
+	line-height:40px;
+	float:right;
+	margin-top:8px;
+}
+.btn_save{
+	line-height:40px;
+	margin-right:15px;
+	float:right;
+	margin-top:8px;
+}
+.btn_close{
+	line-height:40px;
+	float:right;
+	margin-top:8px;
+	margin-right: 10px;
+    
+}
+/*----------------------------框架页面底部公共样式 结束  --------------------------------------*/
+.plug_body{
+	float:left;
+}
+.plug_body_left{
+	float:left;
+}
+.list_title{
+	background:#f1f0e8;
+	line-height:30px;
+	font-weight:900;
+	font-weight:bold;
+	height:30px;
+	padding-left:10px;
+	color:inherit;
+}
+.list_infomation{
+	width:260px; 
+	border:1px solid #dfdfdf;
+	border-top:0px solid red;
+	height:200px;
+	overflow:auto;
+}
+.list_infomation_small{
+	width:200px; 
+	border:1px solid #dfdfdf;
+	border-top:0px solid red;
+	height:180px;
+	overflow:auto;
+}
+.plug_body_center{
+	float:left;
+	margin-left:20px;
+}
+.plug_body_center_small{
+	float:left;
+}
+.plug_body_right{
+	float:left;
+	margin-left:20px;
+}
+.change_right{
+	margin-top:80px;
+}
+.change_left{
+	margin-top:5px;
+}
+.change_up{
+	margin-top:80px;
+}
+.change_down{
+	margin-top:5px;
+}
+.plug_body_left_small{
+	float:left;
+	margin-left:20px;	
+}
+.select{
+	background:#4094bd;
+}
+/*----------------------------框架页面选择插件样式的结束  --------------------------------------*/

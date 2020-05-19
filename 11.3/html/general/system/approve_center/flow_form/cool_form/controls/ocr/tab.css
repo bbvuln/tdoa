@@ -1,0 +1,43 @@
+#tab{
+    width: 508px;
+    /*height: 130px;*/
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2px #ddd;
+    /*margin: 100px 0 0 100px;*/
+    /*处理超出的内容*/
+    overflow: hidden;
+}
+
+/*选项卡的头部*/
+#tab-header{
+    background-color: #F7F7F7;
+    height: 33px;
+    text-align: center;
+    position: relative;
+}
+#tab-header ul{
+    width: 500px;
+    position: absolute;
+    left: -1px;
+}
+#tab-header ul li{
+    float: left;
+    width: 98px;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 1px;
+    border-bottom: 1px solid #dddddd;
+}
+#tab-header ul li.selected{
+    background-color: white;
+    font-weight: bolder;
+    border-bottom: 0;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 0;
+
+}
+
+#tab-header ul li:hover{
+    color: orangered;
+}

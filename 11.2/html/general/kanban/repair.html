@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>任务管理页面跳转</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        width: 100%;
+        height: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #f8f8f8;
+    }
+    .container{
+        top: 10px;
+        width: 800px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 30px;
+        line-height: 40px;
+        color: #454545;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #eee; 
+    }
+    .thead{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .theme{
+        color: rgb(3, 120, 213);
+    }
+    #countDown{
+        color: red;
+    }
+    .jump-tip{
+        display: block;
+        margin: 0 auto; 
+        margin-top: 20px;
+        cursor: pointer;
+        width: 92px;
+        height: 30px;
+        line-height: 30px;
+        background: url('<?=MYOA_STATIC_SERVER?>/static/theme/13/images/btn_white_big.png');
+        
+    }
+    a:hover{
+        background-position:0px 35px;
+    }
+    .tfooter{
+        font-size: 14px;
+        padding: 20px 0 40px;
+    }
+    .tfooter hr{
+        margin: 0 auto;
+        width: 650px;
+        height:1px;
+        border:none;
+        border-top:1px solid #eee;
+    }
+    .tfooter p{
+        margin: 10px 0 20px;
+    }
+    .tfooter div{
+        font-family: microsoft yahei;
+    }
+    .tfooter ul{
+        font-weight: normal;
+        list-style-type: none;
+    }
+    .tfooter li{
+        display: inline-block;
+        _zoom:1;
+        _display:inline;
+        width: 200px;
+    }
+    </style>
+<script type="text/javascript">
+(function(){
+    // var url = 'index.php';
+    // var i = 3;
+    // interval=setInterval(function(){
+    //     if(--i){
+    //         document.getElementById("countDown").innerHTML = i;
+    //     }
+    //     else{
+    //         clearInterval(interval);
+    //         window.location.href=url;
+    //     }
+    // }, 1000);
+
+    // window.onload = function(){
+    //     var jump = document.getElementById("jumpNow");
+    //     jump.onclick = function(){
+    //         window.location.href = url;
+    //     };
+    // };
+})();
+
+</script>
+</head>
+<body>
+	<div class="wrap">
+        <div class="container">
+    		<div class="thead">您的浏览器版本过低</div>
+    		<div class="tbody">  
+               <!-- <span id="countDown">3</span> 秒后自动跳转至 
+                 <span class="theme">
+                    <?
+                        if ($version == 'ie6') {
+                    ?>
+                    2008版经典主题：清新怡然
+                    <?
+                        }
+                        else{
+                    ?>
+                    2013版梦幻灵动主题：现代或未来
+                    <?
+                        }
+                    ?>
+                </span>
+                <a id="jumpNow" class="jump-tip">立即跳转</a> -->
+            </div>
+            <div class="tfooter">
+                <hr>
+                <p>推荐您使用以下版本软件或者浏览器</p>
+                <ul>
+                    <li><img src="/static/theme/15/images/golog/spirit_icon.png"><div>通达OA精灵双核极速版</div></li>
+                    <li><img src="/static/theme/15/images/golog/ie.png"><div>Internet Explore 9+</div></li>
+                    <li><img src="/static/theme/15/images/golog/chrome.png"><div>谷歌浏览器</div></li>
+                </ul>
+            </div>
+            </div>
+	</div>
+</body>
+</html>

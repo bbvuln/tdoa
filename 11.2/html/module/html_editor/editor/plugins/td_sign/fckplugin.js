@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'td_sign', new FCKDialogCommand( 'td_sign', "签章控件属性", FCKPlugins.Items['td_sign'].Path + 'td_sign.php', 380, 260 ) ) ;

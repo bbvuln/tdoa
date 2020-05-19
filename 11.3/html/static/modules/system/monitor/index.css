@@ -1,0 +1,22 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+.content-body{
+    overflow: auto;
+}
+select{
+    height: 28px;
+    line-height: 28px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.table tbody tr td span {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #787878;
+}

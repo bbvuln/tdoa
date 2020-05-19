@@ -1,0 +1,51 @@
+#goods_tab,#goods_details_tab{
+    margin: 0 auto;
+}
+.use_handle{
+    color:#108EE9;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.modal-body-left {
+    width: 128px;
+    float: left;
+    margin-left:30px;
+}
+.modal-body-right {
+    float: left;
+    margin-left:60px;
+    /* margin-top:20px; */
+}
+#home_wrapper img {
+    width: 128px;
+    height: 86.5px;
+}
+#editContent{
+    height:300px;
+    padding-top:50px;
+}
+#spanButtonUpload{
+    margin-left:25px;
+    margin-top:10px;
+    position: relative;
+}
+#spanButtonUpload input[type="file"] {
+    width: 78px;
+    font-size: 200px;
+    opacity: 0;
+}
+#spanButtonUpload div:nth-child(2) {
+    width: 100%!important;
+    height: 100%!important;
+}
+.list_img{
+    width:34px;
+    height:23px;
+}
+.edit_explain{
+    height: auto;
+    margin-top: 20px;
+    width: 470px;
+    margin-left: 30px;
+    float: left;
+}

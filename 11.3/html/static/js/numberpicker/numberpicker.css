@@ -1,0 +1,7 @@
+/*
+    DP Number Picker jQuery Plugin, Version 1.0.1
+    Copyright (C) Dustin Poissant 2014
+    License CC BY-NC-SA 3.0 US
+    http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+*/
+.dp-numberPicker,.dp-numberPicker-add,.dp-numberPicker-input,.dp-numberPicker-sub{display:inline-block;*display:inline;*zoom:1;height: 30px;text-align:center;line-height: 30px;vertical-align:inherit;border: 1px solid #ccc;overflow: hidden;}.dp-numberPicker-add,.dp-numberPicker-sub{width: 30px;font-size:25px;border: none;cursor:pointer;-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;font-family: consolas;background: #F1F1F1;color: #555;line-height: 30px;transition:color ease 0.4s;}.dp-numberPicker-input{width: 50px;font-size:18px;border: none;border-left: 1px solid #ccc;border-right: 1px solid #ccc;color: #E97F2C;outline: none;}div.dp-numberPicker-add:hover,div.dp-numberPicker-sub:hover {color: #E97F2C;}.dp-numberPicker .dp-numberPicker-input{vertical-align: inherit}

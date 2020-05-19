@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-size: 12px;
+    background: #5d79a8;
+    min-width: 660px;
+    overflow: hidden;
+    color: #fff;
+}
+a {
+    color: #fff;
+}
+.update_tips {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.logo {
+    float: left;
+}
+
+#center {
+    height: 300px;
+    width: 660px;
+    margin: 40px auto;
+    padding-top: 200px;
+}
+
+#form {
+    background: url('form.png?t=2016');
+    _background: url('form.jpg?t=2016');
+    position: relative;
+    top: -100px;
+    height: 330px;
+    width: 615px;
+    margin: auto;
+}
+
+input.text {
+    border: none;
+    height: 19px;
+    line-height: 19px;
+    padding-top: 0px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    background-color: transparent;
+    width: 190px;
+    outline: none;
+    
+    color: #575757;
+}
+select {
+    width: 140px;
+    height: 22px;
+}
+input.submit {
+    width: 92px;
+    height: 98px;
+    background: url('logins.png') no-repeat 0 -148px;
+    border: 0px;
+    cursor: pointer;
+}
+input.submit:hover {
+    background-position: 0 0;
+}
+#form input.submit-hover{
+    background-position: 0 0;
+}
+.inputer {
+    position: absolute;
+    top: 165px;
+    left: 150px;
+}
+.inputer .user, .inputer .pwd {
+    width: 200px;
+    line-height: 20px;
+    display: block;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    margin-left: 1px;
+}
+.inputer .pwd {
+    display: block;
+    width: 141px;
+}
+div.msg {
+    line-height: 25px;
+    position: relative;
+    width: 500px;
+    margin: 20px auto;
+}
+.btn {
+    position: absolute;
+    left: 270px;
+    top: -1px;
+}
+.bg-item-1 {
+    _display:none;
+    background: url('logins.png') no-repeat 0 -296px;
+    width: 595px;
+    height: 481px;
+    position: absolute;
+    right: -98px;
+    top: 304px;
+    z-index: -1;
+}
+.bg-item-2 {
+    _display:none;
+    background: url('logins.png') no-repeat 0 -827px;
+    width: 772px;
+    height: 759px;
+    position: absolute;
+    left: -200px;
+    top: 50px;
+    z-index: -1;
+}

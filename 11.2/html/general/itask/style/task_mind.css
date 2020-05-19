@@ -1,0 +1,171 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+
+body {
+    background:#fff;
+    overflow:hidden;
+	font-size:14px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+}
+
+.header{
+    height: 35px;
+    border-bottom: 1px solid #CCC;
+    overflow: hidden;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.headerButtons {
+    float: right;
+    height: 100%;
+    width:70px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.headerTitle { 
+    float:left;
+    height:35px;
+    line-height:35px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.headerButtons .button-list{
+	    background:url("./images/mode.png") no-repeat left top; 
+	    height:24px; 
+	    width:34px; 
+	    float:left; 
+}
+.headerButtons .button-list:hover{
+	    background:url("./images/mode.png") no-repeat left -24px; 
+	    height:24px; 
+	    width:34px;  
+	    float:left; 
+	    cursor:pointer;
+}
+.headerButtons .button-thumb{
+	    background:url("./images/mode.png") no-repeat  right top; 
+	    height:24px; 
+	    width:34px; 
+	    float:left;
+}
+.headerButtons .button-thumb:hover{
+	    background:url("./images/mode.png") no-repeat  right -24px; 
+	    height:24px; 
+	    width:34px; 
+	    float:left; 
+	    cursor:pointer;
+}
+
+.content-thumb{ 
+	    float:left; 
+	    width:1000px;
+}
+.content-thumb .image{
+	    height:106px; 
+	    border:1px solid #fff;
+	    width:100px; 
+	    text-align:center; 
+	    float:left;
+		margin-right:20px;
+	    margin-bottom:20px;
+	    padding-top:5px;
+}
+.content-thumb .image:hover{
+	    background-color:#f6f9fe; 
+	    border:1px solid #c3d4e4; 
+	    -moz-border-radius:4px; 
+	    -webkit-border-radius:4px;
+	    border-radius:4px;
+}
+.content-thumb .image .image-jpg{
+	    margin:0 auto; 
+	    height:87px; 
+	    width:85px; 
+	    background:none;
+}
+.content-thumb .image .image-title{
+	    margin:0 auto; 
+	    height:20px; 
+	    line-height:20px; 
+	    text-align:center; 
+	    width:85px; 
+	    font-size:16px;
+}
+.content-thumb .image-more{
+	    background-color:#d5e7fb !important; 
+	    border:1px solid #8B9FB8 !important; 
+	    -moz-border-radius:4px; 
+	    -webkit-border-radius:4px;
+	    border-radius:4px;
+}
+
+
+.content-list{
+	    width:1000px; 
+	    float:left;
+}
+#content-list .image{
+	    height:30px; 
+	    border:1px solid #fff;
+	    width:970px;
+	    text-align:center; 
+	    margin-bottom:5px; 
+	    padding:4px;
+}
+#content-list .image:hover{
+	    background-color:#f6f9fe; 
+	    border:1px solid #c3d4e4; 
+	    -moz-border-radius:4px;
+	    -webkit-border-radius:4px;
+	    border-radius:4px;
+}
+#content-list .image .image-jpg{
+	    margin:0 auto; 
+	    height:30px; 
+	    width:30px; 
+	    background:none; 
+	    float:left;
+}
+#content-list .image .image-title{  
+	    float:left;height:30px; 
+	    line-height:30px;
+	    padding-left:10px; 
+	    font-size:16px;
+}
+#content-list .image-more{
+	    background-color:#d5e7fb !important; 
+	    border:1px solid #8B9FB8 !important; 
+	    -moz-border-radius:4px; 
+	    -webkit-border-radius:4px;
+	    border-radius:4px;
+}
+.drag-highlight{ 
+	    background-color:#d5e7fb !important; 
+	    border:1px solid #8B9FB8 !important; 
+	    -moz-border-radius:4px; 
+	    -webkit-border-radius:4px;
+	    border-radius:4px;
+}
+.move-image{
+	    opacity:0.9;
+	    background-color:#f6f9fe; 
+	    border:1px solid #c3d4e4;
+	    height:106px; 
+	    width:100px; 
+	    text-align:center;
+	    padding-top:5px; 
+	    -moz-border-radius:4px; 
+	    -webkit-border-radius:4px;
+	    border-radius:4px;
+}
+.move-image-jpg{
+	    margin:0 auto; 
+	    height:87px; 
+	    width:85px; 
+	    background:none;
+}

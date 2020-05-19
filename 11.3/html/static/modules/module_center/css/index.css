@@ -1,0 +1,138 @@
+body {
+	font: 12px/1.5 "Microsoft Yahei", "Calibri";
+	color: #333;
+}
+.module-list {
+    width: 940px;
+    margin: 20px auto;
+}
+.module-list-l{
+    float: left;
+    width: 600px;
+}
+.module-list-r{
+    float: left;
+    width: 310px;
+}
+.module-list-el{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 270px;
+    position: relative;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(50,50,50,.1);
+    display: none;
+	border: 1px solid #eee;
+}
+.width560{
+    width: 560px;
+}
+.module-list-el:hover{
+    -webkit-box-shadow: 0px 0px 8px #aaa;
+    -moz-box-shadow: 0px 0px 8px #aaa;
+    -ms-box-shadow: 0px 0px 8px #aaa;
+    -o-box-shadow: 0px 0px 8px #aaa;
+    box-shadow: 0px 0px 8px #aaa;
+}
+.module_hd{
+    padding: 10px;
+}
+.module-title{ 
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-bottom: 0px;
+}
+.module-bd {
+    padding: 10px;
+    margin-bottom: 40px;
+    min-height: 80px;
+}
+.minheight283{
+    min-height: 283px;
+}
+.module-ft {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+}
+.module-manager{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.module-manager-user a{
+    display: inline-block;
+    margin-right: 5px;
+}
+a.gear-icon{
+    display: none;
+    width: 24px;
+    height: 23px;
+    background:url('../images/gear.png');
+    cursor: pointer;
+}
+a.gear-icon:focus{
+   outline: none;
+}
+a.gear-icon:hover{
+    margin-top: 1px;
+}
+.module-ft .dropdown-toggle{
+    cursor: pointer;
+}
+.module-ft .dropdown-menu{
+    min-width: 86px;
+}
+.module-ft .dropdown-menu li{
+    text-align: center;
+}
+#myModalLabel {
+    font-size: 20px;
+}
+.manage_textarea {
+    padding: 30px 0px 0px 50px;
+}
+.module-ft-item{
+    float: left;
+    cursor: pointer;
+    color: #666;
+}
+.module-ft-item:hover{
+    color: #000;
+}
+.pad25{
+    padding: 10px 25px;
+}
+.pad33{
+    padding: 10px 33px;
+}
+.padfull{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
+.pad49{
+    padding: 10px 49px;
+}
+.module-ft-item i{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #666;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.module-ft-item:hover i{
+    background: #000;
+}
+span.split {
+    float: left;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    margin-top: 9px;
+}

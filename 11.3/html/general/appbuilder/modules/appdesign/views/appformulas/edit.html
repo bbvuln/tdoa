@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <meta name="renderer" content="ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>公式编辑</title>
+    <link href="/static/js/antd/0.12.17/antd.css" rel="stylesheet">
+    <link href="/static/js/antd/0.12.17/td.react.css" rel="stylesheet">
+    <script src="/static/js/jquery-1.10.2/jquery.min.js"></script>
+    <!--
+      * 这个页面是用于表单设计器中编辑公式用的
+      * 具体方式是采用 iframe 加载，因为这个公式编辑组件是通用的，除了表单设计器还会有其它地方会用
+      * 采用 iframe 是因为这个页面用的是 react，而表单设计器用的是 vue。
+      * 用 iframe 加载最适合的宽高是 width: 1000px height: 544px
+    -->
+    <style>
+      body .formula-edit-modal {
+        top: 0 !important;
+        left: 0 !important;
+      }
+      body .ant-modal-content {
+        border-radius: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!--[if lt IE 10]>
+		<script src="/static/js/es5-shim.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="/static/modules/appbuilder/appdesign/formula/vendor.js"></script>
+    <script type="text/javascript" src="/static/modules/appbuilder/appdesign/formula/bundle.js"></script>
+  </body>
+</html>

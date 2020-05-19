@@ -1,0 +1,84 @@
+.attendance-title{
+    padding-left: 55px;
+}
+.table-small{
+    width:70% !important;
+}
+.holidayName{
+
+}
+.handle_icon_cur{
+    cursor: pointer;
+}
+.time_line{
+    padding:0 8px;
+}
+.handle_icon-left{
+    margin-left:7px;
+}
+.overHidden{
+    overflow: hidden;
+    width:700px !important;
+}
+.attendance-back-add{
+    margin-left:15px;
+    margin-top:10px;
+}
+.table{
+    width:98%;
+}
+#holiday_table_head{
+    background:#D7D7D7;
+}
+th{
+    text-align: center !important;
+}
+.handle_btn{
+    /* font-weight:bold; */
+    color:#108EE9;
+}
+.td_text{
+    text-align:right!important;
+    width:100px!important;
+    /* line-height:center; */
+}
+.holiday_power{
+    width:204px;
+    height:30px;
+}
+.ele_mar{
+    margin-left:20px;
+}
+.padding_line{
+    padding:0 4px;
+}
+.padding_font{
+    padding:0 1px;
+}
+.border_red{
+    border-color:red!important;
+}
+#edit_box{
+    min-height:320px;
+}
+#holiday_edit_table{
+    width:100%!important;
+}
+.td_width_title{
+    width:25%;
+}
+.edit_time_width{
+    width:100px;
+}
+.orgAdd{
+    color: #207BD6;
+    padding-left: 12px;
+    background: url(/static/theme/10/images/org_select.png) no-repeat;
+    background-position: 0px 0px;
+}
+th{
+    text-align: left!important;
+}
+.time_width{
+    width:90px;
+}

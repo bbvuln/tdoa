@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>通达OA oauth2 认证服务器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<form action="{$postUri}" method="post" class="pure-form pure-form-stacked" enctype="application/x-www-form-urlencoded">
+    <input name="transaction_id" type="hidden" value="{$transactionID}">
+    <fieldset>
+        <!-- Upper box with Title, username, and password -->
+        <div class="upper-box">
+            <!-- Title -->
+            <div style="padding-top: 15px">
+                <img style="display: block; margin-left: auto; margin-right: auto;" src="/static/images/tongda.ico">
+                <div class="subtext">认证服务器</div>
+            </div>
+            <div class="pure-control-group labels">
+                <p>
+                <p>{$user.name},</p>
+                第三方应用 <b>{$client.name}</b> 请求访问您的账号：
+
+                <h4>{$client.client_name}</h4>
+                <small><i>{$client.desc}</i></small>
+                </p>
+
+                <p>是否允许?</p>
+            </div>
+        </div>
+        <!-- Bottom box with Sign in -->
+        <div class="bottom-box">
+            <div class="pure-controls accept-cancel-buttons">
+                <div>
+                    <input class="pure-button pure-button-primary" type="submit" value="允许" id="allow">
+                    <!-- Cheat to make a bit of spacing -->
+                    <span>&nbsp&nbsp</span>
+                    <input class="pure-button" type="submit" value="拒绝" name="cancel" id="deny">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+</form>

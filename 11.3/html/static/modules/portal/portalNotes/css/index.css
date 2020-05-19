@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+}
+.logs_table_box{
+    width:70%;
+    height:auto;
+    position: relative;
+    margin:auto;
+    margin-top:30px;
+    overflow-y: auto;
+}
+#welcome{
+    width:70%;
+    height:600px;
+    position: relative;
+    margin:auto;
+    margin-top:30px;
+    overflow-y: auto;
+}
+#welcome_div{
+    width:300px;
+    margin:0 auto;
+}
+#welcome_div h4{
+    text-align:center;
+}
+#portalTree{
+    width:13%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    border-right:2px solid #ddd;
+}
+.log_del{
+    color:#458EED;
+    font-weight: 800;
+    cursor: pointer;
+}
+.check_center{
+    text-align:center !important;
+}
+.del_btn{
+    margin-bottom:20px;
+    float:left;
+}
+.time_box{
+    float:right;
+    position: relative;
+}
+.selectData{
+    margin-bottom:20px !important;
+    margin-left:15px;
+}
+.time_line{
+    position: absolute;
+    top:6px;
+}
+.mar_left{
+    margin-left: 20px;
+    float:right;
+}
+#page{
+    float:right;
+}
+.no_delete{
+    color:#ccc;
+}

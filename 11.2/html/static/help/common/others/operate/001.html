@@ -1,0 +1,15 @@
+<h4 style="font-family:'微软雅黑'"><span>怎样将IM分离到其他的服务器上？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+A、两台计算机都安装oa系统<br/>
+B、启用数据库的计算机，在这台计算机上登录oa系统，系统管理 -&gt; 数据库管理 -&gt; MySQL用户管理 添加一个用户：主机为启用office_IM的计算机ip地址，用户名：比如myroot 密码：比如mypass<br/>
+C、启用office_IM服务的计算机配置D:\MYOA\bin\Service.ini<br/>
+设置其参数为<br/>
+[OfficeIm]HOST=数据库所在计算机的ipPORT=3336USER=rootPASSWORD=myoa888DBNAME=TD_OASERVERPORT=1188CENTERMODE=0OAURL=http://oa访问ip:端口号通达应用服务控制中心-通达其他服务配置-即时通讯配置那的主机名修改为数据库所在计算机ip，重启OFFICE_im服务生效。<br/>
+D、启用office_IM服务的计算机停掉Mysql5_oa，启用Mysq5_oa的计算机停掉office_IM服务，以上操作，实现数据库与IM分离。
+</p>
+
+
+

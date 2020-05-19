@@ -1,0 +1,167 @@
+body,html{
+	width:100%;
+	height:100%;
+}
+.logs-body-wrap{
+	min-width:1024px;
+}
+#user_name{
+	margin-right:0px;
+}
+#dept_name{
+	margin-right:0px;
+}
+#begin_time,#finish_begin_time{
+	margin-right:2px;
+}
+input#run_name,input#RUN_NAME{
+	width:110px;
+}
+input#to_name{
+	width:75px;
+}
+.orgClear{
+	position:relative;
+	left:auto;
+	top:3px;
+	margin-right:10px;
+}
+.orgAdd{
+	position:relative;
+	left:auto;
+	top:3px;
+	margin-top:3px;
+}
+A.orgAdd:link, .A.orgAdd:visited{
+	background-position:0px 1px;
+}
+A.orgClear:link, .A.orgClear:visited{
+	background-position:0px -60px;
+}
+.queryBtn{
+	margin-right:-77px;
+}
+.margin-center{
+	margin:0px 5px 0px 5px;
+}
+.time_select{
+	margin-left: -13px;
+	margin-right: 8px;
+	padding-top: 0px;
+}
+.retime{
+	width: 126px; 
+	margin-bottom:0px; 
+}
+.work_query_time{
+	width: 66px;
+}
+.hide_title{
+    text-align: left;
+}
+.b_move_left{
+	margin-left:-16px;
+}
+.to_name_down{
+	margin-bottom:1px;
+}
+.select_style{
+    width:110px;
+    margin-bottom:-1px;
+}
+.select_style_chose_person{
+	width:110px;
+    margin-bottom:-1px;
+}
+.begin_time_style{
+    margin-right:0px;
+    width:70px;
+}
+.end_time_style{
+    width:70px;
+}
+.select_flow{
+	margin-bottom:-1px;
+	margin-right:16px;
+}
+.list_style{
+    margin:10%,10%;
+}
+.search-mul-div-down{
+	margin:-20px;
+}
+.destroy_prcs_data2{
+	margin-top:-10px;
+}
+.destroy_btn_time{
+	margin-top:-20px;
+}
+.destroy_span_title{
+	margin-top:-10px;
+}
+.destory_end_time{
+	margin-bottom:-15px;
+}
+.destory_btn_select{
+	margin-bottom:10px;
+}
+.h5_text_color{
+	color:red;
+}
+.word_wrap{
+	word-wrap:break-word;
+}
+.select_downtobottom{
+	margin-bottom:0px;
+}
+.ip_text_input{
+	width:110px;
+}
+.dump_window_body{
+	/*overflow-y:inherit;
+	height:270px;*/
+}
+.dump_window_footer{
+	height: 28px;
+}
+.quert_dump_window_footer{
+	height: 28px;
+	/*margin-top: 280px;*/
+}
+textArea{
+	margin-bottom: 0px;
+}
+.form-search-top{
+}
+.form-search-bottom{
+	margin-bottom: 4px;
+        white-space: nowrap;
+}
+.form-search>input{
+	margin-right: 8px;
+}
+.logs-form-search{
+	text-align: center;
+}
+.query-fom-search{
+	text-align: center;
+}
+.destroy-form-search{
+	text-align: left;
+	margin-left: 22px
+}
+.rule-form-search{
+	text-align: left;
+	margin-left: 203px;
+}
+.timeout-query-form-search{
+	text-align: left;
+	margin-left: 24px;
+}
+.timeout-stat-form-search{
+	text-align: left;
+	margin-left: 105px;
+}
+.ui-autocomplete-input{
+	margin-bottom: 0px;
+}

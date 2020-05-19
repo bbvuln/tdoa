@@ -1,0 +1,123 @@
+html{
+	margin:0px;
+	padding:0px;
+	height:100%;	
+    overflow-y:hidden;
+}
+body{
+	margin:0px;
+	padding:0px;
+	height:100%;	
+    min-width:960px;
+}
+.bodycolor { 
+	BACKGROUND: #FFFFFF;
+}
+.clear{ 
+	clear:both; float:none;
+}
+.float_left{
+	float:left;
+}
+.float_left{
+	float:left;
+}
+.f_field_block{
+    margin-top:4px;
+    margin-bottom:4px;
+    display:block;
+    text-align:left;
+}
+.f_field_block_small{
+	padding:0px;
+	margin:0px;
+    margin-top:1px;
+    margin-bottom:1px;
+    
+}
+.f_field_label{ 
+	margin:0px;
+	padding:0px；	
+}
+.f_field_title{
+	font-size:12px;
+	font-weight:bold;
+	margin-left:2px;
+	margin-right:2px;
+}
+.f_field_ctrl{
+	margin-top:5px;
+	margin-left:2px;
+}
+.f_field_ctrl_small{
+	margin-top:1px;
+	margin-left:2px;
+}
+.f_field_explain_label{
+	/*background:#F0F8FA;*/
+	width:90%;
+	margin:0px;
+	padding:0px;
+	float:left;
+	margin-bottom:5px;
+	border:0px;
+
+}
+.f_field_explain_title_red{
+	color:red;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+.f_field_explain_title_blue{
+	color:blue;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+.f_field_explain_title_green{
+	color:green;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+/*--必填*样式 --*/
+.f_field_required{
+	color:red;
+	font-size:12px;
+	margin-top:0px;
+	margin-left:2px;
+	margin-right:2px;
+	
+}
+/*--提示小图标样式 --*/
+.icon18-illustration{
+	margin-left:8px;
+	width:24px;
+	height:24px;
+	padding-bottom:5px;
+	padding-left:16px;
+	background:url(/static/modules/workflow/system/flow_guide/flow_type/css/images/tip.png) no-repeat;
+}
+
+.flow_top_type{
+	margin:0px;
+	padding:0px;
+	margin-top:15px;
+	margin-right:10px;
+	border-bottom: 1px solid #d6d6d6;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 5px;
+}
+.flow_name{
+	color:rgb(60, 40, 143);
+	font-size:12px;
+	float:left;
+	font-weight:normal;
+}
+.flow_intro{
+	color:#94918c;
+	float:left;
+}

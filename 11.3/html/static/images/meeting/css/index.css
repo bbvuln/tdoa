@@ -1,0 +1,332 @@
+/*------------------------   ?????? ------------------------------*/
+.content {
+	padding-left: 8px;
+	padding-top: 10px;
+	padding-right: 8px;
+	text-align: left;
+	white-space:nowrap;
+}
+
+.table-name {
+	background-image: url(../images/room/titble-l.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	background-color: #232323;
+	width: 2053px;
+	margin-left: 2px;
+}
+.content-font-h1 {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 21px;
+	}
+.table-h4 {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+	color: #FFFFFF;
+	float: left;
+	background-image: url(../images/room/o.jpg);
+	background-repeat: no-repeat;
+	background-position: 12px 9px;
+	padding-left: 30px;
+	line-height: 29px;
+	height: 29px;
+}
+.table-h5 {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 12px;
+	color: #CCCCCC;
+	float: left;
+	height: 21px;
+	padding-top: 8px;
+	padding-left: 15px;
+}
+.table-r {
+	background-image: url(../images/room/titble-r.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 2px;
+	float: right;
+	background-position: right top;
+}
+.table-title {
+	height: 29px;
+	width: 2060px;
+	margin-top: 3px;
+
+}
+.roomstep1 {
+	width: 2060px;
+}
+.roomstep2 {
+	width: 100%;
+}
+.roomstep3 {
+	width: 100%;
+}
+.table-title ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.table-title li {
+	background-image: url(../images/room/table-l.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	float: left;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 13px;
+	color: #FFFFFF;
+	line-height: 29px;
+	padding-left: 2px;
+	background-color: #7f8c94;
+	margin-left: 2px;
+}
+.table-title li span {
+	height: 29px;
+	display: block;
+	background-image: url(../images/room/table-r.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	background-color: #7f8c94;
+}
+.warp_table {
+	border-collapse:collapse;
+}
+.warp_table td {
+	height: 44px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e8e8e8;
+	background-image: url(../images/room/w-line.jpg);
+	background-repeat: repeat-x;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+	text-align: left;
+	line-height: 44px;
+	overflow: auto;
+	padding-right: 5px;
+	padding-left: 8px;
+}
+#changecolor #form1 {
+	display: block;
+	padding-left: 24px;
+	height: 19px;
+	width: 19px;
+}
+
+#changecolor a {
+	background-image: url(../images/room/checkboxa.png);
+	background-repeat: no-repeat;
+}
+#changecolor a:hover {
+	background-image: url(../images/room/checkboxc.png);
+	background-repeat: no-repeat;
+}
+#changecolor a#b {
+	background-image: url(../images/room/checkboxb.png);
+	background-repeat: no-repeat;
+}
+.table-down {
+	height: 55px;
+	width: 100%;
+	margin-top: 12px;
+}
+.table-down .table-button {
+	height: 42px;
+	width: 101px;
+	float: left;
+	margin-left: 8px;
+}
+.table-h3 {
+	float: left;
+	height: 42px;
+	width: 730px;
+	margin-left: 20px;
+	line-height: 42px;
+
+}
+.table-h3 span {
+	margin-left: 10px;
+		font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+}
+.table-h3 span a {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+}
+.roomstep3 span {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+	color: #000000;
+	letter-spacing: 1px;
+}
+
+
+/*------------------------  ??????? ------------------------------*/
+.content100 {
+	padding-left: 8px;
+	padding-top: 10px;
+	padding-right: 8px;
+	text-align: left;
+}
+.table-name100 {
+	background-image: url(../images/room/titble-l.jpg);
+	background-repeat: no-repeat;
+	height: 29px;
+	background-color: #232323;
+	width: 100%;
+	margin-left: 2px;
+}
+.textbox {
+	width: 100%;
+	padding: 10px;
+}
+.textbox-row {
+	height: 67px;
+}
+.textbox-row ul {
+	margin: 0px;
+	padding: 0px;
+}
+.textbox-row li {
+	float: left;
+	background-image: url(../images/room/text-l.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 54px;
+	padding-left: 3px;
+	width: 230px;
+}
+.textbox-row span {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+}
+.textbox-row input {
+	background-image: url(../images/room/text-r.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 28px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-right: 5px;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	line-height: 28px;
+	font-size: 14px;
+	color: #666666;
+	padding-left: 5px;
+	width: 200px;
+}
+
+.checkbox {
+	width: 100%;
+	padding: 10px;
+}
+.checkbox-row li {
+	float: left;
+	width: 100px;
+}
+
+.checkbox-row span {
+	height: 19px;
+	line-height: 19px;
+	float: left;
+	margin-left: 6px;
+}
+.checkbox-row a {
+	background-image: url(../images/room/checkbox-s1.png);
+	background-repeat: no-repeat;
+}
+h4 {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.checkbox-row a:hover {
+	background-image: url(../images/room/checkbox-s1.png);
+	background-repeat: no-repeat;
+}
+.checkbox-rowr a#b {
+	background-image: url(../images/room/checkbox-s2.png);
+	background-repeat: no-repeat;
+}
+
+.inquiry {
+	width: 101px;
+	height: 42px;
+	display: block;
+	background: url(../images/room/Pre_and_inquiries.jpg) no-repeat left top;
+}
+
+.inquiry:hover {
+	background: url(../images/room/Pre_and_inquiries.jpg) no-repeat left top;
+}
+
+table td.sel {
+	text-align: center;
+}
+
+.gray-checkbox .ez-checkbox {
+  position: relative;
+  *top: 0;
+  left: -3px;
+}
+
+/*0409ÐÂÔö*/
+.table-h6 {
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 12px;
+	color: #CCCCCC;
+	float: right;
+	height: 21px;
+	padding-top: 8px;
+	padding-right: 20px;
+	letter-spacing: 1px;
+}
+.table-h6 b {
+	color: #FFFFff;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.messagebox {
+	padding-top: 25px;
+	padding-left: 60px;
+	width:100%;
+	height: 470px;
+}.mestitlebox {
+	height: 55px;
+	width: 510px;
+	margin-top: 30px;
+	background-color: #f6f6f6;
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #e0e0e0;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-size: 13px;
+	color: #454545;
+	padding-top: 15px;
+	padding-left: 16px;
+}
+.mestext {
+	font-family: "ËÎÌå";
+	font-size: 13px;
+	color: #696969;
+	line-height: 20px;
+	padding-top: 24px;
+	padding-bottom: 75px;
+}
+
+.mes-h2 {
+	font-size: 18px;
+	font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+	font-weight: bold;
+}

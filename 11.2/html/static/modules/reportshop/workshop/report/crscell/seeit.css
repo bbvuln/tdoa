@@ -1,0 +1,43 @@
+.ant-table-content .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: #f7f7f7 !important;
+    color:#252525 !important;
+}
+.ant-table-content .ui-state-default,.ui-jqgrid-hdiv{
+    height: 2rem;
+
+}
+#grid-table{
+    background: #fff;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.ui-jqgrid-hbox,.ui-jqgrid-htable,.ui-jqgrid-labels{
+    height:inherit;
+}
+.ui-jqgrid-htable thead{
+    height: inherit !important;
+}
+
+thead th{
+    height: inherit !important;
+}
+
+.ui-jqgrid-sortable{
+    line-height: 2rem;
+}
+
+span.s-ico{
+    top: 0.4rem;
+    position: absolute;
+}
+
+
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #a6c9e2 !important;
+    background:  #ecf6fd !important;
+    color: #363636;
+}

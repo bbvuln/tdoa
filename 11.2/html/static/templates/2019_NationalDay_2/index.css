@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -khtml-user-select: none;
+    user-select: none;
+}
+.header{
+	position: absolute;
+    left: 50px;
+    top: -60px;
+}
+.header .tdxk {
+}
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: -50px;
+    font-size: 14px;
+    width: 100%;
+}
+.bg{
+	width: 100%;
+    background: url(login_bg2560.png) repeat-x;
+    background-size: 100% 100%;
+    position: absolute;
+    text-align: center;
+    height: 426px;
+    top: 50%;
+    margin-top: -213px;
+}
+.element-left{
+	position: absolute;
+	right: 360px;
+    top: -51px;
+    height: 425px;
+}
+.element-right{
+	position: absolute;
+	left: 355px;
+    top: 25px;
+    height: 425px;
+}
+.login_form {
+	position: absolute;
+    top: 50%;
+    right: 220px;
+    height: 336px;
+    width: 354px;
+    margin: 0 auto;
+	background: #fff;
+    text-align: center;
+    z-index: 2;
+	margin-top: -168px;
+	border: 1px solid #ddd;
+    -moz-box-shadow: 2px -2px 26px rgba(0,0,0,.2);
+    -webkit-box-shadow: 2px -2px 26px rgba(0,0,0,.2);
+    box-shadow: 2px -2px 26px rgba(0,0,0,.2);
+	border-radius: 6px;
+}
+.lower-tip{
+	display: block;
+	padding:10px;
+	font-size:14px;
+	color: #666;
+}
+.msg{
+    color:#fff;
+}
+.msg a{
+    color:#fff;
+}
+.msg a:hover{
+    color: #EFE4B0;
+}
+#center{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.input-wrap {
+    color: #666;
+    margin:0 auto;
+	margin-bottom: 20px;
+}
+.input-wrap.name{
+    border-bottom: 1px solid #ddd;
+    margin-top:10px;
+}
+.input-wrap.password{
+    border-bottom: 1px solid #ddd;
+}
+.input-wrap:hover{
+	border-bottom: 1px solid #bd2323;
+}
+span.login-title-separator {
+    margin-left: 10px;
+}
+.input-wrap:hover .login-title-separator{
+	color: #bd2323;
+}
+.input-wrap input{
+    border: none;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    outline:none;
+    font-size: 16px;
+    background:transparent;
+}
+.input-wrap label{
+    width: 70px;
+    text-align: right;
+    display: inline-block;
+}
+.login_btn{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 274px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    background: url(login_btn.png) repeat-x;
+    margin: 0 auto;
+    display: block;
+    margin-top: 35px;
+}
+div#passWordLogin {
+    padding: 15px;
+	text-align: left;
+}
+#center i{
+    position: relative;
+}
+#center i img{
+    width:18px;
+	vertical-align: middle;
+}
+
+#changeLogin{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+#changeWay{
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+}
+.changeWay-split {
+    float: left;
+    display: block;
+    height: 18px;
+    width: 1px;
+    background: #ddd;
+    margin-top: 28px;
+}
+#numSpan,#imgSpan{
+    display: block;
+    width: 49%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.waySpan{
+    display:inline-block;
+    height:40px;
+
+}
+.selectedSpan{
+	color: #bd2323;
+	/* font-weight: bold; */
+}
+.boxShow{
+    display:block;
+}
+.boxHidden{
+    display:none;
+}
+#erweima{
+    width:160px;
+    height:160px;
+    display:block;
+    margin:0 auto;
+    margin-top:30px;
+}
+#userImg{
+    overflow:hidden;
+    width:300px;
+    height:290px;
+    margin:0 auto;
+    margin-top:20px;
+}
+#headIcon{
+    width:160px;
+    height:160px;
+    margin:0 auto;
+    margin-top:30px;
+    background:#fff;
+}
+.mobileCue{
+    display:block;
+    width:200px;
+    height:20px;
+    line-height:20px;
+    margin:0 auto;
+    margin-top:10px;
+    font-size:13px;
+}
+#nickName{
+    display:block;
+    width:200px;
+    height:20px;
+    line-height:20px;
+    margin:0 auto;
+    margin-top:20px;
+    font-size:13px;
+}
+.backLogin{
+    display:block;
+    width:200px;
+    height:20px;
+    line-height:20px;
+    font-weight:bold;
+    margin:0 auto;
+    margin-top:20px;
+    color:#666;
+    font-size:13px;
+    cursor: pointer;
+}
+#imgLogin{
+    width:100%;
+    height:300px;
+    text-align: center;
+}
+#overTime{
+    width:100%;
+    height:300px;
+    text-align: center;
+    overflow:hidden;
+}
+#invalidImg{
+    width:140px;
+    height:140px;
+    display:block;
+    margin:0 auto;
+    margin-top:30px;
+    cursor: pointer;
+    background:#fff;
+}
+.overTimeSpan{
+    display:block;
+    margin-top:30px;
+    color:#666;
+    font-size:16px;
+}
+.erweimaSpan{
+    display:block;
+    margin-top:30px;
+    color:#666;
+    font-size:14px;
+}
+.app-link{
+    display:block;
+    margin-top:20px;
+    color:#666;
+    font-size:16px;
+}
+.app-link>a{
+    color:#666;
+    text-decoration:none;
+}
+@media (min-width: 1400px) {
+	.bg{
+		background: url(login_bg2560.png) repeat-x;	
+		background-size: 100% 100%;
+		height: 526px;
+		margin-top: -263px;
+	}
+	.login_form{
+		right: 320px;
+	}
+	.element-left{
+		height: 526px;
+		top: -103px;
+	}
+}
+@media (min-width: 1600px) {
+	.bg{
+		background: url(login_bg2560.png) repeat-x;	
+		background-size: 100% 100%;
+		height: 580px;
+		margin-top: -290px;
+	}
+	.login_form{
+		right: 320px;
+	}
+	.element-left{
+		height: 580px;
+		top: -130px;
+	}
+}
+@media (min-width: 1920px) {
+	.bg{
+		background: url(login_bg2560.png) repeat-x;	
+		background-size: 100% 100%;
+		height: 720px;
+		margin-top: -360px;
+	}
+	.element-left{
+		height: 720px;
+		top: -200px;
+	}
+}
+@media (min-width: 2560px) {
+	.bg{
+		background: url(login_bg2560.png) repeat-x;	
+		background-size: 100% 100%;
+		height: 980px;
+		margin-top: -490px;
+	}
+	.login_form {
+		right: 600px;
+	}
+	.element-left{
+		height: 980px;
+		top: -328px;
+	}
+	#changeLogin{
+		left: -1px;
+		width: 356px;
+	}
+}
+@media (max-width: 800px) {
+	#changeLogin{
+		width: 300px;
+		height: 300px;
+		margin-top: -150px;
+	}
+	.input-wrap input{
+		width: 180px;
+	}
+	.login_btn{
+		width: 100%;
+	}
+}

@@ -1,0 +1,116 @@
+*{
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+}
+#reason{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    width:95%;
+    overflow: hidden;
+}
+#person{
+    padding-left: 5px;
+}
+.goods_num{
+    margin-left: 10px;
+}
+.reason{
+    margin-left: 13px;
+    font-size: 14px;
+}
+.leave_reason{
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.7em;
+  display: block;
+  width:100%;
+  word-break:break-word;
+}
+#theme_title{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+}
+#theme_one{
+  font-size: 25px;
+  text-align: center;
+  padding: 5px 0;
+  background-color: white;
+  margin-left: 42px;
+}
+.check_reason{
+margin: 15px 0;
+font-size: 16px;
+line-height: 1.7em;
+display: block;
+width:100%;
+word-break:break-word;
+}
+#applyTime{
+  text-align: center;
+  font-size: 3px;
+}
+#show_ul_list li{
+  width: 100%;
+}
+.ui-btn-wrap{
+  text-align: center;
+}
+#small_s{
+  background-color: white;
+}
+.ui-label-s:before{
+  border:0;
+}
+#active_reason{
+  display: none;
+}
+#no_reason{
+  resize: none;
+  border-top: 1px solid #D4D4D4;
+  width:98%;
+}
+#factNum{
+  width: 30px;
+  padding-left:20px;
+  border: none;
+}
+.office_num{
+  font-size: 14px;
+}
+.office_num input{
+  height: 21px;
+}
+/*.ui-list-info p{
+  color:black;
+  font-size: 14px;
+}*/
+#office_count{
+  float: right;
+  display: inline;
+  margin-right: 10px;
+}
+#office_count button{
+    font-size: 20px;
+    height: 30px;
+}
+.manage_read1{
+  padding-left: 192px;
+}
+.manage_read2{
+  padding-left: 176px;
+}
+.manage_read3{
+  padding-left: 189px;
+}
+.manage_read4{
+  padding-left: 147px;
+}
+.manage_read5{
+  padding-left: 206px;
+}
+.manage_read6{
+  padding-left: 149px;
+}

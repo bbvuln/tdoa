@@ -1,0 +1,516 @@
+{
+    "status": "ok",
+    "data": {
+        "formInfo": {
+            "name": "Debug formName",
+            "flow_id": "1",
+			"can_feedback": true,
+			"type": "edit"
+        },
+        "fieldsMap": {
+            "{field_24}": {
+                "field_id": "{field_24}",
+                "name": "列表",
+                "desc": "",
+                "subFields": [
+                    {
+                        "field_id": "{list_0}",
+                        "name": "单选",
+                        "type": "radio",
+                        "trigger": false,
+                        "options": [
+                            {
+                                "code": "a",
+                                "name": "a"
+                            },
+                            {
+                                "code": "b",
+                                "name": "b"
+                            },
+                            {
+                                "code": "c",
+                                "name": "c"
+                            }
+                        ]
+                    },
+                    {
+                        "field_id": "{list_1}",
+                        "name": "复选",
+                        "type": "checkbox",
+                        "trigger": false,
+                        "options": [
+                            {
+                                "code": "a",
+                                "name": "啊啊"
+                            },
+                            {
+                                "code": "b",
+                                "name": "版本"
+                            },
+                            {
+                                "code": "c",
+                                "name": "存储"
+                            }
+                        ]
+                    },
+                    {
+                        "field_id": "{list_2}",
+                        "name": "下拉",
+                        "type": "select",
+                        "multi": false,
+                        "trigger": false,
+                        "options": [
+                            {
+                                "code": "a",
+                                "name": "啊啊"
+                            },
+                            {
+                                "code": "b",
+                                "name": "不"
+                            },
+                            {
+                                "code": "c",
+                                "name": "吃"
+                            }
+                        ]
+                    }
+                ],
+                "type": "list",
+                "value": [
+                    {
+                        "index": "1",
+                        "data": {
+                            "{list_0}": {
+                                "field_id": "{list_0}",
+                                "value": "a"
+                            },
+                            "{list_1}": {
+                                "field_id": "{list_1}",
+                                "value": ["a","b"]
+                            },
+                            "{list_2}": {
+                                "field_id": "{list_2}",
+                                "value": "c"
+                            }
+                        }
+                    },
+                    {
+                        "index": "2",
+                        "data": {
+                            "{list_0}": {
+                                "field_id": "{list_0}",
+                                "value": "a"
+                            },
+                            "{list_1}": {
+                                "field_id": "{list_1}",
+                                "value": ["a","b","c"]
+                            },
+                            "{list_2}": {
+                                "field_id": "{list_2}",
+                                "value": "c"
+                            }
+                        }
+                    }
+                ]
+            },
+            "{field_1}": {
+                "field_id": "{field_1}",
+                "name": "单行",
+                "desc": "this is text",
+                "kind": "text",
+                "len": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "dup": false,
+                "type": "text",
+                "writable": true,
+                "hidden": false,
+                "value": "10",
+                "trigger": false
+            },
+            "{field_2}": {
+                "field_id": "{field_2}",
+                "name": "多行",
+                "desc": "this is multi-text",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "dup": false,
+                "type": "multi-text",
+                "writable": true,
+                "hidden": false,
+                "value": "20",
+                "trigger": false
+            },
+            "{field_3}": {
+                "field_id": "{field_3}",
+                "name": "数字",
+                "desc": "this is number",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "fixTo": 2,
+                "thousandth": true,
+                "dup": false,
+                "type": "number",
+                "writable": true,
+                "hidden": false,
+                "value": 100000000.198,
+                "trigger": false
+            },
+            "{field_4}": {
+                "field_id": "{field_4}",
+                "name": "货币美元",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "lowCase",
+                "sign": "＄",
+                "fixTo": 2,
+                "dup": false,
+                "type": "currency",
+                "writable": true,
+                "hidden": false,
+                "value": "100",
+                "trigger": false
+            },
+            "{field_5}": {
+                "field_id": "{field_5}",
+                "name": "货币人民币",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "upCase",
+                "sign": "￥",
+                "fixTo": 2,
+                "dup": false,
+                "type": "currency",
+                "writable": true,
+                "hidden": false,
+                "value": "100",
+                "trigger": false
+            },
+            "{field_6}": {
+                "field_id": "{field_6}",
+                "name": "货币欧元",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "upCase",
+                "sign": "O",
+                "fixTo": 2,
+                "dup": false,
+                "type": "currency",
+                "writable": true,
+                "hidden": false,
+                "value": "100",
+                "trigger": false
+            },
+            "{field_7}": {
+                "field_id": "{field_7}",
+                "name": "货币小写",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "lowCase",
+                "sign": "￥",
+                "fixTo": 2,
+                "dup": false,
+                "type": "currency",
+                "writable": true,
+                "hidden": false,
+                "value": "100",
+                "trigger": false
+            },
+            "{field_8}": {
+                "field_id": "{field_8}",
+                "name": "日期yyyy/MM/dd",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "日期",
+                "format": "yyyy/MM/dd",
+                "dup": false,
+                "type": "date",
+                "writable": true,
+                "hidden": false,
+                "value": "",
+                "trigger": false
+            },
+            "{field_9}": {
+                "field_id": "{field_9}",
+                "name": "日期yyyy-MM-dd",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "日期",
+                "format": "yyyy-MM-dd",
+                "dup": false,
+                "type": "date",
+                "writable": true,
+                "hidden": false,
+                "value": "2016-10-31",
+                "trigger": false
+            },
+            "{field_10}": {
+                "field_id": "{field_10}",
+                "name": "日期yyyyMMdd",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "日期",
+                "format": "yyyyMMdd",
+                "dup": false,
+                "type": "date",
+                "writable": true,
+                "hidden": false,
+                "value": "2016-10-31",
+                "trigger": false
+            },
+            "{field_11}": {
+                "field_id": "{field_11}",
+                "name": "日期yyyy-MM-dd HH:mm:ss",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "日期",
+                "format": "yyyy-MM-dd HH:mm:ss",
+                "dup": false,
+                "type": "date",
+                "writable": true,
+                "hidden": false,
+                "value": "2015-10-31 12:30:20",
+                "trigger": false
+            },
+            "{field_12}": {
+                "field_id": "{field_12}",
+                "name": "日期HH:mm:ss",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "日期",
+                "format": "HH:mm:ss",
+                "dup": false,
+                "type": "date",
+                "writable": true,
+                "hidden": false,
+                "value": "12:30:20",
+                "trigger": false
+            },
+            "{field_13}": {
+                "field_id": "{field_13}",
+                "name": "日期HH:mm",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "kind": "日期",
+                "format": "HH:mm",
+                "dup": false,
+                "type": "date",
+                "writable": true,
+                "hidden": false,
+                "value": "12:30",
+                "trigger": false
+            },
+            "{field_14}": {
+                "field_id": "{field_14}",
+                "name": "单选",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": true,
+                "type": "radio",
+                "writable": true,
+                "hidden": false,
+                "value": "a",
+                "options": [
+                    {
+                        "code": "a",
+                        "name": "a"
+                    },
+                    {
+                        "code": "b",
+                        "name": "b"
+                    },
+                    {
+                        "code": "c",
+                        "name": "c"
+                    }
+                ],
+                "trigger": false
+            },
+            "{field_15}": {
+                "field_id": "{field_15}",
+                "name": "复选",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": true,
+                "type": "checkbox",
+                "writable": true,
+                "hidden": false,
+                "value": [
+                    "a","b"
+                ],
+                "options": [
+                    {
+                        "code": "a",
+                        "name": "啊"
+                    },
+                    {
+                        "code": "b",
+                        "name": "v"
+                    },
+                    {
+                        "code": "c",
+                        "name": "想"
+                    }
+                ],
+                "trigger": false
+            },
+            "{field_16}": {
+                "field_id": "{field_16}",
+                "name": "下拉",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "multi": true,
+                "type": "select",
+                "writable": true,
+                "hidden": false,
+                "value": ["a","c"],
+                "options": [
+                    {
+                        "code": "a",
+                        "name": "啊"
+                    },
+                    {
+                        "code": "b",
+                        "name": "吧"
+                    },
+                    {
+                        "code": "c",
+                        "name": "从"
+                    }
+                ],
+                "trigger": false
+            },
+            "{field_17}": {
+                "field_id": "{field_17}",
+                "name": "地址",
+                "desc": "",
+                "defaultType": "custom",
+                "defaultValue": "",
+                "required": false,
+                "detail": true,
+                "type": "address",
+                "writable": true,
+                "hidden": false,
+                "value": {
+                    "prov": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "city": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "country": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "street": ""
+                },
+                "trigger": false
+            },
+            "{field_18}": {
+                "field_id": "{field_18}",
+                "name": "定位",
+                "desc": "",
+                "required": false,
+                "type": "location",
+                "writable": true,
+                "hidden": false,
+                "value": {
+                    "lat": 39.95163,
+                    "lng": 116.308731,
+                    "detail": "详细地址"
+                },
+                "trigger": false
+            },
+            "{field_19}": {
+                "field_id": "{field_19}",
+                "name": "附件",
+                "desc": "",
+                "required": false,
+                "multi": true,
+                "type": "attachment",
+                "writable": true,
+                "hidden": false,
+                "value": [
+                ],
+                "trigger": false
+            },
+            "{field_20}": {
+                "field_id": "{field_20}",
+                "name": "图片",
+                "desc": "",
+                "required": false,
+                "multi": true,
+                "type": "image",
+                "writable": true,
+                "hidden": false,
+                "value": [
+                ],
+                "trigger": false
+            },
+            "{field_21}": {
+                "field_id": "{field_21}",
+                "name": "部门",
+                "desc": "",
+                "required": false,
+                "multi": true,
+                "type": "dept-select",
+                "writable": true,
+                "hidden": false,
+                "value": [
+                ],
+                "trigger": false
+            },
+            "{field_22}": {
+                "field_id": "{field_22}",
+                "name": "人员",
+                "desc": "",
+                "required": false,
+                "multi": true,
+                "type": "user-select",
+                "writable": true,
+                "hidden": false,
+                "value": [
+                ],
+                "trigger": false
+            },
+            "{field_23}": {
+                "field_id": "{field_23}",
+                "name": "链接",
+                "desc": "",
+                "type": "link",
+                "writable": true,
+                "hidden": false,
+                "trigger": false
+            }
+        }
+    }
+}

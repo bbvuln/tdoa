@@ -1,0 +1,109 @@
+.office-product-detail {
+    background-color: #f3f3f3;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.office-product-detail .info,
+.office-product-detail .apply-info,
+.office-product-detail .reject-info {
+    background-color: #fff;
+    padding: 14.5px 16px 0 0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.office-product-detail .info-title-text {
+    display: inline-block;
+    width: 94px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #56aafe;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.office-product-detail .info-title-state {
+    font-size: 16px;
+    color: #0e86fe;
+    float: right;
+}
+.pro_name,
+.pro_desc,
+.trans_flag,
+.trans_date,
+.dept_name,
+.fact_qty,
+.take_time,
+.return_time,
+.fact_return_time,
+.dept_manager {
+    border-bottom: 1px solid #f5f5f5;
+    margin-left: 16px;
+    min-height: 52px;
+    line-height: 27px;
+    font-size: 16px;
+    position: relative;
+}
+.office-product-detail .trans_flag {
+    border-bottom: none;
+}
+.pro_name .pro_name-text,
+.pro_desc .pro_desc-text,
+.trans_flag .trans_flag-text,
+.trans_date .trans_date-text,
+.dept_name .dept_name-text,
+.fact_qty .fact_qty-text,
+.take_time .take_time-text,
+.return_time .return_time-text,
+.fact_return_time .fact_return_time-text,
+.dept_manager .dept_manager-text {
+    color: #666;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.pro_name .pro_name-value,
+.pro_desc .pro_desc-value,
+.trans_flag .trans_flag-value,
+.trans_date .trans_date-value,
+.dept_name .dept_name-value,
+.fact_qty .fact_qty-value,
+.take_time .take_time-value,
+.return_time .return_time-value,
+.fact_return_time .fact_return_time-value,
+.dept_manager .dept_manager-value {
+    padding-top: 12px;
+    color: #333;
+    display: block;
+    margin-left: 80px;
+    text-align: right
+}
+.remark {
+    margin-left: 16px;
+}
+.remark-text {
+    height: 52px;
+    line-height: 52px;
+    color: #666;
+}
+.office-product-detail .apply-info {
+    padding-bottom: 20px;
+}
+.office-product-detail .cancel-btn,
+.office-product-detail .return-btn {
+    height: 49px;
+    line-height: 49px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #0e86fe;
+    border-radius: 5px;
+    text-align: center;
+}
+.office-product-detail .reject-info {
+    padding-left: 16px;
+    padding-bottom: 20px;
+}
+.office-product-detail .reject-info .reject-text {
+    color: #fc3f3f;
+}

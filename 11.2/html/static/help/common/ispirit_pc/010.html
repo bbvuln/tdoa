@@ -1,0 +1,11 @@
+<h4 style="font-family:'微软雅黑'"><span>精灵修改图片后为何不显示？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+修改conf/httpd.conf文件，添加avatar到允许访问&lt;Directory ~ "D:/MYOA/webroot/attachment/(..|avatar)/"&gt;Order allow,denyAllow from all&lt;/Directory&gt;。
+</p>
+
+
+
+

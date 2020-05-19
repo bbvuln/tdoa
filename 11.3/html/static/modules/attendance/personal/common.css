@@ -1,0 +1,18 @@
+.attendance .table{
+	width: 98%;
+}
+.attendance .table-small{
+    width: 60% !important;
+}
+.attendance .table-middle{
+    width: 45% !important;
+}
+.attendance .attendance-title {
+    padding-left: 15px;
+	margin:0;
+}
+.attendance .emptyTip {
+    padding: 30px;
+    text-align: center;
+    color: #999;
+}

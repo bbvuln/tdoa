@@ -1,0 +1,121 @@
+{
+    "status": "ok", 
+    "data": {
+        "op": true, 
+        "add_op": "0", 
+        "data": [
+            {
+                "feed_id": "24", 
+                "prcs_id": "1", 
+                "feedflag": "0", 
+                "content": "1", 
+                "time": "2018-01-26 11:25:58", 
+                "user": {
+                    "uid": "1", 
+                    "userid": "admin", 
+                    "username": "系统管理员", 
+                    "deptname": "综合管理部"
+                }, 
+                "delete_op": true, 
+                "edit_op": true, 
+                "sign_op": true, 
+                "replys": [
+                    {
+                        "feed_id": "26", 
+                        "content": "1.1", 
+                        "time": "2018-01-26 11:26:07", 
+                        "user": {
+                            "uid": "1", 
+                            "userid": "admin", 
+                            "username": "系统管理员", 
+                            "deptname": "综合管理部"
+                        }, 
+                        "delete_op": true, 
+                        "edit_op": true, 
+                        "replys": [
+                            {
+                                "feed_id": "28", 
+                                "content": "1.1.1", 
+                                "time": "2018-01-26 11:26:29", 
+                                "user": {
+                                    "uid": "1", 
+                                    "userid": "admin", 
+                                    "username": "系统管理员", 
+                                    "deptname": "综合管理部"
+                                }, 
+                                "delete_op": true, 
+                                "edit_op": true, 
+                                "replys": [ ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "feed_id": "27", 
+                        "content": "1.2", 
+                        "time": "2018-01-26 11:26:15", 
+                        "user": {
+                            "uid": "1", 
+                            "userid": "admin", 
+                            "username": "系统管理员", 
+                            "deptname": "综合管理部"
+                        }, 
+                        "delete_op": true, 
+                        "edit_op": true, 
+                        "replys": [ ]
+                    }
+                ]
+            }, 
+            {
+                "feed_id": "25", 
+                "prcs_id": "1", 
+                "feedflag": "0", 
+                "content": "2", 
+                "time": "2018-01-26 11:26:02", 
+                "user": {
+                    "uid": "1", 
+                    "userid": "lijia", 
+                    "username": "李佳", 
+                    "deptname": "综合管理部"
+                }, 
+                "delete_op": true, 
+                "edit_op": true, 
+                "sign_op": true, 
+                "replys": [ ]
+            }, 
+            {
+                "feed_id": "29", 
+                "prcs_id": "1", 
+                "feedflag": "0", 
+                "content": "1修改", 
+                "time": "2018-01-26 11:26:54", 
+                "user": {
+                    "uid": "1", 
+                    "userid": "admin", 
+                    "username": "系统管理员", 
+                    "deptname": "综合管理部"
+                }, 
+                "delete_op": true, 
+                "edit_op": true, 
+                "sign_op": true, 
+                "replys": [ ]
+            }, 
+            {
+                "feed_id": "30", 
+                "prcs_id": "1", 
+                "feedflag": "0", 
+                "content": "1修改1", 
+                "time": "2018-01-26 11:27:22", 
+                "user": {
+                    "uid": "1", 
+                    "userid": "admin", 
+                    "username": "系统管理员", 
+                    "deptname": "综合管理部"
+                }, 
+                "delete_op": true, 
+                "edit_op": true, 
+                "sign_op": true, 
+                "replys": [ ]
+            }
+        ]
+    }
+}

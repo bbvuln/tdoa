@@ -1,0 +1,87 @@
+*{
+    font-size:14px;
+}
+.appeal_long{
+    margin-left: 10px;
+    color: #A1A1A1;
+    font-size: 12px;
+}
+.appeal_type{
+    font-size:14px;
+    color:#000;
+}
+.state_red{
+    color:#ff4222;
+}
+.state_orange{
+    color:#ff8444;
+}
+.state_green{
+    color:#00c795;
+}
+.appeal_time{
+    font-size:12px;
+
+}
+.appeal_reason{
+    color:#000!important;
+}
+.appeal_name{
+    font-size:13px;
+}
+.appeal_place{
+    margin-right:10px;
+    font-size:12px;
+}
+.filter_img{
+    width:10px;
+    height:10px;
+}
+.head_portrait_li{
+    height:100px;
+}
+.head_portrait_box{
+    margin-top:15px;
+}
+.head_portrait_other{
+    margin-left:15px;
+}
+.info_margin{
+    margin-left:10px;
+}
+.circulate_mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: 199;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.handle_time{
+    font-size:12px;
+}
+.appeal_username{
+    font-size:15px;
+    color:#000;
+}
+.search{
+    width:10%;
+    height:30px;
+    line-height: 25px!important;
+    text-align:center;
+    display:inline-block;
+}
+#searchInt{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    display: block;
+    margin-left: 0px!important;
+}
+.ui-searchbar-input input {
+    padding: 0 5px;
+}

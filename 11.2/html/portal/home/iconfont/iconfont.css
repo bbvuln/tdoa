@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'td-iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+      url('iconfont.woff2') format('woff2'),
+      url('iconfont.woff') format('woff'),
+      url('iconfont.ttf') format('truetype'),
+      url('iconfont.svg#iconfont') format('svg');
+}
+
+.td-iconfont {
+  font-family: "td-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.td-icon-audio:before {
+  content: "\e74f";
+}
+
+.td-icon-cad:before {
+  content: "\e750";
+}
+
+.td-icon-bmp:before {
+  content: "\e751";
+}
+
+.td-icon-excel:before {
+  content: "\e752";
+}
+
+.td-icon-bt:before {
+  content: "\e753";
+}
+
+.td-icon-apk:before {
+  content: "\e754";
+}
+
+.td-icon-gif:before {
+  content: "\e755";
+}
+
+.td-icon-iso:before {
+  content: "\e756";
+}
+
+.td-icon-log:before {
+  content: "\e757";
+}
+
+.td-icon-ppt:before {
+  content: "\e758";
+}
+
+.td-icon-txt:before {
+  content: "\e759";
+}
+
+.td-icon-sql:before {
+  content: "\e75a";
+}
+
+.td-icon-video:before {
+  content: "\e75c";
+}
+
+.td-icon-zip:before {
+  content: "\e760";
+}
+
+.td-icon-word:before {
+  content: "\e761";
+}
+
+.td-icon-psd:before {
+  content: "\e762";
+}
+
+.td-icon-jpg:before {
+  content: "\e763";
+}
+
+.td-icon-tongyongunkuown:before {
+  content: "\e774";
+}
+
+.td-icon-important:before {
+  content: "\e783";
+}
+
+.td-icon-urgent:before {
+  content: "\e784";
+}
+
+.td-icon-mail_icon_forwarding:before {
+  content: "\e7c0";
+}
+
+.td-icon-pandianzhujiemian:before {
+  content: "\e601";
+}
+
+.td-icon-mail_icon_reply:before {
+  content: "\e602";
+}
+
+.td-icon-mail_icon_replyall:before {
+  content: "\e603";
+}
+
+.td-icon-process_icon_refresh:before {
+  content: "\e604";
+}
+
+.td-icon-news_icon_check:before {
+  content: "\e605";
+}
+
+.td-icon-mail_icon_send:before {
+  content: "\e606";
+}
+
+.td-icon-process_icon_important:before {
+  content: "\e607";
+}
+
+.td-icon-process_icon_location:before {
+  content: "\e608";
+}
+
+.td-icon-process_icon_refund:before {
+  content: "\e609";
+}
+
+.td-icon-process_icon_urgency:before {
+  content: "\e60a";
+}
+
+.td-icon-request_icon_leave:before {
+  content: "\e60b";
+}
+
+.td-icon-request_icon_room:before {
+  content: "\e60c";
+}
+
+.td-icon-schedule_icon_calendar:before {
+  content: "\e60d";
+}
+
+.td-icon-request_icon_stationery:before {
+  content: "\e60e";
+}
+
+.td-icon-schedule_icon_complete:before {
+  content: "\e60f";
+}
+
+.td-icon-schedule_icon_ongoing:before {
+  content: "\e610";
+}
+
+.td-icon-schedule_icon_left:before {
+  content: "\e611";
+}
+
+.td-icon-mail_icon_email:before {
+  content: "\e612";
+}
+
+.td-icon-request_icon_evection:before {
+  content: "\e613";
+}
+
+.td-icon-schedule_icon_right:before {
+  content: "\e614";
+}
+
+.td-icon-request_icon_vacate:before {
+  content: "\e615";
+}
+
+.td-icon-news_icon_comments:before {
+  content: "\e616";
+}
+
+.td-icon-schedule_icon_time:before {
+  content: "\e617";
+}
+
+.td-icon-schedule_icon_pending:before {
+  content: "\e618";
+}
+
+.td-icon-schedule_icon_return:before {
+  content: "\e619";
+}
+
+.td-icon-request_icon_overtime:before {
+  content: "\e61a";
+}
+
+.td-icon-mail_icon_compile:before {
+  content: "\e61b";
+}
+
+.td-icon-pdf:before {
+  content: "\e61c";
+}
+
+.td-icon-depute:before {
+  content: "\e600";
+}
+

@@ -1,0 +1,274 @@
+#share_btn{
+    width:50px;
+    height:20px;
+    border-radius:5px;
+    border:1px solid #000;
+    cursor: pointer;
+    line-height:20px;
+    font-size:12px;
+    float:right;
+}
+
+#share_btn>img{
+    width:16px;
+    height:16px;
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+}
+
+#qxShare{
+    position:absolute;
+    top:65px;
+    right:6%;
+}
+
+#qxShare>img{
+    width:16px;
+    height:16px;
+    float:left;
+    margin-right:2px;
+}
+
+#shareBox{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.3;
+}
+
+#copyShaDow{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+}
+
+#share{
+    width:330px;
+    height:108px;
+    background:#F2F2F2;
+    position:fixed;
+    left:50%;
+    top:33%;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+    opacity:1 !important;
+}
+
+#shareMsg{
+    position: absolute;
+    top:10px;
+    left:10px;
+    font-size:12px;
+}
+
+.icon{
+    position:absolute;
+    top:34px;
+}
+
+.icon_span{
+    position: absolute;
+    top:70px;
+    font-size:12px;
+    color:#000;
+}
+
+#weixin{
+    left:10px;
+    width:33px;
+    height:33px;
+    cursor: pointer;
+}
+
+.weixin_span{
+    left:14px;
+}
+
+.qq{
+    left:60px;
+}
+
+.qq_span{
+    left:65px;
+}
+
+.kongjian{
+    left:110px;
+}
+
+.kongjian_span{
+    left:114px;
+}
+
+.weibo{
+    left:160px;
+}
+
+.weibo_span{
+    left:164px;
+}
+
+.ali{
+    left:210px;
+}
+
+.ali_span{
+    left:214px;
+}
+
+.tieba{
+    left:260px;
+}
+
+.tieba_span{
+    left:253px;
+}
+
+.youdao{
+    left:218px;
+}
+
+.youdao_span{
+    left:205px;
+}
+
+#copy{
+    width:38px;
+    height:33px;
+    left:277px;
+    cursor: pointer;
+}
+
+#copy_span{
+    left:274px;
+}
+
+#share_del{
+    width:20px;
+    height:20px;
+    position: absolute;
+    left:304px;
+    top:7px;
+    cursor: pointer;
+}
+
+#erweima_box{
+    width:200px;
+    height:210px;
+    background:#F2F2F2;
+    position: fixed;
+    left:50%;
+    top:33%;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+}
+
+#erweima{
+    width:120px;
+    height:120px;
+    position: absolute;
+    top:30px;
+    left:40px;
+}
+
+.erweima_span{
+    position:absolute;
+    color:#8A8A8A;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.erweima1{
+    top:158px;
+    left:34px;
+}
+
+.erweima2{
+    width:190px;
+    top:174px;
+    left:13px;
+}
+
+#erweima_del{
+    width:20px;
+    height:20px;
+    position: absolute;
+    left:172px;
+    top:6px;
+    cursor: pointer;
+}
+
+#copy_box{
+    width:360px;
+    height:140px;
+    background:#F2F2F2;
+    position:fixed;
+    left:50%;
+    top:33%;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+
+}
+
+#copy_msg{
+    font-size:12px;
+    position: absolute;
+    top:18px;
+    left:10px;
+}
+
+#copy_inp{
+    position: absolute;
+    top:42px;
+    left:10px;
+    width:290px;
+    height:24px;
+}
+
+#copy_btn{
+    width:50px;
+    height:26px;
+    background:#199ED8;
+    font-size:13px;
+    position: absolute;
+    top:41px;
+    left:300px;
+    text-align:center;
+    line-height:26px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    cursor: pointer;
+    color:#fff;
+}
+
+#copy_del{
+    width:50px;
+    height:28px;
+    background:#fff;
+    border:1px solid #9B9B9B;
+    border-radius:5px;
+    position: absolute;
+    top:80px;
+    left:43%;
+    text-align:center;
+    line-height:28px;
+    font-size:13px;
+    color:#8A8A8A;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+
+.dis_none{
+    display:none;
+}
+
+.dis_show{
+    display:block;
+}

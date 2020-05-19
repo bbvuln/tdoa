@@ -1,0 +1,90 @@
+
+/*------------新建数据源页面导航小图标样式 --------*/
+ 
+.icon20-change_way,.icon20-change_way_hover,.icon20-new_datasrc,.icon20-new_datasrc_hover,
+.icon20-defi_field,.icon20-defi_field_hover,.icon20-import_file,.icon20-import_file_hover,
+.icon20-edit_datasrc,.icon20-edit_datasrc_hover{	
+	padding-left:36px;
+	display:block;
+	height:22px;
+	margin-top:5px;
+}
+.icon20-change_way{/*-- 选择数据源连接方式 --*/
+	background:url(/static/modules/workflow/flow_data/images/change_way.png) no-repeat;
+}
+.icon20-change_way_hover{/*-- 选择数据源连接方??点击后  --*/
+	background:url(/static/modules/workflow/flow_data/images/change_way_hover.png) no-repeat;
+}
+.icon20-new_datasrc{/*-- 新建数据源 --*/
+	background:url(/static/modules/workflow/flow_data/images/new_datasrc.png) no-repeat;
+}
+.icon20-new_datasrc_hover{/*-- 新建数据源-点击后  --*/
+	background:url(/static/modules/workflow/flow_data/images/new_datasrc_hover.png) no-repeat;
+}
+.icon20-defi_field{/*-- 定义字段  --*/
+	background:url(/static/modules/workflow/flow_data/images/defi_field.png) no-repeat;
+}
+.icon20-defi_field_hover{/*-- 定义字段--点击后  --*/
+	background:url(/static/modules/workflow/flow_data/images/defi_field_hover.png) no-repeat;
+}
+.icon20-import_file{/*-- 导入文件  --*/
+	background:url(/static/modules/workflow/flow_data/images/import_file.png) no-repeat;
+}
+.icon20-import_file_hover{/*-- 导入文件-点击后  --*/
+	background:url(/static/modules/workflow/flow_data/images/import_file_hover.png) no-repeat;
+}
+.icon20-edit_datasrc{/*-- 编辑数据源 --*/
+	background:url(/static/modules/workflow/flow_data/images/edit_datasrc.png) no-repeat;
+}
+.icon20-edit_datasrc_hover{/*-- 编辑数据源-点击后  --*/
+	background:url(/static/modules/workflow/flow_data/images/edit_datasrc_hover.png) no-repeat;
+}
+.number_tip{
+	margin-top:10px;
+	font-weight:bold;	
+}
+.left_body{/*-- 右侧页面 左边布局  --*/
+	width:403px;
+    float:left;
+}
+.right_body{/*-- 右侧页面 右边布局  --*/
+	width:403px;
+    float:left;
+	margin-left:50px;
+}
+.main_content{
+	float:left;
+}
+.flow_main_body_left{
+	float:left;
+}
+.flow_name{
+	color:green;
+	font-size:12px;
+	float:left;
+	font-weight:normal;
+}
+.flow_intro{
+	color:black;
+	float:left;
+}
+#flow_name{
+	margin-bottom:0px;
+	width:170px;
+}
+#form_select > span {
+	float:left;
+}
+.view_form{
+	color:#0e86fe;
+	text-decoration:none;
+	float:left;
+	margin-top:3px;
+}
+.select_form{
+	float:left;
+}
+#form_select{
+	float:left;
+	padding-bottom:10px;
+}

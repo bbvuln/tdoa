@@ -1,0 +1,123 @@
+.icon20-expand_field,.icon20-expand_field_hover,.icon20-form_condition,.icon20-form_condition_hover,
+.icon20-model,.icon20-model_hover,.icon20-report_part,.icon20-report_part_hover,.icon20-work_basic,.icon20-work_basic_hover
+{	
+	padding-left:36px;
+	display:block;
+	height:22px;
+	margin-top:5px;
+}
+/*-- 查询模版4个页面 图片的开始  --*/
+.icon20-form_condition{
+	background:url(/module/flow_query_tpl/css/images/form_condition.png) no-repeat;
+}
+.icon20-form_condition_hover{
+	background:url(/module/flow_query_tpl/css/images/form_condition_hover.png) no-repeat;
+}
+.icon20-model{
+	background:url(/module/flow_query_tpl/css/images/model.png) no-repeat;
+}
+.icon20-model_hover{
+	background:url(/module/flow_query_tpl/css/images/model_hover.png) no-repeat;
+}
+.icon20-report_part{
+	background:url(/module/flow_query_tpl/css/images/report_part.png) no-repeat;
+}
+.icon20-report_part_hover{
+	background:url(/module/flow_query_tpl/css/images/report_part_hover.png) no-repeat;
+}
+.icon20-work_basic{
+	background:url(/module/flow_query_tpl/css/images/work_basic.png) no-repeat;
+}
+.icon20-work_basic_hover{
+	background:url(/module/flow_query_tpl/css/images/work_basic_hover.png) no-repeat;
+}
+.left_body{/*-- 右侧页面 左边布局  --*/
+	width:403px;
+    float:left;
+}
+.right_body{/*-- 右侧页面 右边布局  --*/
+	width:403px;
+    float:left;
+	margin-left:50px;
+	
+}
+.f_qtpl_block{
+	width:1020px;
+	height:100%;
+	padding:0px;
+}
+.f_qtpl_condition{
+	width:920px;
+	height:72px;
+	border:1px solid #D3D3D3;
+	background-color:#FCFCFC;
+	float:left;
+}
+.f_qtpl_field{
+
+	margin-top:15px;
+	float:left;	
+	display:inline-block;
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
+	text-rendering: optimizelegibility;
+}
+.f_qtpl_field_ctrl{
+	margin-left:25px;
+	width:170px;
+	margin-top:8px;
+	float:left;
+}
+.f_qtpl_field_ctrl2{
+	margin-left:25px;
+	width:110px;
+	margin-top:8px;
+	float:left;
+}
+.circulation_sponsor_checkbox{
+	width:110px;
+	margin-top:8px;
+	margin-left:25px;
+	font-weight: bold;
+	float:left;
+}
+.f_qtpl_button{
+	width:110px;
+	padding:0px;
+	margin-top:8px;
+	float:right;
+	margin-right:25px;
+}
+.condition_sponsor_table{
+	width:920px;
+	height:auto;
+}
+.condition_sponsor_table_tr{	
+	background-color:#F5F5F5;
+}
+.condition_input{
+	width:906px;
+}
+.condition_edit{
+	width:70px;
+	float:left;
+	margin-left:50px;
+	color:#277EAB;
+}
+.condition_delete{
+	text-align:center;
+	color:#E63231;
+}
+#condition_sponsor_table_td1{
+	width:50px;
+	text-align:center;	
+}
+#condition_sponsor_table_td2{
+	width:auto;
+	text-align:center;	
+}
+#condition_sponsor_table_td3{
+	width:100px;
+	text-align:center;	
+}

@@ -1,0 +1,152 @@
+body{
+    background: #f7f7f7 ;
+}
+.wrapper{
+    width: 920px ;
+    padding-top: 30px;
+    height: 300px;
+    margin:60px auto ;
+}
+.wrapper a{
+    text-decoration: none;
+
+}
+.wrapper a:hover{
+    text-decoration: none;
+}
+.wrapper a:link{
+    text-decoration: none;
+}
+.wrapper a:visited{
+    text-decoration: none;
+}
+.wrapper a:active{
+    text-decoration: none;
+}
+
+.wrapper .accordion-heading{
+    background: #fff;
+    color:#686868;
+}
+
+body{
+    background: #fff;
+}
+.myTab{
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    background: #70c4f7;
+}
+.content{
+    width: 110px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    margin: 15px;
+    border-radius: 2px;
+}
+.content :hover{
+    cursor:pointer;
+}
+.duty-icon{
+    display: inline-block;
+    width: 80px;
+    margin: 25px auto;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.warnspan{
+     font-size:13px;
+     color:#9a9898;
+     clear: both;
+     position: absolute;
+     left: 11%;
+     bottom: 10%;
+}
+.nav-tabs > li {
+    margin-bottom: 0px;
+    border-radius: 0;
+    border: 0px;
+}
+.nav-tabs > li a:hover{
+    margin-bottom: 0px;
+    border-radius: 0;
+    background:#fff;
+}
+.nav-tabs > li a:hover h4{
+    //color:#393939;
+}
+.nav-tabs > li > a, .nav-pills > li > a {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+}
+.nav-tabs > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    border: 0px;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color: #555555;
+    background-color: #ffffff;
+    border: 0px;
+    cursor: default;
+    border-radius: 0;
+}
+h4{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+.nav > li > a {
+    display: block;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.content p{
+    margin: 0 0 10px;
+    color: #686868 ;
+}
+
+.dicon-1{
+    color: #63A3E2;
+}
+.dicon-2{
+    color: #4ccfe1;
+}
+.dicon-3{
+    color: #fe8562;
+}
+.dicon-4{
+    color: #fdc006;
+}
+.dicon-5{
+    color: #fe8562;
+}
+.dicon-6{
+    color: #90a5fe;
+}
+.dicon-7{
+    color: #a0887e;
+}
+
+.dicon-8{
+    color: #97cf54;
+}
+.dicon-9{
+    color: #4ccfe1;
+}
+.dicon-10{
+    color: #fdc006;
+}
+.dicon-11{
+    color: #63A3E2;
+}
+.dicon-12{
+    color: #63A3E2;
+}

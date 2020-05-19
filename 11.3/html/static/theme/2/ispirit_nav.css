@@ -1,0 +1,46 @@
+*
+{
+    padding:0px;
+    margin:0px;
+}
+body
+{
+    font-size:12px;
+}
+#infobar
+{
+    height:28px;
+    line-height:28px;
+    overflow:hidden;
+    background: #E7F1F8 url('shortcut_bg.png') repeat-x top left;
+    color:#fff;
+    padding-left:10px;
+    padding-right:120px;
+    position:relative;
+}
+#infobar #infobar_func_right
+{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+#infobar #infobar_func_right a
+{
+    display:inline-block;
+    height:28px;
+    line-height:28px;
+    color:#fff;
+    text-decoration:none;
+    float:right;   
+    padding:0px 5px;
+}
+#infobar #infobar_func_right a.desktop
+{
+    padding-left:25px;
+    background: url('/static/images/menu/mytable.png') left center no-repeat;
+}
+
+#main_area
+{
+    height:600px;
+}

@@ -1,0 +1,63 @@
+
+.wrapper{
+    width: 70%;
+    margin:0px auto;
+}
+.wrapper .table{
+    margin-bottom:10px;
+}
+#myLocations .modal-body {
+    overflow: hidden;
+}
+#locations{
+    margin-bottom:30px;
+}
+.locations-label{
+    display: inline-block;
+}
+#searchResultPanel{
+    border:1px solid #C0C0C0;
+    width:150px;
+    height:auto;
+    display:none;
+}
+.tangram-suggestion-main{
+    position: absolute;
+    display: none;
+    left: 562px;
+    top: 118px;
+    width: 164px;
+    z-index: 9999;
+    height: 300px;
+    overflow: scroll;
+}
+#myLocations .modal-body #r-result{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 6px;
+    font-size: 14px;
+    display: block;
+    z-index: 999;
+}
+#myWifi .modal-body label{
+    margin: 20px;
+}
+div.content-title{
+    margin-bottom:10px;
+    height: 30px;
+    line-height: 30px;
+}
+a:hover{
+    text-decoration: none;
+}
+.ui-reppriv-option{
+    display: inline-block;
+}
+.f_field_block{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}

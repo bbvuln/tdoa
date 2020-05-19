@@ -1,0 +1,89 @@
+.ui-form-item textarea,
+.ui-form-item input[type=text],
+.ui-form-item input[type=email],
+.ui-form-item input[type=date],
+.ui-form-item input[type=password],
+.ui-form-item input[type=number],
+.ui-form-item input[type=url],
+.ui-form-item input[type=tel]{
+    margin: 0;
+    padding: 3px 5px;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #FFF;
+    border: 1px solid #e6e6e6;
+    height: auto;
+    outline: 0;
+    color: #000;
+    border-radius: 4px;
+    -webkit-transition: background-color .3s ease-out,-webkit-box-shadow .2s ease,border-color .2s ease;
+    transition: background-color .3s ease-out,box-shadow .2s ease,border-color .2s ease;
+    -webkit-box-shadow: 0 0 rgba(0,0,0,.3) inset;
+    box-shadow: 0 0 rgba(0,0,0,.3) inset;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+.ui-attach-img-wrap{
+    display: inline-block;
+    margin: 10px 20px 0px 0;
+    position: relative;
+}
+.ui-attach-img-wrap .ui-icon-close-progress{
+    position: absolute;
+    top: -15px;
+    right: -13px;
+    color: #ef3c3c;
+    font-size: 32px !important;
+    background: none;
+    z-index: 999;
+    width: 32px;
+    height: 26px;
+}
+p.ui-loca-detial{
+    height: 25px;
+    line-height: 25px;
+}
+.ui-attach-img{
+    height: 100px;
+    width: 100px;
+}
+
+.ui-attch-file-wrap{
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-left: 5px;
+
+}
+.ui-attch-file-wrap .ui-icon-close-progress{
+	position: absolute;
+    top: -15px;
+    right: -3px;
+    color: #ef3c3c;
+    font-size: 32px !important;
+    background: none;
+}
+
+.ui-attch-file-name{
+    display: inline-block;
+    width: 210px;
+    white-space: nowrap;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+}
+.ui-attch-img-name{
+    width:100px;
+    white-space: nowrap;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    display: block;
+}

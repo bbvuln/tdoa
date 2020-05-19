@@ -1,0 +1,43 @@
+.ui-searchbar .ui-icon-search {
+    margin-top: -6px;
+}
+.ui-searchbar {
+
+    right: 6px;
+}
+#search_container .ui-searchbar {
+    top: 0;
+}
+i.ui-icon-textfile{
+    font-size: 40px;
+    margin: 9px 10px 0 0;
+}
+i.ui-icon-file {
+    font-size: 45px;
+    margin-top: -5px
+}
+.ui-list li h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.ui-list-info .ui-list-subtitle{
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+.ui-list li h4.ui-warn-color{
+    color: #f58f5d;
+}
+.ui-list-op-delete {
+    position: absolute;
+    right: -80px;
+    top: 0px;
+}
+.ui-list-op-delete button{
+    height:73px;
+    border-radius:0;
+    border:none;
+    width:73px;
+    font-size:1.2em;
+    margin:0;
+}

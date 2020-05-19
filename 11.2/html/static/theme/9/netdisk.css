@@ -1,0 +1,33 @@
+
+.controlbar{
+	height:30px;
+   font-size:12px;
+   margin-bottom:5px;
+}
+.controlbar-left{
+	width:4px;
+	height:30px;
+	background:url('table_controlbar.gif') no-repeat 0px 0px;
+}
+.controlbar-center{
+	padding:0 10px;
+	padding-bottom:3px;
+	background:url('table_controlbar.gif') repeat-x 0px -30px;
+}
+.controlbar-right{
+	width:4px;
+	height:30px;
+	background:url('table_controlbar.gif') no-repeat 0px -60px;
+}
+.BBB{
+	background-color:#FFFF16;
+}
+.new_dropdown{padding-right:20px;background:url(menu_downarrow.png) no-repeat right center;}
+.new_sparetor, .new_sparetor_h{height:100%;width:1px;background-color:#999;margin-right:10px;margin-left:4px;}
+.new_sparetor, .new_sparetor_h{visibility:hidden;}
+
+
+.attach_div a.email_attach_div{position:relative;}
+.attach_div a{
+	padding:0px;
+}

@@ -1,0 +1,15 @@
+.text_stlye input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#656565;}
+.text_stlye1a{ float:left; border:0px; width: 300px; padding-left:5px; height:28px; background:url(../images/form.jpg) left 0px; font-family: "宋体"; font-size:12px; }
+.text_stlye11a{background:url(../images/form.jpg) right -28px;width: 300px; height:28px; float:left; border:0px;}
+.text_stlye1a input{background:none;border:0px; font-family: "宋体"; font-size:12px;color:#656565;line:height:28px;}
+.text_stlye3{ float:left; border:0px; width: 150px; padding-left:5px;height:28px; background:url(../images/form.jpg) left 0px; font-family: "宋体"; font-size:12px; }
+.text_stlye31{background:url(../images/form.jpg) right -28px;width: 150px; height:28px; border:0px;}
+.form_body_2{margin-left:30px;};
+.se4 img{
+float:right;
+margin-top:4px;
+}
+.se5 img{
+margin-left:340px;
+margin-top:-18px; 
+}

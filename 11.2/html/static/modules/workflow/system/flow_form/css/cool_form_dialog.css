@@ -1,0 +1,58 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    font-size:12px;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    border:0px;
+}
+
+table{
+    border:0px;
+}
+
+table.layout td{
+    padding:5px 0px;
+}
+
+table.layout td div{
+    line-height:20px;
+}
+
+input.readonly{
+    background-color:#E0E0E0;
+}
+
+.TableList{
+   border:1px #cccccc solid;
+   line-height:21px;
+   font-size:9pt;
+   border-collapse:collapse;
+   padding:3px;
+}
+.TableList .TableHeader td,
+.TableList td.TableHeader{
+   height:20px;
+   background:#c4de83;
+   border-bottom:1px #9cb269 solid;
+   border-right:1px #9cb269 solid;
+   font-weight:bold;
+   text-align:center;
+   color:#383838;
+   padding:0px;
+}
+.TableList .TableData td,
+.TableList td.TableData{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+   padding:3px;
+   height:20px;
+}

@@ -1,0 +1,166 @@
+.vui-datePicker-warp {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+.vui-datePicker-input {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #e6e6e6;
+}
+.vui-datePicker-input input {
+    text-indent: 1em;
+    width: 270px;
+    height: 100%;
+}
+.vui-datePicker-input i {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    font-size: 16px;
+}
+
+.vui-datePicker-panel-warp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width: 400px; */
+    max-height: 350px;
+    padding-bottom: 10px;
+    background: #fff;
+    /* border: 1px solid #e6e6e6; */
+    box-sizing: border-box;
+}
+
+.vui-datePicker-change {
+    position: relative;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    font-size: 0;
+}
+.vui-datePicker-change span,
+.vui-datePicker-change label {
+    display: inline-block;
+    text-align: top;
+    font-size: 14px;
+}
+.vui-datePicker-change .vui-datePicker-change-btn {
+    cursor: pointer;
+    color: #c0c0c0;
+}
+.vui-datePicker-change .vui-datePicker-header {
+    height: 52px;
+    border-bottom: 2px solid #f2f1f7;
+    position: relative;
+}
+.vui-datePicker-change .vui-datePicker-header span {
+    width: 90px;
+}
+.vui-datePicker-change .vui-datePicker-header label {
+    /* width: 100px; */
+}
+.vui-datePicker-change .other-button {
+    line-height: 20px;
+}
+.vui-datePicker-change .other-button .td-icon-pandianzhujiemian {
+    font-size: 12px;
+}
+.vui-datePicker-change .vui-datePicker-yearMonth {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    width: 150px;
+    height: 120px;
+    background: #fff;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+}
+.vui-datePicker-year {
+    position: absolute;
+    left: 32px;
+    height: 52px;
+    line-height: 52px;
+    color: #a1a1a1;
+}
+.vui-datePicker-change .vui-datePicker-yearMonth span {
+    float: left;
+    width: 50px;
+    height: 36px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+.vui-datePicker-change .vui-datePicker-yearMonth span span:nth-child(3n) {
+    border-right: 0;
+}
+.vui-datePicker-change .vui-datePicker-yearMonth.vui-datePicker-month {
+    height: 52px;
+    line-height: 52px;
+}
+.vui-datePicker-month {
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    vertical-align: baseline;
+}
+.vui-datePicker-days {
+    padding: 0 9px;
+    font-size: 0;
+}
+.vui-datePicker-days span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    margin: 8px 14px;
+}
+.vui-datePicker-days span.vui-datePicker-this-month {
+    color: #333;
+    cursor: pointer;
+}
+.vui-datePicker-not-this-month {
+    visibility: hidden;
+}
+.vui-datePicker-days .vui-datePicker-day-box span {
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.vui-datePicker-days .vui-datePicker-day-box span .show-flag {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #4999fe;
+    position: absolute;
+    bottom: -6px;
+    margin: 0 auto;
+    left: 10px;
+}
+.vui-datePicker-days
+    .vui-datePicker-day-box
+    span:not(.vui-datePicker-this-month) {
+    color: #999;
+    cursor: inherit;
+}
+/* .vui-datePicker-days .vui-datePicker-this-month:hover {
+    background: #cdcdcd;
+    color: #fff;
+} */
+.vui-datePicker-days .vui-datePicker-this-month.vui-datePicker-selected-day {
+    color: #fff;
+    border-radius: 50%;
+}
+
+.vui-datePicker-weekday-box {
+    margin-bottom: 0;
+}

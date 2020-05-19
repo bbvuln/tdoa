@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: Microsoft Yahei;
+}
+
+ul,
+li {
+    margin: 0;
+    list-style: none;
+}
+b {
+    font-weight: normal;
+}
+html,
+body {
+    background: #eceff4;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+body {
+    position: relative;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.comm_table2 .title-td {
+    background-color: #015293;
+    color: #fff;
+    line-height: 40px;
+    text-align: right;
+    position: relative;
+}
+.pass #floatwin {
+    display: block;
+    height: auto;
+    position: relative;
+    left: 0;
+    margin: 0 auto !important;
+}
+.pass .not-pass {
+    display: none;
+}
+.not-pass {
+    margin-top: 20px;
+}
+#myModal {
+    display: none;
+}
+#myModal.show {
+    display: block;
+}
+.c-totalAmount,
+.c-checkCode {
+    display: none;
+}
+.c-totalAmount.c-show,
+.c-checkCode.c-show {
+    display: table-row;
+}
+
+@media print {
+    .btns {
+        display: none;
+    }
+}

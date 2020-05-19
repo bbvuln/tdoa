@@ -1,0 +1,7 @@
+<h4 style="font-family:'微软雅黑'"><span>CRM中，在查看客户信息中，“客户联络”、“售前”等字段怎样自定义？</span></h4>
+<hr>
+
+<h5><span>解决方法:</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+客户信息查看页面 其他块的名称想修改或者想删除相应块 ，这个要到程序文件里改\MYOA\webroot\general\crm\modules\Account\account\template\relation.xml比如您需要删除&lt;客户联系人&gt;，就在relation.xml文件中找到&lt;cell id="crm_account_contact" name="crm_account_contact" label="客户联系人" colspan="2" type="grid" tips="客户联系人"&gt;&lt;/cell&gt; 删除整句即可。
+</p>

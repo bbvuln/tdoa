@@ -1,0 +1,58 @@
+.tab_content_center{
+	width:950px;
+	margin-left:300px;
+	margin-top:30px;
+}
+.flow_content{
+	display:inline-block;
+}
+.unit_before{
+	width:50px;
+}
+.select_width{
+	width:80px;
+}
+.checkbox{
+	display:inline-block;
+	margin-bottom:-3px;
+}
+.flow_subscript{
+	float:left;
+	margin-top:-8px;
+}
+.smtp_ssl_title{
+	display: inline;
+}
+.form_action_title{
+	display: inline;
+}
+.flow_piece{
+	width:30%;
+	float:left;
+}
+.flow_piece_left{
+	width:100%;
+}
+.flow_piece_right{
+	width:60%;
+	margin-left:8%;
+	margin-right:1%;
+}
+.smtp_server_width{
+	width:130px;
+}
+.seal_form_entrust{
+	color:red;
+}
+.btn_save_margin{
+	margin-right:23%;
+}
+.manual_tr{
+	border:1px solid #ccc;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.btn_save_border{
+	border-top:0px;	
+}

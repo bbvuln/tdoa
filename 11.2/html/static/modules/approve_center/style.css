@@ -1,0 +1,474 @@
+.font-red{
+	color:red;
+}
+.font-#0e86fe{
+	color:#0e86fe;
+}
+.font-green{
+	color:green;
+}
+.search-mul-div>input, .search-op-search-div>button, .search-op-export-div>button{
+	margin-right:16px;
+}
+/************ pager.css ***************/
+.data-wrap{
+	padding:0px 10px;
+}
+.data-operation{
+	height:40px;
+	min-width:650px;
+}
+.button-operation{
+	float:left;
+	padding-top:4px;
+}
+.page-info-block{
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	vertical-align:top;
+}
+.data-operation .button-operation>button{
+	margin-right:8x;
+}
+.pager_operation{
+	text-align:right;
+	font-size:13px;
+	padding-top:10px;
+	line-height:20px;
+}
+#work-pager-block{
+	margin:0px;
+	display:inline-block;
+}
+#work-pager-block>ul>li>a{
+	cursor:pointer;
+}
+#total_records, #current_page, #total_page{
+	color:#0e86fe;
+}
+.pager_operation img{
+	margin-right:10px;
+	cursor:pointer;
+	vertical-align:text-top;
+}
+.pager_operation input#gopage{
+	width:32px;
+	height:16px;
+	padding:0px;
+	vertical-align:top;
+    text-align: center;
+}
+.pager-selbox-menu{
+	min-width:48px;
+}
+.btn .caret{
+	margin-left:6px;
+}
+.remind_set{
+	background:url(images/remind.png) no-repeat;
+	background-position-y: center;
+}
+#pager-selbox{
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+}
+.pager-selbox-button{
+	height:30px;
+	padding-top:1px;
+	margin-top:-4px;
+}
+.pager-go-top{
+    background:url(images/go-top.png) no-repeat;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:16px;
+    cursor:pointer;
+}
+.pager-go-previous{
+    background:url(images/previous.png) no-repeat;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:16px;
+    cursor:pointer;
+}
+.pager-go-next{
+    background:url(images/next.png) no-repeat;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:16px;
+    cursor:pointer;
+}
+.pager-go-last{
+    background:url(images/go-last.png) no-repeat;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:16px;
+    cursor:pointer;
+	margin-right:0px;
+}
+.pager-gopager{
+    background:url(images/gopage.png) no-repeat;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:16px;
+    cursor:pointer;
+	margin-right:0px;
+    -webkit-filter: invert(0.8);
+    filter: invert(0.8);
+}
+
+/*---------------   分页样式结束 ---------------------*/
+ul.typeahead{
+    max-height:260px;
+    overflow-y:auto;
+}
+ul.typeahead li{
+	text-align:left;
+}
+span.sort-name-span{
+	padding-left:15px;
+	margin-left:0px;
+	background:url(images/folder.png) no-repeat left center;
+}
+span.flow-name-span{
+	padding-left:16px;
+	margin-left:0px;
+	background:url(images/flow.png) no-repeat left center;
+}
+.search_area input, .search_area form{
+	margin-bottom:0px;
+}
+.adv-select-btns{
+	white-space: nowrap;
+	margin-top: 10px;
+}
+.adv-select{
+	display:inline-block;
+	margin-right:16px;
+	white-space: nowrap;
+}
+
+.adv-select-label{
+	display:inline-block;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+	font-weight: bold;
+	color: inherit;
+	text-rendering: optimizelegibility;
+}
+.search_adv>button{
+	margin-right:8px;
+}
+.data-wrap{
+	padding:8px 10px 2px 10px;
+}
+
+.button-operation{
+	float:left;
+	padding-top:4px;
+}
+/*---------------   搜索的头部定义开始----------------------*/
+.search_area{
+	padding:8px 0px;
+	/* padding-top: 15px; */
+	margin:0 auto;
+	text-align:center;
+	margin-top: 0px;
+	/*
+	background-color:#f5f5f5;
+	border-bottom:1px solid #dddddd;
+	*/
+}
+.form_class{
+	margin-right:8%;
+	margin-left:8%;
+}
+.search-mul-div{
+	border:0px solid red;
+	line-height:40px;
+	padding:0px;
+	text-align:left;
+	width:1200px;
+}
+.search-op-search-div{
+	margin-right:138px;
+}
+.floatr{
+	float:right;
+}
+.adv-select-label{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+	font-weight: bold;
+	color: inherit;
+	text-rendering: optimizelegibility;
+}
+.adv-select{
+	display:inline-block;
+	margin-right:8px;
+}
+.search-op-export-div{
+	margin-right:60px;
+}
+.inlineblock{
+	display:inline-block;
+    *display:inline;
+    *zoom: 1;
+}
+.sms-check,.email-check,.mobile-check {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    *zoom: 1;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.sms-bg{
+	background:url(images/sms.png) no-repeat left center;
+}
+.email-bg{
+	background:url(images/email.png) no-repeat left center;
+}
+.mobile-bg{
+	background:url(images/mobile.png) no-repeat left center;
+}
+
+.sms-bg-static{
+	background:url(images/sms-static.png) no-repeat left center;
+}
+.email-bg-static{
+	background:url(images/email-static.png) no-repeat left center;
+}
+.mobile-bg-static{
+	background:url(images/mobile-static.png) no-repeat left center;
+}
+.result_ok{
+	background:url(images/ok.png) no-repeat left center;
+	display:inline-block;
+	width:16px;
+	height:16px;
+}
+.result_error{
+	background:url(images/error.png) no-repeat left center;
+	display:inline-block;
+	width:16px;
+	height:16px;
+}
+/*---------------   搜索的头部定义完毕----------------------*/
+/*---------------   列表样式开始 -------------------------*/
+#gbox_gridTable{
+	border:1px solid #d3d3d3;
+	-moz-border-radius:2px, 2px, 0px, 0px;
+	-webkit-border-radius:2px, 2px, 0px, 0px;
+	border-radius:4px 4px 0px 0px;
+}
+.ui-jqgrid-hbox{
+	height:38px;
+}
+.ui-jqgrid-hbox .ui-jqgrid-htable{
+	height:100%;
+}
+.ui-jqgrid-hbox .ui-jqgrid-htable .ui-jqgrid-labels{
+	height:100%;
+
+}
+.ui-jqgrid .ui-jqgrid-htable th{
+	height: 38px;
+	line-height: 38px;
+	font-weight:bold;
+	color:#333;
+	background-color:#f4faff;
+	background-image:none;
+}
+.ui-jqgrid .ui-jqgrid-view, .ui-jqgrid .ui-jqgrid-pager{
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background-color:#f5f5f4;
+	background-image:none;
+}
+.ui-jqgrid .ui-th-div-ie, .ui-jqgrid .ui-jqgrid-htable th div{
+	height: 38px;
+    line-height: 38px;
+}
+#cb_gridTable{
+	margin:0;
+}
+.ui-jqgrid-view .ui-jqgrid-btable tr.jqgrow td{
+	padding:4px;
+	line-height: 30px;
+	/*padding-right:0px;*/
+}
+.ui-jqgrid .ui-icon-asc{
+	margin-top: 8px;
+}
+.ui-jqgrid .ui-icon-desc {
+    margin-top: 15px;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+	background-image:none;
+}
+.ui-jqgrid .ui-jqgrid-pager{
+	height:30px;
+}
+.ui-jqgrid .ui-pg-selbox{
+	height:24px;
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a{
+	color:#0466cb;
+}
+/*---------------   列表样式结束---------------------*/
+/*---------------   流程选择控件样式开始---------------------*/
+
+.loading-16{
+	background:url(images/loading_16.gif) no-repeat;
+}
+.fontweightb{
+	font-weight:bold;
+}
+.ui-menu .ui-menu-item a span.root{
+	display:inline-block;background:url('images/root.png') no-repeat left center;padding-left:22px;
+}
+.ui-menu .ui-menu-item a span.leaf{
+	display:inline-block;background:url('images/workflow.gif') no-repeat left center;padding-left:22px;
+}
+.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active{
+	color:#333;
+	background-color:#eaf2ff;
+}
+.ui-menu-item a{
+	color:#333;
+}
+.ui-autocomplete-category span.category-text{
+	display:inline-block;
+	background:#fff url('images/folder.gif') no-repeat 5px center;
+	font-weight:bold;
+	padding-left:25px;
+}
+.ui-menu .ui-menu-item a.selected{
+	background-color:#FBEC88;
+}
+/*---------------   流程选择控件样式结束---------------------*/
+/*---------------   popover   -------------------------------*/
+.operation-pop {
+    position: absolute;
+    *zoom: 1;
+    border: 1px solid #E2E2E2;
+    background: #FFFFFF;
+    left: 70px;
+    top: 10px;
+    border-radius: 3px;
+    width: 240px;
+    box-shadow: 0 2px 10px #E4E4E4;
+    z-index: 1000;
+    display:none;
+}
+.operation-pop .op-block-container {
+    width: 60px;
+    float: left;
+    height: 40px;
+	padding:10px 0;
+}
+.operation-pop .op-block-title {
+    margin-top: 3px;
+}
+.pop-content {
+    padding: 10px;
+    background: #fff;
+}
+.pop-overlay{
+    position: fixed;
+    _position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 990;
+    display:none;
+}
+.ui-urgent-img{
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 16px;
+	height: 16px;
+	border: 0;
+	margin-left: 5px;
+	background: url(/static/images/a_urgent.png) no-repeat 0px 0px;
+}
+.ui-returned-img{
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 16px;
+	height: 16px;
+	border: 0;
+	margin-left: 5px;
+	background: url(/static/images/a_return.png) no-repeat 0px 0px;
+}
+.ui-entrust-img{
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 16px;
+	height: 16px;
+	border: 0;
+	margin-left: 5px;
+	background: url(/static/images/a_entrust.png) no-repeat 0px 0px;
+}
+
+/*---------------------ocr图片展示样式------------------------*/
+a.pda_attach.pda_attach_img{
+	display: inline-block;
+	padding: 0;
+	margin: 10px;
+	border: 0;
+	width: 60px;
+	height: 40px;
+}
+a.pda_attach.pda_attach_img img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #efefef;
+}
+a.pda_attach.pda_attach_img .icon-delete{
+	top: 10px;
+	right: 10px;
+}
+/*------------ocr占位图-------------*/
+ul.ocrPlaceHolder   {
+	position:   relative;
+	/*left:   15px;
+	right:   15px;*/
+	top: 10px;
+	white-space:   nowrap;
+	font-size:   0;
+	width: 200px;
+	height: 60px;
+}
+ul.ocrPlaceHolder   li   {
+	width:   30%;
+	box-sizing:   border-box;
+	border:   1px   dashed   #9fcfff;
+	height:   60%;
+	display:   inline-block;
+	margin-right:   5%;
+	position:   relative;
+	border-radius:5px
+}
+ul.ocrPlaceHolder   li   img   {
+	width:   25px;
+	height:   20px;
+	position:   absolute;
+	left:   50%;
+	margin-left:   -12px;
+	top:   50%;
+	margin-top:   -9.5px;
+}

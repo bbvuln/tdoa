@@ -1,0 +1,35 @@
+body{
+    overflow:hidden;
+    height:100%;
+}
+.task-title{
+  padding-top:5px;
+  width:100%;
+  font-size:18px;
+  border-bottom:1px solid #ddd;
+
+}
+.task-time{
+  width:100%;
+  border-bottom:1px solid #ddd;
+
+}
+.task-time .task-start-time{
+   display:inline-block;
+   width:49%;
+   height:30px;
+   line-height:30px;
+
+}
+.task-time .task-stop-time{
+   display:inline-block;
+   width:49%;
+   height:30px;
+   line-height:30px;
+
+}
+.task-content{
+   padding-top:5px;
+   width:100%;
+   border-bottom:1px solid #ddd;
+}

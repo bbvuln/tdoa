@@ -1,0 +1,93 @@
+.jsmind-Stage {
+    position: relative;
+    overflow: hidden;
+}
+.jsmind-Stage .map {
+    display: block;
+    position: absolute;
+    white-space: pre;
+    top: 0px;
+}
+.canvas textarea {
+    outline: 0
+}
+.canvas {
+    position: absolute;
+    background-image: url(../images/bg_theme_classic.gif);
+    background-color: rgb(255, 255, 255);
+}
+.tk_open_container {
+    position: relative;
+    vertical-align: baseline
+}
+.tk_container {
+    white-space: pre
+}
+.tk_container,.tk_label {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.viewonly .tk_label {
+    -moz-user-select: -moz-text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -o-user-select: text;
+    -ms-user-select: text;
+    user-select: text
+}
+.tk_open {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.tk_container>.tk_label,.tk_container>.tk_open,.tk_container>.tk_children {
+    vertical-align: middle
+}
+.tk_container {
+    z-index: 10
+}
+.jsmind-Stage .map .tk_label.root {
+    position: relative
+}
+.tk_label.selected {
+    z-index: 65
+}
+.tk_label textarea {
+    border: 0px;
+    background-color:transparent;
+    resize:none;
+    overflow: hidden; 
+    white-space: pre-wrap; 
+    height: 19px;
+    width:60px;
+    font-size: 100%;
+    color: #000;
+    padding: 0px;
+    word-wrap: normal;
+    word-wrap:break-word;
+    overflow:hidden;
+    word-break:break-all;
+}
+.tk_label.node textarea {
+    height: 16px;
+}
+.tk_label.edit .rhandle {
+    visibility: hidden;
+}
+.resizer {
+    position: absolute;
+    top: -1500px;
+    left: -1500px;
+}
+.editPanel {
+    position: absolute;
+    z-index: 100;
+}
+.edit.tk_label {
+    visibility: hidden;
+}
+

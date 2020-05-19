@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{title}</title>
+<meta http-equiv="Content-Type" content="text/html; charset={charset}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" type="text/css" href="{static_server}/static/templates/clear/index.css">
+<link rel="shortcut icon" href="{static_server}/static/images/tongda.ico" />
+{javascript}
+</head>
+<body onload="javascript:document.form1.{focus_filed}.focus();">
+{update_tips}
+<img src="{static_server}/static/templates/clear/product.png">
+<br />
+<br />
+<br />
+<br />
+
+<form name="form1" method="post" action="logincheck.php" {autocomplete} onsubmit="{form_submit}">
+  <table align="center" border="0" cellspacing="0" cellpadding="0" id="logo">
+    <tr height="70">
+      <td width="438"></td>
+      <td width="260"></td>
+    </tr>
+    <tr height="40">
+      <td align="right">ÓÃ»§Ãû£º</td>
+      <td>&nbsp;&nbsp;<input type="text" class="text" name="UNAME" style="width:220px" maxlength="20" onmouseover="this.focus()" onfocus="this.select()" value="{username_cookie}"></td>
+    </tr>
+    <tr height="40">
+      <td align="right">ÃÜ¡¡Âë£º</td>
+      <td>&nbsp;&nbsp;<input type="password" class="text" name="PASSWORD" onmouseover="this.focus()" onfocus="this.select()" style="width:220px" value=""></td>
+    </tr>
+    <tr height="40">
+      <td></td>
+      <td>&nbsp;&nbsp;<input type="hidden" name="encode_type" value="1"><input type="image" align="absmiddle" border="0" src="{static_server}/static/templates/clear/login_btn.png" alt="µÇ Â¼"></td>
+    </tr>
+    <tr height="72">
+      <td></td>
+      <td valign="top" nowrap><br />{usb_key_option}</td>
+    </tr>
+  </table>
+  {usbkey_object}
+</form>
+
+<div align="center">
+{tips}
+{antivirus_script}
+<br />
+{miibeian}
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.portals_container
+{
+    width:980px;
+    margin:0px auto;
+    padding-top:30px;
+}
+.portals_container .portal
+{
+    width:220px;
+    margin:12px 10px;
+    float:left;
+    cursor:pointer;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    /* -moz-box-shadow:3px 3px 6px #cfcfcf; */
+    /* -webkit-box-shadow:3px 3px 6px #cfcfcf; */
+    /* box-shadow:3px 3px 6px #cfcfcf; */
+}
+.portals_container .portal span
+{
+    display:block;
+    font-size:18px;
+    font-family:Î¢ÈíÑÅºÚ;
+    color:#fff;
+    padding-top:95px;
+    padding-bottom:15px;
+    text-align:center;
+}
+
+.portals_container .style_0
+{
+    background-color:#1a88ef;
+    /* background:linear-gradient(to bottom,#58a9f3, #1a88ef); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#58a9f3), to(#1a88ef)); */
+    /* background:-moz-linear-gradient(top, #58a9f3, #1a88ef); */
+}
+.portals_container .style_1
+{
+    background-color:#ff7e15;
+    /* background:linear-gradient(to bottom,#ffae5f, #ff7e15); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#ffae5f), to(#ff7e15)); */
+    /* background:-moz-linear-gradient(top, #ffae5f, #ff7e15); */
+}
+.portals_container .style_2
+{
+    background-color:#56b0d8;
+    /* background:linear-gradient(to bottom,#7bc8ea, #56b0d8); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#7bc8ea), to(#56b0d8)); */
+    /* background:-moz-linear-gradient(top, #7bc8ea, #56b0d8); */
+}
+.portals_container .style_3
+{
+    background-color:#70ba0f;
+    /* background:linear-gradient(to bottom,#9dd552, #70ba0f); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#9dd552), to(#70ba0f)); */
+    /* background:-moz-linear-gradient(top, #9dd552, #70ba0f); */
+}
+.portals_container .style_4
+{
+    background-color:#b53627;
+    /* background:linear-gradient(to bottom,#e46c5c, #b53627); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#e46c5c), to(#b53627)); */
+    /* background:-moz-linear-gradient(top, #e46c5c, #b53627); */
+}
+.portals_container .style_5
+{
+    background-color:#58c596;
+    /* background:linear-gradient(to bottom,#69d3a5, #58c596); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#69d3a5), to(#58c596)); */
+    /* background:-moz-linear-gradient(top, #69d3a5, #58c596); */
+}
+.portals_container .style_6
+{
+    background-color:#f55981;
+    /* background:linear-gradient(to bottom,#fe6c91, #f55981); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#fe6c91), to(#f55981)); */
+    /* background:-moz-linear-gradient(top, #fe6c91, #f55981); */
+}
+.portals_container .style_7
+{
+    background-color:#944c72;
+    /* background:linear-gradient(to bottom,#bb6d98, #944c72); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#bb6d98), to(#944c72)); */
+    /* background:-moz-linear-gradient(top, #bb6d98, #944c72); */
+}
+.portals_container .style_8
+{
+    background-color:#f9c71b;
+    /* background:linear-gradient(to bottom,#ffd95c, #f9c71b); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#ffd95c), to(#f9c71b)); */
+    /* background:-moz-linear-gradient(top, #ffd95c, #f9c71b); */
+}
+.portals_container .style_9
+{
+    background-color:#1a88ef;
+    /* background:linear-gradient(to bottom,#58a9f3, #1a88ef); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#58a9f3), to(#1a88ef)); */
+    /* background:-moz-linear-gradient(top, #58a9f3, #1a88ef); */
+}
+.portals_container .style_10
+{
+    background-color:#8edf42;
+    /* background:linear-gradient(to bottom,#9eed54, #8edf42); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#9eed54), to(#8edf42)); */
+    /* background:-moz-linear-gradient(top, #9eed54, #8edf42); */
+}
+.portals_container .style_11
+{
+    background-color:#85a9b0;
+    /* background:linear-gradient(to bottom,#97b6bc, #85a9b0); */
+    /* background:-webkit-gradient(linear, left top, left bottom, from(#97b6bc), to(#85a9b0)); */
+    /* background:-moz-linear-gradient(top, #97b6bc, #85a9b0); */
+}
+
+.portals_container .portal span.icon_0
+{
+    background:url('icons/0.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_1
+{
+    background:url('icons/1.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_2
+{
+    background:url('icons/2.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_3
+{
+    background:url('icons/3.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_4
+{
+    background:url('icons/4.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_5
+{
+    background:url('icons/5.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_6
+{
+    background:url('icons/6.png') center 15px no-repeat;
+}
+.portals_container .portal span.icon_7
+{
+    background:url('icons/7.png') center 15px no-repeat;
+}

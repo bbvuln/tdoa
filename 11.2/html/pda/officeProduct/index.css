@@ -1,0 +1,501 @@
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.office-product {
+    background-color: #f3f3f3;
+}
+
+.office-product.ui-page.ui-page-active {
+    transform: none;
+}
+.office-product.ui-page {
+    transition: none;
+}
+.office-product-add.ui-page {
+    transition: none;
+}
+.office-product .header {
+    background-color: #fff;
+    margin: 10px 12px 10px 12px;
+    border-radius: 10px;
+    height: 138px;
+}
+.office-product .header .header-item {
+    width: 33.33%;
+    float: left;
+}
+.office-product .header .header-item img {
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 18px;
+    display: inherit;
+}
+.office-product .header .header-item .header-item-text {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0 5px 0;
+}
+.office-product .header .header-item div {
+    text-align: center;
+}
+.office-product .add-btn {
+    height: 49px;
+    margin: 0 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.office-product .add-btn .center {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -12px;
+}
+.office-product .add-btn .center img {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+}
+.office-product .add-btn .center span {
+    color: #0e86fe;
+}
+.office-product .submit-btn {
+    height: 49px;
+    line-height: 49px;
+    background-color: #0e86fe;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    left: 12px;
+    bottom: 20px;
+}
+.office-product .product-wrap {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 217px;
+    bottom: 79px;
+    overflow: scroll;
+}
+.office-product .product-wrap li {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 16px;
+}
+.office-product .product-wrap li .product-title {
+    height: auto;
+    min-height: 52px;
+}
+.office-product .product-wrap li .product-title .trans_flag-value {
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.office-product .product-wrap li .product-title img {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.office-product .product-wrap li .product-title .pro_name-value {
+    display: inline-block;
+    margin: 12px 50px 0 50px;
+    line-height: 27px;
+}
+.product-title,
+.fact_qty,
+.take_time,
+.dept_manager,
+.return_time {
+    height: 52px;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+}
+/* .dept_manager,
+.return_time {
+    border-bottom: none;
+} */
+.pro_name-value,
+.fact_qty-text,
+.take_time-text,
+.dept_manager-text,
+.return_time-text,
+.fact_qty-value,
+.take_time-value,
+.dept_manager-value,
+.return_time-value {
+    line-height: 52px;
+}
+.fact_qty-value,
+.take_time-value,
+.dept_manager-value,
+.return_time-value {
+    float: right;
+}
+.trans_flag-value {
+    display: inline-block;
+    width: 44px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #f1f8ff;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #0e86fe;
+}
+.fact_qty-text,
+.take_time-text,
+.dept_manager-text,
+.return_time-text {
+    font-size: 16px;
+    color: #666;
+}
+/* 添加页面 */
+.office-product-add {
+    background-color: #f3f3f3;
+}
+.office-product-add.ui-page.ui-page-active {
+    transform: none;
+    transition: none;
+}
+.office-product-add .ui-searchbar-wrap {
+    background-color: #fff;
+}
+.office-product-add .ui-searchbar {
+    background-color: #f3f3f3;
+    margin: 0 12px;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
+}
+.office-product-add .ui-searchbar-wrap .ui-searchbar-input {
+    display: block;
+}
+.office-product-add
+    .ui-searchbar-wrap
+    .ui-searchbar-input
+    input::-webkit-input-placeholder {
+    color: #dbdbdb;
+    font-size: 15px;
+}
+.office-product-add .ui-searchbar .ui-icon-search {
+    color: #dbdbdb;
+}
+
+.office-product-add .product-list {
+    position: absolute;
+    padding: 0 12px;
+    left: 0;
+    right: 0;
+    top: 66px;
+    bottom: 68px;
+    overflow: scroll;
+}
+.office-product-add .product-list li {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 16px;
+    position: relative;
+}
+.office-product-add .product-list li .line {
+    height: auto;
+    min-height: 52px;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+}
+.office-product-add .product-list li.checked .line-overlay {
+    display: block;
+}
+.office-product-add .product-list li .line-overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    /* background-color: red; */
+}
+.office-product-add .product-list li .product-title img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 17px;
+    left: 0;
+}
+.office-product-add .product-list li .product-title span {
+    height: 52px;
+    line-height: 27px;
+}
+.office-product-add .product-list li .product-title span.pro_name-value {
+    display: inline-block;
+    margin: 12px 92px 0 26px;
+    height: auto;
+}
+.office-product-add .product-list li .product-title span.trans_flag-value {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f1f8ff;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.office-product-add
+    .product-list
+    li
+    .product-title
+    span.trans_flag-value.selected {
+    border-color: #0e86fe;
+    color: #0e86fe;
+}
+.pro_desc-value {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 14px 0;
+}
+.pro_stock-text,
+.pro_stock-value,
+.time-text,
+.dept_manager-text,
+.dept_manager-value {
+    line-height: 52px;
+}
+.pro_stock-text {
+    margin-right: 10px;
+    color: #666;
+}
+.pro_stock-value {
+    color: #0e86fe;
+}
+.input-val {
+    position: absolute;
+    top: 50%;
+    margin-top: -26px;
+    right: 0;
+}
+.input-val img {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -7px;
+}
+.input-val input {
+    float: left;
+    border-radius: 15px;
+    margin: 11px 0 0 0;
+    background: #f3f3f3;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    -webkit-box-flex: 1;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-appearance: none;
+    border: 0;
+    width: 30px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #333;
+}
+.input-val .btn_subtraction {
+    float: left;
+    width: 25px;
+    height: 52px;
+    position: relative;
+}
+.input-val .btn_addition {
+    float: right;
+    width: 25px;
+    height: 52px;
+    position: relative;
+}
+.time-text,
+.dept_manager-text {
+    color: #666;
+}
+
+.user-btn_arrow {
+    width: 7.5px;
+    height: 13px;
+    float: right;
+    padding: 18px 10px;
+}
+.dept_manager-value {
+    float: right;
+    text-align: right;
+    display: inline-block;
+    height: 52px;
+    min-width: 100px;
+}
+.input-date {
+    float: right;
+    margin: 0;
+    height: 52px;
+    line-height: 52px;
+    position: relative;
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-appearance: none;
+    border: 0;
+    width: 110px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+.time-btn_arrow {
+    width: 7.5px;
+    height: 13px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7.5px;
+    pointer-events: none;
+}
+.product-list-item .overlay {
+    display: none;
+    position: absolute;
+    top: 53px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: lightblue;
+}
+/* .product-list-item .overlay.show {
+    display: block;
+} */
+.select-wrap {
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0px -7px 35px rgba(0, 79, 148, 0.1);
+}
+.select-wrap .submit {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -21px;
+}
+.select-wrap .select-box {
+    height: 100%;
+    position: absolute;
+    left: 12px;
+    right: 56px;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.select-wrap .select-list {
+    white-space: nowrap;
+    font-size: 0;
+    display: inline-block;
+    /* background-color: yellow; */
+    -webkit-overflow-scrolling: touch;
+}
+
+.select-wrap .select-list li {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #0e86fe;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 11px 5px 11px 0;
+}
+.empty {
+    margin-top: 100px;
+}
+.empty .img {
+    width: 150px;
+    height: 82.5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.empty .empty-text {
+    text-align: center;
+    color: #c2c6d0;
+    margin-top: 5px;
+}
+.remark-text {
+    height: 52px;
+    line-height: 52px;
+    color: #666;
+}
+#remark-value {
+    -webkit-appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #f5f5f5;
+    background: 0 0;
+    color: #333;
+    font-size: 15px;
+    height: 64px;
+    padding: 10px 15px;
+}
+.office-product-add .product-list li .line.remark {
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+.tip-text.show {
+    display: block;
+}
+.tip-text.show .text-wrap {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.tip-text.show span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+}
+.tip-text {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

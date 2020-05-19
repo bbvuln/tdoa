@@ -1,0 +1,213 @@
+[
+    {
+        "/static/js/pack.utils.js": [
+            "/inc/js_lang.php", 
+            "/static/js/module.js", 
+            "/static/js/utility.js", 
+            "/static/js/attach.js"
+        ],
+        "/static/modules/workflow/js/pack.workflow.runtime.js": [
+            "/static/js/jquery-1.5.1/jquery.min.js", 
+            "/static/js/jquery-1.5.1/jquery-ui.custom.min.js", 
+            "/static/js/jquery-1.5.1/jquery.ui.autocomplete.min.js", 
+            "/static/js/jquery-1.5.1/tooltip/jquery.tooltip.min.js", 
+            "/static/js/jquery-1.5.1/jsrender/jsrender.gbk.min.js",
+            "/static/js/jquery-1.5.1/jquery.tipsy/jquery.tipsy.js",
+            "/static/js/dialog.js", 
+            "/static/js/mouse_mon.js", 
+            "/static/js/tdPass.js",
+            "/general/workflow/list/input_form/js/work_handle.js", 
+            "/general/workflow/list/input_form/form.js", 
+            "/static/modules/workflow/js/runtime.js",
+            "/static/js/arale/base/1.1.1/base.js",
+            "/static/js/arale/class/1.1.0/class.js",
+            "/static/js/arale/events/1.1.0/events.js"
+        ],
+        "/static/modules/workflow/js/pack.workflow.runtimeframe.js": [
+            "/static/js/jquery-1.10.2/jquery.min.js", 
+            "/static/js/bootstrap/js/bootstrap.min.js", 
+            "/static/js/jquery-1.5.1/jBox/jquery.jBox-2.3.gbk.min.js", 
+            "/static/js/jquery-1.5.1/jBox/i18n/jquery.jBox-zh-CN.gbk.js", 
+            "/static/modules/workflow/js/jquery.browser.js",
+            "/static/js/jquery-1.5.1/tooltip/jquery.tooltip.min.js", 
+            "/static/js/jquery-1.5.1/jsrender/jsrender.gbk.min.js", 
+            "/static/js/jquery-1.10.2/jquery.ux.attachmenu.js", 
+            "/static/modules/workflow/js/workflow.js",
+            "/general/workflow/list/input_form/js/index.js", 
+            "/general/workflow/list/input_form/js/handle.js",
+            "/general/workflow/assets/common.js"
+        ],
+        "/static/modules/swfupload/pack.swfupload.js": [
+            "/module/swfupload/swfupload.js", 
+            "/module/swfupload/swfupload.queue.js", 
+            "/module/swfupload/fileprogress.js", 
+            "/module/swfupload/handlers.js"
+        ],
+        "/static/js/tDesktop/puck.tDesktop.js": [
+            "/static/js/tDesktop/tDesktop.js",
+            "/static/js/tDesktop/tDesktop.IM.js",
+            "/static/js/tDesktop/tDesktop.Layout.js",
+            "/static/js/tDesktop/tDesktop.Menu.js",
+            "/static/js/tDesktop/tDesktop.Nocbox.js",
+            "/static/js/tDesktop/tDesktop.Notification.js",
+            "/static/js/tDesktop/tDesktop.Pulse.js",
+            "/static/js/tDesktop/tDesktop.Search.js",
+            "/static/js/tDesktop/tDesktop.Tabs.js",
+            "/static/js/tDesktop/tDesktop.Theme.js",
+            "/static/js/tDesktop/tDesktop.Today.js"
+        ],
+		"/static/js/tDesktop19/puck.tDesktop.js": [
+            "/static/js/tDesktop19/tDesktop.js",
+            "/static/js/tDesktop19/tDesktop.IM.js",
+            "/static/js/tDesktop19/tDesktop.Layout.js",
+            "/static/js/tDesktop19/tDesktop.Menu.js",
+            "/static/js/tDesktop19/tDesktop.Nocbox.js",
+            "/static/js/tDesktop19/tDesktop.Notification.js",
+            "/static/js/tDesktop19/tDesktop.Pulse.js",
+            "/static/js/tDesktop19/tDesktop.Search.js",
+            "/static/js/tDesktop19/tDesktop.Siderbar.js",
+            "/static/js/tDesktop19/tDesktop.Tabs.js",
+            "/static/js/tDesktop19/tDesktop.Theme.js",
+            "/static/js/tDesktop19/tDesktop.Info.js"
+        ],
+
+        "/static/pack/fashion/puck.jquery-1.5.1.common.js": [
+            "/static/js/jquery-1.5.1/jquery.min.js",
+            "/static/js/jquery-1.5.1/jquery-ui.custom.min.js",
+            "/static/js/jquery-1.5.1/jquery.plugins.js"
+        ],
+        "/static/pack/fashion/puck.jquery-1.5.1.plugin.js": [
+            "/static/js/jquery-1.5.1/jquery.ui.autocomplete.min.js",
+            "/static/js/jquery-1.5.1/jquery.cookie.js"
+        ],
+        "/static/pack/fashion/puck.jquery-1.5.1.ui-plugin.js": [
+            "/static/js/jquery-1.5.1/jquery.ui.draggable.min.js",
+            "/static/js/jquery-1.5.1/jquery.ui.sortable.min.js",
+            "/static/js/jquery-1.5.1/jquery.ux.borderlayout.js",
+            "/static/js/jquery-1.5.1/jquery.ui.droppable.min.js",
+            "/static/js/jquery-1.5.1/jquery.ux.slidebox.js",
+            "/static/js/jquery-1.5.1/jquery.ux.simulatemouse.js"
+        ],
+        "/static/pack/t-os/puck.t-os.other.js": [
+            "/static/js/jquery-1.10.2/jquery.plugins.js",
+            "/static/js/jquery-1.10.2/mousewheel/jquery.mousewheel.min.js"
+        ],
+        "/static/pack/common/puck.jquery_bootstrap.js": [
+            "/static/js/jquery-1.10.2/jquery.min.js",
+            "/static/js/jquery-1.10.2/template/jquery.tmpl.min.js",
+            "/static/js/jquery-1.5.1/json2.js",
+            "/static/js/bootstrap/js/bootstrap.min.js",
+            "/static/js/bootstrap/tag/bootstrap.tag.js"
+        ],
+        "/static/pack/common/puck.bootstrap.js": [
+            "/static/js/bootstrap/js/bootstrap.min.js",
+            "/static/js/bootstrap/tag/bootstrap.tag.js",
+            "/static/js/bootstrap/paginator/bootstrap.paginator.min.js"
+        ],
+        "/static/pack/workflow/puck.workflow.list.js": [
+            "/static/js/jquery-1.10.2/jquery.min.js",
+            "/static/js/bootstrap/js/bootstrap.min.js",
+            "/static/js/jquery-1.5.1/jsrender/jsrender.min.js",
+            "/static/js/jquery-1.5.1/jquery-ui.custom.min.js",
+            "/static/modules/workflow/js/jquery.browser.js",
+            "/static/modules/workflow/js/jquery.curcss.js",
+            "/static/js/jquery-1.5.1/jquery.ui.autocomplete.min.js",
+            "/static/modules/workflow/js/jquery.browser.js",
+            "/static/js/jquery-1.5.1/jqGrid/js/grid.loader.js"
+        ],
+        "/static/pack/workflow/puck.workflow.list.todo.js": [
+            "/static/js/jquery-1.10.2/jquery.min.js",
+            "/static/js/bootstrap/js/bootstrap.min.js",
+            "/static/js/jquery-1.5.1/jquery.cookie.js",
+            "/static/modules/workflow/js/jquery.curcss.js",
+            "/static/js/jquery-1.5.1/jquery-ui.custom.min.js",
+            "/static/js/jquery-1.5.1/jquery.ui.autocomplete.min.js",
+            "/general/workflow/assets/common.js",
+            "/general/workflow/list/js/combobox.js",
+            "/static/modules/workflow/js/jquery.browser.js",
+            "/static/js/jquery-1.5.1/jqGrid/js/grid.loader.js",
+            "/general/workflow/list/js/data_list_operation.js",
+            "/general/workflow/list/js/work_search.js",
+            "/static/modules/workflow/js/workflow.js"
+        ],
+        "/static/pack/taskcenter/puck.taskcenter.js": [
+            "/static/js/ispirit.js",
+            "/static/js/jquery-1.10.2/jquery.easing.1.3.js",
+            "/static/js/bootstrap/datepicker/bootstrap.datepicker.js",
+            "/static/js/bootstrap/timepicker/bootstrap.timepicker.js",
+            "/static/js/raphael/raphael-min.js",
+            "/static/js/task_center.js",
+            "/static/js/jquery-1.10.2/jquery.circle.menu/jquery.circleMenu.practice.js"
+        ],
+        "/static/pack/email/puck.email.js": [
+            "/static/js/jquery-1.10.2/jquery.min.js",
+            "/static/js/bootstrap/js/bootstrap.min.js",
+            "/static/js/jquery-1.10.2/jquery-ui/js/jquery-ui-1.10.3.custom.min.js",
+            "/static/js/email.js",
+            "/static/js/jquery-1.10.2/template/jquery.tmpl.min.js",
+            "/static/js/bootstrap/paginator/bootstrap.paginator.min.js"
+        ],
+        "/static/pack/mobile/js/wx.js": [
+            "/static/mobile/js/zepto.min.js",
+            "/static/mobile/js/gmu/gmu.js",
+            "/static/mobile/js/gmu/list.js",
+            "/static/mobile/js/gmu/page.js",
+            "/static/mobile/js/frozen/frozen.js",
+            "/static/mobile/js/swiped/swiped.js",
+            "/static/mobile/js/routie.min.js",
+            "/static/mobile/js/sdk.js",
+            "/pda/js/jweixin-1.0.0.js",
+            "/static/mobile/js/sdk/wx_sdk.js"
+        ],
+         "/static/pack/mobile/js/qywx.js": [
+            "/static/mobile/js/zepto.min.js",
+            "/static/mobile/js/gmu/gmu.js",
+            "/static/mobile/js/gmu/list.js",
+            "/static/mobile/js/gmu/page.js",
+            "/static/mobile/js/frozen/frozen.js",
+            "/static/mobile/js/swiped/swiped.js",
+            "/static/mobile/js/routie.min.js",
+            "/static/mobile/js/sdk.js",
+            "/pda/js/jweixin-1.2.0.js",
+            "/static/mobile/js/sdk/qywx_sdk.js"
+        ],
+        "/static/pack/mobile/js/dd.js": [
+            "/static/mobile/js/zepto.min.js",
+            "/static/mobile/js/gmu/gmu.js",
+            "/static/mobile/js/gmu/list.js",
+            "/static/mobile/js/gmu/page.js",
+            "/static/mobile/js/frozen/frozen.js",
+            "/static/mobile/js/swiped/swiped.js",
+            "/static/mobile/js/routie.min.js",
+            "/static/mobile/js/sdk.js",
+            "/static/mobile/js/sdk/dd_sdk.js"
+        ],
+        "/static/pack/mobile/js/common.js": [
+            "/static/mobile/js/zepto.min.js",
+            "/static/mobile/js/gmu/gmu.js",
+            "/static/mobile/js/gmu/list.js",
+            "/static/mobile/js/gmu/page.js",
+            "/static/mobile/js/frozen/frozen.js",
+            "/static/mobile/js/swiped/swiped.js",
+            "/static/mobile/js/routie.min.js",
+            "/static/mobile/js/sdk.js",
+            "/static/mobile/js/sdk/h5_sdk.js"
+        ],
+        "/static/pack/mobile/js/client.js": [
+            "/static/mobile/js/zepto.min.js",
+            "/static/mobile/js/gmu/gmu.js",
+            "/static/mobile/js/gmu/list.js",
+            "/static/mobile/js/gmu/page.js",
+            "/static/mobile/js/frozen/frozen.js",
+            "/static/mobile/js/swiped/swiped.js",
+            "/static/mobile/js/routie.min.js",
+            "/static/mobile/js/sdk.js",
+            "/static/mobile/js/sdk/client_sdk.js"
+        ],
+        "/static/pack/mobile/style/common.css": [
+            "/static/mobile/style/gmu/gmu.css",
+            "/static/mobile/style/frozen/frozen.css",
+            "/static/mobile/style/app.css"
+        ]
+    }
+]

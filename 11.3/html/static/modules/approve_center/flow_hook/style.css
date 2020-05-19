@@ -1,0 +1,37 @@
+table.data-table thead th{
+	text-align:center;
+	background-color:#f5f5f4;
+	border-bottom:none;
+}
+table.data-table td{
+    font-size: 13px;
+}
+.form-search{
+	text-align:center;
+	line-height:40px;
+}
+.form-search input{
+	margin-right:16px;
+}
+.radio{
+	float:left;
+	margin-right:16px;
+}
+.clearfix{
+	margin-top:8px;
+	margin-bottom:5px;
+}
+.TableBlock{
+	padding-left:20px;
+
+}
+.ModalDialog{
+	width:100%;
+}
+.nav nav-tabs{
+	float:left;
+	height:20px;
+}
+.edit_module{
+	margin-right:8px;
+}

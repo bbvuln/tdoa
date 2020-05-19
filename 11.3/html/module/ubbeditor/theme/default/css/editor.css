@@ -1,0 +1,100 @@
+.EditorDiv {
+	margin: 0px; position: relative;
+}
+.EditorDiv .EditorDivPanel {
+	margin: 0px; padding: 3px; border: 1px #BBBBBB solid; background: #F5FBFF;
+}
+.EditorDiv .EditorDivPanel select {
+	padding: 2px; margin: 0px 2px;
+}
+.EditorDiv .EditorDivPanel IMG {
+	cursor: pointer; padding: 2px; border: #F5FBFF 1px solid;
+}
+.EditorDiv .EditorDivPanel IMG.EditorHover,
+.EditorDiv .EditorDivPanel IMG.EditorSelected {
+	cursor: pointer; padding: 2px; border: #316AC5 1px solid; background: #DFF1FF
+}
+.EditorDiv .EditorTextarea {
+	margin: 0px; padding: 0px; border: 0px; overflow-y: scroll; vertical-align: middle
+}
+.EditorDiv .EditorIframe {
+	margin: 0px;
+}
+.EditorDiv .EditorColorTable {
+	margin: 0px; background: #F5FBFF; border: #BBBBBB 1px solid
+}
+.EditorDiv .EditorColorTable TD {
+	font-size: 12px; font-weight: bold;border: #F5FBFF 1px solid; padding: 2px;
+}
+.EditorDiv .EditorColorTable TD.Selected {
+	cursor: pointer; border: #316AC5 1px solid; background: #DFF1FF;
+}
+.EditorDiv .EditorColorTable TD div {
+	cursor: pointer; border: #BBBBBB 1px solid;
+}
+.EditorDiv .EditorSmileyTable {
+	margin: 0px; background: #F5FBFF; border: #BBBBBB 1px solid
+}
+.EditorDiv .EditorSmileyTable TD {
+	FONT-SIZE: 12px; FONT-WEIGHT: bold;BORDER: #F5FBFF 1px solid; padding: 2px;
+}
+.EditorDiv .EditorSmileyTable TD.Selected {
+	CURSOR: pointer; BORDER: #316AC5 1px solid; BACKGROUND: #DFF1FF;
+}
+.EditorDiv .EditorSmileyTable TD IMG {
+	CURSOR: pointer;
+}
+.EditorDiv .EditorMessageTable {
+	MARGIN: 0px; BACKGROUND: #F5FBFF; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorMessageTable TD {
+	FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.EditorDiv .EditorMessageTable TD.EditorTD1 {
+	PADDING-TOP: 2px; PADDING-BOTTOM: 2px; TEXT-ALIGN: right
+}
+.EditorDiv .EditorMessageTable TD SPAN {
+	PADDING-LEFT: 30px; PADDING-RIGHT: 30px; COLOR: #333333; FONT-WEIGHT : normal
+}
+.EditorDiv .EditorMessageTable TD INPUT {
+	MARGIN: 0px; PADDING: 0px; VERTICAL-ALIGN: middle
+}
+.EditorDiv .EditorMessageTable TD INPUT.EditorMessageButton {
+	HEIGHT: 22px; BACKGROUND: #DEDEDE; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorLinkTable {
+	MARGIN: 0px; BACKGROUND: #F5FBFF; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorLinkTable TD {
+	FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.EditorDiv .EditorLinkTable TD.EditorTD1 {
+	PADDING-TOP: 2px; PADDING-BOTTOM: 2px; TEXT-ALIGN: right
+}
+.EditorDiv .EditorLinkTable TD INPUT {
+	MARGIN: 0px; PADDING: 0px; VERTICAL-ALIGN: middle
+}
+.EditorDiv .EditorLinkTable TD INPUT.EditorLinkText {
+	WIDTH: 240px; HEIGHT: 16px; PADDING: 2px; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorLinkTable TD INPUT.EditorLinkButton {
+	HEIGHT: 22px; BACKGROUND: #DEDEDE; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorImageTable {
+	MARGIN: 0px; BACKGROUND: #F5FBFF; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorImageTable TD {
+	FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.EditorDiv .EditorImageTable TD.EditorTD1 {
+	PADDING-TOP: 2px; PADDING-BOTTOM: 2px; TEXT-ALIGN: right
+}
+.EditorDiv .EditorImageTable TD INPUT {
+	MARGIN: 0px; PADDING: 0px; VERTICAL-ALIGN: middle
+}
+.EditorDiv .EditorImageTable TD INPUT.EditorImageText {
+	WIDTH: 240px; HEIGHT: 16px; PADDING: 2px; BORDER: #BBBBBB 1px solid
+}
+.EditorDiv .EditorImageTable TD INPUT.EditorImageButton {
+	HEIGHT: 22px; BACKGROUND: #DEDEDE; BORDER: #BBBBBB 1px solid
+}

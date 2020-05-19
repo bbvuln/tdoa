@@ -1,0 +1,718 @@
+*{
+   padding:0px;
+   margin:0px;
+}
+
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+   background:#1d569b;
+   cursor: default;
+    font-size:12px;
+}
+
+.background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1920px;
+	height: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	.background { width: 0; }
+}
+
+.screen ul {
+   padding: 60px 70px 0 70px;
+   height:100%;
+}
+
+#container{
+}
+.screen ul li{
+   width:120px;   
+}
+.block{
+   float:left;
+   display:block;
+   height:122px;
+   text-align:center;
+   overflow:hidden;
+}
+
+.block .count{
+   position:absolute;
+   right:-20px;
+   top:0px;
+   width:44px;
+   height:40px;
+   background-repeat: no-repeat;
+   background-image: url('images/count_bg.png')
+}
+
+.icon-text{
+   cursor: pointer;
+	margin-top: 3px;
+	padding-left: 10px;
+	height: 20px;
+	display: inline-block;
+	background: url('images/icon_text_l.png') 0px 0px no-repeat;
+	overflow:hidden;
+}
+
+.icon-text span{
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	background: url('images/icon_text_r.png') right center no-repeat;
+	color: #fff;
+	padding: 0 10px 0 0px;
+}
+
+li.block .img{
+	height: 86px;
+	width: 86px;
+	line-height:86px;
+	cursor:pointer;
+	position:relative;
+	margin:0px auto;
+   text-align:center; 
+}
+
+li.block .img p{
+   position:static;   
+   +position:absolute;   
+   top:50%       
+}
+
+li.block .img p img {
+	max-height:86px;
+	max-width:86px;
+   position:static;   
+   +position:relative;   
+   top:-50%;left:-50%;   
+   vertical-align:middle   
+ }   
+li.block .img p:after {   
+   content:".";font-size:1px;   
+   visibility:hidden   
+ }   
+
+.block .count1{
+   background-position: -16px -41px;
+}
+.block .count2{
+   background-position: -16px -84px;
+}
+.block .count3{
+   background-position: -16px -126px;
+}
+.block .count4{
+   background-position: -16px -168px;
+}
+.block .count5{
+   background-position: -16px -210px;
+}
+.block .count6{
+   background-position: -16px -252px;
+}
+.block .count7{
+   background-position: -16px -294px;
+}
+.block .count8{
+   background-position: -16px -336px;
+}
+.block .count9{
+   background-position: -16px -378px;
+}
+.block .count10{
+   background-position: -16px -420px;
+}
+
+#trash {
+	position: absolute;
+	left: 50%;
+	width: 128px;
+	height: 128px;
+	bottom: 10px;
+	display: none;
+	background: url(images/slidebox/trash.png) no-repeat center top transparent;
+}
+
+#trash.hover { 
+	background: url(images/slidebox/trash_hover.png) no-repeat center top transparent;
+}
+
+#pageUp {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	left: 10px;
+	width: 61px;
+	height: 99px;
+	margin-top: -50px;
+	background: url(images/slidebox/page_up.png) no-repeat left top transparent;
+}
+
+#pageDown {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	right: 10px;
+	width: 61px;
+	height: 99px;
+	margin-top: -50px;
+	background: url(images/slidebox/page_down.png) no-repeat left top transparent;
+}
+
+#control { 
+   height: 26px; 
+   position: absolute; 
+   top: 10px; 
+   left: 0; 
+   z-index: 3; 
+   width: 100%; 
+} 
+
+#control table { 
+   margin: 0 auto; 
+} 
+
+.control-r { 
+   padding-right: 15px; 
+   height: 26px; 
+   width: 26px; 
+   background: url(images/slidebox/slide_bar_r.png) no-repeat right top transparent; 
+} 
+
+.control-l { 
+   width: 15px; 
+   height: 26px; 
+   background: url(images/slidebox/slide_bar_l.png) no-repeat left top transparent; 
+} 
+
+#control a { 
+   top: 0px; 
+   float: left; 
+   width: 26px; 
+   height: 26px; 
+   background: url(images/slidebox/btn.png) no-repeat center top transparent; 
+   display: block; 
+} 
+
+#control a.active { 
+   background: url(images/slidebox/btn_active.png) no-repeat center top transparent; 
+} 
+
+#control a.cfg { 
+   height: 26px; 
+   float: right; 
+   background: url(images/slidebox/btn_cfg.png) no-repeat center top transparent; 
+} 
+
+#control a.cfg:hover { 
+   background: url(images/slidebox/btn_cfg_hover.png) no-repeat center top transparent; 
+}
+
+.slidebox {
+	position: relative;
+	z-index: 2;	
+}
+
+.add {
+	background: url(images/slidebox/add.png) no-repeat center top transparent;
+}
+
+.add:hover {
+	background: url(images/slidebox/add_hover.png) no-repeat center top transparent;
+}
+/**** end ****/
+#overlay {
+   background:#000;
+   filter:alpha(opacity=60);
+   -moz-opacity:0.6;
+   opacity:0.6;
+}
+
+.table-title{
+   font-size:16px;
+   font-weight:bold;
+   text-align:left;
+   padding-bottom:5px;
+}
+
+.dialog .head {
+	cursor: move;
+}
+
+.dialog .msg-content {
+	overflow-y:auto;
+}
+
+
+.TableTop{
+   border:0px;
+   font-size:12px;
+}
+.TableTop td{
+   height:32px;
+   font-weight:bold;
+   color:#383838;
+   background:url('images/table_top_bg.png') 0px -32px no-repeat;
+}
+.TableTop td.head-left{
+   width:5px !important;
+   background-position:left 0px;
+}
+.TableTop td.head-center{
+   background-position:0px -32px;
+   background-repeat:repeat-x;
+}
+.TableTop td.head-right{
+   width:5px !important;
+   background-position:right -64px;
+}
+
+
+
+.dialog .head .left, .dialog .top .left, .dialog .body .left, .dialog .foot .left{
+   width:10px;
+}
+.dialog .body .center .msg-content{
+   margin:5px 0px 0px 3px;
+   position:relative;
+   overflow-x:hidden;
+   overflow-y:auto;
+}
+
+.extDialog .dialog .head {
+	cursor: default;
+}
+
+/* lp 应用盒子样式 */
+.clearfix{
+	border-top:1px solid transparent !important;
+	margin-top:-1px !important;
+	border-top:0;
+	margin-top:0;
+	clear:both;
+	visibility:hidden;	
+}
+#portalSetting{
+	width:100%;
+	height:100%;	
+}
+#portalSetting #appPageDom{
+	display:block;	
+	height:100%;
+}
+#portalSetting #screenPageDom{
+	display:none;
+	height:100%;	
+}
+#portalSetting #bar{
+	line-height:24px;
+	text-align:left;
+	padding-left:10px;
+	background:transparent url("images/appbox/bar_bg.jpg") repeat-x 0 bottom;
+}
+#portalSetting #appPageDom #app_cate_list{
+	width:120px;
+	height:100%;
+	background-color:#F3F3F3;
+	text-align:left;
+	padding:3px;
+	float:left;
+	overflow:auto;
+	border-right:1px solid #D0D0D0;
+}
+#portalSetting #appPageDom #app_list_box{
+	
+}
+#portalSetting #bar #btnAppSet{
+	width:102px;
+	height:22px;
+	display:block;
+	float:left;
+	margin-right:10px;
+	margin-top:8px;
+	cursor:pointer;
+	background:url("images/appbox/bar_btn_appset.png") center center;
+}
+#portalSetting #bar #btnScreenSet{
+	width:102px;
+	height:22px;
+	display:block;
+	float:left;
+	margin-top:8px;
+	margin-right:10px;
+	cursor:pointer;
+	background:transparent url("images/appbox/bar_btn_screenset.png") center center;
+}
+#portalSetting #bar #portalSettingMsg{
+	width:auto;
+	margin-left:100px;
+	display:none;
+	height:38px;
+	line-height:38px;
+	color:Green;	
+}
+#portalSetting #appPageDom #app_cate_list ul{
+	list-style-type:none;
+	width:100%;
+	overflow:hidden;
+	height:300px;
+}
+#portalSetting #appPageDom #app_cate_list .scroll-up,
+#portalSetting #appPageDom #app_cate_list .scroll-down
+{
+   height:10px;
+   overflow:hidden;
+   cursor:pointer;
+   background:url('images/scroll_arrow.png') center 0px no-repeat;
+}
+#portalSetting #appPageDom #app_cate_list .scroll-up{
+   background-position:center -5px;     
+}
+#portalSetting #appPageDom #app_cate_list .scroll-down{
+   background-position:center -23px;     
+}
+#portalSetting #appPageDom #app_cate_list .scroll-up-hover{
+   background-position:center -45px;   
+}
+#portalSetting #appPageDom #app_cate_list .scroll-down-hover{
+   background-position:center -63px;   
+}
+#portalSetting #app_cate_list ul li{
+	width:100%;
+	border-bottom:1px solid #D8D8D8;
+	float:left;
+	height:27px;
+	text-indent:10px;
+	line-height:27px;
+}
+#app_cate_list img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 3px;
+}
+#portalSetting #app_cate_list ul li a{
+	display:block;
+	height:27px;
+	width:100%;
+	color:#000;
+	overflow:hidden;
+	text-overflow:ellipsis; 
+	white-space:nowrap;
+}
+#portalSetting #app_cate_list ul li a:hover{
+	background:transparent url("images/appbox/app_cate_list_bg.gif") 0 -27px;	
+}
+#portalSetting #app_cate_list ul li a.current{
+	color:#FFF;
+	background:transparent url("images/appbox/app_cate_list_bg.gif") 0 0px;	
+}
+
+#portalSetting #app_list_box{
+	overflow:auto !important;		
+}
+#portalSetting #app_list_box ul{
+	padding:10px;
+	list-style-type:none;
+}
+
+#portalSetting #app_list_box ul li{
+	float:left;
+	width:85px;
+	height: 70px;
+	text-align:center;
+	margin-left:30px;
+	margin-bottom:14px;
+	cursor:pointer;
+}
+
+#portalSetting #app_list_box ul li a img{
+	display:block;
+	margin:0 auto;
+    width: 48px;
+    height: 48px;
+}
+
+#portalSetting #app_list_box ul li a{
+	color:#000;
+}
+
+#portalSetting #app_list_box ul li a span.lleft{
+   display:inline-block;
+	height:18px;
+	line-height:18px;
+	margin-top:3px;
+}
+#portalSetting #app_list_box ul li a span.lright{
+   display:inline-block;
+   height:18px;
+   max-width:80px;
+	line-height:18px;
+	overflow:hidden;
+	cursor:pointer;      	
+}
+#portalSetting #app_list_box ul li:hover span.lleft{
+   display:inline-block;
+   height:18px;
+   background:transparent url('images/appbox/app_title_bg.png') no-repeat left 0;
+   padding-left:2px;
+} 
+#portalSetting #app_list_box ul li:hover span.lright{
+   display:inline-block;
+   padding-right:2px;
+   max-width:80px;
+   overflow:hidden;
+	color:#FFF;
+	background:transparent url('images/appbox/app_title_bg.png') no-repeat right -18px;	
+}
+
+#portalSetting #screenPageDom{
+	height:100%; 
+	background-color:#F3F3F3;
+}
+#portalSetting #screenPageDom #screen_list{
+	overflow:auto !important;
+	height:100%;	
+}
+#portalSetting #screenPageDom ul{
+	padding:10px 5px;
+	height:auto;
+	list-style-type:none;
+}
+#portalSetting #screenPageDom ul li{
+	display:block;
+	height:120px;
+	width:240px;
+	line-height:120px;
+	cursor:move;
+	text-align:center;
+	font-family:"Microsoft YaHei","Arial","宋体";
+	float:left;
+	margin-left:5px;
+	margin-bottom:10px;
+	font-size:40px;
+	color:#FFF;
+	background:transparent url('images/appbox/min_screen_bg.png') no-repeat;
+}
+
+#portalSetting #screenPageDom ul #btnAddScreen{
+	cursor:pointer;
+	background:transparent url('images/appbox/min_screen_bg_add.png') no-repeat;
+}
+
+#portalSetting #screenPageDom ul li{
+	position:relative;	
+}
+#portalSetting #screenPageDom ul li.current{
+	font-size:60px;
+	font-weight:bold;
+}
+
+#portalSetting #screenPageDom ul li .closebtn{
+	width:32px;
+	height:32px;
+	display:block;
+	position:absolute;
+	background:transparent url('images/appbox/close.png') no-repeat center center;
+	cursor:pointer;
+	top:-6px;right:-6px;	
+}
+
+/* appbox icons */
+#app_cate_list ul li a i{
+   display: inline-block;
+   *zoom: 1;
+   width: 20px;
+   height: 20px;
+   vertical-align: middle;
+   margin-top: -4px;
+   *margin-top: -3px;
+   *margin-right: 5px;
+   background-image: url('../10/images/menu_icons/default.png');
+}
+#app_cate_list ul li a.current i{	
+   background-image: url('../10/images/menu_icons/default_active.png');
+}
+#app_cate_list ul li a i.default{
+}
+#app_cate_list ul li a.current i.default{	
+}
+#app_cate_list ul li a i.appbox{
+
+   background-image: url('../10/images/menu_icons/appbox.png');
+}
+#app_cate_list ul li a.current i.appbox{
+	
+   background-image: url('../10/images/menu_icons/appbox_active.png');
+}
+#app_cate_list ul li a i.calendar{
+
+   background-image: url('../10/images/menu_icons/calendar.png');
+}
+#app_cate_list ul li a.current i.calendar{
+	
+   background-image: url('../10/images/menu_icons/calendar_active.png');
+}
+#app_cate_list ul li a i.comm{
+
+   background-image: url('../10/images/menu_icons/comm.png');
+}
+#app_cate_list ul li a.current i.comm{
+	
+   background-image: url('../10/images/menu_icons/comm_active.png');
+}
+#app_cate_list ul li a i.crm{
+
+   background-image: url('../10/images/menu_icons/crm.png');
+}
+#app_cate_list ul li a.current i.crm{
+	
+   background-image: url('../10/images/menu_icons/crm_active.png');
+}
+#app_cate_list ul li a i.document{
+
+   background-image: url('../10/images/menu_icons/document.png');
+}
+#app_cate_list ul li a.current i.document{
+	
+   background-image: url('../10/images/menu_icons/document_active.png');
+}
+#app_cate_list ul li a i.erp{
+
+   background-image: url('../10/images/menu_icons/erp.png');
+}
+#app_cate_list ul li a.current i.erp{
+	
+   background-image: url('../10/images/menu_icons/erp_active.png');
+}
+#app_cate_list ul li a i.fav{
+
+   background-image: url('../10/images/menu_icons/fav.png');
+}
+#app_cate_list ul li a.current i.fav{
+	
+   background-image: url('../10/images/menu_icons/fav_active.png');
+}
+#app_cate_list ul li a i.hr{
+
+   background-image: url('../10/images/menu_icons/hr.png');
+}
+#app_cate_list ul li a.current i.hr{
+	
+   background-image: url('../10/images/menu_icons/hr_active.png');
+}
+#app_cate_list ul li a i.info{
+
+   background-image: url('../10/images/menu_icons/info.png');
+}
+#app_cate_list ul li a.current i.info{
+	
+   background-image: url('../10/images/menu_icons/info_active.png');
+}
+#app_cate_list ul li a i.knowledge{
+
+   background-image: url('../10/images/menu_icons/knowledge.png');
+}
+#app_cate_list ul li a.current i.knowledge{
+	
+   background-image: url('../10/images/menu_icons/knowledge_active.png');
+}
+#app_cate_list ul li a i.management_center{
+
+   background-image: url('../10/images/menu_icons/management_center.png');
+}
+#app_cate_list ul li a.current i.management_center{
+	
+   background-image: url('../10/images/menu_icons/management_center_active.png');
+}
+#app_cate_list ul li a i.mytable{
+
+   background-image: url('../10/images/menu_icons/mytable.png');
+}
+#app_cate_list ul li a.current i.mytable{
+	
+   background-image: url('../10/images/menu_icons/mytable_active.png');
+}
+#app_cate_list ul li a i.oa_project{
+
+   background-image: url('../10/images/menu_icons/oa_project.png');
+}
+#app_cate_list ul li a.current i.oa_project{
+	
+   background-image: url('../10/images/menu_icons/oa_project_active.png');
+}
+#app_cate_list ul li a i.portal{
+
+   background-image: url('../10/images/menu_icons/portal.png');
+}
+#app_cate_list ul li a.current i.portal{
+	
+   background-image: url('../10/images/menu_icons/portal_active.png');
+}
+#app_cate_list ul li a i.project{
+
+   background-image: url('../10/images/menu_icons/project.png');
+}
+#app_cate_list ul li a.current i.project{
+	
+   background-image: url('../10/images/menu_icons/project_active.png');
+}
+#app_cate_list ul li a i.reportshop{
+
+   background-image: url('../10/images/menu_icons/reportshop.png');
+}
+#app_cate_list ul li a.current i.reportshop{
+	
+   background-image: url('../10/images/menu_icons/reportshop_active.png');
+}
+#app_cate_list ul li a i.roll_manage{
+
+   background-image: url('../10/images/menu_icons/roll_manage.png');
+}
+#app_cate_list ul li a.current i.roll_manage{
+	
+   background-image: url('../10/images/menu_icons/roll_manage_active.png');
+}
+#app_cate_list ul li a i.share{
+
+   background-image: url('../10/images/menu_icons/share.png');
+}
+#app_cate_list ul li a.current i.share{
+	
+   background-image: url('../10/images/menu_icons/share_active.png');
+}
+#app_cate_list ul li a i.system{
+
+   background-image: url('../10/images/menu_icons/system.png');
+}
+#app_cate_list ul li a.current i.system{
+	
+   background-image: url('../10/images/menu_icons/system_active.png');
+}
+#app_cate_list ul li a i.tide{
+
+   background-image: url('../10/images/menu_icons/tide.png');
+}
+#app_cate_list ul li a.current i.tide{
+	
+   background-image: url('../10/images/menu_icons/tide_active.png');
+}
+#app_cate_list ul li a i.workflow{
+
+   background-image: url('../10/images/menu_icons/workflow.png');
+}
+#app_cate_list ul li a.current i.workflow{
+	
+   background-image: url('../10/images/menu_icons/workflow_active.png');
+}

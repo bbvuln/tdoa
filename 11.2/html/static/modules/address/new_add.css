@@ -1,0 +1,404 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;}
+li{
+	list-style:none;
+	margin:0px;
+	padding:0px;}
+a{
+	color:#000;}
+img{
+	border:0px;}
+.new_f{
+	margin:0;
+	width:1000px;
+	height:400px;
+	overflow: hidden;
+}
+.left{
+	position:relative;
+	float:left;
+	width:213px;
+	height:400px;
+	background-color:#f1f1f1;}
+#img{
+	position:absolute;
+	top:33px;
+	left:23px;
+	width:170px;
+	height:175px;
+	background-color:#999;}
+#left_bts{
+	width:170px;
+	height:81px;
+	position:absolute;
+	top:219px;
+	left:23px;}
+.right{
+	position:relative;
+	float:left;
+	width:742px;
+	height:370px;
+	overflow: auto;
+}
+#name{
+	color:#000;}
+.red{
+	color:#F00;}
+#add{
+	float:left;}
+#qt{
+	width:300px;
+	margin-left:50px;}
+#qtbt{
+	width:70px;
+	height:30px;}
+#prependedDropdownButton{
+	width:170px;}
+.controls input{
+	width:200px;}
+#yx,#dh{
+	width:170px;}
+#beizhu{
+	float:left;}
+.bz{
+	width:200px;
+	height:175px;}
+#bts{
+	position:absolute;
+	width:300px;
+	height:60px;
+	bottom:0px;
+	right:200px;}
+.right_bts{
+	width:200px;
+	height:32px;
+}
+.input-prepend select {
+  border-radius: 4px 0px 0px 4px;
+}
+	
+/*分组管理*/
+.group{
+	background-color:#fff;}
+.left1{
+	width:213px;
+	height:43px;
+	background:rgb(221, 221, 221);
+	text-align:center;
+	line-height:43px;
+	font-size:14px;
+	color:#000;}
+.left dl dd{
+	margin-left:0px;} 
+.left1 span{
+	margin-right:10px;}
+.all{
+	display:block;
+	cursor:pointer;
+	font-size:15px;
+	color:#000;
+	width:180px;
+	height:43px;
+	text-align:center;
+	line-height:43px;}
+.fz{
+	position:relative;
+	display:block;
+	cursor:pointer;
+	font-size:13px;
+	color:#000;
+	width:180px;
+	height:43px;
+	text-align:center;
+	line-height:43px;}
+.left-span{
+	position:absolute;
+	left:10px;
+}
+.leftul{
+        width:213px;
+        height:357px;
+		margin:0px;
+		padding:0px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		background-color: #f7f7f7;
+        }
+.leftul li{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	height:44px;
+	width:213px;
+	border-bottom:1px #E0E0E0 solid;
+	line-height:44px;}
+.leftul li a{
+	text-decoration:none;
+	position:relative;
+	display:block;
+	line-height:44px;
+	color:#000;}
+.leftul li a label{
+	width: 170px;
+	height:44px;}
+.leftul li a span{
+	position:absolute;
+	left:30px;
+	top:0px;}
+.gname{
+	position:relative;
+	line-height:34px;
+	width:670px;
+	height:85px;
+	border-bottom:1px #CCCCCC solid;}
+#share1{
+	position:absolute;
+	right:36px;
+	bottom:20px;
+	width:170px;
+	height:34px;
+	margin-top:10px;
+	border:0px;}
+#bj{
+	font-size:14px;
+	}	
+#pp{
+	left:400px;}
+
+.bts{
+	position:absolute;
+	width:200px;
+	height:35px;
+	bottom:35px;
+	left:250px;}
+
+
+/*导入数据*/
+.leadin{
+	margin:0;
+	position:relative;
+	background-color:#fff;
+	height:350px;}
+#dr{
+	position:absolute;
+	top:100px;
+	width:600px;
+	left:110px;}
+#gs{
+	position:absolute;
+	top:150px;
+	left:265px;}
+#appendedInput{
+	width:250px;}
+	
+
+/*导出数据*/
+.dc{
+	background-color:#fff;
+	width:900px;
+	height:400px;}
+.dc_l{
+	width:190px;
+	height:400px;
+	background-color:#f7f5f6;
+	float:left;}
+.dc_l ul{
+	margin:0px;
+	padding:0px;
+	width:190px;
+	height:400px;}
+.dc_l ul li{
+	position:relative;
+	width:190px;
+	height:58px;
+	border-bottom:1px #CCCCCC solid;}
+.dc_l ul li a{
+	color:#797979;
+	font-size:14px;
+	text-align:center;
+	display:block;
+	padding-left:20px;           
+	line-height:58px;
+	text-decoration:none;
+	background-color:#f7f5f6;}
+.dc_l ul li a:hover{
+	background-color:#FFF;
+	color:#000;}
+.dc_img{
+	position:absolute;
+	left:15px;}
+.dc_r{
+	position:relative;
+	float:left;
+	width:710px;
+	height:400px;
+	background-color:#fff;                   
+	}
+#dc_bt{
+	position:absolute;
+	bottom:80px;}
+#radio_n{
+	width:170px;
+	height:400px;
+	float:left;}
+#radio_n input{
+	width:30px;}
+#right_fz{
+	float:left;
+	width:470px;
+}
+#rightfz{
+	float:left;
+	width:470px;
+	height:400px;
+}
+#dc_rightbts{
+	position:absolute;
+	bottom:20px;
+	left:330px;}
+#l{
+	margin-right:15px;}                     
+#l,#r{
+	width:213px;
+	display:inline; 
+	float:left;}
+#l dl dd{
+	margin-left:0px;}
+
+
+
+#rightfz1{
+	float:left;
+	width:470px;
+	height:400px;}
+#TabbedPanels1{
+	border:0px;
+	width:470px;}
+.TabbedPanelsTab{
+	border:0px;
+	width:197px;
+	height:43px;
+	float:left;
+	top: 0px;
+	margin: 0px;
+	text-align:center;
+}
+.TabbedPanelsContentGroup {
+	border-left: solid 1px #CFCFCF;
+	border-right: solid 1px #CFCFCF;
+	border-top: solid 1px #CFCFCF;
+	width: 440px;
+	height: 356px;
+}
+#rightli a,#rightli1 a{
+	display:block;
+	border:0px;
+	font-size:14px;
+	line-height:45px;
+	overflow:hidden;
+}
+#rightli a{
+	color:#FFF;}
+.TabbedPanelsContent{
+	border:0px;
+	width:440px;
+	height:357px;}
+.f_group{
+	position:relative;
+	width:439px;
+	height:35px;
+	background-color:#f0f0f0;}
+.leftbt{
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:block;
+	cursor:pointer;}
+.rightbt{
+	position:absolute;
+	right:0px;
+	top:0px;
+	display:block;
+	cursor:pointer;}
+.f_group ul{
+	margin:0 auto;
+	width:384px;
+	height:34px;
+	overflow:hidden;}
+.f_group ul li{
+	float:left;
+	width:95px;
+	height:34px;
+	border-right:1px #DADADA solid;
+	}
+.f_group ul li a{
+	text-align:center;
+	display:block;
+	line-height:34px;
+	color:#000;
+	text-decoration:none;}
+.zimulist{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:440px;
+	border-top:1px #CCCCCC solid;
+	overflow:hidden;
+	background-color:#FFF;}
+.zimulist_l{
+	float:left;
+	width:440px;
+	height:255px;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+.lxr{
+	width:165px;
+	height:145px;
+	float:left;
+	margin-left:28px;
+	margin-bottom:10px;}
+.lxr p{
+	float:right;
+	padding-right:20px;
+	color:#F00;
+	}
+.lxr ul{
+	float:right;}
+.lxr ul li{
+	position:relative;
+	padding-left:20px;
+	background-color:#f7f7f7;}
+.input{
+	position:absolute;
+	left:0px;
+	top:10px;
+	width:50px;}
+.lxr .namelist li a span{
+	position:absolute;
+	right:0px;
+	top:-10px;}
+.lxr .namelist li{
+	width:120px;
+	height:41px;
+	line-height:41px;
+	border-bottom:1px #CCCCCC solid;
+	overflow:hidden;}
+.lxr .namelist li a{
+	text-decoration:none;
+	text-align:left;
+	display:block;
+	line-height:41px;
+	color:#000;}
+.select{
+	font-size:13px;
+	width:100%;
+	height:64px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-top: 1px #CCCCCC solid;
+	background-color:#FFF;
+}

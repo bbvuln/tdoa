@@ -1,0 +1,25 @@
+*{margin:0px;padding:0px;font-size:9pt;}
+.NodeDiv{
+}
+.NodeDiv img{
+   border:0px;
+}
+.NodeImg, .NodeExpandImg, .NodeLoadingImg{
+   border:0px;
+   cursor:pointer;
+}
+.NodeSpan{
+   padding-left:3px;
+}
+.NodeLink{
+   text-decoration:none;
+   height:20px;
+   line-height:20px;
+}
+.NodeContainer{
+   padding-left:16px;
+   display:none;
+}
+.NodeSpan .NodeActive{
+   color:#ff0000 !important;
+}

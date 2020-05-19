@@ -1,0 +1,105 @@
+.m-style {
+    float: right;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+    zoom: 1;
+}
+.m-style div {
+    display: inline-block;
+}
+.m-style:before,
+.m-style:after {
+    content: "";
+    display: table;
+}
+.m-style:after {
+    clear: both;
+    overflow: hidden;
+}
+.m-style span {
+    border: 1px solid #d9d9d9;
+    float: left;
+    margin: 0 5px;
+    width: auto;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    color: #333;
+    font-size: 14px;
+}
+.m-style .active {
+    float: left;
+    margin: 0 5px;
+    width: auto;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+    background-color: #0e86fe;
+    border-color: #0e86fe;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.m-style a {
+    float: left;
+    margin: 0 5px;
+    width: auto;
+    padding: 0 10px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    color: #333;
+    font-size: 14px;
+}
+.m-style a:hover {
+    transition: all 0.3s;
+    border-color: #0e86fe;
+    color: #0e86fe;
+}
+.m-style .next,
+.m-style .prev {
+    font-size: 13px;
+}
+.now,
+.count {
+    padding: 0 5px;
+    color: red;
+}
+.eg img {
+    max-width: 800px;
+    min-height: 500px;
+}
+.m-style .jump-ipt {
+    height: 28px;
+    line-height: 28px;
+}
+input {
+    float: left;
+    margin: 0 5px;
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: 0;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+.m-style .jump-btn {
+    /* width: 36px; */
+    width: auto;
+    padding: 0 3px;
+    border: none;
+    background-color: transparent;
+    cursor: initial;
+    height: 28px;
+    line-height: 28px;
+}
+.m-style .jump-btn:hover {
+    color: #333;
+}

@@ -1,0 +1,15 @@
+.f_dialog_block{
+	margin-left:75px;
+	margin-right:75px;
+}
+
+.f_dialog_lblock{
+	width:45%;
+	margin-left:35px;
+	margin-right:5px;
+}
+.f_dialog_rblock{
+	width:45%;
+	margin-left:5px;
+	margin-right:25px;
+}

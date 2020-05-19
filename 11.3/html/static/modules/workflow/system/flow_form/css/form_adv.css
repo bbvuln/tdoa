@@ -1,0 +1,254 @@
+.form-wrap td {
+	border: 0;
+	padding: 0 !important;
+}
+
+.form-wrap tr {
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.form-wrap p {
+	line-height: 1.8em;
+	padding-left: 10px;
+}
+
+.form-wrap {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+
+.form-wrap table {
+	border: 1px solid #c9c9c9;
+	margin: 15px auto;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.form-line {
+	border-bottom: 5px solid #0666c5;
+}
+
+.form-min-placeholder {
+	width: 0.5em;
+	display: inline-block;
+}
+
+.form-mid-placeholder {
+	width: 1em;
+	display: inline-block;
+}
+
+.form-large-placeholder {
+	width: 2em;
+	display: inline-block;
+}
+
+.form-max-placeholder {
+	width: 3em;
+	display: inline-block;
+}
+
+.form-title-company {
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+}
+
+.form-title {
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+	height: 50px;
+	line-height: 50px;
+	margin:0;
+}
+
+.form-wrap tr.form-group-title {
+	border-bottom: none;
+}
+
+.form-group-title {
+	height: 22px;
+	line-height: 22px;
+	background-color: #3970d6;
+	color: #ffffff;
+	font-size: 14px;
+	padding-left: 15px;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+}
+
+.form-item {
+	min-height: 30px;
+}
+
+.form-item-field-require {
+	margin: 0 4px;
+	color: #ff0000;
+}
+
+.form-item-field {
+	color: #03579e;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+}
+
+.form-item.last-border,
+.form-border-bottom {
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.form-item-note {
+	color: #ff0000;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.form-wrap hr,
+.form-line,
+tr.form-line,
+.form-item.form-line {
+	border-bottom: 3px solid #0666c5;
+	margin-bottom: 3px;
+}
+
+.form-item-button {
+	background-color: #3970d6;
+	width: 96px;
+	height: 30px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.form-item-comment-time {
+	text-align: right;
+	margin: 5px 10px;
+	font-weight: normal;
+}
+
+.form-item-margin-left {
+	margin-left: 10px;
+}
+
+.form-item span {
+	line-height: 30px;
+	font-size: 13px;
+	font-family: 'Microsoft YaHei',Simsun, Arial, sans-serif;
+}
+
+.form-item strong span {
+	font-size: 13px;
+}
+
+.form-item span.form-item-field {
+	font-size:14px;
+}
+
+.form-item p {
+	padding: 0 0 0 10px;
+}
+
+.form-item button {
+	padding: 5px 0;
+}
+
+.form-item input,
+.form-item input[type="text"],
+.form-item textarea,
+.form-item select {
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	margin: 2px 0;
+	padding: 0px 3px;
+}
+
+.form-item input[type="radio"],
+.form-item input[type="checkbox"] {
+	margin: 3px 3px 3px 0;
+	width: 15px;
+	border: 0;
+}
+
+.form-item textarea {
+	resize: none;
+	border-radius: 3px;
+	border: 1px solid #c9c9c9;
+	margin: 2px 0;
+}
+
+.form-item input[type="button"] {
+	margin-left: 5px;
+	color: #03579e;
+	padding: 0 3px;
+	background: none;
+}
+
+.form-item label {
+	height: 30px;
+	line-height: 30px;
+	margin: 3px 10px 3px 0;
+}
+
+.form-item img {
+	margin: 0 10px 0 5px;
+}
+
+.form-wrap tr.form-item td table {
+	margin: 5px;
+	width: 98%;
+}
+
+.form-wrap tr.form-item td table td {
+	height: 25px;
+	border: 1px solid #c9c9c9;
+	text-align: center;
+}
+
+.form-wrap tr.LIST_VIEW_HEADER td {
+	color: #03579e;
+	font-weight: normal;
+}
+
+.form-item .CUSTOM_RUNSELECT {
+	padding: 0 5px;
+	height: 25px;
+}
+
+.form-item-list td input[type="text"],
+.form-item-list td input[type="button"],
+.form-item-list td input[type="input"],
+.form-item-list td select {
+	max-height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0;
+}
+
+.form-item-selct select {
+	min-width: 90px;
+	margin-right: 25px;
+}
+
+.form-item p {
+	font-weight: bold;
+}
+
+p.form-item-comment-time {
+	font-weight: normal;
+}
+
+.form-item p strong span {
+	font-size: 14px;
+}
+
+

@@ -1,0 +1,76 @@
+﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+html{height:100%;}
+ul, ol {list-style:none;}
+.clear{ clear:both; overflow:hidden;}
+.fr{float:right;}
+.tac{text-align:center;}
+body {
+	text-transform:capitalize;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.container{
+	width: 100%;
+	background-color: #FFFFFF;
+	overflow:hidden;
+}
+.head_er{
+    font-family: "微软雅黑", "宋体";
+	font-size: 34px;
+	color: #000000;
+	line-height:80px;
+	width:100%;
+}
+.head_er1{
+    font-family: "微软雅黑", "宋体";
+	font-size: 34px;
+	color: #ee7f47;
+	line-height:80px;
+	width:100%;
+}
+.line{
+	background-image:url(../images/form_bottom.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+.gsmc{
+	text-align:left;
+	font-size: 16px;
+	font-family: "微软雅黑", "宋体";
+	font-weight:bold;
+	color: #000000;
+}
+.rq{
+	text-align:right;
+	font-size: 16px;
+	font-family: "微软雅黑", "宋体";
+	font-weight:bold;
+	color: #000000;
+}
+.jl{
+	text-align:center;
+	font-size: 16px;
+	font-family: "微软雅黑", "宋体";
+	font-weight:bold;
+	color: #000000;
+}
+th,td{
+	border:1pt solid #b3bc9f;	
+}
+.btxx{
+	text-align:center;
+	font-size: 16px;
+	font-family: "微软雅黑", "宋体";
+	color: #000000;	
+}
+.bt{
+text-align:center;
+font-family:"","";color:#000000;
+font-size:16px;
+font-weight:bold;
+}

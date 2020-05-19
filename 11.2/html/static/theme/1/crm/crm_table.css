@@ -1,0 +1,200 @@
+*{margin:0;padding:0}
+body{background:#f6f7f9;}
+.body{text-align:center;}
+.module {text-align:left;border:1px #07a6c8 solid; padding: 0px;margin:5px 10px 10px 15px;}
+.module_body {clear:both;font-size: 9pt;margin: 0 !important; overflow-y: auto; padding: 5px 5px;}
+.module_div{overflow:hidden;clear:both;}
+ul{list-style:none;}
+.module_div ul li{ margin-top:5px;}
+.module_div ul li a{background:url("images/normal.gif") no-repeat left;padding-left:23px;color:black;text-decoration:none;margin-left:15px;margin-bottom:3px;}
+.module_div ul li a:hover {background:url("images/selected.gif") no-repeat left;padding-left:23px;cursor:pointer;text-decoration:none;margin-left:15px;margin-bottom:3px;}
+.listColor {border: none;}
+.listColor .head {height:27px;}
+.listColor .moduleHeader {border: none;background:#07a6c8;height:27px;}
+.listColor .module_body {border: 2px #07a6c8 solid;border-top:none;}
+ 
+#navMenu{float: left;white-space: nowrap;padding: 0px 10px 0px 10px;margin-top:2px;height: 25px;overflow:hidden;}
+#navMenu a{float:left;overflow:hidden;color:#FFFFFF;text-decoration: none;padding-left:5px;height: 25px;}
+#navMenu a span{float:left;cursor:hand;padding:6px 10px 3px 5px;height:25px;font-size:13px;}
+#navMenu a:hover{color:#000000;background: #eaf8ff}
+#navMenu a:hover span{background: #eaf8ff}
+#navMenu a.active{color:#000000; background:#eaf8ff}
+#navMenu a.active span{background: #eaf8ff}
+
+.listColor .head2 {background:#07a6c8}
+.listColor .moduleHeader2 {color:#FFFFFF;overflow:hidden;padding-top:5px;padding-left:10px;border: none;background:#07a6c8;height:27px;font-size:13px;}
+.moduleHeader2 img{cursor:pointer;}
+.clearPointer{cursor:default;}
+.crm-box {
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	position:relative;
+	background-position: center center;
+	height:298px;
+	width:743px;
+	margin:0 auto;
+	
+}
+.A-module{
+	margin:0 auto;
+	height:298px;
+	width:auto;
+	margin-left:10px;
+	margin-right:10px;
+	position:relative;
+}
+.menu-a {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:130px;
+	left:20px;
+	background:url(images/Marketing.png);
+}
+.menu-b {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:145px;
+	left:120px;
+	background:url(images/Account.png);
+}
+.menu-c {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:150px;
+	left:220px;
+	background:url(images/Opportunity.png);
+}
+.menu-d {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:155px;
+	left:320px;
+	background:url(images/ContractOrder.png);
+}
+.menu-e {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:150px;
+	left:420px;
+	background:url(images/AccountService.png);
+}
+.menu-f {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:145px;
+	left:520px;
+	background:url(images/Purchase.png);
+}
+.menu-g {
+	cursor:pointer;
+	position:absolute;
+	width:90px;
+	height:110px;
+	top:130px;
+	left:620px;
+	background:url(images/ProductDepository.png);
+}
+.pic-box{
+	position:relative;margin:0 auto;height:298px;width:740px;
+}
+.module-pic1{
+	cursor:pointer;
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:20px;
+	top:80px;
+}
+.module-pic1-h{
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:20px;
+	top:80px;
+}
+.module-pic2{
+	cursor:pointer;
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:200px;
+	top:80px;
+}
+.module-pic2-h{
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:200px;
+	top:80px;
+}
+.module-pic3{
+	cursor:pointer;
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:380px;
+	top:80px;
+}
+.module-pic3-h{
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:380px;
+	top:80px;
+}
+.module-pic4{
+	cursor:pointer;
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:560px;
+	top:80px;
+}
+.module-pic4-h{
+	position:absolute;
+	width:160px;
+	height:160px;
+	left:560px;
+	top:80px;
+}
+.back{
+	cursor:pointer;
+	position:absolute;
+	background:url(images/back_crm.png) center right no-repeat;
+	height:38px;
+	width:163px;
+	top:1px;
+	right:0px;
+}
+.line{position:absolute;top:38px;left:0px;width:660px;border-top:1px solid #3366CC;}
+.module_title{
+	cursor:pointer;
+	position:absolute;
+	height:38px;
+	width:163px;
+	top:0px;
+	left:0px;
+	background-repeat:none;
+}
+
+.data_div{
+	float:right;
+	display:block;
+	width:90px;
+	height:27px;
+	padding-left:5px;
+	margin-top:-5px;
+	*margin-top:-20px;
+}

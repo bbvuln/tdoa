@@ -1,0 +1,225 @@
+/* CSS Document */
+/*------------------------  Globa ------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+html{height:100%;}
+ul, ol {list-style:none;}
+.clear{ clear:both; overflow:hidden;}
+.fr{float:right;}
+.tac{text-align:center;}
+body {
+	margin:0;
+	padding:0;
+}
+#container {
+	width: 100%;
+}
+#top {
+	height: 127px;
+	width: 100%;
+	background-image: url(../images/room/topbg.jpg);
+	background-repeat: repeat-x;
+}
+#top .logo {
+	height: 75px;
+	width: 351px;
+	float: left;
+	background-image: url(../images/room/roomlogo.jpg);
+	background-repeat: no-repeat;
+	background-position: 30px top;
+}
+#nav_out {
+	line-height:52px;
+	float: left;
+	margin-left: 30px;
+}
+#nav_in { }
+#nav {height:52px;}
+	
+#nav li {
+	float:left;
+	margin-left: 5px;
+	background-image: url(../images/room/label-link.jpg);
+	background-repeat: no-repeat;
+}
+#nav li a {
+	display:block;
+	text-decoration:none;
+	color:#515151;
+	height: 52px;
+	width: 134px;
+}
+#nav li a:hover {
+	background-image: url(../images/room/li_l.jpg);
+	background-repeat: no-repeat;
+	height: 52px;
+}
+#nav li a span {
+	display:block;
+	letter-spacing: 1pt;
+	padding-top: 5;
+	padding-right: 6px;
+	padding-bottom: 0;
+	padding-left: 18px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+}
+#nav li a:hover span {
+	color:#FFFFFF;
+	background-image: url(../images/room/li_r.jpg);
+	background-repeat: no-repeat;
+}
+.current {background:url(../images/room/li_l.jpg) 0 0 no-repeat;}/*???????»Œ??????????JS??????*/
+.current span{background:url(../images/room/li_r.jpg) 100% 0 no-repeat;color:#FFFFFF;}  /*???????»Œ??????????JS??????*/
+.arealine {
+	background-image: url(../images/room/aline.jpg);
+	background-repeat: repeat-x;
+	height: 11px;
+	width: 100%;	
+}
+/*------------------------  ?°¿??????? ------------------------------*/
+#footer {
+	background-image: url(../images/room/foot-bg.jpg);
+	background-repeat: repeat-x;
+	height: 41px;
+}
+#footer .name {
+	height: 31px;
+	width: 160px;
+	float: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	float:left;
+}
+#footer .disktop {
+	height: 31px;
+	width: 50px;
+	padding-top: 10px;
+	float:left;
+}
+#footer a {
+	font-family: "Œ¢»Ì—≈∫⁄", "ÀŒÃÂ";
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#footer a:hover {
+	font-size: 14px;
+	color: #FF3333;
+}
+#nav_out2 {
+	line-height:41px;
+	float: left;
+	margin-left: 30px;
+	width: 760px;
+	overflow: hidden;
+}
+#nav_in2 { }
+#nav2 {height:41px;}
+	
+#nav2 li {
+	float:left;
+}
+#nav2 li a {
+	display:block;
+	text-decoration:none;
+	color:#515151;
+	height: 41px;
+	width: 174px;
+	text-align: center;
+	font-family: "Œ¢»Ì—≈∫⁄", "ÀŒÃÂ";
+	font-size: 13px;
+}
+#nav2 li a:hover {
+	background-image: url(../images/room/fot-select-l.jpg);
+	background-repeat: no-repeat;
+	height: 41px;
+}
+#nav2 li a span {
+	display:block;
+	letter-spacing: 1pt;
+	padding-top: 5;
+	padding-bottom: 0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+}
+#nav2 li a:hover span {
+	color:#FFFFFF;
+	background-image: url(../images/room/fot-select-r.jpg);
+	background-repeat: no-repeat;
+}
+.current2 {background:url(../images/room/fot-select-l.jpg) 0 0 no-repeat;}/*???????»Œ??????????JS??????*/
+.current2 span{background:url(../images/room/fot-select-r.jpg) 100% 0 no-repeat;color:#FFFFFF;}  /*???????»Œ??????????JS??????*/
+.small-button {
+	float: right;
+	height: 31px;
+	width: 200px;
+	padding-top: 10px;
+	margin-right: 20px;
+}
+.small-button li {
+	float: left;
+	height: 17px;
+	width: 42px;
+	margin-left: 8px;
+}
+.small-button li a {
+border: 0;	
+}
+
+
+/*0409–¬‘ˆ*/
+.table-h6 {
+	font-family: "Œ¢»Ì—≈∫⁄", "ÀŒÃÂ";
+	font-size: 12px;
+	color: #CCCCCC;
+	float: right;
+	height: 21px;
+	padding-top: 8px;
+	padding-right: 20px;
+	letter-spacing: 1px;
+}
+.table-h6 b {
+	color: #FFFFff;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.messagebox {
+	padding-top: 25px;
+	padding-left: 60px;
+	width:100%;
+	height: 470px;
+}.mestitlebox {
+	height: 55px;
+	width: 510px;
+	margin-top: 30px;
+	background-color: #f6f6f6;
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #e0e0e0;
+	font-family: "Œ¢»Ì—≈∫⁄", "ÀŒÃÂ";
+	font-size: 13px;
+	color: #454545;
+	padding-top: 15px;
+	padding-left: 16px;
+}
+.mestext {
+	font-family: "Œ¢»Ì—≈∫⁄", "ÀŒÃÂ";
+	font-size: 13px;
+	color: #696969;
+	line-height: 20px;
+	padding-top: 24px;
+	padding-bottom: 75px;
+}
+
+.mes-h2 {
+	font-size: 18px;
+	font-family: "Œ¢»Ì—≈∫⁄", "ÀŒÃÂ";
+	font-weight: bold;
+}

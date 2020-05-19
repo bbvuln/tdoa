@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body{
+    height: 100%;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0px;
+}
+.erp_wrapper{
+    position: relative;
+    height: 100%;
+    background: #fff;
+}
+.erp_left{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.erp_center{
+    position: absolute;
+    left: 201px;
+    right: 261px;
+    top: 0;
+    bottom: 0;
+}
+.erp_right{
+    width: 260px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.main_menu{
+    margin: 0;
+    padding: 0;
+}
+a.main_menu_item{
+    position: relative;
+    display: block;
+    padding: 15px;
+    padding-left: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    margin-right: 0px;
+}
+a.main_menu_item:focus{
+    outline:none;
+}
+a.main_menu_item:hover{
+    background: #f8f8f8;
+    text-decoration: none;
+    color: #000;
+}
+a.main_menu_item.active{
+    background: #fff;
+    text-decoration: none;
+    margin-right: -1px;
+}
+.main_menu_icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: transparent;//#03a9f4;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+.main_menu_split{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    width: 2px;
+    bottom: 0px;
+    background: #fff;
+}
+.erp_center_bd{
+    position: absolute;
+    top: 0;
+    bottom: 0;//151px;
+    width: 100%;
+}
+.erp_center_ft{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    height: 150px;
+}
+.mod{
+}
+.mod .mod_hd{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color: #05a;
+    //font-size: 14px;
+}
+.mod .mod_bd{
+    padding: 10px;
+}
+.mod .mod_bd_list{
+    margin-left: 10px;
+}
+.mod .mod_bd_item{
+    padding: 5px;
+    display: block;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sub_menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.sub_menu_title{
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #05a;
+}
+.sub_menu_list{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+}
+.sub_menu_list_canvas{
+    width: 100%;
+    display: block;
+    /*overflow: auto;*/
+}
+.sub_menu_list_item{
+    width: 100%;
+    display: block;
+    /*overflow: auto;*/
+}
+.sub_menu_panel{
+    display: none;
+}
+.sub_menu_panel.active{
+    display: block;
+    padding: 10px 40px;
+    padding-left: 60px;
+}
+.sub_menu_item{
+    float: left;
+    cursor: pointer;
+    /*padding: 5px;*/
+    /*width: 100px;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*text-align: center;*/
+    /*margin-bottom: 20px;*/
+}
+.sub_menu_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.sub_menu_txt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sub_menu_item:hover .sub_menu_icon{
+    -webkit-box-shadow: 0px 0px 8px #ddd;
+    -moz-box-shadow: 0px 0px 8px #ddd;
+    -ms-box-shadow: 0px 0px 8px #ddd;
+    -o-box-shadow: 0px 0px 8px #ddd;
+    box-shadow: 0px 0px 8px #ddd;  
+}
+.sub_menu_item:hover .sub_menu_txt{
+    color: #05a;
+}
+#ft_mod{
+    height: 85px;
+    overflow: auto;
+}
+#ft_mod li a{
+    float: left;
+    color: #000;
+    display: block;
+    padding: 5px;
+}

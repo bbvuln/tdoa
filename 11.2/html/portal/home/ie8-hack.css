@@ -1,0 +1,48 @@
+#common ul li .img-wrap.ie8 {
+    overflow: hidden;
+    background-color: transparent;
+}
+#common ul li .img-wrap.ie8 .ie8-img {
+    position: relative;
+    z-index: 10;
+}
+#common ul li .img-wrap .radius {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 79px dotted;
+    margin: 0 0 1px 1px;
+    color: #eff0f2;
+    top: 0px;
+}
+/* 
+ * fix ie8 not support ie8 
+ * tianlin@20190717
+ */
+.home-contanier {
+	width: 1080px;
+}
+#schedule {
+	width: 395px;
+}
+#workflow {
+	width: 665px;
+}
+#common {
+	width: 164px;
+	padding-bottom: 0px;
+}
+#attendance {
+	width: 280px;
+}
+#filefolder {
+	width: 605px;
+}
+#news {
+	width: 442px;
+}
+#notify {
+	width: 442px;
+}
+

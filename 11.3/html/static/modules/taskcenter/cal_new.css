@@ -1,0 +1,66 @@
+#color{
+	width:20px;
+	height:20px;
+	display:block;
+	background:#3a87ad;
+	float:left;
+	cursor:pointer;
+}
+#color_menu{
+	float:left;
+	margin-left:5px;
+	visibility:hidden;
+}
+#color_menu a{
+	width:20px;
+	height:20px;
+	display:block;
+	float:left;
+	cursor:pointer;
+}
+.color{
+	background-color:#3a87ad;
+}
+.color1{
+	background-color:rgb(255, 136, 124);
+}
+.color2{
+	background-color:rgb(252, 226, 89);
+}
+.color3{
+	background-color:rgb(105, 240, 164);
+}
+.color4{
+	background-color:rgb(245, 181, 46);
+}
+.color5{
+	background-color:rgb(70, 214, 219);
+}
+.color6{
+	background-color:rgb(219, 173, 255);
+}
+.wrapper{
+    background: #FFF;
+    width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.TableBlock,.TableBlock .TableData td, .TableBlock td.TableData,TableControl td{
+	border:none;
+	padding:5px;
+	background: #fff;
+}
+.TableBlock .TableControl td,.TableBlock td.TableControl{
+	border:none;
+}
+.new_title{
+	display:block;
+	width:450px; 
+	font-size:12pt; 
+	font-weight:bold; 
+	color:#124164; 
+	line-height:50px;
+	margin:0 auto;
+}

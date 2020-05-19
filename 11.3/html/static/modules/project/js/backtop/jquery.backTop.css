@@ -1,0 +1,9 @@
+#totop{position:fixed; bottom:40px;right:40px;z-index:999;width:50px; cursor:pointer; display:none;}
+*html #totop{position:absolute;cursor:pointer;right:40px; display:none;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight)-112+"px")}
+#totop a{display:block;width:50px;height:50px;background:url(backtop-trans.png) no-repeat;text-align:center;color:#888}
+#totop a.cur{background-position:-50px 0;text-decoration:none;color:#3a9}
+
+#toTOP{position:fixed; top:50%; left:-100%; margin:-100px -250px; width:500px; height:200px; font-family:"微软雅黑"; font-size:80px; 	text-shadow:1px 1px 1px #000;
+	text-align:center;
+   
+    }

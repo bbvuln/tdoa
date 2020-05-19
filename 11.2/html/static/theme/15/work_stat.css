@@ -1,0 +1,26 @@
+*{padding:0px;margin:0px;}
+body{background:transparent url('/static/images/work_stat/bg.jpg') no-repeat fixed center center;text-align:center;}
+
+.clear{border-top:1px solid transparent !important;margin-top:-1px !important;border-top:0;margin-top:0;clear:both;visibility:hidden;}
+
+.qsinput{height:33px;width:300px;padding:1px 3px;padding-top:7px;border:1px solid #999;background:#FFF url('/static/images/work_stat/binputbg.gif') repeat-x 1px;}
+.qsbutton{height:33px;width:63px;background:transparent url('/static/images/work_stat/button.gif') no-repeat center top;border:0px;font-size:14px;font-weight:bold;color:#FFF;}
+
+#header{text-align:center;background:url('/static/images/work_stat/header_bg.png') center top;margin-bottom:50px;}
+
+#RobotLogo{width:100px;height:113px;background:url('/static/images/work_stat/logo.png') no-repeat center top;position:absolute;z-index:2;right:30px;top:50px;cursor:pointer;}
+
+#RobotBoxArea{width:260px;height:300px;float:right;margin-top:50px;margin-right:30px;right:0px;position:absolute;border:1spx solid #FFF;-moz-border-radius: 15px;border-radius: 15px;background:#05040A url('/static/images/work_stat/boxbg.jpg') no-repeat left top;top:90px;display:none;}
+#RobotBoxArea .content{height:auto;z-index:3;left:0;padding:20px 10px;color:#FFF;text-align:left;}
+#RobotBoxArea h3{font-size:14px;font-weight:bold;height:26px;line-height:26px;background:#05040A url('/static/images/work_stat/boxbg.jpg') no-repeat left top;margin-top:15px;text-indent:10px;cursor:pointer;}
+#RobotBoxArea ul{list-style:none;padding-left:15px;}
+#RobotBoxArea ul li{height:30px;line-height:30px;border-bottom:1px dotted #EFEFEF;}
+#RobotBoxArea ul li a{display:block;color:#EFEFEF;text-decoration:none;}
+#RobotBoxArea ul li a:hover{font-weight:bold;}
+
+#PanelBoHeader{background:url('/static/images/work_stat/bg.png') no-repeat center top;}
+#DataPanelBox{width:960px;height:800px;margin:10px auto;padding-top:50px;}
+#DataPanelBox .databox{width:450px;height:240px;float:left;margin-left:20px;display:inline;margin-bottom:10px;/*background:url('/static/images/work_stat/panel_bg.gif') 0 0;*/}
+#DataPanelBox .databox .ModuleCont{height:205px;}
+#DataPanelBox .databox .ModuleA{height:30px;line-height:30px;width:auto;background:url('/static/images/work_stat/btn.png') no-repeat 0 0;padding-left:12px;margin-top:5px;}
+#DataPanelBox .databox .ModuleTitle{height:30px;background:url('/static/images/work_stat/btn.png') no-repeat -30px  right;color:#FFF;padding-right:12px;cursor:pointer;}

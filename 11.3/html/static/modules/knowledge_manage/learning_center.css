@@ -1,0 +1,221 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+.learn-wrapper{
+    width: 960px;
+    margin: 0 auto;
+    min-height: 120px;
+}
+.learn-top{
+    padding: 10px;
+    position: relative;
+    min-height: 102px;
+}
+.learn-top .top-info{
+    margin-right: 350px;
+    position: relative;
+}
+.learn-top .top-focus{
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+}
+.learn-top .top-focus a.focus-item img{
+    display: inline-block;
+    *zoom:1;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 0px 0px;
+	border-radius: 50%;
+}
+.learn-top .top-focus .noconcern{
+    color: #bbb;
+}
+.learn-top .top-focus .more-focus{
+    font-size: 13px;
+    font-weight: normal;
+}
+.top-info .info-img{
+    padding: 10px 10px 10px 0px;
+}
+.top-info .info-img img{
+    width: 60px;
+    height: 60px;
+    border: none;
+	border-radius: 50%;
+}
+.top-info .info-title{
+    line-height: 25px;
+    color: #686868;
+    position: absolute;
+    left: 85px;
+    top: 10px;
+}
+.top-info .info-title h4{
+    color: #3f3f3f;
+}
+.top-info .info-title .department{
+    margin-right: 10px;
+}
+.learn-nav{
+    width: 960px;
+    z-index: 12;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.nav-links a.link{
+    position: relative;
+    padding-top: 15px;
+    height: 35px;
+}
+.num{
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.num-icon{
+    background: url('images/focus.png') no-repeat center center;
+}
+.focus .num-icon{
+    background: url('images/focus-hover.png') no-repeat center center;
+}
+.learn-content{
+    padding: 10px 0px;
+    position: relative;
+}
+.learn-content-left{
+    width: 660px;
+    float: left;
+}
+.learn-content-left .mod{
+    margin:0px 10px 10px 0px;
+    width: 290px;
+}
+.learn-content-right{
+    width: 278px;
+    border: 1px solid #E9E9E9;
+    padding: 10px;
+    float: right;
+}
+.learn-content-right .mod-ft .more{
+}
+.feedline{
+    margin: 10px 50px;
+    border-left: none;
+}
+.feedlist .experts_info{
+    font-size: 12px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+.mod .hd .more{
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.mod .bd ul li{
+    height: auto;
+    line-height: auto;
+}
+.learn-content-right .mod-hd{
+    padding: 0 0 5px 0;
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid #DDD;
+}
+.learn-content-right h5{
+    color: #428DD1;
+    margin: 0;
+}
+.learn-content-right h5 .icon-refresh{
+    float: right;
+}
+.rightSider-list{
+    list-style: none;
+    margin:0;
+}
+.rightSider-item{
+    margin-bottom: 5px;
+}
+.rightSider-item .subhead{
+    display: block;
+    padding: 5px 0px;
+}
+.sub-avatar{
+    float: left;
+}
+.rightSider-item .subhead img{
+    width: 44px;
+    height: 44px;
+    margin: 3px 5px;
+    cursor: pointer;
+    border: 1px solid #DDD;
+    -webkit-box-shadow: 0 1px 4px #DDD;
+    -moz-box-shadow: 0 1px 4px #ddd;
+    box-shadow: 0 1px 4px #DDD;
+    border-radius: 3px;
+}
+.rightSider-item .subcontent{
+    margin-left: 10px;
+}
+.rightSider-item .subcontent .content-name{
+    font-weight: bold;
+    color: #686868;
+    margin-left: 10px;
+}
+.rightSider-item .subcontent .content-focus{
+    color: #428DD1;
+    float: right;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.content-focus .plus{
+    margin-right: 2px;
+    vertical-align: -2px;
+    font: bold 16px Arial;
+    height: 16px;
+    text-decoration: none;
+    color: #FFA00A;
+}
+.content-focus .focus-icon{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    *zoom:1;
+    background: url("images/focus.png") center center no-repeat;
+}
+.rightSider-item .subcontent .content-intro{
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#star ul{
+    margin: 0;
+    padding: 0;
+}
+#star li{
+    float: left;
+    display: inline-block;
+    *zoom:1;
+    width: 24px;
+    height: 20px;
+    background: url(images/star-mini.png) no-repeat 0px 0px;
+}
+#star li.on{
+    background-position:0 -21px;
+}
+/*加载更多*/
+.getmore{
+    text-align: center;
+}

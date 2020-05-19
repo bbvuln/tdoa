@@ -1,0 +1,1 @@
+FCKCommands.RegisterCommand( 'td_data_select', new FCKDialogCommand( 'td_data_select', "数据选择控件", FCKPlugins.Items['td_data_select'].Path + 'data.php', 500, 350 ) ) ;

@@ -1,0 +1,43 @@
+<?
+include_once("inc/auth.inc.php");
+include_once("inc/utility_cache.php");
+include_once("inc/header.inc.php");
+?>
+<script>
+	var pageType = "pending";
+	var cookieName = pageType+"_<?=$_SESSION['LOGIN_USER_ID']?>";
+</script>
+<?php include("general/workflow/include/search_normal.php");?>
+<div class="search_area search_adv" id="search_adv_div">
+	<div class="adv-select-label"><?=_("流程名称：")?></div>
+    <input id="MENU_FLOW_ID" type="hidden" value="<?=$FLOW_ID;?>">
+	<select id="flow_id" name="flow_id" onChange="changeFlow()"></select>
+	<div class="adv-select-label"><?=_("工作名称/文号：")?></div>
+	<input type="text" class="span3" id="run_name" name="run_name" title="<?echo _("工作名称/文号")?>" placeholder="<?echo _("工作名称/文号")?>">
+	<button type="button" action="new" id="advSearchBtn" class="btn btn-primary"><?echo _("查 询")?></button>
+	<button type="button" id="toNormalSearch" class="btn"><?echo _("切换至普通查询")?></button>
+</div>
+<div class="data-wrap">
+	<div class="data-operation">
+		<div class="button-operation">
+			<button type="button" action="new_work" class="btn btn-primary"><?echo _("新建工作")?></button>
+			<button type="button" action="restore_work" class="btn btn-info"><?echo _("恢复")?></button>
+			<button type="button" action="export_pending" class="btn btn-info"><?echo _("导出工作列表")?></button>
+			<button type="button" action="refresh" class="btn btn-info"><?echo _("刷新")?></button>
+		</div>
+		<?php include_once("general/workflow/include/pager.php");?>
+	</div>
+	<div class="data-list">
+		<?php include_once("general/workflow/include/datalist.php");?>
+	</div>
+<div id="sorry" style="display:none;" align="center">
+<?
+   	$msg = _("暂无符合条件的挂起工作！");
+    Message("",$msg);
+?>
+</div>
+</div>
+
+<script type="text/javascript" 
+	src="js/grid.operation.js">
+</script>

@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    overflow: hidden;
+    height: 100%;
+    font-family: "Microsoft YaHei","Arial",simsun, sans-serif;
+}
+.btn{
+    cursor: pointer;
+}
+/* .sd_top{ */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* height: 60px; */
+    /* border-bottom: 1px solid #ddd; */
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065); */
+    /* background: #fff; */
+/* } */
+.sd_left{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+}
+.sd_right{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 201px;
+    padding: 15px;
+    overflow: auto;
+}
+.sd_logo{
+    width: 300px;
+    padding-top: 8px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #686868;
+}
+.sd_logo img{
+    margin-right: 15px;
+}
+.sd_tool{
+    margin-bottom: 20px;
+}
+.safe_modules{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.safe_modules.active{
+    display: block;
+}
+.safe_modules li a{
+    padding: 10px;
+    display: block;
+    padding-left: 60px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    color: #686868;
+}
+.safe_modules li a:hover{
+    text-decoration: none;
+    background: #FDFDFD;
+}
+.safe_modules li a.active{
+    background: #fff;
+    font-weight: bold;
+    color: #000;
+}
+.safe_modules i.menu-icon{
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    width: 24px;
+    height: 24px;
+    background: url('../images/doc.png') no-repeat 0px 0px;
+}
+.sd_file_list{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.sd_file_list th{
+    position: relative;
+}
+.sd-sort{
+    position: absolute;
+    top: 0px;
+    left: 65px;
+    width: 15px;
+    height: 100%;
+    display: none;
+}
+.sd-sort.mini-sort{
+    left: 40px;
+}
+.sd-sort .asc,
+.sd-sort .desc{
+	display: block;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+.sd-sort .asc{
+	background: url('/static/modules/email/images/asc.png') no-repeat center center;
+}
+.sd-sort .desc{
+	background: url('/static/modules/email/images/desc.png') no-repeat center center;
+}
+.sort .sd-sort{
+    display: block;
+}
+.file-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.selectmodal{
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+}
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+#uploader{
+    width: 185px;
+    float: right;
+}
+#uploadlist{
+    text-align: left;
+    margin-left: 80px;
+}
+#uploader .webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+	padding: 5px 10px;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+#uploader .webuploader-pick-hover {
+	background: #00a2d4;
+}
+#uploader .webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+.uploader-list .item{
+    position: relative;
+    margin-right: 150px;
+    line-height: 24px;
+}
+.uploader-list .item .close{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -8px;
+    right: -8px;
+    /*background: url("images/remove.png") no-repeat;*/
+    opacity: 1;
+    border-radius: 8px;
+    color: #fff;
+}
+#uploadlist .progress{
+    height: 10px;
+    margin-bottom: 10px;
+}
+.operate-delete{
+	padding-left:10px;
+}
+#togglemenu {
+	margin: 10px 0 10px 20px;
+}
+#togglemenu button{
+	padding: 5px 10px ;
+}
+.webuploader-pick a{
+	color:#fff;
+	text-decoration:none;
+}
+#tip{
+	display:none;
+}
+.tip-content{
+	margin:100px auto;
+	font-size: 18px;
+	text-align: center;
+}
+#convertModal{
+	width:300px;
+	height: 150px;
+	background-color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -150px;
+	z-index: 9999;
+	display: none;
+	border: 1px solid #ccc;
+}
+#convertModal img{
+	margin-top: 40px;
+}
+.convert-tip{
+	margin-top: 20px;
+}
+.notify{
+	color: red;
+	font-size: 12px;
+	margin-left: 80px;
+	text-align: left;
+}
+#search-content{
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+#search-btn{
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.create_tip{
+	color: #BDBDBD;
+	font-size: 13px;
+}
+#layout{
+	display: none;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+/*修补webuploader选择按钮不可隐藏 sxm 2015-3-14*/
+#picker .uplaoder-hide{
+	right:1500px;
+}

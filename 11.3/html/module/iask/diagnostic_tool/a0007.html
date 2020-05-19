@@ -1,0 +1,12 @@
+<a name="a0007"></a>
+<div class="head">目录权限设置方法</div>
+<div class="item">
+由于OA的服务程序需要记录日志、读取和生成附件文件等，所以需要所有启动OA服务的操作系统账号具有以下目录的读写权限：<br />
+MYOA\attach<br />
+MYOA\logs<br />
+MYOA\tmp<br />
+MYOA\data5<br />
+MYOA\webroot\attachment<br />
+MYOA\ webroot\inc<br />
+打开“开始菜单 -> 控制面板 -> 管理工具 -> 服务”，找到对应的服务后点击鼠标右键打开“属性”对话框，点击“登录”标签即可看到启动OA服务的操作系统账号，默认为“本地系统帐户”（SYSTEM用户），请确保该账号有以上目录的读写权限。
+</div>

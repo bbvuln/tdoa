@@ -1,0 +1,277 @@
+#west{
+    width:200px;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #e3e3e3;
+}
+#west iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:auto;
+    
+}
+#center{
+    position: absolute;
+    top:0px;
+    bottom:0;
+    left:201px;
+    right:0;
+    overflow: hidden;
+}
+#center iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    
+}
+.clear{ 
+	clear:both; 
+	float:none;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+    height: 100%;
+    line-height: 20px;		
+}
+.set_border{
+	background: #9ac5e8;	
+    border:1px solid #5b99ca;
+    line-height: 32px;
+	text-align:center;
+	padding-left:10px;
+    color: #000000;
+    font-weight: bold;	
+	border-collapse:collapse;
+}
+
+li a:link span, li a:visited span{
+	background: url("../img/ar.png") no-repeat center left;
+    color: #445599;
+    font-size: 9pt;
+    display: block;
+    font-weight: bold;	
+    height: 32px;
+    font-weight: bold;
+	text-align:left;
+	padding-left:20px;
+}
+li a:hover span{
+	background: url("../img/ar.png") no-repeat center left;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    height: 32px;  
+	text-align:left;
+	padding-left:20px;
+}
+.defin_main_body{
+    float:left;
+}
+.main_left{
+    margin-left:30px;
+    float:left;
+}
+.main_right{
+    margin-left:30px;
+    float:left;
+}
+.title_tip{
+    color:rgb(41, 46, 162);
+    font-size:16px;
+    font-weight:bold;
+    margin-top:12px;
+}
+.f_dialog_block{
+    margin-left:80px;
+}
+.f_field_block{
+    margin-top:4px;
+    margin-bottom:4px;
+    display:block;
+    text-align:left;
+}
+.f_field_block_small{
+    padding:0px;
+    margin:0px;
+    margin-top:1px;
+    margin-bottom:1px;
+}
+.f_field_label{ 
+    margin:0px;
+    padding:0px；    
+}
+.f_field_title{
+    font-size:12px;
+    font-weight:bold;
+    margin-left:2px;
+    margin-right:2px;
+}
+.f_field_ctrl{
+    margin-top:5px;
+    margin-left:2px;
+}
+.f_field_ctrl_small{
+    margin-top:1px;
+    margin-left:2px;
+}
+.f_field_explain_label{
+    width:90%;
+    margin:0px;
+    padding:0px;
+    float:left;
+    margin-bottom:5px;
+    border:0px;
+}
+.f_field_explain_title_red{
+    color:red;
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+}
+.f_field_explain_title_blue{
+    color:blue;
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+}
+.f_field_explain_title_green{
+    color:green;
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+}
+.f_field_required{
+    color:red;
+    font-size:12px;
+    margin-top:0px;
+    margin-left:2px;
+    margin-right:2px;
+}
+.top_left h3{
+	margin:0;
+}
+.th_1{
+	width:40px;
+}
+.th_2{
+    width:100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;	
+}
+.th_3{
+    width:50px;
+}
+.th_4{
+    width:50px;
+}
+.th_5{
+    width:50px;
+}
+.modal-header h4{
+	margin: 10px 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 20px;
+	color: inherit;
+}
+.center th,.center td{text-align:center;}
+.top_right,.top_left{
+	height:36px;
+	float:right;
+	margin:5px;
+}
+.top_left{float:left;}
+.center_tr{text-align:center;}
+.pagination{
+    width: 400px;
+    margin: 0px 3px;
+    text-align: right;
+}
+.pagination,
+.set-pagenum{
+    float:right;
+    margin: 0px 3px;
+}
+.set-pagenum{
+    margin: 10px 3px;
+}
+.set-pagenum-input{
+    width:50px;
+    margin:6px;
+}
+table td.align-right{
+    text-align: right;
+    vertical-align: middle;
+
+}
+td select {
+     margin-bottom: 0px;
+}
+td textarea{
+    width: 280px;
+}
+.apply-right-wrap{
+    width: 9px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    background: #cccccc;
+    z-index: 1;
+}
+.dropdown-menu{
+        width: auto;
+        height: auto;
+}   
+.big3{ 
+    font-size: 12pt;
+    color: #333;
+    FONT-WEIGHT: bold;
+}
+.big{
+    margin-top: 10px;
+}
+.align-left td{
+	text-align: left;
+  }
+.box{
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+small.space{
+    margin-left: 30px;
+}
+.ui-autocomplete{
+	width: auto;
+	height: auto;
+}
+td.vertial_center{
+    vertical-align: middle;
+}
+.control-align{
+    margin-left: -60px;
+}
+#control-left{
+    margin-left: 100px;
+}
+div.arrow-right { 
+	margin-top: 80px;
+} 
+

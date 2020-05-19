@@ -1,0 +1,38 @@
+.font{
+	/*±ÍÃ‚…Ë÷√*/
+	font-size:16px;
+	font-family: "Microsoft YaHei"
+}
+#Menu1{
+	style="background-color:White; 
+	border:1px solid #cccccc; 
+	padding:0px;display:none";
+}
+.menu ul{
+	 font-size:12px;
+	 font-family: "Microsoft YaHei"
+	 font-weight:600;
+     text-decoration:none;
+     margin:0;
+     padding:0;
+	 list-style-type: none;
+	 border-left:10px solid #f60;
+	 width:120px;
+	 /*height:124px;*/
+	 overflow:hidden;
+	 background:#fff url(2.png) 1px 0 repeat-y;
+}
+
+.menu ul li{
+	border-bottom:1px solid #fff;
+}
+.menu ul li a{
+	 display:block;
+     color:#fffeee;
+     text-indent:22px;
+     line-height:26px;
+
+}
+.menu ul li a:hover {
+     background:#fff url(1.png) 1px 0 repeat-y;
+}

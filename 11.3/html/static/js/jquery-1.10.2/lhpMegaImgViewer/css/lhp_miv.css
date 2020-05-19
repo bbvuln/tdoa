@@ -1,0 +1,281 @@
+/*
+* cursors
+*/
+.lhp_cursor_drag {
+	cursor: url('/static/js/jquery-1.10.2/lhpMegaImgViewer/css/cursorDrag.png'), move;
+}
+
+.lhp_cursor_hand {
+	cursor: url('/static/js/jquery-1.10.2/lhpMegaImgViewer/css/cursorHand.png'), default;
+}
+
+/*
+ * navigation
+ */
+.lhp_miv_nav {
+	position:absolute;
+	z-index:5;
+}
+
+.lhp_miv_nav_pos_T {
+	top:5px;
+	left:50%;
+}
+
+.lhp_miv_nav_pos_TL {
+	top:5px;
+	left:5px;
+}
+
+.lhp_miv_nav_pos_TR {
+	top:5px;
+	right:5px;
+}
+
+.lhp_miv_nav_pos_B {
+	bottom:5px;
+	left:50%;
+}
+
+.lhp_miv_nav_pos_BL {
+	bottom:5px;
+	left:5px;
+}
+
+.lhp_miv_nav_pos_BR {
+	bottom:5px;
+	right:5px;
+}
+
+.lhp_miv_nav_pos_L {
+	left:5px;
+	top:50%;
+}
+
+.lhp_miv_nav_pos_R {
+	right: 5px;
+	top:50%;
+}
+
+.lhp_miv_nav ul {
+	margin:0;
+	padding:0;
+}
+
+.lhp_miv_nav ul li {
+	position:relative; 
+	padding:4px 0; 
+	cursor:pointer; 
+	float:left; 
+	list-style:none;
+	margin-right:1px;
+	margin-bottom:1px;
+}
+
+.lhp_miv_nav ul li span {
+	float:left; 
+	margin:0 4px;
+}
+
+ul li.lhp_miv_nav_btt_disab {
+	cursor:default;
+}
+
+/*
+* map palette
+*/
+.lhp_miv_map {
+	position:absolute;
+	z-index:4;
+}
+
+.lhp_miv_map_pos_T {
+	left:50%;
+}
+
+.lhp_miv_map_pos_TL {
+
+}
+
+.lhp_miv_map_pos_TR {
+	position:absolute;
+	right:0;
+}
+
+.lhp_miv_map_pos_B {
+	left:50%;
+	bottom:0;
+	position:absolute;
+}
+
+.lhp_miv_map_pos_BL {
+	bottom:0;
+	position:absolute;
+}
+
+.lhp_miv_map_pos_BR {
+	bottom:0;
+	right:0;
+	position:absolute;
+}
+
+.lhp_miv_map_pos_L {
+	top:50%;
+}
+
+.lhp_miv_map_pos_R {
+	right:0;
+	position:absolute;
+	top:50%;
+}
+
+.lhp_miv_map_wrapp_hol {
+	position:relative;
+	overflow: hidden;
+	border:1px solid #0f0f0f;
+}
+
+.lhp_miv_map_wrapp_hol_T {
+	border-top:none;
+}
+
+.lhp_miv_map_wrapp_hol_TL {
+	border-top:none;
+	border-left:none;
+}
+
+.lhp_miv_map_wrapp_hol_TR {
+	border-right:none;
+	border-top:none;
+}
+
+.lhp_miv_map_wrapp_hol_B {
+	position:absolute;
+	border-bottom:none;
+}
+
+.lhp_miv_map_wrapp_hol_BL {
+	border-left:none;
+	border-bottom:none;
+}
+
+.lhp_miv_map_wrapp_hol_BR {
+	border-right:none;
+	border-bottom:none;
+}
+
+.lhp_miv_map_wrapp_hol_L {
+	border-left:none;
+}
+
+.lhp_miv_map_wrapp_hol_R {
+	border-right:none;
+}
+
+.lhp_miv_map_vr {
+	background: #000;
+	opacity: 0.5;
+}
+
+.lhp_miv_map_vr_over {
+	background: #4cf1fe;
+}
+
+/*
+ * preloader
+ */
+.lhp_miv_preload_holder {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-17px;
+	margin-left:-17px;
+	z-index:10000;
+	width:33px;
+	height:33px;
+	background: #fff url('ajax-loader.gif') no-repeat center;
+	opacity: .5;
+	border-radius: 17px;
+}
+
+/*
+* info box
+*/
+.lhp_miv_infoBox_holder {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:5;
+	padding: 2px 6px;
+	background:#262626;
+	font:10px arial,sans-serif;
+	color:#ddd;
+	display: none;
+}
+
+/*
+* markers
+*/
+.lhp_miv_hotspot .lhp_miv_marker {
+
+}
+
+.lhp_miv_hotspot .pos-TL {
+
+}
+
+.lhp_miv_hotspot .pos-T {
+	position:relative;
+	left:-50%;
+}
+
+.lhp_miv_hotspot .pos-TR {
+	position:relative;
+	left:-100%;
+}
+
+.lhp_miv_hotspot .pos-L {
+	position:relative;
+	top:-50%;
+}
+
+.lhp_miv_hotspot .pos-C {
+	position:relative;
+	top:-50%;
+	left:-50%;
+}
+
+.lhp_miv_hotspot .pos-R {
+	position:relative;
+	top:-50%;
+	left:-100%;
+}
+
+.lhp_miv_hotspot .pos-BL {
+	position:relative;
+	top:-100%;
+}
+
+.lhp_miv_hotspot .pos-B {
+	position:relative;
+	top:-100%;
+	left:-50%;
+}
+
+.lhp_miv_hotspot .pos-BR {
+	position:relative;
+	top:-100%;
+	left:-100%;
+}
+
+.lhp_miv_popup_close {
+	position:absolute;
+	z-index:1000;
+	width:15px;
+	height:15px;
+	right:14px;
+	top:14px;
+	cursor:pointer;
+	border-radius:5px;
+	background: #00c6ff url('popupClose.png') no-repeat center;
+}

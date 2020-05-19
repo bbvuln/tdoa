@@ -1,0 +1,95 @@
+body {background:#fff;}
+#body{
+   font-size:9pt;
+}
+#modules{
+   padding:5px 5px 10px 5px;
+}
+
+#modules .TableList{
+   margin-top:0;
+}
+
+.moduleContainer{
+   overflow-x:auto;
+   overflow-y:hidden;
+   width:100%;
+}
+.moduleContainer table{
+   border:0px;
+}
+
+.sub-module-head{
+   cursor:pointer;
+}
+.sub-module-head .group-name{
+   float:left;
+   padding-left:25px;
+   background: url("../10/images/arrow_d.png") no-repeat 5px center;
+}
+.sub-module-head .group-name-collapsed{
+   background: url("../10/images/ar.png") no-repeat 5px center;
+}
+.sub-module-head .group-op{
+   float:right;
+   padding-right:10px;
+   font-weight:normal;
+   font-size:normal;
+}
+.sub-module-item{
+   cursor:pointer;
+}
+.sub-module-item td.U00{
+   padding-left:25px;
+   background-image:url('/static/images/org/U00.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U01{
+   padding-left:25px;
+   background-image:url('/static/images/org/U01.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U02{
+   padding-left:25px;
+   background-image:url('/static/images/org/U02.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U03{
+   padding-left:25px;
+   background-image:url('/static/images/org/U03.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U10{
+   padding-left:25px;
+   background-image:url('/static/images/org/U10.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U11{
+   padding-left:25px;
+   background-image:url('/static/images/org/U11.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U12{
+   padding-left:25px;
+   background-image:url('/static/images/org/U12.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.U13{
+   padding-left:25px;
+   background-image:url('/static/images/org/U13.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}
+.sub-module-item td.im-group{
+   padding-left:25px;
+   background-image:url('/static/images/org/group.png');
+   background-position:3px center;
+   background-repeat:no-repeat;
+}

@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'doc_textfield', new FCKDialogCommand( 'doc_textfield', "单行输入框属性", FCKPlugins.Items['doc_textfield'].Path + 'doc_textfield.php', 380, 210 ) ) ;

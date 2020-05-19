@@ -1,0 +1,45 @@
+/* dairy search */
+body{
+    background: #f2f2f2;
+}
+.wrapper{
+	padding:0px 10px;
+}
+.PageHeader{
+	height:32px;
+	line-height:32px;
+	padding-top: 6px;
+	margin: 0px 10px;
+	margin-bottom: 5px;
+}
+.PageHeader .title{
+	margin-top:0px;
+}
+.searchhead{
+	height:32px;
+	line-height:32px;
+}
+.pageArea{
+	line-height:32px;
+	height:32px;
+}
+#page_no{
+	margin-bottom: 9px;
+}
+.searchbtn{
+	display: inline-block;
+	border: 1px solid #CCC;
+	padding: 1px 8px;
+	height: 20px;
+	line-height: 20px;
+	color: #686868;
+	background: #FFF;
+	border-radius: 3px;
+	text-decoration:none;
+}
+.treeList{
+	background:#fff;
+}
+.TableTop .subject a{
+	margin-left:6px;
+}

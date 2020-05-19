@@ -1,0 +1,139 @@
+<?
+include_once("inc/auth.inc.php");
+include_once("inc/utility_all.php");
+include_once("inc/utility_cache.php");
+include_once("inc/header.inc.php");
+?>
+
+<body class="bodycolor">
+
+<?
+if($TO_ID =="")
+{
+	Message(_("错误"),_("请选择关注的人员"));
+    Button_Back();
+    exit;
+}
+
+//过滤自己
+$TO_ID    = check_id($_SESSION["LOGIN_USER_ID"], $TO_ID, false);
+$USER_STR = "";
+//修改组成员的之前对关注表进行修改
+$sql    = "SELECT USER_STR FROM user_group WHERE GROUP_ID='$GROUP_ID' and USER_ID='".$_SESSION["LOGIN_USER_ID"]."'";
+$cursor = exequery(TD::conn(),$sql);
+if($row=mysql_fetch_array($cursor))
+{
+	$USER_STR = $row['USER_STR'];
+}
+$user_id_all = "";
+$sql1 = "SELECT user_id FROM concern_user WHERE concern_user = '".$_SESSION["LOGIN_USER_ID"]."'";
+$cursor1= exequery(TD::conn(),$sql1);
+while($arr=mysql_fetch_array($cursor1))
+{
+	$user_id_all .= $arr['user_id'].",";
+}
+
+$group = $GROUP_ID.",";
+
+if(substr($TO_ID,-1)==",")
+{
+	$TOID = substr($TO_ID,0,-1);
+}
+
+/*if($USER_STR == "")
+{
+	if($user_id_all =="")
+	{		
+		$toid_array = explode(",",$TOID);
+		for($i=0;$i<count($toid_array);$i++)
+		{
+			$query = "INSERT INTO concern_user (user_id,group_id,concern_user,concern_content)VALUES('$toid_array[$i]','$group','".$_SESSION["LOGIN_USER_ID"]."','')";
+			exequery(TD::conn(),$query);
+		}	
+	}
+	else
+	{
+		if($uid1 = check_id($user_id_all,$TOID,true))
+		{
+			$uid1 = substr($uid1,0,-1);
+			$uid1_array = explode(",",$uid1);
+			for($i=0;$i<count($uid1_array);$i++)
+			{
+				$query = "UPDATE concern_user SET group_id= CONCAT(group_id,'$group') WHERE user_id = '$uid1_array[$i]' AND concern_user='".$_SESSION["LOGIN_USER_ID"]."'";
+				exequery(TD::conn(),$query);
+			}	
+		}
+		if($uid2 = check_id($user_id_all,$TOID,false))
+		{
+			$uid2 = substr($uid2,0,-1);
+			$uid2_array = explode(",",$uid2);
+			for($i=0;$i<count($uid2_array);$i++)
+			{
+				$query = "INSERT INTO concern_user (user_id,group_id,concern_user,concern_content)VALUES('$uid2_array[$i]','$group','".$_SESSION["LOGIN_USER_ID"]."','')";
+				exequery(TD::conn(),$query);
+			}
+		}	
+	}
+}
+else
+{*/
+	//对比新增的人员
+	$added_uid = check_id($USER_STR,$TO_ID,false);
+	
+	if(substr($added_uid,-1)==",")
+	{
+		$added_uid = substr($added_uid,0,-1);
+	}
+	if($added_uid!="")
+	{
+		if($added_uid1 = check_id($user_id_all,$added_uid,true))
+		{
+			$added_uid1 = substr($added_uid1,0,-1);
+			$added_uid1_array = explode(",",$added_uid1);
+			for($i=0;$i<count($added_uid1_array);$i++)
+			{
+				$query = "UPDATE concern_user SET group_id= CONCAT(group_id,'$group') WHERE user_id = '$added_uid1_array[$i]' AND concern_user='".$_SESSION["LOGIN_USER_ID"]."'";
+				exequery(TD::conn(),$query);
+			}	
+		}
+		if($added_uid2 = check_id($user_id_all,$added_uid,false))
+		{
+			$added_uid2 = substr($added_uid2,0,-1);
+			$added_uid2_array = explode(",",$added_uid2);
+			for($i=0;$i<count($added_uid2_array);$i++)
+			{
+				$query = "INSERT INTO concern_user (user_id,group_id,concern_user,concern_content)VALUES('$added_uid2_array[$i]','$group','".$_SESSION["LOGIN_USER_ID"]."','')";
+				exequery(TD::conn(),$query);
+			}
+		}	
+	}	
+	//对比删除的人员
+	$out_add = check_id($TO_ID,$USER_STR,false);	
+	if(substr($out_add,-1)==",")
+	{
+		$out_add = substr($out_add,0,-1);
+	}
+	if($out_add!="")
+	{
+		$out_array = explode(",",$out_add);
+		for($i=0;$i<count($out_array);$i++)
+		{
+			$query = "UPDATE concern_user set group_id = REPLACE(group_id,'$group','') WHERE user_id = '".$out_array[$i]."' AND concern_user='".$_SESSION["LOGIN_USER_ID"]."'";
+			exequery(TD::conn(),$query);
+		}
+	}
+//}
+
+
+
+$query="UPDATE user_group SET USER_STR='$TO_ID' WHERE GROUP_ID='$GROUP_ID' and USER_ID='".$_SESSION["LOGIN_USER_ID"]."'";
+exequery(TD::conn(), $query);
+
+updateUserCache($_SESSION["LOGIN_UID"]);
+
+Message("",_("保存成功"), "", array(array('value' => _("返回"), 'href' => 'index.php?IS_MAIN=1')));
+
+?>
+
+</body>
+</html>

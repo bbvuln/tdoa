@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body{
+    height: 100%;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0px;
+}
+.erp_wrapper{
+    position: relative;
+    height: 100%;
+    background: #fff;
+	color: #333;
+}
+.erp_left{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #f9f9f9;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.erp_center{
+    position: absolute;
+    left: 201px;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    overflow: auto;
+}
+.erp_right{
+    width: 260px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.erp_center_bd{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.erp_center_ft{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    height: 150px;
+}
+.content-r{
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.mod .mod_hd{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color: #05a;
+}
+.mod .mod_bd{
+    padding: 10px;
+}
+.mod .mod_bd_list{
+    margin-left: 10px;
+}
+.mod .mod_bd_item{
+    padding: 5px;
+    display: block;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sub_menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.sub_menu_title{
+    padding: 15px 40px;
+    font-weight: bold;
+    color: #05a;
+}
+.sub_menu_list{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+}
+.sub_menu_list_canvas{
+    display: block;
+    margin-right: 200px;
+}
+.sub_menu_list_item{
+    display: block;
+    margin-right: 200px;
+}
+.sub_menu_panel{
+    display: none;
+}
+.sub_menu_panel.active{
+    display: block;
+    padding: 0 10px;
+}
+.sub_menu_item{
+    float: left;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 15px;
+    height: 120px;
+}
+.sub_menu_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.sub_menu_txt{
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    text-align: center;
+    word-wrap: break-word;
+}
+.sub_menu_item:hover .sub_menu_icon{
+    -webkit-box-shadow: 0px 0px 8px #ddd;
+    -moz-box-shadow: 0px 0px 8px #ddd;
+    -ms-box-shadow: 0px 0px 8px #ddd;
+    -o-box-shadow: 0px 0px 8px #ddd;
+    box-shadow: 0px 0px 8px #ddd;
+}
+.sub_menu_item:hover .sub_menu_txt{
+    color: #05a;
+}
+#ft_mod{
+    height: 85px;
+    overflow: auto;
+}
+#ft_mod li a{
+    float: left;
+    color: #000;
+    display: block;
+    padding: 5px;
+}
+#erp_wrapper .nav-tabs{
+    border-bottom: none;
+    margin-top: -1px;
+}
+#erp_wrapper .nav-tabs>li{
+    float: none;
+}
+#erp_wrapper .nav-tabs>li>a,#erp_wrapper .nav-tabs>li>a:focus{
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    height: 40px;
+    position: relative;
+    padding-left: 50px;
+}
+#erp_wrapper .nav-tabs>li>a.active{
+    background: #fff;
+    font-weight: bold;
+}
+#erp_wrapper .nav>li>a>img{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.content-l .icon-bookmark,.content-l .icon-bookmark-empty{
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+/*
+.content-l .page-header{
+    border-bottom: 0px;
+}*/
+i.arrow {
+    display: inline-block;
+    position: absolute;
+}
+.linktype1 i.arrow{
+    width: 28px;
+    height: 50px;
+    right: -20px;
+    top: 0px;
+    background: url('/static/modules/reportshop/images/1arrow.png') no-repeat -30px 1px;
+}
+.linktype2 i.arrow{
+    width: 50px;
+    height: 28px;
+    bottom: -15px;
+    left: 0px;
+    background: url('/static/modules/reportshop/images/2arrow.png') no-repeat 0px -32px;
+}
+.linktype3 i.arrow{
+    width: 28px;
+    height: 50px;
+    left: -15px;
+    top: 1px;
+    background: url('/static/modules/reportshop/images/3arrow.png') no-repeat 0px 0px;
+}
+.linktype4 i.arrow{
+    width: 50px;
+    height: 27px;
+    top: -15px;
+    left: 0px;
+    background: url('/static/modules/reportshop/images/4arrow.png') no-repeat 1px 0px;
+}
+.linktypeicon{
+    cursor: move;
+    position: relative;
+}
+.linktypeicon i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #ddd;
+}
+.linktypeicon.icon1 i{
+    background: url('/static/modules/reportshop/images/1arrow.png') no-repeat 1px 0px;
+}
+.linktypeicon.icon2 i{
+    background: url('/static/modules/reportshop/images/2arrow.png') no-repeat 1px 0px;
+}
+.linktypeicon.icon3 i{
+    background: url('/static/modules/reportshop/images/3arrow.png') no-repeat 1px 0px;
+}
+.linktypeicon.icon4 i{
+    background: url('/static/modules/reportshop/images/4arrow.png') no-repeat 1px 0px;
+}
+.save-icon{
+    display: none;
+}

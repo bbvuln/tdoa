@@ -1,0 +1,79 @@
+.attendance-title{
+    padding-left:55px;
+}
+.table {
+    width: 80%;
+}
+#center{
+    width:1100px;
+    margin:0 auto;
+}
+#outMail_tab{
+    margin:0 auto;
+}
+#outMail_tab td{
+    padding:0;
+    height:180px;
+}
+#first_tr td{
+    padding:0;
+    height:90px;
+}
+.center_explain_full{
+    display:block;
+    text-align: center;
+    line-height:180px;
+}
+.center_explain_full_first{
+    display:block;
+    text-align: center;
+    line-height:90px;
+}
+.center_explain_half{
+    display:block;
+    text-align: center;
+    line-height:90px;
+}
+.bottom_border{
+    border-bottom:1px solid #ddd;
+}
+.half_box{
+    /* width:100%; */
+    height:50%;
+    position: relative;
+}
+.info_entry{
+    width:80%;
+    margin-left: 8%;
+    margin-top: 30px;
+}
+.is_radio{
+    line-height:90px;
+    margin-left: 8%;
+}
+.chiose_radio{
+    margin: 0!important;
+    margin-right: 5px!important;
+}
+.handle_box{
+    width:84px;
+    margin:40px auto;
+}
+#back_info{
+    margin-left:12%;
+}
+#pwShow{
+    position: absolute;
+    top: 32px;
+    right: 18px;
+    padding: 0 3px;
+    padding-top: 3px;
+    cursor: default;
+    background:#fff;
+}
+.yes_btn{
+    width: 84px;
+    height: 28px;
+    line-height: 18px;
+    border-radius: 4px;
+}

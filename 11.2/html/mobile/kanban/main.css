@@ -1,0 +1,435 @@
+/*common*/
+select{
+    min-width: 85px;
+}
+.pages{
+	display: none;
+}
+.hide{
+    display: none;
+}
+.center{
+    text-align: center;
+}
+.emptyTip{
+    display: none;
+}
+.emptyTip .content{
+    text-align: center;
+    color: #bbb;
+    padding: 20px 0px;
+    width: 100%;
+}
+.showEmpty .emptyTip{
+    display: block;
+}
+.showEmpty .data-list{
+    display: none;
+}
+.mod{
+	margin-bottom: 10px;
+}
+.mod.last{
+	margin-bottom: 0px;
+}
+.mod20{
+    margin-bottom: 20px;
+}
+.mod .mod-title {
+    padding: 5px 5px 5px 15px;
+	position: relative;
+    color: #999;
+}
+.mod.panel .mod-title{
+    padding: 10px 5px 10px 15px;
+    position: relative;
+    color: #999;
+    background: #fff;
+}
+.mod .ui-panel-title-tips{
+    /*width: 26px;*/
+    height: 26px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -13px;
+}
+.panel{
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.panel_name{
+    position: relative;
+}
+.panel .panel_list,
+.panel .task-add{
+    display: none;
+}
+.panel.open .panel_list,
+.panel.open .task-add{
+    display: block;
+}
+.panel_name span.ui-icon-zhankai1,
+.open .panel_name span.ui-icon-next{
+    display: none;
+}
+.open .panel_name span.ui-icon-zhankai1,
+.panel_name span.ui-icon-next{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #c7c7c7;
+}
+.mytasks .task-panel-list{
+}
+.mytasks .task-panel-list .panel_name{
+    padding-left: 40px;
+}
+.panel_name .ui-icon-type{
+    position: absolute;
+    line-height:1;
+    left: 8px;
+}
+.panel_name .ui-icon-warn{
+    top: 5px;
+    color: #f75549;
+    font-size: 28px;
+    left: 5px;
+}
+.panel_name .ui-icon-info-block{
+    font-size: 36px;
+    top: 0px;
+    left: 0;
+    color: #bbb;
+}
+.panel_name .ui-icon-next-dot{
+    font-size: 20px;
+    left: 8px;
+    color: #0e86fe;
+}
+.panel_name .ui-icon-success{
+    top: 4px;
+    left: 3px;
+    color: #54d09f;
+    font-size: 28px;
+}
+/*project-info*/
+.project-info .task-item{
+	border-left: 4px solid #fff;
+    padding-left: 10px;
+    margin-left: 0px !important;
+    position:relative;
+}
+.project-info .task-item h4.ui-nowrap{
+       margin-right: 40px;
+    padding-right: 80px;
+    position: relative;
+}
+.project-info .project-head {
+    background: #fff;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center;
+}
+.project-head .project-name {
+    font-weight: bold;
+    font-size: 22px;
+}
+.project-head .project-desc {
+    color: #999;
+    margin: 5px 0px;
+    padding: 0px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project-head .project-main {
+    color: #999;
+    font-size: 13px;
+}
+.project-head .project-main label{
+    margin: 0px 3px;
+}
+.project-head .project-main span{
+    color: #ffa200;
+}
+.project-info .task-item .can_delete{
+    z-index: 999;
+    position: relative;
+}
+.project-info .task-item .task-item-delete{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    text-align: center;
+    background: red;
+    color: #fff;
+    line-height: 44px;
+    z-index: -1;
+}
+.project-info .task-add {
+    position: relative;
+    padding: 10px 0px;
+    padding-left: 35px;
+    background: #fff;
+    /*border-bottom: 1px solid #efefef;*/
+    color: #999;
+}
+.project-info .task-add .ui-icon-plus{
+    font-size: 22px;
+    position: absolute;
+    line-height: 22px;
+    left: 10px;
+    top: 50%;
+    margin-top: -11px;
+    color: #999;
+}
+.ui-panel-subtitle.time_status{
+    color: #ff3c00; 
+}
+.ui-panel-subtitle{
+    position: absolute;
+    right: 0;
+}
+.isdone{
+    text-decoration:line-through;
+}
+/*紧急程度*/
+.level-0{
+    border-left: 4px solid #c5c5c5 !important;
+}
+.level-1{
+    border-left: 4px solid #ffa200 !important;
+}
+.level-2{
+    border-left: 4px solid #ff3c00 !important;
+}
+/*task-info*/
+.task-info .task-head,
+.task-new .task-head{
+    background: #fff;
+}
+.task-info .task-status{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.task-info .cannot_edit .task-status{
+    display: none;
+}
+.task-info .task-status .ui-icon-finish,
+.task-info .task-status .ui-icon-unfinish{
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    font-size: 22px;
+    line-height: 22px;
+}
+.task-info .cannot_edit .task-content-finish{
+    padding-left: 0;
+    display: block;
+}
+.task-info .cannot_edit .task-content{
+    display: none;
+}
+.task-content-finish{
+    padding-left: 28px;
+    resize: none;
+    margin-top: 14px;
+    line-height: 22px;
+    /*text-decoration: line-through;*/
+}
+.finish .task-content-finish{
+    text-decoration: line-through;
+}
+.task-info .task-content{
+    padding-left: 28px;
+    resize: none;
+}
+.task-info .task-status .ui-icon-unfinish,
+.task-info .task-content{
+    display: inline-block;
+}
+.task-info .task-status .ui-icon-finish,
+.task-info .task-content-finish{
+    display: none;
+}
+.finish .task-status .ui-icon-finish,
+.finish .task-content-finish{
+    display: inline-block;
+    max-height: 44px;
+    overflow: hidden;
+}
+.finish .task-status .ui-icon-unfinish,
+.finish .task-content{
+    display: none;
+}
+.task-info .task-member{
+    height: auto;
+    min-height: 44px;
+}
+.task-info .task-member .ui-icon-add,
+.task-new .task-member .ui-icon-add{
+    position: absolute;
+    right: 15px;
+    font-size: 26px;
+    top: 50%;
+    margin-top: -13px;
+    line-height: 26px;
+}
+.task-new .task-member .ui-label-s,
+.task-info .task-member .ui-label-s{
+    margin-right: 5px;
+    padding: 3px 5px;
+}
+.task-info .task-executor img,
+.task-new .task-executor img{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: 10px;
+}
+.task-new .task-content{
+    padding-left: 0;
+    resize: none;
+}
+.showEmpty .task-subtasks-list{
+    display: none;
+}
+.subtasks-item{
+    position: relative;
+}
+.subtask-info .ui-form-item-textarea{
+    padding-left: 40px;
+}
+#addsubtask-info .ui-form-item-textarea{
+    padding-left: 15px;
+}
+.subtask-status{
+    position: absolute;
+    top:0;
+    left: 15px;
+}
+.subtask-status .ui-icon-unfinish,
+.subtask-status .ui-icon-finish{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 22px;
+    line-height: 22px;
+}
+.can_edit .subtask-status .ui-icon-unfinish,
+.can_edit .subtask-status .ui-icon-finish{
+    color: rgba(0,0,0,.5);
+}
+.subtask-status .ui-icon-unfinish{
+    display: block;
+}
+.subtask-status .ui-icon-finish{
+    display: none;
+}
+.finish .ui-icon-unfinish{
+    display: none;
+}
+.finish .ui-icon-finish{
+    display: block;
+}
+.subtask-info .subtask-content,
+.subtask-info p{
+    padding-top: 10px;
+    margin-top: 0;
+}
+.subtask-info.finish p{
+    text-decoration: line-through;    
+}
+.subtask-info.finish .subtask-content,
+.subtask-info p{
+    display: none;
+}
+.subtask-info .subtask-content,
+.subtask-info.finish p{
+    display: block;
+    line-height: 22px;
+}
+
+.subtasks-item.finish .ui-nowrap{
+    text-decoration: line-through;
+}
+.subtasks-add{
+    position: relative;
+    padding: 10px 0px;
+    padding-left: 35px;
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    color: #999;
+}
+.subtasks-add .ui-icon-plus{
+    font-size: 22px;
+    position: absolute;
+    line-height: 22px;
+    left: 10px;
+    top: 50%;
+    margin-top: -11px;
+    color: #999;
+}
+.subtask-info.cannot_edit .subtask-status,
+.subtask-info.cannot_edit .subtask-content{
+    display: none;
+}
+.subtask-info.cannot_edit .ui-form-item-textarea{
+    padding-left: 15px;
+}
+.subtask-info.cannot_edit p{
+    display: block;
+}    
+/*子任务详情*/
+.subtask-info{
+    background: #fff;
+}
+.subtask-content{
+    padding-left: 0 !important;
+    resize: none;
+}
+.subtask-executor img{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: 10px;
+}
+/*选人*/
+#user_list .user-item.hidden{
+    display: none;
+}
+#user_selected .user-item.unselected{
+    display: none;
+}
+.mytasks .ui-tab-content{
+    margin-top: 0;
+}
+.task-panel-list {
+    padding-top: 10px;
+}
+.userselect-ui-container{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#userselect .userselect-ui-container{
+    overflow: hidden;
+}
+#userselect .userselect-ui-container .ui-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; 
+}

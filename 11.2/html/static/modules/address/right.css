@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-size:14px;
+	background: #fff;
+}
+*{
+	margin:0px;
+	padding:0px;}
+li{
+	list-style:none;}
+a{
+	display:block;
+	cursor:pointer;
+	text-decoration:none;}
+img{
+	border:0px;}
+input{
+	border:0px;}
+.content{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+.right{
+	position:relative;
+	overflow:auto;
+}
+.jianjie{
+    position:absolute;
+    top:40px;
+    left:200px;
+    width: 372px;
+    height: 140px;
+}
+.jianjie p{
+	height:34px;
+	margin:0;}
+#xm{
+	font-weight:bold;
+	line-height:34px;
+	font-size:30px;
+	margin-right:50px;
+	}
+#zhiwu{
+	font-size:16px;}
+#gs{
+	
+	font-size:16px;}
+.jianjie ul{
+	margin-top:5px;
+	height:29px;
+	margin-left: 0;
+}
+.jianjie ul li{
+	position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e7e7e7;
+    margin-right: 15px;
+}
+.jianjie ul li.send-icon-email{
+	background: #35ade3;
+}
+.jianjie ul li.send-icon-dx{
+	background: #59e69f;
+}
+.jianjie ul li.send-icon-edit{
+	background: #ffda56;
+}
+.jianjie ul li.send-icon-delete{
+	background: #ff7171;
+}
+.jianjie ul li img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    width: 24px;
+}
+.pic{
+    position:absolute;
+    top: 35px;
+    left:60px;
+    width: 120px;
+    height: 120px;
+}
+.pic a img{
+	width:120px;
+	height:120px;
+}
+.address{
+	position:absolute;
+	top:195px;
+	left:5%;
+	width:550px;
+}
+.lb{
+	float:left;
+	width:100px;
+	color:#969696;
+	font-weight:bold;
+	display:block;
+	text-align:right;
+	margin-right:30px;}
+	
+input[type="text"],
+.uneditable-input {
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  vertical-align: middle;
+}

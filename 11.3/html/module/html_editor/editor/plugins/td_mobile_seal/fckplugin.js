@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'td_mobile_seal', new FCKDialogCommand( 'td_mobile_seal', "移动签章属性", FCKPlugins.Items['td_mobile_seal'].Path + 'td_mobile_seal.php', 380, 210 ) ) ;

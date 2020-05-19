@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: url(login_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -khtml-user-select: none;
+    user-select: none;
+}
+.login_form {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -400px;
+}
+@media (min-width: 1921px) {
+    body {
+        background: url(login_bg.jpg) no-repeat;
+    }
+}
+.tdxk {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    max-width: 100px;
+}
+.msg{
+    color:#fff;
+}
+.msg a{
+    color:#fff;
+}
+.msg a:hover{
+    color: #EFE4B0;
+}
+#center{
+    margin: 0 auto;
+    text-align: center;
+	margin-top:80px;
+}
+img.logo{
+    max-width: 400px;
+    margin-top: 20px;
+}
+.input-wrap {
+    width: 241px;
+    height: 50px;
+    color: #666;
+    margin: 0 auto;
+}
+.input-wrap.name{
+    border-bottom: 1px solid #b7c5d1;
+    margin-top: 72px;
+}
+.input-wrap.password{
+    border-bottom: 1px solid #b7c5d1;
+}
+.input-wrap input{
+    border: none;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    outline:none;
+    font-size: 16px;
+    background:transparent;
+	color:white;
+}
+.input-wrap label{
+    width: 70px;
+    text-align: right;
+    display: inline-block;
+}
+.login_btn{
+    margin-top: 82px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    width: 262px;
+    font-size: 14px;
+    outline:none;
+    cursor: pointer;
+    border-radius: 56px;
+    background-color: transparent;
+    border: none;
+    background-image: url(/static/templates/2016_02/login_btn.png);
+    background-position: -24px -62px;
+}
+.login_btn:hover{
+    background-position: -24px -144px;
+}
+#center i{
+    position: relative;
+}
+#center i img{
+    width:15px;
+    position: relative;
+    top:2px;
+}

@@ -1,0 +1,86 @@
+.pgPanel {
+	height:24px;
+	line-height:24px;
+}	
+.pgPanel div {
+	float:left;
+	font-size:12px;
+}
+
+.pgBtn {
+	width: 20px;
+	height: 22px;
+	display: block;
+	cursor: pointer;
+	margin:1px;
+}
+
+.pgPress {
+	margin:2px 0 0 2px;
+}
+
+.pgPrev {
+	background: url(../images/prev.gif) no-repeat center;
+}
+
+.pgPrevDisabled {
+	background: url(../images/prev_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgNext {
+	background: url(../images/next.gif) no-repeat center;
+}
+
+.pgNextDisabled{
+	background: url(../images/next_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgFirst {
+	background: url(../images/first.gif) no-repeat center;
+}
+
+.pgFirstDisabled {
+	background: url(../images/first_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgLast {
+	background: url(../images/last.gif) no-repeat center;
+}
+
+.pgLastDisabled {
+	background: url(../images/last_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgRefresh {
+	background: url(../images/nowait.gif) no-repeat center;
+}
+
+.pgLoad {
+	background: url(../images/loading.gif) no-repeat center;
+}
+
+.pgCurrentPage, .pgPerPage {
+	width:24px;
+	text-align:center;
+
+}
+
+.pgSearchInfo {
+	margin-left:20px;
+}
+
+.cleanFloat {
+	clear:both;
+	display:none;
+}
+
+.separator {
+	width:2px;
+	height:24px;
+	margin:0 5px 0 5px;
+	background: url(../images/separator.gif) no-repeat center;
+}

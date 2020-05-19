@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if IE 6 ]> <html class="ie6 lte_ie6 lte_ie7 lte_ie8 lte_ie9"> <![endif]--> 
+<!--[if lte IE 6 ]> <html class="lte_ie6 lte_ie7 lte_ie8 lte_ie9"> <![endif]--> 
+<!--[if lte IE 7 ]> <html class="lte_ie7 lte_ie8 lte_ie9"> <![endif]--> 
+<!--[if lte IE 8 ]> <html class="lte_ie8 lte_ie9"> <![endif]--> 
+<!--[if lte IE 9 ]> <html class="lte_ie9"> <![endif]--> 
+<!--[if (gte IE 10)|!(IE)]><!--><html><!--<![endif]-->
+ <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+    <meta http-equiv="pragram" content="no-cache">
+    <link rel="stylesheet" type="text/css" href="/leader_plantform/style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/leader_plantform/style/common.css" />
+    <script type="text/javascript" src="/inc/js/jquery-1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/leader_plantform/js/common.js"></script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="/inc/js/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/inc/js/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/leader_plantform/style/style.css" />
+<link href="../document/style/index.css" rel="stylesheet">
+<link href="style/task.css" rel="stylesheet">
+<script src="/inc/js/attach.js"></script>
+<script type="text/javascript" src="/inc/js_lang.php"></script>
+<script type="text/javascript" src="feed.js"></script>
+<script>
+jQuery(function($){
+    var tFeed = new TFeed({
+        el: '#feedlist'
+    });
+})
+</script>
+<div>
+	<div class="doc-header navbar-fixed-top">
+		<div class="top_title">我的督办</div>
+	    <ul id="statusbasic" class="nav nav-tabs doc-nav" style="
+	    margin-bottom: 10px;
+	    background-image: -webkit-gradient(linear,0 0,0 100%,from(#FFF),to(#F2F2F2));
+	    progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffffffff',endColorstr='#fff2f2f2',GradientType=0);
+	    padding-left: 10px;">
+	        <li class="active">
+	          <a href="javascript:;" data-status="all"><span class="pull-right c-couter">10</span>全部</a>
+	        </li>
+	        <li><a href="javascript:;" data-status="urgent"><span class="pull-right c-couter">3</span>急件</a></li>
+	        <li><a href="javascript:;" data-status="common">普通</a></li>
+	    </ul>
+	</div>
+	
+	<div class="header-holder clearfix">
+	</div>
+	
+	<div class="doc-content">
+		<div class="ui-grid-row">
+			<div class="feeds-wrapper">
+				<form> 
+					<div class="mod" data-module="feeds-search">
+					    <div class="mod_bd">
+					        <div class="mod_bd_inner">
+					        	<div class="ui-grid-row feeds-search-basic">
+					                <div class="ui-grid-6 search-keyword">
+					                    <input id="search-input-basic" class="input-medium" type="text" name="keyword"  value=""/>
+					                    <a class='search-submit-handler' href="javascript:void(0);">查询</a>
+					                </div>
+					            </div>
+					  		</div>
+					    </div>
+					</div>
+				</form>               
+				<div id="feed-pagination" class="pagination pull-right">                   
+				</div>
+				<div id="pageloading" style="display: none;">正在加载...</div>
+				<div id="submiting" style="display: none;">正在提交...</div>
+				<div id="feedlist" class="feeds feedlist">
+					<div class="feed  feed-text" id="feed-feed-448" data-prcs-id="2" data-feed-id="448">
+						<div class="feed-content-holder">
+							
+							<div class="pop-content clearfix">	
+								
+								<div class="feed-hd">
+									<div class="feed-time" title="2014-05-29" data-timestamp="1401334867">截至时间: 5月29日 11:41</div>
+									<span class="feed-status-text pull-right"><span class="color2"><img style="width:14px;height:14px;vertical-align:top;" src="/images/leader_plantform/images/2_14.png"> </span>办理中</span>
+									
+									<div class="feed-basic">
+										<a target="_blank" href="/general/workflow/list/input_form/index.php?RUN_ID=448&amp;FLOW_ID=261&amp;PRCS_ID=2&amp;FLOW_PRCS=2&amp;target=opener&amp;callback=turnCallback">【<span style="color:#F0A84D;">【加急】</span>】集团公司与华中科大签署协同创新战略合作协议</a>
+									</div>
+								</div>
+							
+								<div class="feed-txt-summary clearfix" style="display:block">
+									<h6>最新反馈</h6>
+									<p>王某某：反馈意见反馈意见反馈意见反馈意见<span class="timeline">进度50%</span></p>
+									<p>王某某：反馈意见反馈意见反馈意见反馈意见<span class="timeline">进度30%</span></p>
+								</div>
+								
+								<div class="feed-act"> 
+									<button onclick="window.open('/general/supervision_system/instructions.php?task_id=','','width=800,height=600')" data-cmd="unfocus" class="btn btn-mini btn-info" style="margin-left:8px" hidefocus="hidefocus">批示</button>
+									<button onclick="window.open('/general/supervision_system/task_show.php?task_id=','','width=800,height=600')" data-cmd="unfocus" class="btn btn-mini" hidefocus="hidefocus">详情</button>
+									<a href="javascript:;" class="feed-num" data-cmd="feed-num">反馈(3)</a>
+									<a href="javascript:;" data-cmd="task-item">任务进展(4)</a>
+								</div>
+								
+								<div class="feed-txt-summary feed-bottom clearfix" style="display:block">
+									<h6>反馈意见</h6>
+									<p>王某某：反馈意见反馈意见反馈意见反馈意见<span class="timeline">进度50%</span></p>
+									<p>王某某：反馈意见反馈意见反馈意见反馈意见<span class="timeline">进度50%</span></p>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="feed  feed-text" id="feed-feed-448" data-prcs-id="2" data-feed-id="448">
+						<div class="feed-content-holder">
+							
+							<div class="pop-content clearfix">	
+								
+								<div class="feed-hd">
+									<div class="feed-time" title="2014-05-29" data-timestamp="1401334867">截至时间: 5月29日 11:41</div>
+									<span class="feed-status-text pull-right"><span class="color2"><img style="width:14px;height:14px;vertical-align:top;" src="/images/leader_plantform/images/2_14.png"> </span>办理中</span>
+									
+									<div class="feed-basic">
+										<a target="_blank" href="/general/workflow/list/input_form/index.php?RUN_ID=448&amp;FLOW_ID=261&amp;PRCS_ID=2&amp;FLOW_PRCS=2&amp;target=opener&amp;callback=turnCallback">【<span style="color:#F0A84D;">【加急】</span>】集团公司与华中科大签署协同创新战略合作协议</a>
+									</div>
+								</div>
+							
+								<div class="feed-txt-summary clearfix" style="display:block">
+									<h6>最新反馈</h6>
+									<p>无</p>
+								</div>
+								
+								<div class="feed-act"> 
+									<button data-cmd="unfocus" class="btn btn-mini btn-info" style="margin-left:8px" hidefocus="hidefocus">批示</button>
+									<button data-cmd="unfocus" class="btn btn-mini" hidefocus="hidefocus">详情</button>
+									<a href="javascript:;" class="feed-num">反馈(4)</a>
+									<a href="javascript:;" data-cmd="task-item">任务进展(4)</a>
+								</div>
+							
+								
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	
+			<div class="ui-grid-8 sidebar">
+				<div class="" id="feed-feed-detail-448"">
+					<table class="table table-bordered T_table">
+						<colgroup>
+						<col width="90">
+						<col width="90">
+						<col width="90">
+						<col width="120">
+						<col width="60">
+						</colgroup>
+						<thead>
+						<tr>
+						    <th>承办部门</th>
+						    <th>承办事项</th>
+						    <th>部门主管</th>
+						    <th>截止时间</th>
+						    <th>操作</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>产品研发部</td>
+								<td>承办事项</td>
+								<td>夏勇</td>
+								<td>5月29日11:41</td>
+								<td><button type="button" onclick="window.open('/general/supervision_system/instructions.php?task_id=','','width=800,height=600')" class="btn btn-mini btn-info" style="float:left;margin-right:3px;">批示</button></td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<div style="width:100px;height:8px;margin-top:6px;border: 1px solid #DDD;border-radius: 7px;display: inline-block;">
+										<div style="width:50px;height:100%;background:red;border-radius: 7px;"></div>
+									</div>
+									50%
+									<span style="color:red">超时：2天</span>（2014年5月12日 14:00 王艳发起催办提醒）
+								</td>
+							</tr>
+
+							<tr>
+								<td>产品研发部</td>
+								<td>承办事项</td>
+								<td>夏勇</td>
+								<td>5月29日11:41</td>
+								<td><button type="button" onclick="window.open('/general/supervision_system/instructions.php?task_id=','','width=800,height=600')" class="btn btn-mini btn-info" style="float:left;margin-right:3px;">批示</button></td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<div style="width:100px;height:8px;margin-top:6px;border: 1px solid #DDD;border-radius: 7px;">
+										<div style="width:30px;height:100%;background:#B5FFB2;border-radius: 7px;"></div>
+									</div>
+									30%
+								</td>
+							</tr>
+														
+						</tbody>
+					</table>
+					<div class="popicon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

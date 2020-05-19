@@ -1,0 +1,214 @@
+*{margin:0px;padding:0px;}
+body{
+	background:#fff;
+   margin-bottom:10px;
+   overflow:hidden;
+}
+
+#center{
+   _width:100%;
+   height:390px;
+   margin:0px 60px;
+   background:#fff;
+   overflow-x:auto;
+   overflow-y:hidden;
+   white-space:nowrap;
+}
+#center .group{
+   width:880px;
+   margin:10px 20px 0px 20px;
+   display:inline-block !important;
+   display:inline;
+   overflow:visible;
+}
+#center .group .row{
+   height:110px;
+   margin:10px;
+}
+#center .group .row .block{
+   display:inline-block !important;
+   display:inline;
+   height:110px;
+   line-height:110px;
+   margin:0px 10px;
+   cursor:pointer;
+}
+#center .group .row .block span{
+   display:block;
+   font-family:Î¢ÈíÑÅºÚ;
+   color:#fff;
+   font-size:22px;
+   padding-left:20px;
+}
+#center .group .row .block_1{
+   width:195px;
+   background-position:0px center;
+   background-repeat:no-repeat;
+}
+#center .group .row .block_1 span{
+   font-size:22px;
+   padding-left:70px;
+}
+#center .group .row .block_2{
+   width:410px;
+   background-position:65px center;
+   background-repeat:no-repeat;
+}
+#center .group .row .block_2 span{
+   font-size:28px;
+   padding-left:145px;
+}
+
+a.PickColor{
+   display:inline-block;
+   border:1px #fff solid;
+}
+a.PickColor:hover,
+a.PickColorActive{
+   border:1px #4686c6 solid;
+   background:#e7f0fb;
+}
+a.PickColor span{
+   display:block;
+   margin:3px;
+   width:20px;
+   height:20px;
+   cursor:pointer;
+}
+
+.win8_module_default{
+   background-color:#008ae7;
+}
+.win8_module_todo{
+   background-color:#ce4731;
+}
+.win8_module_email,
+.win8_module_sms,
+.win8_module_calendar,
+.win8_module_diary,
+.win8_module_fax,
+.win8_module_file_folder,
+.win8_module_notify,
+.win8_module_news,
+.win8_module_vote,
+.win8_module_person_info{
+   background-color:#435cb0;
+}
+.win8_module_workflow{
+   background-color:#37568f;
+}
+.win8_module_work_stat,
+.win8_module_work_plan,
+.win8_module_office_Product,
+.win8_module_asset,
+.win8_module_book,
+.win8_module_source,
+.win8_module_meeting,
+.win8_module_vehicle{
+   background-color:#2081b8;
+}
+.win8_module_netdisk,
+.win8_module_picture,
+.win8_module_zhidao,
+.win8_module_wiki,
+.win8_module_index{
+   background-color:#95519e;
+}
+.win8_module_hr,
+.win8_module_portal_hrms{
+   background-color:#54b100;
+}
+.win8_module_document{
+   background-color:#cf3411;
+}
+.win8_module_roll_manage{
+   background-color:#996823;
+}
+.win8_module_crm,
+.win8_module_portal_crm{
+   background-color:#01afd4;
+}
+.win8_module_project{
+   background-color:#00a1c8;
+}
+.win8_module_reportshop{
+   background-color:#32984c;
+}
+.win8_module_weixunshare,
+.win8_module_bbs,
+.win8_module_bbs2,
+.win8_module_netmeeting,
+.win8_module_netchat,
+.win8_module_chatroom,
+.win8_module_vchat,
+.win8_module_gbtmeet{
+   background-color:#d1549b;
+}
+.win8_module_uconnect{
+}
+.win8_module_ext_data{
+}
+.win8_module_info,
+.win8_module_game,
+.win8_module_calendar2,
+.win8_module_world_time,
+.win8_module_im{
+   background-color:#339a4b;
+}
+.win8_module_system{
+   background-color:#498baa;
+}
+.color_style_1{
+   background-color:#7f139a;
+}
+.color_style_2{
+   background-color:#0082da;
+}
+.color_style_3{
+   background-color:#37568f;
+}
+.color_style_4{
+   background-color:#99629c;
+}
+.color_style_5{
+   background-color:#3b7ddb;
+}
+.color_style_6{
+   background-color:#d28d01;
+}
+.color_style_7{
+   background-color:#b9b901;
+}
+.color_style_8{
+   background-color:#54b100;
+}
+.color_style_9{
+   background-color:#f08302;
+}
+.color_style_10{
+   background-color:#56bab8;
+}
+.color_style_11{
+   background-color:#01afd4;
+}
+.color_style_12{
+   background-color:#752ea4;
+}
+.color_style_13{
+   background-color:#df1c85;
+}
+.color_style_14{
+   background-color:#f3e800;
+}
+.color_style_15{
+   background-color:#6d953c;
+}
+.color_style_16{
+   background-color:#008ae7;
+}
+.color_style_17{
+   background-color:#6f99d5;
+}
+.color_style_18{
+   background-color:#f83435;
+}

@@ -1,0 +1,210 @@
+*{padding:0px;margin:0px;}
+body{
+   margin:0px;
+}
+
+#left{
+   width:188px;
+   padding-left:20px;
+   vertical-align:top;
+   font-size:12px;
+}
+
+.BlockTop{
+   width:178px;
+}
+
+#left_top{
+   width:178px;
+   background:none;
+}
+#Toolbar{
+   width:178px;
+   height:45px;
+   text-align:center;
+}
+#Toolbar a.ToolBtn2{
+   width:50px !important;
+   width:55px;
+}
+#Toolbar a.ToolBtn2 span{
+   display:block;
+}
+#PrevMonth{
+   display:inline-block !important;
+   display:inline;
+   width:20px;
+   height:20px !important;
+   height:21px;
+   background:url('/static/images/previouspage.gif') 0px center no-repeat;
+   cursor:pointer;
+}
+#YearMonth{
+   display:inline-block !important;
+   display:inline;
+   width:90px;
+   margin-bottom:0px !important;
+   margin-bottom:3px;
+}
+#NextMonth{
+   display:inline-block !important;
+   display:inline;
+   width:20px;
+   height:20px !important;
+   height:21px;
+   background:url('/static/images/nextpage.gif') 0px center no-repeat;
+   cursor:pointer;
+}
+#calendar{
+   width:178px;
+   border:1px #83accf solid;
+   border-top:0px;
+   margin-bottom:10px;
+   text-align:center;
+   font-size:12px;
+   border-collapse:collapse;
+   background:#fff;
+}
+#calendar .head{
+   color:#6aad44;
+   font-weight:bold;
+}
+#calendar td{
+   height:20px;
+   border-bottom:1px #cdcdcd solid;
+   border-right:1px #cdcdcd solid;
+   cursor:pointer;
+}
+#calendar td.hover,
+#calendar td.active{
+   background:#def1f1;
+}
+
+.container{
+   width:176px !important;
+   width:178px;
+   border:1px #83accf solid;
+   border-top:0px;
+   margin-bottom:10px;
+   background:#fff;
+}
+.container a{
+   display:block;
+   height:20px;
+   line-height:20px;
+   padding-left:18px;
+   color:#000;
+   background:url('/static/images/black_dot.png') 0px 0px no-repeat;
+   overflow:hidden;
+}
+.container a.more{
+   text-align:right;
+   background:none;
+}
+
+
+#right{
+   height:100%;
+   vertical-align:top;
+}
+
+.PageHeader{
+   font-size:1px;
+}
+.TableTop{
+}
+.TableTop .subject{
+   font-size:14px;
+   color:#000;
+}
+.TableTop .subject a{
+   color:#000;
+   text-decoration:none;
+}
+.TableTop .operate{
+   font-size:12px;
+   font-weight:normal;
+   text-align:right;
+   color:#000;
+}
+.TableTop .operate a{
+   color:#000;
+   text-decoration:none;
+}
+#diary_body_topbar{
+   height:30px;
+	float:left;
+}
+
+.last_10dairy{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	font-weight:bold;
+	float:right;
+}
+
+.body_content{
+   text-align: center;
+}
+.one_diary{
+	width: 100%;
+	text-align: left;
+	margin-bottom:10px;
+	border-bottom:1px #83accf solid;
+}
+.diary_type {
+   padding:10px;
+	color: #999;
+	font-size: 12px;
+	background-color: #ffffff;
+	border-left: 1px #83ACCF solid;
+	border-right: 1px #83ACCF solid;
+}
+.diary_comment {
+	color: #999;
+	font-size: 12px;
+	background-color: #ffffff;
+	border-left: none;
+	border-right: none;
+}
+
+.diary_comment_replay {
+	border:#666 1px dashed;
+  padding:8px;margin:8px; 
+  text-align:left;
+  background-color:#fff; zoom:1;
+  filter:alpha(opacity=70);
+  opacity:0.7;
+  background-color:none;
+}
+
+.content {
+   PADDING-RIGHT: 20px;
+	PADDING-LEFT: 20px;
+	PADDING-BOTTOM: 8px;
+  PADDING-TOP: 8px;
+	COLOR: #252927;
+	line-height: normal;
+	FONT-SIZE: 12px;
+	background-color: #ffffff;
+	border-left: 1px #83ACCF solid;
+	border-right: 1px #83ACCF solid;
+}
+
+.operate{
+   text-align:right;
+}
+#readbody{
+}
+.replycontent{
+  padding-left: 14px;
+}
+
+.operatebar{
+	padding:4px;
+	text-align: right;
+  background-color: #DEF1F1;
+  border: 1px #83ACCF solid;
+}
+/*  diary_body.php end     */

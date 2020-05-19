@@ -1,0 +1,111 @@
+*{padding:0px;margin:0px;}
+body{
+   margin:0px;
+}
+
+#left{
+   width:188px;
+   padding-left:10px;
+   vertical-align:top;
+   font-size:12px;
+}
+
+#left_top{
+   width:188px;
+   font-size:1px;
+}
+
+.diary_icon{
+}
+
+.BlockTop{
+   width:178px;
+}
+.BlockTop .center{
+   text-align:left;
+   color:#383838;
+}
+
+.BlockBottom{
+   width:178px;
+}
+.BlockBottom .center{
+   text-align:left;
+   color:#383838;
+}
+
+
+.head{
+   width:171px !important;
+   width:178px;
+   padding-left:5px;
+   border-top:1px #9F9F9F solid;
+   border-left:1px #9F9F9F solid;
+   border-right:1px #9F9F9F solid;
+   background:url('list_hd_bg.png') left top repeat-x;
+}
+
+.container{
+   width:176px !important;
+   width:178px;
+   border-left:1px #9F9F9F solid;
+   border-right:1px #9F9F9F solid;
+   background:#fff;
+   overflow-x:auto;
+}
+.container div.a{
+   display:block;
+   height:20px;
+   line-height:20px;
+   padding-left:18px;
+   color:#393939;
+   background:url('/static/images/black_dot.png') 5px center no-repeat;
+}
+
+.container .TableList{
+   border:0px;
+}
+
+.container .TableList a{
+   background:none;
+}
+
+.container .trHover{
+   border:0px;
+}
+.container .trHover td.TableData,
+.container .trHover .TableData td{
+   border:0px;
+   border-bottom:1px #cccccc solid;
+   text-align:left;
+   padding-left:21px;
+   background-image:url('/static/images/black_dot.png');
+   background-position: 3px center;
+   background-repeat:no-repeat;
+}
+
+.treeList{
+   width:166px !important;
+   width:178px;
+   padding:5px;
+}
+
+a.header{
+   display:block;
+   height:32px;
+   line-height:32px;
+   color:#000 !important;
+   font-size:12px !important;
+   font-weight:bold;
+   padding-left:21px;
+   background: url("ar.png") no-repeat 5px center;
+   text-decoration:none !important;
+}
+a.header-active{
+   background: url("arrow_d.png") no-repeat 5px center;
+}
+
+#right{
+   vertical-align:top;
+   height:100%;
+}

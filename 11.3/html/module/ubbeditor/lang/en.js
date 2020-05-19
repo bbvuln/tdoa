@@ -1,0 +1,20 @@
+var EditorLang = {
+  tColorPicker: 'Color Picker:',
+  tLinkURL: 'Link URL:',
+  tImageURL: 'Image URL:',
+  tSmileyImage: 'Emotion',
+  tHint: 'Hint:',
+  tOK: 'OK',
+  tCancel: 'Cancel',
+  tError1: 'Source code mode can not do this',
+  FontName: 'Font Name',
+  FontSize: 'Font Size',
+  Bold: 'Bold',
+  Italic: 'Italic',
+  Underline: 'Underline',
+  TextColor: 'Text Color',
+  Link: 'Link',
+  Unlink: 'Unlink',
+  Smiley: 'Smiley',
+  RemoveFormat: 'Remove Format'
+};

@@ -1,0 +1,1 @@
+﻿FCKCommands.RegisterCommand( 'td_imgupload', new FCKDialogCommand( 'td_imgupload', "图片上传属性", FCKPlugins.Items['td_imgupload'].Path + 'td_imgupload.php', 380, 210 ) ) ;

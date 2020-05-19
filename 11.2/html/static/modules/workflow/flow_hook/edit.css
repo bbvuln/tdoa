@@ -1,0 +1,8 @@
+.title1,.title2,.title3{
+	height:auto;
+    font-size: 13px;
+}
+.title2,.title3{
+	display:none;
+}
+

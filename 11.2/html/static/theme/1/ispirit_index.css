@@ -1,0 +1,65 @@
+*{padding:0px; margin:0px;}
+a
+{
+    color:#000;
+    text-decoration:none;
+}
+html
+{
+    overflow:hidden;
+}
+body
+{
+    overflow:hidden;
+    font-size:12px;
+}
+
+#ipanel_container
+{
+}
+
+#status_bar
+{
+    width:100%;
+    height:25px;
+    line-height:25px;
+    overflow:hidden;
+    color:#000;
+    background:#b8d1e2 url("statusbar.png") left top repeat-x;
+}
+
+#status_bar table
+{
+    width:100%;
+    height:25px;
+    font-size:12px;
+    border:0px;
+    border-collapse:collapse;
+}
+#status_bar table td.left
+{
+    width:80px;
+    padding-left:10px;
+    text-align:left;
+}
+#status_bar table td.left #user_count
+{
+    color:#0066cc;
+    font-weight:bold;
+    cursor:pointer;
+    padding:0px 5px;
+}
+#status_bar table td.center
+{
+    text-align:center;
+}
+#status_bar table td.center span
+{
+    cursor:pointer;
+}
+#status_bar table td.right
+{
+    width:80px;
+    padding-right:10px;
+    text-align:right;
+}

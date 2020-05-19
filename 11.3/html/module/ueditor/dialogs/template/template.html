@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="../internal.js"></script>
+    <link rel="stylesheet" type="text/css" href="template.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">
+            <div class="top">
+                <label><var id="lang_template_clear"></var>：<input id="issave" type="checkbox"></label>
+            </div>
+            <div class="bottom border_style1" id="preview" style="overflow: auto;"></div>
+        </div>
+        <fieldset  class="right border_style1">
+            <legend><var id="lang_template_select"></var></legend>
+            <div class="pre" id="preitem"></div>
+        </fieldset>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+var renderTmpl = function (templates) {
+    var me = editor,
+            preview = $G( "preview" ),
+            preitem = $G( "preitem" ),
+            tmps = templates,
+            currentTmp;
+    var initPre = function () {
+        var str = "";
+        for ( var i = 0, tmp; tmp = tmps[i++]; ) {
+            str += '<div class="preitem" style="border:1px solid #ccc;padding-left:5px;" onclick="pre(' + i + ')"><div style="font-weight:bold">' + tmp.title + '</div></div>';
+        }
+        preitem.innerHTML = str;
+    };
+    var pre = function ( n ) {
+        var tmp = tmps[n - 1];
+        currentTmp = tmp;
+        clearItem();
+        domUtils.setStyles( preitem.childNodes[n - 1], {
+            "background-color":"lemonChiffon",
+            "border-color":"#F93"
+        } );
+        preview.innerHTML = tmp.preHtml ? tmp.preHtml : "";
+    };
+    var clearItem = function () {
+        var items = preitem.children;
+        for ( var i = 0, item; item = items[i++]; ) {
+            domUtils.setStyles( item, {
+                "background-color":"",
+                "border-color":"#ccc"
+            } );
+        }
+    };
+    dialog.onok = function () {
+        if ( !$G( "issave" ).checked ){
+            me.execCommand( "cleardoc" );
+        }
+        var obj = {
+            html:currentTmp && currentTmp.html
+        };
+        me.execCommand( "template", obj );
+    };
+    initPre();
+    window.pre = pre;
+    pre(1)
+
+};
+
+
+
+
+
+
+
+
+
+
+
+UE.ajax.getJSONP( '/module/html_model/view/ueditor_xml.php',
+    {MODEL_TYPE: editor.options.model_type}, 
+    function ( data ) {
+        if(data.length!=0){
+            renderTmpl(data);
+        }
+    });
+    </script>
+</body>
+</html>

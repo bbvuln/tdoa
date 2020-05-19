@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+	background: url(login_bg1920.jpg) no-repeat;
+    background-size: 100% 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -khtml-user-select: none;
+    user-select: none;
+}
+.login_form {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    margin-top: -270px;
+    left: 50%;
+    margin-left: -400px;
+}
+@media (min-width: 1921px) {
+    body {
+		background: url(login_bg_2560.jpg) no-repeat;
+    }
+}
+.tdxk {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    max-width: 100px;
+}
+.logo {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+.logo-icon{
+	width: 240px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.lower-tip{
+	display: block;
+	padding:10px;
+	font-size:14px;
+	color: #fff;
+}
+.logo-newyear{
+	width: 100%;
+}
+.msg{
+    color:#fff;
+}
+.msg a{
+    color:#fff;
+}
+.msg a:hover{
+    color: #EFE4B0;
+}
+#center{
+    margin: 0 auto;
+    text-align: center;
+}
+.input-wrap {
+    height: 35px;
+    color: #666;
+    margin: 20px auto;
+}
+.input-wrap.password{
+}
+.input-wrap input{
+	border: none;
+    padding: 0px 8px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 6px;
+}
+.input-wrap label{
+    width: 70px;
+    text-align: right;
+    display: inline-block;
+}
+.login_btn{
+    margin-top: 22px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 140px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+	background: url(login_btn.png) no-repeat center center;
+	background-size: cover;
+	/*针对IE8的hack，目的是除掉之前background*/
+	background: none\9;
+}
+#center i{
+    position: relative;
+}
+#center i img{
+    width: 20px;
+    position: relative;
+    top: 4px;
+}
+#changeLogin{
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    padding: 10px;
+}
+.changeLogin-bg{
+	width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#changeWay{
+        width: 100%;
+    height: 50px;
+}
+#numSpan,#imgSpan{
+        display: block;
+    width: 49%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+}
+.waySpan{
+    display:inline-block;
+    height:40px;
+
+}
+.selectedSpan{
+    /* border-bottom:2px solid #888; */
+	color: #FEE883;
+}
+.boxShow{
+    display:block;
+}
+.boxHidden{
+    display:none;
+}
+#changeWay-split {
+    height: 20px;
+    width: 1px;
+    background: #AB191C;
+    float: left;
+    margin-top: 18px;
+}
+#passWordLogin span.split {
+    height: 20px;
+    width: 1px;
+    background: #AB191C;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+#erweima{
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#userImg{
+    overflow:hidden;
+    width:300px;
+    height:290px;
+    margin:0 auto;
+    margin-top:52px;
+    background:rgba(241, 240, 240, 0.466);
+    border-radius:10px;
+}
+#headIcon{
+    width:140px;
+    height:140px;
+    margin:0 auto;
+    margin-top:42px;
+    background:#fff;
+}
+.mobileCue{
+    display:block;
+    width:200px;
+    height:20px;
+    line-height:20px;
+    margin:0 auto;
+    margin-top:10px;
+    font-size:13px;
+}
+#nickName{
+    display:block;
+    width:200px;
+    height:20px;
+    line-height:20px;
+    margin:0 auto;
+    margin-top:20px;
+    font-size:13px;
+}
+.backLogin{
+    display:block;
+    width:200px;
+    height:20px;
+    line-height:20px;
+    font-weight:bold;
+    margin:0 auto;
+    margin-top:20px;
+    color:#666;
+    font-size:13px;
+    cursor: pointer;
+}
+#overTime{
+    width:100%;
+    height:200px;
+    text-align: center;
+    overflow:hidden;
+}
+#invalidImg{
+    width:140px;
+    height:140px;
+    display:block;
+    margin:0 auto;
+    margin-top:20px;
+    cursor: pointer;
+    background:#fff;
+}
+.overTimeSpan{
+    display:block;
+    margin-top:18px;
+    color:#fff;
+    font-size:12px;
+}
+.erweimaSpan{
+    display:block;
+    margin-top:30px;
+    color:#bbb;
+    font-size:14px;
+}
+.app-link{
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+.app-link>a{
+    color:#666;
+    text-decoration:none;
+}

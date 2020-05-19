@@ -1,0 +1,10 @@
+.apply-list-item.taxiTicket .title-top img,
+.apply-list-item.planeTicket .title-top img,
+.apply-list-item.trainTicket .title-top img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+}

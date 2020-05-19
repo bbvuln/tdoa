@@ -1,0 +1,65 @@
+*{padding:0px;margin:0px;}
+body{
+   background:#c4c4c4 url('images/login_pda.png') center top no-repeat;
+   font-size:14px;
+   color:#383838;
+   background-size: 320px 480px;
+   -o-background-size: 320px 480px;
+   -moz-background-size: 320px 480px;
+   -webkit-background-size: 320px 480px;
+}
+#logo{
+   margin-top:60px;	
+	background: url('/static/theme/10/logo_pda.png') center top no-repeat;
+	background-size:286px 128px;
+	-webkit-background-size: 286px 128px;
+	-moz-background-size: 286px 128px;
+	-o-background-size: 286px 128px;
+}
+
+#form{
+   margin:0px auto;
+   margin-top:15px;
+   padding-top:225px;
+   width:240px;
+}
+#form_input{
+   padding-left:77px;
+}
+#form_input div{
+   height:32px;
+}
+#form_submit{
+   margin:0px auto;
+   margin-top:25px;
+   margin-bottom:20px;
+   width:239px;
+   height:40px;
+}
+#msg{
+   margin:0px auto;
+   line-height:20px;
+   text-align:center;
+   color:#f00;
+}
+input.text{
+   border:0px #cccccc solid;
+   padding:0px 5px;
+   width:128px;
+   height:20px;
+   line-height:20px;
+   font-size:14px;
+	background:transparent;
+	outline:none;
+	color: #727272;
+}
+input.submit{
+   width:236px;
+   height:40px;
+   background:url("images/submit_pad.png") center top no-repeat;   
+   background-size:236px 40px;
+   -o-background-size:236px 40px;
+   -webkit-background-size:236px 40px;
+   border:0px;
+   cursor:pointer;
+}

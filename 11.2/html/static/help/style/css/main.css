@@ -1,0 +1,133 @@
+*
+{
+    padding:0px;
+    margin:0px;
+}
+body
+{
+    background:#fcfcfc;
+}
+
+/*顶部搜索区域*/
+.top
+{
+    background-color:#F5F5F5;
+    font-weight: bold;
+	height:88px;
+    border-bottom:1px solid #EAEAEA;
+    text-align:center;
+}
+.top .search
+{
+    padding-top:30px;
+}
+*html .top .search button.btn
+{
+	padding-top:0px;
+	padding-bottom:1px;
+	hidefocus:hidefocus;
+}
+.top .search .search-query
+{
+	outline-style:none;
+	border-radius:0;
+	font-size:17px;
+	line-height:30px;
+	border: 0 none;
+	height:28px;
+	width:463px;
+	padding:4px;	
+}
+form 
+{
+    width: 762px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.bg
+{
+	background:url('/static/help/style/images/search.jpg') no-repeat;
+	float:left;
+	display:inline-block; 
+	height: 39px;
+    padding: 1px;
+}
+.newbtn-left
+{
+	background:url('/static/help/style/images/local_static.jpg') no-repeat;
+	height: 41px;
+    width: 133px;
+    border:0px;
+    margin-left:23px;
+    float:left;
+    display:inline-block; 
+}
+.newbtn-left:hover
+{
+	background:url('/static/help/style/images/local_hover.jpg') no-repeat;
+	height: 41px;
+    width: 133px;
+    border:0px;
+    margin-left:23px;
+    float:left;
+    display:inline-block; 
+}
+.newbtn-right
+{
+	background:url('/static/help/style/images/baidu_static.jpg') no-repeat;
+	height: 41px;
+    width: 133px;
+    border:0px;
+    float:left;
+    display:inline-block; 
+}
+.newbtn-right:hover
+{
+	background:url('/static/help/style/images/baidu_hover.jpg') no-repeat;
+	height: 41px;
+    width: 133px;
+    border:0px;
+    float:left;
+    display:inline-block; 
+}
+/*查询结果区域*/
+.query-result
+{
+    padding:0px 20px;
+}
+.query-result .question
+{
+    padding-left:20px;
+    background:url('/static/images/m/5.png') left center no-repeat;
+}
+.query-result .question a.link
+{
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+}
+
+/*分页区域*/
+.pagination
+{
+    padding-left:20px;
+}
+*html .pagination li
+{
+    float:left;
+    list-style:none;
+    border:0px;
+    font-size:16px;
+}
+*html .pagination li a
+{
+    display:block;
+    width:30px;
+    text-align:center;
+    background:#fcfcfc;
+    border:0px;
+}
+*html .pagination li.active a
+{
+    color:#ff0000;
+}

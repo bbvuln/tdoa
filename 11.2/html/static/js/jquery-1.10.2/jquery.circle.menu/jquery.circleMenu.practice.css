@@ -1,0 +1,341 @@
+/** {*/
+  /*margin:0;*/
+  /*padding:0;*/
+/*}*/
+
+/*body {*/
+  /*font-size:14px;*/
+  /*color:#666;*/
+  /*font-family:Arial, Verdana, sans-serif;*/
+/*}*/
+
+/*div {*/
+  /*padding:200px;*/
+/*}*/
+
+
+
+
+.circleMenuWrap {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  margin:0;
+  padding:0;
+}
+
+.circleMenuWrap li,
+.circleMenuWrap strong,
+.circleMenuWrap .cM_target a {
+  list-style:none;
+  height:35px;
+  display:block;
+}
+
+
+.circleMenuWrap .cM_target{
+    width:40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.expanded .cM_target{
+    -webkit-transform: rotate(-135deg));
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.expanded .circleMenuWrap .cM_target a{
+    background: url('images/tool.png') no-repeat center center;
+}
+.expanded .circleMenuWrap .cM_target a:hover{
+    background: url('images/tool.png') no-repeat center center;
+}
+.lte_ie8 .expanded .circleMenuWrap .cM_target a{
+    background: url('images/tool0.png') no-repeat center center;
+}
+
+.circleMenuWrap .cM_target a {
+  text-indent:-9999px;
+  background: url('images/tool1.png') no-repeat center center;
+  width:100%;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+}
+.circleMenuWrap .cM_target a:hover{
+    background: url('images/tool2.png') no-repeat center center;
+}
+
+.circleMenuWrap a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  outline:none;
+  padding:0;
+  text-decoration:none;
+  font-family:Arial, sans-serif;
+  font-size:12px;
+  color:#999;
+  width:40px;
+  height:40px;
+}
+.lte_ie8 .circleMenuWrap a{
+    width: 32px;
+    height: 32px;
+}
+
+.circleMenuWrap span {
+  visibility:hidden;
+  display:block;
+  width:90px;
+  position:relative;
+  margin-left:40px;
+}
+
+.circleMenuWrap a:hover span {
+  visibility:visible;
+}
+
+.CMItem_left  span{
+  left:-128px;
+  text-align:right;
+}
+
+.CMItem_right  span{
+ left:0px;
+ top:15px;
+}
+
+.CMItem_top  span{
+  text-align:center;
+  top:-18px;
+  left:-64px;
+}
+
+.CMItem_bottom  span{
+    left: -30px;
+    bottom: -43px;
+}
+
+.CMItem_topleft span{
+  left:-128px;
+  top:-8px;
+  text-align:right;
+}
+
+.CMItem_bottomleft span{
+  left:-128px;
+  bottom:-10px;
+  text-align:right;
+}
+
+.CMItem_topright span{
+    left: 18px;
+    top: 41px;
+}
+.CMItem_bottomright span{
+    left: 6px;
+    bottom: -12px;
+}
+.menu-msg a:before{
+    content: "\e65c";
+    font-size: 40px;
+    color: #64c2de;
+   /*background-image:url('images/msgM.png')!important;*/
+}
+.menu-msg a:after {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+}
+.lte_ie8 .menu-msg a{
+    background-image:url('images/msgS.png')!important;
+}
+
+.menu-email a:before{
+    content: "\e619";
+    font-size: 40px;
+    color: #56d169;
+    /*background-image:url('images/emailM.png')!important;*/
+}
+.menu-email a:after {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+}
+.lte_ie8 .menu-email a{
+   background-image:url('images/emailS.png')!important;
+}
+
+.menu-journal a:before{
+    content: "\e61d";
+    font-size: 40px;
+    color: #f7c600;
+   /*background-image:url('images/journalM.png')!important;*/
+}
+.menu-journal a:after {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+}
+.lte_ie8 .menu-journal a{
+    background-image:url('images/journalS.png')!important;
+}
+
+.menu-schedule a:before{
+    content: "\e616";
+    font-size: 40px;
+    color: #779ddb;
+   /*background-image:url('images/scheduleM.png')!important;*/
+}
+.menu-schedule a:after {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+}
+.lte_ie8 .menu-schedule a{
+    background-image:url('images/scheduleS.png')!important;
+}
+
+.menu-workflow a:before{
+    content: "\e65a";
+    font-size: 40px;
+    color: #ff6b6b;
+    /*background-image:url('images/workflowM.png')!important;*/
+}
+.menu-workflow a:after {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+}
+.lte_ie8 .menu-workflow a{
+    background-image:url('images/workflowS.png')!important;
+}
+
+.circle-menu li a{
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+}
+.circle-menu li a:hover{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.circle-menu li a span{
+    color: #fff;
+    font-family: "Microsoft YaHei","Arial",simsun, sans-serif;
+    -webkit-text-stroke-width: 0px;
+}
+
+.menu-msg a span{
+    /*
+    left: -31px;
+    bottom: -43px;
+    */
+    left: -26px;
+    bottom: -5px;
+}
+.menu-email a span{
+    /*
+    left: -16px;
+    bottom: -39px;
+    */
+    left: -20px;
+    bottom: -5px;
+}
+.menu-journal a span{
+    /*
+    left: -2px;
+    bottom: -33px;
+    */
+    left: 5px;
+    bottom: 5px;
+}
+.menu-schedule a span{
+    /*
+    left: 3px;
+    bottom: -23px;*/
+    left:  10px;
+    bottom: 18px;
+}
+.menu-workflow a span{
+    /*
+    left: 5px;
+    bottom: -12px;
+    */
+    left: 10px;
+    bottom: 20px;
+}
+
+/* ie8 & ie7 hack*/
+.lte_ie8 .menu-msg a span{
+    left: -33px;
+    bottom: -34px;
+}
+.lte_ie8 .menu-email a span{
+    left: -17px;
+    bottom: -28px;
+}
+.lte_ie8 .menu-journal a span{
+    left: -10px;
+    bottom: -24px;
+}
+.lte_ie8 .menu-schedule a span{
+    left: -8px;
+    bottom: -17px;
+}
+.lte_ie8 .menu-workflow a span{
+    left: -5px;
+    bottom: -9px;
+}
+

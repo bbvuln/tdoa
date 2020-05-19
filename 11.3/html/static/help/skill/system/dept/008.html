@@ -1,0 +1,16 @@
+<h4 style="font-family:'微软雅黑'"><span>系统管理员绑定了动态密码卡，怎样取消动态密码卡？</span></h4>
+<hr>
+
+<h5><span>解决方法：</span></h5>
+<p style="font-size:1.1em;line-height:22px;">
+如果有其他的OA管理员，到系统管理-系统参数设置中设置“是否启用动态密码卡”为否即可。<br/>
+如果只有一个系统管理员，那么可以使用脚本文件解决，方法：<br/>
+UPDATE `TD_OA`.`sys_para` SET `PARA_VALUE` = '0' WHERE `sys_para`.`PARA_NAME` = 'LOGIN_SECURE_KEY' LIMIT 1 ;<br/>
+记事本打开存为sql格式，到通达应用服务控制中心-数据库管理中脚本导入。<br/>
+或安装网页式数据库管理工具到数据库中修改sys_para表LOGIN_SECURE_KEY的值为0即可。<br/>
+如果按b中方法操作后仍然提示动态密码错误，请重启下memcached Server服务即可。
+</p>
+
+
+
+

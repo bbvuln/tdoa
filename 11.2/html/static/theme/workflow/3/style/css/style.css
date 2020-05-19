@@ -1,0 +1,440 @@
+﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+html{height:100%;}
+ul, ol {list-style:none;}
+.clear{ clear:both; overflow:hidden;}
+.fr{float:right;}
+.tac{text-align:center;}
+body {
+	text-transform:capitalize;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: #dcdcdc;
+}
+.container{
+	text-transform:capitalize;
+	text-align: center;
+	width: 100%;
+	background-color: #dcdcdc;
+font-family: "微软雅黑", "宋体";
+}
+.form_body {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	overflow:hidden;
+font-family: "微软雅黑", "宋体";
+}
+.form_body textarea{
+overflow:auto;
+}
+.form_line_15 {
+	background-color: #74a8f4;
+	height: 15px;
+	width: 100%;
+}
+.round_l {
+	background-image: url(../images/round_l.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	height: 15px;
+	width: 10px;
+}
+.round_r {
+	background-image: url(../images/round_r.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	height: 15px;
+	width: 10px;
+}
+.head_er {
+	
+	width: 100%;
+	height:76px;
+}
+.title_h1 {
+	height: 50px;
+	font-family: "微软雅黑", "宋体";
+	font-size: 32px;
+	color: #74A8F4;
+	line-height: 50px;
+	letter-spacing: 2px;
+}
+.situation_h1 {
+	font-family: Arial, "微软雅黑", "宋体";
+	font-size: 13px;
+	line-height: 18px;
+	color: #68584e;
+	height: 26px;
+	text-align: right;
+	padding-right: 25px;
+	overflow:hidden;
+}
+.situation_h1 span {
+	padding-left: 5px;
+}
+.text_bule {
+	font-family: "微软雅黑", "宋体";
+	font-size: 13px;
+	color: #666666;
+	height:25px;
+    
+        
+
+}
+.cent_er {
+	text-align: left;
+}
+.form_group {
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #74A8F4;
+}
+.form_group1 {
+	border-top-width: 1px;
+}
+.form_group2 {
+	border-bottom: 1px solid #74A8F4;
+}
+.form_row {
+	height: 44px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eaeaea;
+	overflow:hidden;
+}
+.form_row_height {
+	height: 102px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eaeaea;
+	overflow:hidden;
+	
+	}
+	.form_row_heighta {
+	
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eaeaea;
+
+	
+	}
+.form_row_height1 {
+	height: 190px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eaeaea;
+	overflow:hidden;
+	}
+.text_li {
+ width:100%;
+	float: left;
+	line-height: 44px;
+	height: 44px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ddded5;
+	overflow:hidden;
+}
+.text_lia {
+ width:100%;
+	float: left;
+	line-height: 44px;
+	
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ddded5;
+}
+
+.text_li1{
+	border-right:none;
+	overflow:hidden;
+}
+
+.text_gray {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #666666;
+	padding-right: 8px;
+	padding-left: 8px;
+	background-color: #f7f8ee;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ddded5;
+	display: block;
+	float: left;
+	letter-spacing: 1px;
+	text-align:center;
+}
+.text_gray_a {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #666666;
+	background-color: #f7f8ee;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ddded5;
+	display: block;
+	float: left;
+	overflow:hidden;
+	letter-spacing: 1px;
+	text-align:center;
+}
+.text_kong{
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #666666;
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+	text-align:center;
+
+}
+.text_li .text_stlye {
+	text-align:left;
+	display: block;
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+	border: 0;
+	line-height: 40px;
+	height: 40px;
+	overflow:hidden;
+}
+
+
+.text_li .text_stlye1 {
+	float:left;
+	display: block;
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+	border: 0;
+	line-height: 40px;
+	height: 40px;
+	padding-left: 5px;
+}
+.pselect
+{ float:left;
+padding:6px 0 0 10px;
+	background-color: transparent;
+	width:125px;
+	height: 38px;
+	color: #74A8F4;
+	line-height:28px;
+	border-width:0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.selectlist {
+	width:90px;
+	border-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	
+	
+	padding-left: 10px;
+	line-height: 44px;
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+}
+.textarea_stlye {
+	float: left;
+	display: block;
+	font-family: "微软雅黑", "宋体";
+	font-size: 13px;
+	color: #74A8F4;
+	border: 0;
+	height: 100px;
+	line-height: 21px;
+	padding-top:10px;
+}
+.textarea_a{
+	font-family: "微软雅黑", "宋体";
+	font-size: 13px;
+	color: #74A8F4;
+	height: 100px;
+	line-height: 21px;
+	padding-left: 5px;
+	text-align:left;
+	padding-top:10px;
+	overflow:hidden;
+}
+.calendar{
+        font-family: "微软雅黑", "宋体";
+        color: #74A8F4;
+        font-size: 14px;
+		
+}
+
+.calendar img{ float:left; margin-top:9px;}
+
+.text_li .sel {
+	
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	color: #666666;
+	margin-left: 10px;
+}
+
+.se2 {
+	line-height: 30px;
+	height: 30px;
+	text-align:left;
+}
+
+.ez-checkbox {
+	position: relative;
+
+  *top: 0;
+	left: -3px;
+}
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	display:inline-block;
+	background-color: transparent;
+	background-image: url(../images/checkbox-red.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+
+.gray-checkbox .ez-checkbox {
+	background-image: url(../images/checkbox-gray.jpg);
+}
+
+.lightgray-checkbox .ez-checkbox {
+	background-image: url(../images/checkbox-lightgray.png);
+}
+
+.ez-radio {
+	background: transparent url(../images/radio-black.png) 0 1px no-repeat;
+	display:inline-block;
+}
+
+.ez-checked { background-position: 0 -19px; }
+.ez-selected { background-position: 0 -19px; }
+
+.ez-checkbox-green {
+	background: transparent url(../images/checkbox-green.png) 0 1px no-repeat;
+	display:inline-block;
+	*display: inline;
+}
+.ez-checked-green { background-position: 0 -18px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; line-height: 0;}
+.ez-checkbox {
+	vertical-align: middle;
+	width: 19px;
+	height: 19px;
+}
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.foot_er {
+	padding-top: 28px;
+	padding-bottom:28px;
+       text-align:center;
+}
+.button_next {
+	height: 44px;      
+	width: 134px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+}
+.button_next a {
+	background-image: url(../images/button_bg.jpg);
+	background-repeat: no-repeat;
+        display:block;
+        margin:0 auto;
+	height: 44px;
+	width: 134px;
+	font-family: "微软雅黑", "宋体";
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 44px;
+	text-align:center;
+}
+.form_row .ul{ width:100%; float:left; font-family: "微软雅黑";color:#666666;font-size: 14px;} 
+.form_row .li{ width:350px; float:left; padding-left:10px;}
+.form_row .li1{   font-family: "微软雅黑", "宋体";font-size: 14px; color: #74A8F4; height:44px; line-height:44px;}
+
+#text_stlye {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+	border: 0;
+	line-height: 40px;
+	height: 40px;
+    background-color: #ffffff;
+	text-align:left;
+	display:block;
+	overflow:hidden;
+	
+} 
+#text_stlye1 {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+	padding-right: 5px;
+	padding-left: 5px;
+    border:1px #CCC solid;
+	background-color: #ffffff;
+}
+#text_stlye2 {
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+	padding-right: 5px;
+	padding-left: 5px;
+	border:none;
+	background-color: #ffffff;
+float:left;
+}
+#hong{
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #74A8F4;
+	padding-right: 5px;
+	padding-left: 5px;
+        background-color: #ffffff;
+	width: 120px; 
+	height: 20px
+}
+#hong1{
+	font-family: "微软雅黑", "宋体";
+	font-size: 13px;
+	color: #74A8F4;
+	padding-right: 5px;
+	padding-left: 5px;
+	width: 120px; 
+background:none;
+ border:1px #CCC solid;
+}
+.form_h1{font-family: "微软雅黑", "宋体";font-size: 17px; font-weight:bold; color:#999; padding-left:15px; line-height:35px; height:35px;  border-bottom:2px #74A8F4 solid;}
+.zhaopian{ width:140px; height:190px; float:right; margin-top:15px; background-color:#CCC; margin-right:4px; text-align:center; overflow:hidden;}
+.form_body input{ background:none; border:none; font-family: "微软雅黑", "宋体"; font-size: 14px; color: #74A8F4; background-image:none;}
+.form_body textarea{ background:none; border:none; overflow:auto; font-family: "微软雅黑", "宋体"; font-size: 13px; color: #74A8F4; line-height:21px;height:100%;}
+input,
+input[type="text"],
+textarea,
+select{
+	max-width:none;	
+}

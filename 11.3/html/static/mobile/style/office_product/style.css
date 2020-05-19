@@ -1,0 +1,180 @@
+*{
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+}
+.float_l{
+  float:left;
+}
+.float_r{
+    float:right;
+    border:1px solid;
+    padding:1px 5px;
+    border-radius: 5px;
+}
+#office_form{
+    position: relative;
+    z-index: 1;
+}
+#searchResult ul{
+    position: absolute;
+    z-index: 99;
+}
+#show_ul_list .ui-btn-wrap{
+    width: 95%;
+}
+#searchResult .ui-list{
+    background-color: #EBECED;
+}
+.year_rest{
+  color:#00CC00;
+  margin-right:20px;
+  font-size: 14px;
+  position:absolute;
+  top: 30px;
+  right: 0;
+}
+.thing_rest{
+  color:#FF0000;
+  margin-right:35px;
+  margin-top: 5px;
+  font-size: 14px;
+  position:absolute;
+  top: 30px;
+  right: 0;
+}
+/*pÑùÊ½ÐÞ¸Ä*/
+.line_div{
+  margin-right: 80px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width:80%;
+  overflow: hidden;
+  color:#777;
+  font-size: 14px;
+}
+.line_span{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width:60%;
+  overflow: hidden;
+  /*display: inline-block;*/
+  font-size: 14px;
+  color: #777777;
+}
+.office_num{
+    margin-left: 15px;
+}
+.font_span{
+    font-size: 14px;
+}
+table{
+    background-color: white;
+}
+.ui-btn-wrap{
+    width: 100%;
+    text-align: center;
+}
+.ui-form-item input{
+float: right;
+width: 200px;
+height:38px;
+margin:3px 0;
+border: none;
+}
+.ui-form-item textarea{
+resize: none;
+padding-left: 0;
+border:none;
+height: auto;
+}
+#receiveList{
+padding-left: 145px;
+}
+#office_form label{
+width: 120px;
+}
+#office_btn{
+width: 95%;
+}
+#number{
+width: 78px;
+text-align: center;
+border: none;
+}
+.state_green{
+    color:green;
+}
+.office_num{
+font-size: 14px;
+/*line-height: 44px;*/
+}
+.office_num input{
+height: 21px;
+}
+.ui-form-item-show label{
+color: black;
+}
+.office_count{
+width: 200px;
+float: right;
+vertical-align: middle;
+margin-top: 5px;
+}
+.office_count input{
+float: left;
+}
+.office_count span{
+height: 30px;
+vertical-align: middle;
+float: left;
+font-size: 20px;
+}
+.ui-select-group{
+float: right;
+margin-left: 0;
+}
+.ui-select-group .ui-select{
+width:200px;
+}
+.ui-select select{
+padding-left: 12px;
+}
+.office_area{
+height: auto;
+}
+.out_reason{
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.7em;
+  display: block;
+  width:100%;
+  word-break:break-word;
+}
+.top-title{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    margin:0;
+    padding-top: 5px;
+}
+.ui-list-info p{
+    color: black;
+    font-size: 14px;
+}
+.office_span1{
+    padding-left: 27px;
+}
+.office_span2{
+    padding-left: 87px;
+}
+.office_span3{
+    padding-left: 56px;
+}
+.office_span5{
+    padding-left: 70px;
+}
+.office_span4{
+    padding-left: 56px;
+}

@@ -13,7 +13,10 @@ services:
     command: redis-server --requirepass 123456
   web:
     image: bbvuln/tdoa:11.2
+    command: bash -c 'mv /var/www/html/index.php /var/www/html/index.php.bak && cp /wait-for-db.php /var/www/html/index.php && chmod +x /wait-for-it.sh && /wait-for-it.sh db:3306 -- apache2-foreground'
     volumes:
+      - ./wait-for-it.sh:/wait-for-it.sh
+      - ./wait-for-db.php:/wait-for-db.php
       - ./php.ini:/usr/local/etc/php/php.ini
       - ./oa_config.php:/var/www/html/inc/oa_config.php
     depends_on:

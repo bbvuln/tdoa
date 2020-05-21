@@ -15,7 +15,7 @@ RUN docker-php-ext-install gd \
     && docker-php-ext-install mysql \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install sockets \
-    && docker-php-ext-install gd
+    && docker-php-ext-install mbstring
 
 # install phpredis extension
 ENV PHPREDIS_VERSION 2.2.8

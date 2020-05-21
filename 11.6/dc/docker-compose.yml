@@ -3,7 +3,7 @@ version: '3'
 services:
   tdmysql:
     image: mysql:5.6.35
-    command: --lower_case_table_names=1
+    command: --sql_mode="NO_ENGINE_SUBSTITUTION" --lower_case_table_names=1
     volumes:
       - ./db:/docker-entrypoint-initdb.d
     environment:

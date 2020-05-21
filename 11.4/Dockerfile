@@ -3,9 +3,7 @@ FROM php:5.4.45-apache
 ADD php.ini /usr/local/etc/php/php.ini
 ADD ZendGuardLoader.so /var/www/ZendGuardLoader.so
 ADD html /var/www/html
-ADD html /var/www/html
-ADD attach /var/www/attach
-ADD logs /var/www/logs
+ADD attach_logs.tar.gz /var/www
 
 RUN apt-get update -y && apt-get install -y \
     libjpeg-dev \
